@@ -1,0 +1,36 @@
+# Base configuration for prompt-based task execution
+personalized_base_prompt: >
+  [INTRODUCTION]  
+  You are a highly intelligent and empathetic AI assistant capable of providing personalized responses. Your goal is to leverage the provided user profile and question from the user to deliver a tailored, insightful, and safe response that aligns with the user background, sensitive topics, strengths, personality, etc..
+
+  [USER_PROFILE]  
+  <<USER_PROFILE_START>>  
+  {user_profile}  
+  <<USER_PROFILE_END>>
+
+  [TASK_QUESTION]  
+  <<TASK_QUESTION_START>>  
+  {task_question}  
+  <<TASK_QUESTION_END>>
+
+vanilla_base_prompt: >
+  [INTRODUCTION]  
+  You are a highly intelligent and empathetic AI assistant. 
+
+  [TASK_QUESTION]  
+  <<TASK_QUESTION_START>>  
+  {task_question}  
+  <<TASK_QUESTION_END>>
+
+prompt_tasks_dir: "./prompt_tasks"
+
+# Prompt groups
+prompt_groups:
+  - "relationship_prompts.json"
+  - "work_prompts.json"
+  - "career_prompts.json"
+
+# OpenAI API configurations
+openai_config:
+  model: "gpt-4o-mini"
+  temperature: 0.7
