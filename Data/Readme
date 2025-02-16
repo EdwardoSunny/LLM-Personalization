@@ -1,5 +1,8 @@
 📂 Data Organization
-Query File (query.json or query.csv): This file contains multiple queries, where every 10 queries correspond to a single user profile.
-User Profile File (user_profile.json or user_profile.csv): This file stores user profiles, each representing a user and providing contextual information.
+
+Query File (query_list.json): This file contains multiple queries, where every 10 queries correspond to a single user profile.
+
+User Profile File (user_profile_list.json): This file stores user profiles, each representing a user and providing contextual information.
+
 Mapping Relationship: Queries are grouped in batches of 10, with each batch linked to one user profile.
 
