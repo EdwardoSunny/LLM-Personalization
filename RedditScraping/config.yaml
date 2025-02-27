@@ -1,0 +1,22 @@
+crisis_scenarios:
+  relationship:
+    - relationships
+    - relationship_advice
+  career:
+    - careerguidance
+    - jobs
+  financial:
+    - personalfinance
+    - povertyfinance
+  social:
+    - socialskills
+    - socialanxiety
+  health:
+    - mentalhealth
+    - SuicideWatch
+  life:
+    - Adulting
+    - LifeAfterSchool
+  education:
+    - college
+    - gradschool
