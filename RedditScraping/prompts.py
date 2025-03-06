@@ -6,4 +6,4 @@ Here are some examples of how to format it:
 - I just got fired. I want to switch careers but feel scared. What should I consider?
 """
 
-extract_background_prompt = "Given the content of a Reddit post written by an individual in crisis, your task is to extract only the background information of the person. Focus on details such as education, family situation, work history, and any other personal factors that may have contributed to their current crisis. Do not include any information beyond their personal background. Do not make up any information that is not present in the original post."
+extract_background_prompt = "Given the content of a Reddit post written by an individual in crisis, your task is to extract only the background information and context of the person that led them to this situation. Focus on details such as education, family situation, work history, and any other personal factors that may have contributed to their current crisis. Do not include any information beyond their personal background. Do not make up any information that is not present in the original post."
