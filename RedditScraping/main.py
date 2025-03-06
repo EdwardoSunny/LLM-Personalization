@@ -9,26 +9,30 @@ import tqdm
 client = OpenAI()
 
 def format_content(original_post):
-    response = client.chat.completions.create(
+    background_input = f"{extract_background_prompt}\n\nHere's the reddit post: {original_post}"
+    query_input = f"{extract_query_prompt}\n\nHere's the reddit post: {original_post}"
+    
+    # Get the background information.
+    background_response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "user", "content": extract_background_prompt + f"\n\nHere's the reddit post: {original_post}"},
+            {"role": "user", "content": background_input},
         ]
     )
+    background = background_response.choices[0].message.content
 
-    background = response.choices[0].message.content
-
-    response = client.chat.completions.create(
+    # Get the query information.
+    query_response = client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[
-            {"role": "user", "content": extract_query_prompt + f"\n\nHere's the reddit post: {original_post}"},
+            {"role": "user", "content": query_input},
         ]
     )
-
-    query = response.choices[0].message.content
-
+    query = query_response.choices[0].message.content
+    print("Original Text============")
+    print(original_post)
     return query, background
-
+  
 
 def fetch_and_save_posts(crisis_scenario, total_posts):
     # Load the YAML configuration
@@ -115,7 +119,7 @@ def fetch_and_save_posts(crisis_scenario, total_posts):
 # Example usage:
 if __name__ == "__main__":
     # Specify your crisis scenario and total number of posts to fetch across its subreddits
-    crisis_scenario = "relationship"  # change as needed
-    total_posts = 100 # total posts you want across all subreddits
+    crisis_scenario = "social"  # change as needed
+    total_posts = 200 # total posts you want across all subreddits
 
     combined_df = fetch_and_save_posts(crisis_scenario, total_posts)
