@@ -3,8 +3,10 @@ import yaml
 import pandas as pd
 from reddit import RedditUtils  # assuming this module is available
 from openai import OpenAI
-from prompts import extract_background_prompt, extract_query_prompt
+from prompts import extract_background_prompt, extract_query_prompt, extract_structured_prompt
 import tqdm
+
+import sys
 
 client = OpenAI()
 
@@ -32,6 +34,23 @@ def format_content(original_post):
     print("Original Text============")
     print(original_post)
     return query, background
+
+def extract_structured_content(original_post, trait):
+    post_input = f"{extract_structured_prompt}\n\nHere's the reddit post: {original_post}\n\nHere's the trait about the redditer I want you to extract/infer: {trait}"
+
+    background_response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "user", "content": post_input},
+        ]
+    )
+    trait_desc = background_response.choices[0].message.content
+
+    return trait_desc
+
+
+    
+    
   
 
 def fetch_and_save_posts(crisis_scenario, total_posts):
@@ -89,19 +108,54 @@ def fetch_and_save_posts(crisis_scenario, total_posts):
         print("BACKGROUND===========")
         print(background)
 
-
+        print("STRUCTURED===========")
+        scenario = extract_structured_content(row_dict["selftext"], "scenario")
+        age = extract_structured_content(row_dict["selftext"], "age")
+        gender = extract_structured_content(row_dict["selftext"], "gender")
+        marital_status = extract_structured_content(row_dict["selftext"], "marital_status")
+        profession = extract_structured_content(row_dict["selftext"], "profession")
+        economic_status = extract_structured_content(row_dict["selftext"], "economic_status")
+        health_status = extract_structured_content(row_dict["selftext"], "health_status")
+        education_level = extract_structured_content(row_dict["selftext"], "education_level")
+        mental_health_status = extract_structured_content(row_dict["selftext"], "mental_health_status")
+        past_self_harm_history = extract_structured_content(row_dict["selftext"], "past_self_harm_history")
+        emotional_state = extract_structured_content(row_dict["selftext"], "emotional_state")
+        print("scenario:", scenario)
+        print("age:", age)
+        print("gender: ", gender)
+        print("marital_status:", marital_status)
+        print("profession:", profession)
+        print("economic_status:", economic_status)
+        print("health_status:", health_status)
+        print("education_level:", education_level)
+        print("mental_health_status:", mental_health_status)
+        print("past_self_harm_history:", past_self_harm_history)
+        print("emotional_state:", emotional_state)
+        
         # Build a new dictionary with columns in the desired order:
         # 'created_utc', 'id', 'title', 'selftext', 'query', 'background',
         # then the remaining columns.
         new_row = {
-            'created_utc': row_dict['created_utc'],
+            # 'created_utc': row_dict['created_utc'],
             'id': row_dict['id'],
             'title': row_dict['title'],
-            'selftext': row_dict['selftext'],
+            'original': row_dict['selftext'],
             'query': query,
             'background': background,
-            'score': row_dict['score'],
-            'num_comments': row_dict['num_comments'],
+            # categorization begin 
+            'scenario': scenario,
+            'age': age,
+            'gender': gender,
+            'marital status': marital_status,
+            'profession': profession,
+            'economic status': economic_status,
+            'health status': health_status,
+            'education level': education_level,
+            'mental health status': mental_health_status,
+            'past self harm history': past_self_harm_history,
+            'emotional state': emotional_state,
+            # 'score': row_dict['score'],
+            # 'num_comments': row_dict['num_comments'],
             'url': row_dict['url'],
             'subreddit': row_dict['subreddit']
         }
@@ -116,10 +170,19 @@ def fetch_and_save_posts(crisis_scenario, total_posts):
 
     return combined_df
 
+
 # Example usage:
 if __name__ == "__main__":
-    # Specify your crisis scenario and total number of posts to fetch across its subreddits
-    crisis_scenario = "social"  # change as needed
-    total_posts = 200 # total posts you want across all subreddits
+    if len(sys.argv) != 3:
+        print("Usage: python your_script.py <crisis_scenario> <total_posts>")
+        sys.exit(1)
+
+    crisis_scenario = sys.argv[1]
+    
+    try:
+        total_posts = int(sys.argv[2])
+    except ValueError:
+        print("Error: total_posts must be an integer.")
+        sys.exit(1)
 
     combined_df = fetch_and_save_posts(crisis_scenario, total_posts)
