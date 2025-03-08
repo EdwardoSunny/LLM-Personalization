@@ -5,6 +5,11 @@ from reddit import RedditUtils  # assuming this module is available
 from openai import OpenAI
 from prompts import extract_background_prompt, extract_query_prompt
 import tqdm
+from langchain.prompts import PromptTemplate
+from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.pydantic_v1 import BaseModel, Field
+from langchain_openai import ChatOpenAI
+from typing import List
 
 client = OpenAI()
 
