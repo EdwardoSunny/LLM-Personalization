@@ -7,16 +7,25 @@ from typing import List
 # Define the output schema using Pydantic
 class CoreContent(BaseModel):
     query: str = Field(description="The explicit question from a Reddit post written by someone in crisis")
-    background: List[str] = Field(description="List of people mentioned in the paragraph")
+    background: List[str] = Field(description="relevant background information and context about the person that led to their situation.")
 
 # Initialize the output parser
-parser = JsonOutputParser(pydantic_object=TextAnalysis)
+parser = JsonOutputParser(pydantic_object=CoreContent)
 
 # Create a prompt template that includes instructions and the expected output format
 template = """
-Analyze the following paragraph and extract the main topic and all people mentioned.
+Given a paragraph written by someone in crisis, extract two distinct elements:
 
-Paragraph: {input_text}
+1. THE QUESTION: Extract the explicit question as a self-contained query that could be directly asked to an AI assistant. Ensure it's clear and understandable while omitting most background details. Do not add or infer information beyond what is explicitly stated in the post. Format examples:
+   - "How can I manage my stress better?"
+   - "How can I manage this situation with my boyfriend who just left the house?"
+   - "What should I consider when switching careers after being fired?"
+
+2. THE BACKGROUND: Extract only the relevant background information and context about the person that led to their situation. Focus on details such as education, family situation, work history, and personal factors that contributed to their current crisis. Include only information explicitly mentioned in the original post, without making inferences or additions.
+
+Provide these two elements separately and clearly labeled.
+
+Here is the paragraph: {input_text}
 
 {format_instructions}
 """
@@ -28,7 +37,7 @@ prompt = PromptTemplate(
 )
 
 # Initialize the language model
-model = ChatOpenAI(temperature=0)
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 # Create the chain
 chain = prompt | model | parser
