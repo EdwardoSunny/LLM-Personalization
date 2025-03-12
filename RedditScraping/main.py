@@ -14,10 +14,12 @@ from filters import has_all_attributes
 import sys
 import datetime
 
+
 class RedditScraper():
     def __init__(self, model="gpt-4o-mini"):
-        model = ChatOpenAI(model=model, temperature=0)
+        self.seen_posts = {}
 
+        model = ChatOpenAI(model=model, temperature=0)
         core_content_parser = JsonOutputParser(pydantic_object=CoreContent)
         core_content_prompt = PromptTemplate(
             template=core_content_template,
@@ -63,7 +65,6 @@ class RedditScraper():
         reddit_utils = RedditDataFetcher()
         all_valid_posts = []
         today = datetime.datetime.now()
-        fifteen_days_ago = today - datetime.timedelta(days=5)
         target_per_subreddit = int(total_posts / len(subreddits))
        
         for subreddit in subreddits:
@@ -71,9 +72,10 @@ class RedditScraper():
             curr_subreddit_valid_posts = []
 
             # Initialize the sliding window
+            window_size = 5  # e.g., a 5-day window
             current_end_date = today.strftime("%Y-%m-%d")
-            current_start_date = fifteen_days_ago.strftime("%Y-%m-%d") 
-            window_size = 5 # 15 days window
+            current_start_date = (today - datetime.timedelta(days=window_size-1)).strftime("%Y-%m-%d")
+
 
             while len(curr_subreddit_valid_posts) < target_per_subreddit:
                 print(f"Fetching posts from {current_start_date} to {current_end_date}")
@@ -89,19 +91,29 @@ class RedditScraper():
                 # Add your post processing logic here
                 # For example:
                 for post in tqdm.tqdm(posts):
-                    if has_all_attributes(post):  # You'll need to define this function
+                    post_content = post["title"] + "\n\n" + post["content"]
+                    # check that we haven't seen this post before
+                    if post["id"] in self.seen_posts:
+                        print("HAVE ALREADY SEEN THIS POST")
+                        continue
+                    else:
+                        self.seen_posts[post["id"]] = ""
+                    
+                    if has_all_attributes(post_content):  # You'll need to define this function
                         curr_subreddit_valid_posts.append(post)
 
-                        print(f"Found {len(curr_subreddit_valid_posts)} valid posts so far")
+                    print(f"Found {len(curr_subreddit_valid_posts)} valid posts so far")
                     if len(curr_subreddit_valid_posts) >= target_per_subreddit:
                         break
 
                 # If we still need more posts, slide the window back in time
                 if len(curr_subreddit_valid_posts) < target_per_subreddit:
                     # Move the date window back
-                    current_end_date = current_start_date
-                    current_start_date = (datetime.datetime.strptime(current_start_date, "%Y-%m-%d") - datetime.timedelta(days=window_size)).strftime("%Y-%m-%d")
-                    print(f"Moving date window back: new range {current_start_date} to {current_end_date}")
+                    new_end_date = (datetime.datetime.strptime(current_start_date, "%Y-%m-%d") - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
+                    new_start_date = (datetime.datetime.strptime(new_end_date, "%Y-%m-%d") - datetime.timedelta(days=window_size-1)).strftime("%Y-%m-%d")
+                    current_end_date = new_end_date
+                    current_start_date = new_start_date
+                    print(f"moving date window back: new range {current_start_date} to {current_end_date}")
 
                     # Optional: Implement a safety check to prevent going too far back
                     if datetime.datetime.strptime(current_start_date, "%Y-%m-%d") < datetime.datetime(2005, 6, 23):  # Reddit launch date

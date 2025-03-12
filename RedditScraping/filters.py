@@ -22,9 +22,12 @@ def has_attributes_prescence(original_post):
     return result["scenario"], result["age"], result["gender"], result["marital_status"], result["profession"], result["economic_status"], result["health_status"], result["education_level"], result["mental_health_status"], result["emotional_state"]
 
 def has_all_attributes(original_post):
+    if (len(original_post) == 0):
+        return False
+    
     prescences = has_attributes_prescence(original_post)
     
-    threshold = 0.8
+    threshold = 0.7
     
     attribute_count = 0
     for i in range(0, len(prescences)):

@@ -40,7 +40,7 @@ Here is the paragraph: {input_text}
 {format_instructions}"""
 
 filter_template = """
-You are an expert at information extraction. Your task is to determine whether specific information is present in a given paragraph. For each field below, assess whether the text explicitly or even subtly/implicitly contains the corresponding information. If there is any indication—even if not stated outright—that the information is present, respond with **true**. Only respond with **false** if there is no evidence whatsoever for that field. You can make small leaps in logic to determine if its present so that more can be marked as true.
+You are an expert at information extraction. Your task is to determine whether specific information is present in a given paragraph. For each field below, assess whether the text explicitly or even subtly/implicitly contains the corresponding information. If there is any indication—even if not stated outright—that the information is present, respond with **true**. Only respond with **false** if there is no evidence whatsoever for that field. You can make small leaps in logic to determine if its present so that more can be marked as true. If there is not enough information to get any of the fields, just mark all of them as False.
 
 **Fields:**
 - **scenario:** The situation or context the person is facing.
