@@ -1,57 +1,173 @@
-from langchain.prompts import PromptTemplate
-from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
-from langchain_openai import ChatOpenAI
-from typing import List
+import requests
+import time
+import json
+from datetime import datetime, timedelta
 
-# Define the output schema using Pydantic
-class CoreContent(BaseModel):
-    query: str = Field(description="The explicit question from a Reddit post written by someone in crisis")
-    background: List[str] = Field(description="relevant background information and context about the person that led to their situation.")
+class RedditDataFetcher:
+    """
+    A class to fetch all Reddit submissions between a specified date range
+    using the PullPush API, storing only title and content.
+    """
+    
+    def __init__(self, base_url="https://api.pullpush.io/reddit/search"):
+        self.base_url = base_url
+        self.session = requests.Session()
+    
+    def fetch_all_submissions_in_date_range(self, start_date, end_date, subreddit=None, 
+                                           query=None, output_file="reddit_submissions.json"):
+        """
+        Fetch all submissions between start_date and end_date, one day at a time.
+        
+        Args:
+            start_date (str): Start date in format 'YYYY-MM-DD'
+            end_date (str): End date in format 'YYYY-MM-DD'
+            subreddit (str, optional): Restrict to a specific subreddit
+            query (str, optional): Search term
+            output_file (str): File to save results
+        """
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+        end = datetime.strptime(end_date, "%Y-%m-%d")
+        print(start)
+        print(end)
+        
+        all_results = []
+        current_date = start
+        
+        print(f"Fetching all submissions from {start_date} to {end_date}")
+        
+        while current_date <= end:
+            next_date = current_date + timedelta(days=1)
+            
+            # Convert to epoch timestamps
+            after_timestamp = int(current_date.timestamp())
+            before_timestamp = int(next_date.timestamp())
+            
+            print(f"\nProcessing day: {current_date.strftime('%Y-%m-%d')}")
+            
+            # Fetch all submissions for this day
+            day_results = self.fetch_all_submissions_for_timeframe(
+                after_timestamp, 
+                before_timestamp,
+                subreddit=subreddit,
+                query=query
+            )
+            
+            print(f"Found {len(day_results)} submissions for {current_date.strftime('%Y-%m-%d')}")
+            all_results.extend(day_results)
+            print(day_results)
+            
+            # Move to next day
+            current_date = next_date
+            
+            # Small pause to be nice to the API
+            time.sleep(0.5)
+        
+        # Save results to file
+        with open(output_file, 'w') as f:
+            json.dump(all_results, f, indent=4)
+        
+        print(f"\nComplete! Fetched {len(all_results)} total submissions.")
+        print(f"Results saved to {output_file}")
+        
+        return all_results
+    
+    def fetch_all_submissions_for_timeframe(self, after_timestamp, before_timestamp, 
+                                          subreddit=None, query=None):
+        """
+        Fetch all submissions for a specific timeframe, handling pagination.
+        
+        Args:
+            after_timestamp (int): Start timestamp (epoch)
+            before_timestamp (int): End timestamp (epoch)
+            subreddit (str, optional): Restrict to a specific subreddit
+            query (str, optional): Search term
+        
+        Returns:
+            list: All submissions for the timeframe, containing only title and content
+        """
+        all_results = []
+        batch_size = 100  # Maximum allowed by the API
+        total_fetched = 0
+        
+        while True:
+            # Build the request parameters
+            params = {
+                'after': after_timestamp,
+                'before': before_timestamp,
+                'size': batch_size,
+                'sort': 'asc',  # Get oldest first for consistent pagination
+            }
+            
+            # Add optional parameters if provided
+            if subreddit:
+                params['subreddit'] = subreddit
+            if query:
+                params['q'] = query
+            
+            # Construct URL - specifically for submissions only
+            url = f"{self.base_url}/submission/"
+            
+            # Make the request
+            response = self.session.get(url, params=params)
+            
+            if response.status_code != 200:
+                print(f"Error: API returned status code {response.status_code}")
+                print(response.text)
+                break
+            
+            # Parse the response
+            try:
+                data = response.json()
+            except json.JSONDecodeError:
+                print("Error: Could not parse API response as JSON")
+                break
+            
+            # Check if we have results
+            if not data.get('data') or len(data['data']) == 0:
+                break
+            
+            # Extract only title and content from each submission
+            results = data['data']
+            filtered_results = []
+            
+            for post in results:
+                filtered_post = {
+                    'title': post.get('title', ''),
+                    'content': post.get('selftext', ''),
+                    'id': post.get('id', ''),
+                    'created_utc': post.get('created_utc', 0)
+                }
+                filtered_results.append(filtered_post)
+            
+            all_results.extend(filtered_results)
+            total_fetched += len(results)
+            
+            # Print progress 
+            print(f"Fetched {total_fetched} submissions so far for this timeframe...", end='\r')
+            
+            # If we got fewer results than the batch size, we've reached the end
+            if len(results) < batch_size:
+                break
+            
+            # Otherwise, update the after timestamp to get the next batch
+            # Use the created_utc of the last item plus 1 second as the new after
+            after_timestamp = results[-1]['created_utc'] + 1
+            
+            # Small pause to be nice to the API
+            time.sleep(0.2)
+        
+        print(f"Completed fetching {total_fetched} submissions for this timeframe.")
+        return all_results
 
-# Initialize the output parser
-parser = JsonOutputParser(pydantic_object=CoreContent)
-
-# Create a prompt template that includes instructions and the expected output format
-template = """
-Given a paragraph written by someone in crisis, extract two distinct elements:
-
-1. THE QUESTION: Extract the explicit question as a self-contained query that could be directly asked to an AI assistant. Ensure it's clear and understandable while omitting most background details. Do not add or infer information beyond what is explicitly stated in the post. Format examples:
-   - "How can I manage my stress better?"
-   - "How can I manage this situation with my boyfriend who just left the house?"
-   - "What should I consider when switching careers after being fired?"
-
-2. THE BACKGROUND: Extract only the relevant background information and context about the person that led to their situation. Focus on details such as education, family situation, work history, and personal factors that contributed to their current crisis. Include only information explicitly mentioned in the original post, without making inferences or additions.
-
-Provide these two elements separately and clearly labeled.
-
-Here is the paragraph: {input_text}
-
-{format_instructions}
-"""
-
-prompt = PromptTemplate(
-    template=template,
-    input_variables=["input_text"],
-    partial_variables={"format_instructions": parser.get_format_instructions()}
-)
-
-# Initialize the language model
-model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
-
-# Create the chain
-chain = prompt | model | parser
-
-# Function to analyze text
-def analyze_paragraph(paragraph_text):
-    return chain.invoke({"input_text": paragraph_text})
 
 # Example usage
 if __name__ == "__main__":
-    sample_text = "During the Apollo 11 mission, Neil Armstrong and Buzz Aldrin became the first humans to land on the Moon, while Michael Collins orbited above. The historic event captivated millions around the world and marked a significant achievement in space exploration."
+    fetcher = RedditDataFetcher()
     
-    result = analyze_paragraph(sample_text)
-    print(f"Topic: {result['topic']}")
-    print(f"People mentioned:")
-    for person in result['people']:
-        print(f"- {person}")
+    # Example: Fetch all submissions from r/AskScience in January 2023
+    posts = fetcher.fetch_all_submissions_in_date_range(
+        start_date="2025-02-24",
+        end_date="2025-03-11",
+        subreddit="relationships",
+        output_file="relationships.json"
+    )

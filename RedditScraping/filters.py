@@ -24,8 +24,15 @@ def has_attributes_prescence(original_post):
 def has_all_attributes(original_post):
     prescences = has_attributes_prescence(original_post)
     
+    threshold = 0.8
+    
+    attribute_count = 0
     for i in range(0, len(prescences)):
-        if not prescences[i]:
-            return False
+        if prescences[i]:
+            attribute_count += 1
 
-    return True
+
+    print(attribute_count / len(prescences))
+    print(attribute_count / len(prescences) >= threshold)
+
+    return attribute_count / len(prescences) >= threshold

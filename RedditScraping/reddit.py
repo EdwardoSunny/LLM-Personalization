@@ -1,116 +1,167 @@
-import os
-import praw
-import pandas as pd
-from typing import Annotated, List
-from functools import wraps
-from datetime import datetime, timezone
-from datetime import date, timedelta, datetime
+import requests
+import time
+import json
+from datetime import datetime, timedelta
 
-
-SavePathType = Annotated[str, "File path to save data. If None, data is not saved."]
-
-
-# def process_output(data: pd.DataFrame, tag: str, verbose: VerboseType = True, save_path: SavePathType = None) -> None:
-#     if verbose:
-#         print(data.to_string())
-#     if save_path:
-#         data.to_csv(save_path)
-#         print(f"{tag} saved to {save_path}")
-
-
-def save_output(data: pd.DataFrame, tag: str, save_path: SavePathType = None) -> None:
-    if save_path:
-        data.to_csv(save_path)
-        print(f"{tag} saved to {save_path}")
-
-
-def get_current_date():
-    return date.today().strftime("%Y-%m-%d")
-
-
-def decorate_all_methods(decorator):
-    def class_decorator(cls):
-        for attr_name, attr_value in cls.__dict__.items():
-            if callable(attr_value):
-                setattr(cls, attr_name, decorator(attr_value))
-        return cls
-
-    return class_decorator
-
-
-def init_reddit_client(func):
-    @wraps(func)
-    def wrapper(*args, **kwargs):
-        global reddit_client
-        if not all([os.environ.get("REDDIT_CLIENT_ID"), os.environ.get("REDDIT_CLIENT_SECRET")]):
-            print("Please set the environment variables for Reddit API credentials.")
-            return None
-        else:
-            reddit_client = praw.Reddit(
-                client_id=os.environ["REDDIT_CLIENT_ID"],
-                client_secret=os.environ["REDDIT_CLIENT_SECRET"],
-                user_agent="python:subredditSearch:v0.1 (by /u/yourusername)",
-            )
-            print("Reddit client initialized")
-            return func(*args, **kwargs)
-    return wrapper
-
-
-@decorate_all_methods(init_reddit_client)
-class RedditUtils:
-
-    def get_subreddit_posts(
-        self,
-        subreddit: Annotated[str, "The subreddit name to search in"],
-        limit: Annotated[int, "Maximum number of posts to fetch, default is 100"] = 100,
-        selected_columns: Annotated[
-            List[str],
-            "Columns to include in the result. Available columns: 'created_utc', 'id', 'title', 'selftext', 'score', 'num_comments', 'url'."
-        ] = ["created_utc", "id", "title", "selftext", "score", "num_comments", "url"],
-        save_path: SavePathType = None,
-    ) -> pd.DataFrame:
+class RedditDataFetcher:
+    """
+    A class to fetch all Reddit submissions between a specified date range
+    using the PullPush API, storing only title and content.
+    """
+    
+    def __init__(self, base_url="https://api.pullpush.io/reddit/search"):
+        self.base_url = base_url
+        self.session = requests.Session()
+    
+    def fetch_all_submissions_in_date_range(self, start_date, end_date, subreddit=None, 
+                                           query=None, output_file="reddit_submissions.json"):
         """
-        Get the most recent posts from the specified subreddit.
+        Fetch all submissions between start_date and end_date, one day at a time.
+        
+        Args:
+            start_date (str): Start date in format 'YYYY-MM-DD'
+            end_date (str): End date in format 'YYYY-MM-DD'
+            subreddit (str, optional): Restrict to a specific subreddit
+            query (str, optional): Search term
+            output_file (str): File to save results
         """
-        post_data = []
-
-        subreddit_obj = reddit_client.subreddit(subreddit)
-        for post in subreddit_obj.new(limit=limit):
-            post_data.append(
-                [
-                    datetime.fromtimestamp(post.created_utc, tz=timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
-                    post.id,
-                    post.title,
-                    post.selftext,
-                    post.score,
-                    post.num_comments,
-                    post.url,
-                ]
+        start = datetime.strptime(start_date, "%Y-%m-%d")
+        end = datetime.strptime(end_date, "%Y-%m-%d")
+        
+        all_results = []
+        current_date = start
+        
+        
+        while current_date <= end:
+            print(f"\nProcessing day: {current_date.strftime('%Y-%m-%d')}")
+            next_date = current_date + timedelta(days=1)
+            
+            # Convert to epoch timestamps
+            after_timestamp = int(current_date.timestamp())
+            before_timestamp = int(next_date.timestamp())
+            
+            # Fetch all submissions for this day
+            day_results = self.fetch_all_submissions_for_timeframe(
+                after_timestamp, 
+                before_timestamp,
+                subreddit=subreddit,
+                query=query
             )
+            
+            all_results.extend(day_results)
+            
+            # Move to next day
+            current_date = next_date
+            
+            # Small pause to be nice to the API
+            time.sleep(0.5)
+        
+        # Save results to file
+        with open(output_file, 'w') as f:
+            json.dump(all_results, f, indent=4)
+        
+        return all_results
+    
+    def fetch_all_submissions_for_timeframe(self, after_timestamp, before_timestamp, 
+                                          subreddit=None, query=None):
+        """
+        Fetch all submissions for a specific timeframe, handling pagination.
+        
+        Args:
+            after_timestamp (int): Start timestamp (epoch)
+            before_timestamp (int): End timestamp (epoch)
+            subreddit (str, optional): Restrict to a specific subreddit
+            query (str, optional): Search term
+        
+        Returns:
+            list: All submissions for the timeframe, containing only title and content
+        """
+        all_results = []
+        batch_size = 100  # Maximum allowed by the API
+        total_fetched = 0
+        
+        while True:
+            # Build the request parameters
+            params = {
+                'after': after_timestamp,
+                'before': before_timestamp,
+                'size': batch_size,
+                'sort': 'asc',  # Get oldest first for consistent pagination
+            }
+            
+            # Add optional parameters if provided
+            if subreddit:
+                params['subreddit'] = subreddit
+            if query:
+                params['q'] = query
+            
+            # Construct URL - specifically for submissions only
+            url = f"{self.base_url}/submission/"
+            
+            # Make the request
+            response = self.session.get(url, params=params)
+            
+            if response.status_code != 200:
+                print(f"Error: API returned status code {response.status_code}")
+                print(response.text)
+                print(params)
+                break
+            print("Success: API returned data")
+            # Parse the response
+            try:
+                data = response.json()
+            except json.JSONDecodeError:
+                print("Error: Could not parse API response as JSON")
+                break
+            
+            # Check if we have results
+            if not data.get('data') or len(data['data']) == 0:
+                break
+            
+            # Extract only title and content from each submission
+            results = data['data']
+            filtered_results = []
+            
+            for post in results:
+                filtered_post = {
+                    'title': post.get('title', ''),
+                    'content': post.get('selftext', ''),
+                    'id': post.get('id', ''),
+                    'url': post.get('url', ''),
+                    'subreddit': post.get('subreddit', ''),
+                    'created_utc': post.get('created_utc', 0)
+                }
+                filtered_results.append(filtered_post)
+            
+            all_results.extend(filtered_results)
+            total_fetched += len(results)
+            
+            # Print progress 
+            print(f"Fetched {total_fetched} submissions so far for this timeframe {after_timestamp} {before_timestamp}...", end='\r')
 
-        output = pd.DataFrame(
-            post_data,
-            columns=["created_utc", "id", "title", "selftext", "score", "num_comments", "url"],
-        )
-        output = output[selected_columns]
+            # If we got fewer results than the batch size, we've reached the end
+            if len(results) < batch_size:
+                break
+            
+            # Otherwise, update the after timestamp to get the next batch
+            # Use the created_utc of the last item plus 1 second as the new after
+            after_timestamp = results[-1]['created_utc'] + 1
+            
+            # Small pause to be nice to the API
+            time.sleep(0.2)
+        
+        print(f"Completed fetching {total_fetched} submissions for this timeframe.")
+        return all_results
 
-        save_output(output, f"reddit posts from subreddit {subreddit}", save_path=save_path)
 
-        return output
-
+# Example usage
 if __name__ == "__main__":
-    # Ensure you have set the environment variables:
-    # REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET before running this script.
+    fetcher = RedditDataFetcher()
     
-    # Create an instance of RedditUtils
-    reddit_utils = RedditUtils()
-    
-    # Specify the subreddit and number of posts to fetch
-    subreddit_name = "python"  # You can change this to any subreddit you want
-    num_posts = 10  # Number of most recent posts to fetch
-    
-    # Fetch the posts
-    posts_df = reddit_utils.get_subreddit_posts(subreddit=subreddit_name, limit=num_posts)
-    
-    # Display the fetched posts
-    print(posts_df.head())
+    # Example: Fetch all submissions from r/AskScience in January 2023
+    posts = fetcher.fetch_all_submissions_in_date_range(
+        start_date="2025-03-10",
+        end_date="2025-03-11",
+        subreddit="relationships",
+        output_file="relationships.json"
+    )

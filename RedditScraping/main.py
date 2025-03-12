@@ -1,15 +1,18 @@
 import os
 import yaml
+import json
 import pandas as pd
-from reddit import RedditUtils  # assuming this module is available
+from reddit import RedditDataFetcher # assuming this module is available
 from openai import OpenAI
-from prompts import extract_background_prompt, extract_query_prompt, extract_structured_prompt, core_content_template, attribute_template
+from prompts import core_content_template, attribute_template
 import tqdm
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_openai import ChatOpenAI
 from models import CoreContent, BackgroundAttributes
+from filters import has_all_attributes
 import sys
+import datetime
 
 class RedditScraper():
     def __init__(self, model="gpt-4o-mini"):
@@ -57,46 +60,83 @@ class RedditScraper():
             raise ValueError("No subreddits found for the given scenario.")
 
         # Determine the number of posts per subreddit (distributing any remainder)
-        posts_per_subreddit = total_posts // num_subreddits
-        remainder = total_posts % num_subreddits
-
-        reddit_utils = RedditUtils()
-        posts_dfs = []
-
-        # Fetch posts from each subreddit
+        reddit_utils = RedditDataFetcher()
+        all_valid_posts = []
+        today = datetime.datetime.now()
+        fifteen_days_ago = today - datetime.timedelta(days=5)
+        target_per_subreddit = int(total_posts / len(subreddits))
+       
         for subreddit in subreddits:
-            # Distribute any remainder by adding one extra post to the first few subreddits
-            current_limit = posts_per_subreddit + (1 if remainder > 0 else 0)
-            if remainder > 0:
-                remainder -= 1
-            # Fetch posts as a DataFrame
-            df = reddit_utils.get_subreddit_posts(subreddit=subreddit, limit=current_limit)
-            # Add a column to identify the subreddit
-            df["subreddit"] = subreddit
-            posts_dfs.append(df)
+            print(f"\nProcessing subreddit: {subreddit}")
+            curr_subreddit_valid_posts = []
 
-        # Combine all fetched posts into one DataFrame
-        combined_df = pd.concat(posts_dfs, ignore_index=True)
+            # Initialize the sliding window
+            current_end_date = today.strftime("%Y-%m-%d")
+            current_start_date = fifteen_days_ago.strftime("%Y-%m-%d") 
+            window_size = 5 # 15 days window
+
+            while len(curr_subreddit_valid_posts) < target_per_subreddit:
+                print(f"Fetching posts from {current_start_date} to {current_end_date}")
+                # Get new posts for the current date window
+                posts = reddit_utils.fetch_all_submissions_in_date_range(
+                    start_date=current_start_date,
+                    end_date=current_end_date,
+                    subreddit=subreddit,
+                    output_file=f"{subreddit}.json"
+                )
+
+                # Process the fetched posts (assuming the processing logic adds valid posts to curr_subreddit_valid_posts)
+                # Add your post processing logic here
+                # For example:
+                for post in tqdm.tqdm(posts):
+                    if has_all_attributes(post):  # You'll need to define this function
+                        curr_subreddit_valid_posts.append(post)
+
+                        print(f"Found {len(curr_subreddit_valid_posts)} valid posts so far")
+                    if len(curr_subreddit_valid_posts) >= target_per_subreddit:
+                        break
+
+                # If we still need more posts, slide the window back in time
+                if len(curr_subreddit_valid_posts) < target_per_subreddit:
+                    # Move the date window back
+                    current_end_date = current_start_date
+                    current_start_date = (datetime.datetime.strptime(current_start_date, "%Y-%m-%d") - datetime.timedelta(days=window_size)).strftime("%Y-%m-%d")
+                    print(f"Moving date window back: new range {current_start_date} to {current_end_date}")
+
+                    # Optional: Implement a safety check to prevent going too far back
+                    if datetime.datetime.strptime(current_start_date, "%Y-%m-%d") < datetime.datetime(2005, 6, 23):  # Reddit launch date
+                        print(f"Reached the beginning of Reddit for {subreddit}. Stopping.")
+                        break
+                else:
+                    # We have enough posts, continue to the next subreddit
+                    break
+
+            # If we collected too many posts, trim to the target number
+            if len(curr_subreddit_valid_posts) > target_per_subreddit:
+                curr_subreddit_valid_posts = curr_subreddit_valid_posts[:target_per_subreddit]
+
+            print(f"Finished processing {subreddit}: collected {len(curr_subreddit_valid_posts)} posts")
+            all_valid_posts = all_valid_posts + curr_subreddit_valid_posts
+
 
         # Create the output directory if it doesn't exist
         output_dir = os.path.join("data", crisis_scenario)
         os.makedirs(output_dir, exist_ok=True)
-        output_file = os.path.join(output_dir, "posts.csv")
-
-        # start building new dataframe with the LLM extracted query and background columns
-        new_rows = []
+        output_file = os.path.join(output_dir, "posts.json")
+        print("DATA: ", len(all_valid_posts))
+        final_data = []
         # Iterate over each row in the original DataFrame.
-        for index, row in tqdm.tqdm(combined_df.iterrows()):
+        for post in tqdm.tqdm(all_valid_posts):
+            full_content = post["title"] + ":\n\n" + post["content"]
             # Extract query and background from the selftext column.
-            row_dict = row.to_dict()
-            query, background = format_content(row_dict["selftext"])
+            query, background = self.format_content(full_content)
             print("QUERY===========")
             print(query)
             print("BACKGROUND===========")
             print(background)
 
             print("STRUCTURED===========")
-            structured_content_dict = extract_structured_content(row_dict["selftext"])
+            structured_content_dict = self.extract_structured_content(full_content)
             scenario = structured_content_dict["scenario"]
             age = structured_content_dict["age"]
             gender = structured_content_dict["gender"]
@@ -106,7 +146,6 @@ class RedditScraper():
             health_status = structured_content_dict["health_status"]
             education_level = structured_content_dict["education_level"]
             mental_health_status = structured_content_dict["mental_health_status"]
-            past_self_harm_history = structured_content_dict["past_self_harm_history"]
             emotional_state = structured_content_dict["emotional_state"]
 
             print("scenario:", scenario)
@@ -118,17 +157,13 @@ class RedditScraper():
             print("health_status:", health_status)
             print("education_level:", education_level)
             print("mental_health_status:", mental_health_status)
-            print("past_self_harm_history:", past_self_harm_history)
             print("emotional_state:", emotional_state)
 
             # Build a new dictionary with columns in the desired order:
-            # 'created_utc', 'id', 'title', 'selftext', 'query', 'background',
-            # then the remaining columns.
-            new_row = {
-                # 'created_utc': row_dict['created_utc'],
-                'id': row_dict['id'],
-                'title': row_dict['title'],
-                'original': row_dict['selftext'],
+            new_post = {
+                'id': post['id'],
+                'title': post['title'],
+                'original': post['content'],
                 'query': query,
                 'background': background,
                 # categorization begin 
@@ -141,24 +176,17 @@ class RedditScraper():
                 'health status': health_status,
                 'education level': education_level,
                 'mental health status': mental_health_status,
-                'past self harm history': past_self_harm_history,
                 'emotional state': emotional_state,
-                # 'score': row_dict['score'],
-                # 'num_comments': row_dict['num_comments'],
-                'url': row_dict['url'],
-                'subreddit': row_dict['subreddit']
+                'url': post['url'],
+                'subreddit': post['subreddit']
             }
+            final_data.append(new_post)
 
-            new_rows.append(new_row)
+        # Save the new_rows list as a JSON file
+        with open(output_file, "w") as f:
+            json.dump(final_data, f, indent=4)
 
-        # Create a new DataFrame with the new rows.
-        combined_df = pd.DataFrame(new_rows)
-
-        # Save the combined DataFrame as a CSV file
-        combined_df.to_csv(output_file, index=False)
-
-        return combined_df
-
+        return final_data 
 
 # Example usage:
 if __name__ == "__main__":
@@ -174,4 +202,5 @@ if __name__ == "__main__":
         print("Error: total_posts must be an integer.")
         sys.exit(1)
 
-    combined_df = fetch_and_save_posts(crisis_scenario, total_posts)
+    scraper = RedditScraper()
+    new_rows = scraper.run(crisis_scenario, total_posts)

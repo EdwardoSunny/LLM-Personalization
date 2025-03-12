@@ -16,11 +16,11 @@ Here is the paragraph: {input_text}
 """
 
 attribute_template = """
-Your task is to extract a specific trait from a Reddit post, such as gender, marital status, age, etc. If the trait is clearly stated, extract it exactly as written (e.g., "male", "female", "married", "single", "divorced"). If the trait is not directly mentioned, infer it based on the context of the post. For example, if someone mentions worrying about their kids, they are likely over 30. Apply reasonable inference when needed, but do not invent details beyond what can be logically deduced.
+Your task is to extract a specific trait from a text that might come from a Reddit post, such as gender, marital status, age, etc. If the trait is clearly stated, extract it exactly as written (e.g., "male", "female", "married", "single", "divorced"). If the trait isn’t directly mentioned, make a reasonable guess based on context. For example, if someone mentions worrying about their kids, it’s reasonable to assume they might be over 30. Be as flexible as possible and use context clues to infer the trait, without adding details that aren’t logically supported.
 
-Always provide a value for the trait — never say "not given" or "not specified". If the trait is clear, extract it directly. If not, make your best guess based on the post's context. Do not include any reasoning or explanations in your output — only the trait itself.
+Always provide a value for the trait — if it isn’t immediately clear, use the surrounding context to decide on a sensible answer. Do not output "not given" or "not specified." If the trait appears obvious, extract it directly; if not, give your best inferred guess based on context. Do not include any reasoning or explanations in your output — output only the trait itself. You can make small leaps in logic extract traits that aren't exactly present so more information can be filled in.
 
-Here are the traits that may be requested and their definitions:
+Below are the traits and their definitions:
 
     scenario: The situation the person is in — what is troubling them or what caused them to make the post.
     age: The person's age.
@@ -33,15 +33,14 @@ Here are the traits that may be requested and their definitions:
     mental health status: The person's mental health, including any specific conditions or disorders.
     emotional state: The person's current mood or emotional state.
 
-In your output, refer to the person simply as "the person." Do not mention Reddit or the original post. Output only the extracted or inferred trait, with no extra text. MAKE SURE you always guess the logical trait if it is not given. You can never say not given, you must guess based off of context.
+In your output, refer to the individual simply as "the person." Do not mention Reddit or the original post. Output only the extracted or inferred trait with no extra text. Always ensure you provide a value for the trait, using logical context inference when necessary.
 
 Here is the paragraph: {input_text}
 
-{format_instructions}
-"""
+{format_instructions}"""
 
 filter_template = """
-You are an expert at information extraction. Your task is to determine whether specific information is present in a given paragraph. For each field below, assess whether the text explicitly or implicitly contains the corresponding information. Respond with **true** only if you are confident the information is present; otherwise, respond with **false**.
+You are an expert at information extraction. Your task is to determine whether specific information is present in a given paragraph. For each field below, assess whether the text explicitly or even subtly/implicitly contains the corresponding information. If there is any indication—even if not stated outright—that the information is present, respond with **true**. Only respond with **false** if there is no evidence whatsoever for that field. You can make small leaps in logic to determine if its present so that more can be marked as true.
 
 **Fields:**
 - **scenario:** The situation or context the person is facing.
