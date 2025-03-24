@@ -8,18 +8,25 @@ from prompts import core_content_template, attribute_template
 import tqdm
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from langchain_openai import ChatOpenAI
+from langchain_openai import AzureChatOpenAI
 from models import CoreContent, BackgroundAttributes
 from filters import has_all_attributes
 import sys
 import datetime
+import torch
 
 
 class RedditScraper():
-    def __init__(self, model="gpt-4o-mini"):
+    def __init__(self, model="gpt-4o"):
         self.seen_posts = {}
 
-        model = ChatOpenAI(model=model, temperature=0)
+        model = AzureChatOpenAI(
+            azure_endpoint="https://oai-b-westus3.openai.azure.com/",
+            azure_deployment=model,
+            openai_api_version="2024-05-01-preview",
+            temperature=0
+        )
+
         core_content_parser = JsonOutputParser(pydantic_object=CoreContent)
         core_content_prompt = PromptTemplate(
             template=core_content_template,
@@ -66,6 +73,11 @@ class RedditScraper():
         all_valid_posts = []
         today = datetime.datetime.now()
         target_per_subreddit = int(total_posts / len(subreddits))
+
+        # Create the output directory if it doesn't exist
+        output_dir = os.path.join("data", crisis_scenario)
+        os.makedirs(output_dir, exist_ok=True)
+        valid_posts_file = os.path.join(output_dir, "valid_posts.json")
        
         for subreddit in subreddits:
             print(f"\nProcessing subreddit: {subreddit}")
@@ -106,6 +118,9 @@ class RedditScraper():
                     if len(curr_subreddit_valid_posts) >= target_per_subreddit:
                         break
 
+                    with open(valid_posts_file, "w") as f:
+                        json.dump(curr_subreddit_valid_posts, f, indent=4)
+
                 # If we still need more posts, slide the window back in time
                 if len(curr_subreddit_valid_posts) < target_per_subreddit:
                     # Move the date window back
@@ -130,10 +145,6 @@ class RedditScraper():
             print(f"Finished processing {subreddit}: collected {len(curr_subreddit_valid_posts)} posts")
             all_valid_posts = all_valid_posts + curr_subreddit_valid_posts
 
-
-        # Create the output directory if it doesn't exist
-        output_dir = os.path.join("data", crisis_scenario)
-        os.makedirs(output_dir, exist_ok=True)
         output_file = os.path.join(output_dir, "posts.json")
         print("DATA: ", len(all_valid_posts))
         final_data = []
@@ -194,9 +205,9 @@ class RedditScraper():
             }
             final_data.append(new_post)
 
-        # Save the new_rows list as a JSON file
-        with open(output_file, "w") as f:
-            json.dump(final_data, f, indent=4)
+            # Save the new_rows list as a JSON file
+            with open(output_file, "w") as f:
+                json.dump(final_data, f, indent=4)
 
         return final_data 
 

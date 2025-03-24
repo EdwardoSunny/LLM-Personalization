@@ -65,50 +65,36 @@ class RedditDataFetcher:
         all_results = []
         current_date = start
         
-        try:
-            while current_date <= end:
-                print(f"\nProcessing day: {current_date.strftime('%Y-%m-%d')}")
-                next_date = current_date + timedelta(days=1)
-                
-                # Convert to epoch timestamps
-                after_timestamp = int(current_date.timestamp())
-                before_timestamp = int((next_date - timedelta(seconds=1)).timestamp())
-                
-                # Fetch all submissions for this day
-                day_results = self.fetch_all_submissions_for_timeframe(
-                    after_timestamp, 
-                    before_timestamp,
-                    subreddit=subreddit,
-                    query=query
-                )
-                
-                all_results.extend(day_results)
-                
-                # Move to next day
-                current_date = next_date
-                
-                # Small pause to be nice to the API
-                time.sleep(self.day_delay)
-            
-            # Save results to file
-            if output_file:
-                try:
-                    with open(output_file, 'w', encoding='utf-8') as f:
-                        json.dump(all_results, f, indent=4, ensure_ascii=False)
-                    # print(f"Successfully saved {len(all_results)} submissions to {output_file}")
-                except Exception as e:
-                    print(f"Error saving results to file: {str(e)}")
-        
-        except KeyboardInterrupt:
-            # print("\nOperation interrupted by user. Saving partial results...")
-            if output_file and all_results:
-                try:
-                    with open(output_file, 'w', encoding='utf-8') as f:
-                        json.dump(all_results, f, indent=4, ensure_ascii=False)
-                    # print(f"Saved {len(all_results)} submissions to {output_file}")
-                except Exception as e:
-                    print(f"Error saving partial results: {str(e)}")
-        
+        while current_date <= end:
+            print(f"\nProcessing day: {current_date.strftime('%Y-%m-%d')}")
+            next_date = current_date + timedelta(days=1)
+
+            # Convert to epoch timestamps
+            after_timestamp = int(current_date.timestamp())
+            before_timestamp = int((next_date - timedelta(seconds=1)).timestamp())
+
+            # Fetch all submissions for this day
+            day_results = self.fetch_all_submissions_for_timeframe(
+                after_timestamp, 
+                before_timestamp,
+                subreddit=subreddit,
+                query=query
+            )
+
+            all_results.extend(day_results)
+
+            # Move to next day
+            current_date = next_date
+
+            # Small pause to be nice to the API
+            time.sleep(self.day_delay)
+
+        # Save results to file
+        if output_file:
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(all_results, f, indent=4, ensure_ascii=False)
+            # print(f"Successfully saved {len(all_results)} submissions to {output_file}")
+
         return all_results
     
     def fetch_all_submissions_for_timeframe(self, after_timestamp, before_timestamp, 
