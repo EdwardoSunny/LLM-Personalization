@@ -5,14 +5,15 @@ from inspect import get_annotations
 from typing import get_type_hints
 from models import BackgroundAttributesPresence
 from prompts import filter_template
+from openai import RateLimitError
 
-model="gpt-4o"
+model = "gpt-4o"
 model = AzureChatOpenAI(
-            azure_endpoint="https://oai-b-westus3.openai.azure.com/",
-            azure_deployment=model,
-            openai_api_version="2024-05-01-preview",
-            temperature=0
-        )
+    azure_endpoint="https://oai-b-westus3.openai.azure.com/",
+    azure_deployment=model,
+    openai_api_version="2024-05-01-preview",
+    temperature=0
+)
 
 filter_parser = JsonOutputParser(pydantic_object=BackgroundAttributesPresence)
 filter_prompt = PromptTemplate(
@@ -22,9 +23,12 @@ filter_prompt = PromptTemplate(
 )
 filter_chain = filter_prompt | model | filter_parser 
 
+def safe_invoke_filter_chain(input_text):
+    return filter_chain.invoke({"input_text": input_text})
+
 def has_attributes_prescence(original_post):
     try:
-        result = filter_chain.invoke({"input_text": original_post})
+        result = safe_invoke_filter_chain(original_post)
         return (
             result["scenario"], 
             result["age"], 
@@ -39,7 +43,7 @@ def has_attributes_prescence(original_post):
         )
     except Exception as e:
         print(f"Error processing text: {str(e)[:100]}...")
-        print(f"Orginal Text {original_post}...")
+        print(f"Original Text: {original_post}...")
         # Return all False values when parsing fails
         return (False, False, False, False, False, False, False, False, False, False)
 

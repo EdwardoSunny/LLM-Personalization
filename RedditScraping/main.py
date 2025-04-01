@@ -13,8 +13,11 @@ from models import CoreContent, BackgroundAttributes
 from filters import has_all_attributes
 import sys
 import datetime
+import time
+import random
 import torch
-
+import requests
+import cysimdjson
 
 class RedditScraper():
     def __init__(self, model="gpt-4o"):
@@ -43,8 +46,28 @@ class RedditScraper():
         )
         self.attribute_chain = attribute_prompt | model | attribute_parser 
 
+    def format_content(self, original_post):
+        try:
+            result = self.content_chain.invoke({"input_text": original_post})
+            return result["query"], result["background"]
+        except Exception as e:
+            print(f"Error formatting content: {str(e)}")
+            # Add random jitter to avoid synchronous retries
+            time.sleep(random.uniform(1, 3))
+            raise e
+
+    def extract_structured_content(self, original_post):
+        try:
+            result = self.attribute_chain.invoke({"input_text": original_post})
+            return result
+        except Exception as e:
+            print(f"Error extracting structured content: {str(e)}")
+            time.sleep(random.uniform(1, 3))
+            raise e
+
     # Function to analyze text
     def format_content(self, original_post):
+
         result = self.content_chain.invoke({"input_text": original_post})
         return result["query"], result["background"]
 
@@ -78,40 +101,35 @@ class RedditScraper():
         output_dir = os.path.join("data", crisis_scenario)
         os.makedirs(output_dir, exist_ok=True)
         valid_posts_file = os.path.join(output_dir, "valid_posts.json")
+
+        # jsonl parser
+        parser = cysimdjson.JSONParser()
        
         for subreddit in subreddits:
             print(f"\nProcessing subreddit: {subreddit}")
+            subreddit_data_path = os.path.join("reddit_data", f"r_{subreddit}_posts.jsonl")
+            if not os.path.exists(subreddit_data_path):
+                raise Exception(f"Subreddit File Reading Error: {subreddit_data_path} does not exist! Make sure you download the reddit data for this subreddit first!")
+
             curr_subreddit_valid_posts = []
 
-            # Initialize the sliding window
-            window_size = 5  # e.g., a 5-day window
-            current_end_date = today.strftime("%Y-%m-%d")
-            current_start_date = (today - datetime.timedelta(days=window_size-1)).strftime("%Y-%m-%d")
+            with open(subreddit_data_path, "rb") as f:
+                for i, line in enumerate(f):
+                    # skip empty lines
+                    if not line.strip():
+                        continue
 
-
-            while len(curr_subreddit_valid_posts) < target_per_subreddit:
-                print(f"Fetching posts from {current_start_date} to {current_end_date}")
-                # Get new posts for the current date window
-                posts = reddit_utils.fetch_all_submissions_in_date_range(
-                    start_date=current_start_date,
-                    end_date=current_end_date,
-                    subreddit=subreddit,
-                    output_file=f"{subreddit}.json"
-                )
-
-                # Process the fetched posts (assuming the processing logic adds valid posts to curr_subreddit_valid_posts)
-                # Add your post processing logic here
-                # For example:
-                for post in tqdm.tqdm(posts):
-                    post_content = post["title"] + "\n\n" + post["content"]
+                    parsed_line = dict(parser.parse(line))
+                    post_content = f"# {parsed_line['title']}\n\n{parsed_line['selftext']}" 
+            
                     # check that we haven't seen this post before
-                    if post["id"] in self.seen_posts:
+                    if parsed_line["id"] in self.seen_posts:
                         print("HAVE ALREADY SEEN THIS POST")
                         continue
                     else:
-                        self.seen_posts[post["id"]] = ""
+                        self.seen_posts[parsed_line["id"]] = ""
                     
-                    if has_all_attributes(post_content):  # You'll need to define this function
+                    if has_all_attributes(post_content): 
                         curr_subreddit_valid_posts.append(post)
 
                     print(f"Found {len(curr_subreddit_valid_posts)} valid posts so far")
@@ -120,23 +138,6 @@ class RedditScraper():
 
                     with open(valid_posts_file, "w") as f:
                         json.dump(curr_subreddit_valid_posts, f, indent=4)
-
-                # If we still need more posts, slide the window back in time
-                if len(curr_subreddit_valid_posts) < target_per_subreddit:
-                    # Move the date window back
-                    new_end_date = (datetime.datetime.strptime(current_start_date, "%Y-%m-%d") - datetime.timedelta(days=1)).strftime("%Y-%m-%d")
-                    new_start_date = (datetime.datetime.strptime(new_end_date, "%Y-%m-%d") - datetime.timedelta(days=window_size-1)).strftime("%Y-%m-%d")
-                    current_end_date = new_end_date
-                    current_start_date = new_start_date
-                    print(f"moving date window back: new range {current_start_date} to {current_end_date}")
-
-                    # Optional: Implement a safety check to prevent going too far back
-                    if datetime.datetime.strptime(current_start_date, "%Y-%m-%d") < datetime.datetime(2005, 6, 23):  # Reddit launch date
-                        print(f"Reached the beginning of Reddit for {subreddit}. Stopping.")
-                        break
-                else:
-                    # We have enough posts, continue to the next subreddit
-                    break
 
             # If we collected too many posts, trim to the target number
             if len(curr_subreddit_valid_posts) > target_per_subreddit:
