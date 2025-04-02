@@ -42,7 +42,7 @@ def has_attributes_prescence(original_post):
             result["emotional_state"]
         )
     except Exception as e:
-        print(f"Error processing text: {str(e)[:100]}...")
+        print(f"Error processing text: {str(e)}")
         print(f"Original Text: {original_post}...")
         # Return all False values when parsing fails
         return (False, False, False, False, False, False, False, False, False, False)
@@ -54,7 +54,7 @@ def has_all_attributes(original_post):
     try:
         presences = has_attributes_prescence(original_post)
         
-        threshold = 0.7
+        threshold = 0.6
         
         # Count the number of True values
         attribute_count = sum(1 for presence in presences if presence)

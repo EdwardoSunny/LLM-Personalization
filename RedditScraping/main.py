@@ -47,27 +47,6 @@ class RedditScraper():
         self.attribute_chain = attribute_prompt | model | attribute_parser 
 
     def format_content(self, original_post):
-        try:
-            result = self.content_chain.invoke({"input_text": original_post})
-            return result["query"], result["background"]
-        except Exception as e:
-            print(f"Error formatting content: {str(e)}")
-            # Add random jitter to avoid synchronous retries
-            time.sleep(random.uniform(1, 3))
-            raise e
-
-    def extract_structured_content(self, original_post):
-        try:
-            result = self.attribute_chain.invoke({"input_text": original_post})
-            return result
-        except Exception as e:
-            print(f"Error extracting structured content: {str(e)}")
-            time.sleep(random.uniform(1, 3))
-            raise e
-
-    # Function to analyze text
-    def format_content(self, original_post):
-
         result = self.content_chain.invoke({"input_text": original_post})
         return result["query"], result["background"]
 
@@ -114,20 +93,33 @@ class RedditScraper():
             curr_subreddit_valid_posts = []
 
             with open(subreddit_data_path, "rb") as f:
-                for i, line in enumerate(f):
+                for i, line in tqdm.tqdm(enumerate(f)):
                     # skip empty lines
                     if not line.strip():
                         continue
 
                     parsed_line = dict(parser.parse(line))
                     post_content = f"# {parsed_line['title']}\n\n{parsed_line['selftext']}" 
-            
+
+                    # skip removed posts
+                    if "[removed]" in post_content:
+                        continue
+
                     # check that we haven't seen this post before
                     if parsed_line["id"] in self.seen_posts:
                         print("HAVE ALREADY SEEN THIS POST")
                         continue
                     else:
                         self.seen_posts[parsed_line["id"]] = ""
+
+                    post = {
+                        "title": parsed_line["title"],
+                        "content": parsed_line["selftext"],
+                        "id": parsed_line["id"],
+                        "subreddit": subreddit,
+                        "url": parsed_line["url"],
+                        "created_utc": parsed_line["created_utc"]
+                    }
                     
                     if has_all_attributes(post_content): 
                         curr_subreddit_valid_posts.append(post)
