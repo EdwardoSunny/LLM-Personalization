@@ -38,8 +38,8 @@ from openai import OpenAI
 
 client = OpenAI()
 
-# MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
-# OUTPUT_FILE = "output/llama3-8b-instruct_results.csv"
+MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
+OUTPUT_FILE = "output/llama3-8b-instruct_results.csv"
 
 # MODEL = "Qwen/Qwen2.5-7B-Instruct"
 # OUTPUT_FILE = "output/qwen25-7b-instruct_results.csv"
@@ -47,8 +47,8 @@ client = OpenAI()
 # MODEL = "mistralai/Mistral-7B-Instruct-v0.1"
 # OUTPUT_FILE = "output/mistral-7b-instruct_results.csv"
 
-MODEL = "deepseek-ai/deepseek-llm-7b-chat"
-OUTPUT_FILE = "output/deepseek-7b_results.csv"
+# MODEL = "deepseek-ai/deepseek-llm-7b-chat"
+# OUTPUT_FILE = "output/deepseek-7b_results.csv"
 
 # Create a vLLM instance using your open source model.
 llm = LLM(model=MODEL)
@@ -101,13 +101,6 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
             for query_idx, query in enumerate(background_queries, start=1):
                 # Format the background description.
                 background_text = "\n".join([f"- {key}: {value}" for key, value in background.items()])
-                background_description = (
-                    f"Age: {background['Age']}, Gender: {background['Gender']}, Marital Status: {background['Marital Status']}, "
-                    f"Profession: {background['Profession']}, Economic Status: {background['Economic Status']}, "
-                    f"Health Status: {background['Health Status']}, Education Level: {background['Education Level']}, "
-                    f"Mental Health Status: {background['Mental Health Status']}, Past Self-Harm History: {background['Past Self-Harm History']}. "
-                    f"Emotional State: {background['Emotional State']}."
-                )
 
                 # Prepare prompt without background.
                 no_background_prompt = (

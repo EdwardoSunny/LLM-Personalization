@@ -1,0 +1,42 @@
+* Scraping Data using Arctic Shift
+Categories done:
+- relationship (2k)
+  - llama eval DONE 
+  - qwen eval DONE 
+  - mistral eval DONE 
+  - deepseek eval not started 
+  - Llama 4 not started 
+- career (2k)
+  - llama eval DONE 
+  - qwen eval DONE 
+  - mistral eval DONE 
+  - deepseek eval not started
+  - Llama 4 not started 
+- financial (1k)
+  - llama eval DONE 
+  - qwen eval DONE 
+  - mistral eval DONE
+  - deepseek eval not started
+  - Llama 4 not started 
+- health (1k)
+  - llama eval DONE 
+  - qwen eval DONE 
+  - mistral eval DONE 
+  - deepseek eval not started
+  - Llama 4 not started 
+- social (1k)
+  - llama eval DONE 
+  - qwen eval DONE 
+  - mistral eval DONE 
+  - deepseek eval not started
+  - Llama 4 not started 
+- life (1k)
+  - llama eval DONE
+  - qwen eval DONE 
+  - mistral eval DONE 
+  - deepseek eval not started
+  - Llama 4 not started 
+
+Running (Make sure no overlapping apis to avoid crashing. ALWAYS CHECK BEFORE RUNNING):
+- education (azure 1 collection + scai api extract)
+

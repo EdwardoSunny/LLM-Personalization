@@ -33,7 +33,7 @@ Below are the traits and their definitions:
     mental health status: The person's mental health, including any specific conditions or disorders.
     emotional state: The person's current mood or emotional state.
 
-In your output, refer to the individual simply as "the person." Do not mention Reddit or the original post. Output only the extracted or inferred trait with no extra text. Always ensure you provide a value for the trait, using logical context inference when necessary.
+In your output, refer to the individual simply as "the person." Do not mention Reddit or the original post. Output only the extracted or inferred trait with no extra text. Always ensure you provide a value for the trait, using logical context inference when necessary. You must have all the trains in the output as it will be parsed into a dictionary and it will crash with key not found if you do not have all of the traits.
 
 Here is the paragraph: {input_text}
 

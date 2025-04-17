@@ -1,19 +1,24 @@
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
-from langchain_openai import AzureChatOpenAI
+from langchain_openai import AzureChatOpenAI, ChatOpenAI
 from inspect import get_annotations
 from typing import get_type_hints
 from models import BackgroundAttributesPresence
 from prompts import filter_template
 from openai import RateLimitError
+from utils import timeout
+import time
 
 model = "gpt-4o"
-model = AzureChatOpenAI(
-    azure_endpoint="https://oai-b-westus3.openai.azure.com/",
-    azure_deployment=model,
-    openai_api_version="2024-05-01-preview",
-    temperature=0
-)
+# model = AzureChatOpenAI(
+#     # azure_endpoint="https://oai-b-westus3.openai.azure.com/",
+#     azure_endpoint="https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview",
+#     azure_deployment=model,
+#     openai_api_version="2024-05-01-preview",
+#     temperature=0
+# )
+
+model = ChatOpenAI(model_name=model, temperature=0)
 
 filter_parser = JsonOutputParser(pydantic_object=BackgroundAttributesPresence)
 filter_prompt = PromptTemplate(
@@ -23,11 +28,17 @@ filter_prompt = PromptTemplate(
 )
 filter_chain = filter_prompt | model | filter_parser 
 
+
+@timeout(50)
 def safe_invoke_filter_chain(input_text):
     return filter_chain.invoke({"input_text": input_text})
 
+
+@timeout(50)
 def has_attributes_prescence(original_post):
     try:
+        time.sleep(1.5)  # 1-second to avoid rate limit 
+
         result = safe_invoke_filter_chain(original_post)
         return (
             result["scenario"], 
