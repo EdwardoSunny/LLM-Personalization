@@ -4,39 +4,46 @@ Categories done:
   - llama eval DONE 
   - qwen eval DONE 
   - mistral eval DONE 
-  - deepseek eval not started 
-  - Llama 4 not started 
+  - deepseek eval DONE 
+  - qwq DONE 
 - career (2k)
   - llama eval DONE 
   - qwen eval DONE 
   - mistral eval DONE 
-  - deepseek eval not started
-  - Llama 4 not started 
+  - deepseek eval DONE 
+  - qwq DONE 
 - financial (1k)
   - llama eval DONE 
   - qwen eval DONE 
   - mistral eval DONE
-  - deepseek eval not started
-  - Llama 4 not started 
+  - deepseek eval DONE 
+  - qwq DONE 
 - health (1k)
   - llama eval DONE 
   - qwen eval DONE 
   - mistral eval DONE 
-  - deepseek eval not started
-  - Llama 4 not started 
+  - deepseek eval DONE 
+  - qwq DONE 
 - social (1k)
   - llama eval DONE 
   - qwen eval DONE 
   - mistral eval DONE 
-  - deepseek eval not started
-  - Llama 4 not started 
+  - deepseek eval DONE 
+  - qwq DONE 
 - life (1k)
   - llama eval DONE
   - qwen eval DONE 
   - mistral eval DONE 
-  - deepseek eval not started
-  - Llama 4 not started 
+  - deepseek eval DONE 
+  - qwq DONE 
+- education (1k)
+  - llama eval DONE 
+  - qwen eval DONE 
+  - mistral eval DONE 
+  - deepseek eval DONE 
+  - qwq DONE 
+- syth data (7k)
+
 
 Running (Make sure no overlapping apis to avoid crashing. ALWAYS CHECK BEFORE RUNNING):
-- education (azure 1 collection + scai api extract)
 
