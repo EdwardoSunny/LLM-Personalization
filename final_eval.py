@@ -33,9 +33,11 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
     # MODEL_ALIAS = "mistral-7b-instruct"
 
-    MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
-    MODEL_ALIAS = "qwen25-7b-instruct"
+    # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
+    # MODEL_ALIAS = "qwen25-7b-instruct"
 
+    MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
+    MODEL_ALIAS = "deepseek-7b"
 
     if "QwQ" in MODEL_BEING_EVAL:
         # For QwQ-32B, use quantization.
@@ -293,12 +295,12 @@ if __name__ == "__main__":
                         
                         print(path1_background_result)
 
-                        path1_background_evaluation = evaluate_response(
-                            path1_background_result, background_description, query
-                        )
-                        path1_background_avg_score = (
-                            extract_comprehensive_score(path1_background_evaluation)
-                        ) / 3
+                    #     path1_background_evaluation = evaluate_response(
+                    #         path1_background_result, background_description, query
+                    #     )
+                    #     path1_background_avg_score = (
+                    #         extract_comprehensive_score(path1_background_evaluation)
+                    #     ) / 3
                     except Exception as e:
                         path1_background_result = f"Error: {e}"
                         path1_background_evaluation = f"Error: {e}"
@@ -311,8 +313,10 @@ if __name__ == "__main__":
                                 background_description,
                                 query,
                                 path1_background_result,
-                                path1_background_evaluation,
-                                path1_background_avg_score,
+                                # path1_background_evaluation,
+                                "",
+                                # path1_background_avg_score,
+                                0
                             ]
                         )
                         file.flush()

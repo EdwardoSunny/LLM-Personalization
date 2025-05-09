@@ -10,25 +10,25 @@ Retrieval Agent:
 - llama DONE 
 - qwen2.5 DONE 
 - mistral DONE 
-- deepseek RUNNING 
+- deepseek DONE 
 - qwq RUNNING 
 
 ALL EVAL:
 REGULAR:
-- llama RUNNING
+- llama RUNNING 
 - qwen2.5 RUNNING 
-- mistral RUNNING 
-- deepseek NS 
+- mistral DONE
+- deepseek RUNNING 
 - qwq NS
 
-RETRIEVAL
+RETRIEVAL (partial)
 - llama NS 
 - qwen2.5 NS 
 - mistral NS 
 - deepseek NS 
 - qwq NS
 
-* REAL data agents
+* REAL data agents (scai4)
 ** Real Data 
 *** Vanilla Agents
 - llama NS 
