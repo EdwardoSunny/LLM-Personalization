@@ -8,10 +8,11 @@ client = OpenAI()
 from datetime import datetime
 import os
 
+
 def generate_personality_big_five():
     """
     Returns a dictionary containing randomized values for the Big Five traits
-    Each trait is assigned an integer score (1–100). 
+    Each trait is assigned an integer score (1–100).
     You can adjust the scoring range or distribution to fit your needs.
     """
     return {
@@ -19,21 +20,35 @@ def generate_personality_big_five():
         "Conscientiousness": random.randint(1, 100),
         "Extraversion": random.randint(1, 100),
         "Agreeableness": random.randint(1, 100),
-        "Neuroticism": random.randint(1, 100)
+        "Neuroticism": random.randint(1, 100),
     }
+
 
 def generate_personality_mbti():
     """
-    Returns a random MBTI type from a predefined list. 
+    Returns a random MBTI type from a predefined list.
     If you prefer MBTI over Big Five, you can call this function in your profiles.
     """
     mbti_types = [
-        "ISTJ", "ISFJ", "INFJ", "INTJ",
-        "ISTP", "ISFP", "INFP", "INTP",
-        "ESTP", "ESFP", "ENFP", "ENTP",
-        "ESTJ", "ESFJ", "ENFJ", "ENTJ"
+        "ISTJ",
+        "ISFJ",
+        "INFJ",
+        "INTJ",
+        "ISTP",
+        "ISFP",
+        "INFP",
+        "INTP",
+        "ESTP",
+        "ESFP",
+        "ENFP",
+        "ENTP",
+        "ESTJ",
+        "ESFJ",
+        "ENFJ",
+        "ENTJ",
     ]
     return random.choice(mbti_types)
+
 
 def generate_cultural_background():
     """
@@ -50,9 +65,10 @@ def generate_cultural_background():
         "East Asian",
         "Southeast Asian",
         "Oceanian",
-        "Caribbean"
+        "Caribbean",
     ]
     return random.choice(backgrounds)
+
 
 def generate_occupation():
     """
@@ -69,9 +85,10 @@ def generate_occupation():
         "Journalist",
         "Student",
         "Small Business Owner",
-        "Researcher"
+        "Researcher",
     ]
     return random.choice(occupations)
+
 
 def generate_preferences_and_experiences():
     """
@@ -87,15 +104,16 @@ def generate_preferences_and_experiences():
         "Frequent traveler",
         "Religious background",
         "LGBTQ+ community involvement",
-        "Environmentalist"
+        "Environmentalist",
     ]
     # Choose 1 to 3 random experiences from the list
     num_choices = random.randint(1, 3)
     return random.sample(possible_experiences, num_choices)
 
+
 def generate_profile(use_big_five=True):
     """
-    Generates a single user profile as a dictionary. 
+    Generates a single user profile as a dictionary.
     If use_big_five is False, it uses MBTI instead of Big Five.
     """
     if use_big_five:
@@ -107,14 +125,15 @@ def generate_profile(use_big_five=True):
         "Personality": personality,
         "CulturalBackground": generate_cultural_background(),
         "Occupation": generate_occupation(),
-        "Preferences_Experiences": generate_preferences_and_experiences()
+        "Preferences_Experiences": generate_preferences_and_experiences(),
     }
 
     return profile
 
+
 def generate_user_profiles(n=10, use_big_five=True):
     """
-    Generates n user profiles (default 10). 
+    Generates n user profiles (default 10).
     If use_big_five=False, uses MBTI for personality instead of the Big Five.
     """
     profiles = []
@@ -122,10 +141,12 @@ def generate_user_profiles(n=10, use_big_five=True):
         profiles.append(generate_profile(use_big_five))
     return profiles
 
+
 def load_config(path):
     with open(path, "r") as f:
         config = yaml.safe_load(f)
         return config
+
 
 def test_model(config, base_prompt, task_dir, task_groups, profiles, output_dir=None):
     """
@@ -186,8 +207,12 @@ def test_model(config, base_prompt, task_dir, task_groups, profiles, output_dir=
                 user_profile_str = json.dumps(profile, indent=2)
 
                 format_values = {
-                    "user_profile": user_profile_str if 'user_profile' in base_prompt else '',
-                    "task_question": task_question if 'task_question' in base_prompt else ''
+                    "user_profile": (
+                        user_profile_str if "user_profile" in base_prompt else ""
+                    ),
+                    "task_question": (
+                        task_question if "task_question" in base_prompt else ""
+                    ),
                 }
 
                 # Format the prompt with only the available values
@@ -197,25 +222,21 @@ def test_model(config, base_prompt, task_dir, task_groups, profiles, output_dir=
                 response = client.chat.completions.create(
                     model=config["model"],
                     temperature=config["temperature"],
-                    messages=[
-                        {"role": "user", "content": final_prompt}
-                    ]
+                    messages=[{"role": "user", "content": final_prompt}],
                 )
 
                 # Extract the model's response
                 model_reply = response.choices[0].message.content.strip()
 
                 # Collect each response with its corresponding question
-                responses_for_this_profile.append({
-                    "task_question": task_question,
-                    "model_response": model_reply
-                })
+                responses_for_this_profile.append(
+                    {"task_question": task_question, "model_response": model_reply}
+                )
 
             # Once we've gone through all tasks for the given profile, append to the task_file's results
-            task_results[task_file].append({
-                "profile": profile,
-                "responses": responses_for_this_profile
-            })
+            task_results[task_file].append(
+                {"profile": profile, "responses": responses_for_this_profile}
+            )
 
     # Convert our dictionary into a list of dicts so it’s easily serializable:
     # [
@@ -236,10 +257,9 @@ def test_model(config, base_prompt, task_dir, task_groups, profiles, output_dir=
     # ]
     organized_results = []
     for task_file, profile_responses in task_results.items():
-        organized_results.append({
-            "task_file": task_file,
-            "profiles": profile_responses
-        })
+        organized_results.append(
+            {"task_file": task_file, "profiles": profile_responses}
+        )
 
     # If requested, save the results in a timestamped JSON file
     if output_dir is not None:

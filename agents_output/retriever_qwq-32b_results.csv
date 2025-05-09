@@ -1,0 +1,140 @@
+User Query,Attribute Path,Path Length
+What strategies can help balance career demands with spending quality time with loved ones?,"['Profession', 'Emotional State', 'Economic Status', 'Marital Status']",4
+What are some effective ways to communicate better with children during challenging times?,"['Age', 'Education Level', 'Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",7
+How can personal growth be prioritized when dealing with significant life changes?,"['Emotional State', 'Education Level', 'Economic Status', 'Mental Health Status', 'Age']",5
+What are the best practices for maintaining a positive relationship with children in a changing family dynamic?,"['Education Level', 'Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Economic Status']",6
+How can one cope with feelings of anxiety while managing professional responsibilities?,"['Emotional State', 'Profession', 'Mental Health Status', 'Health Status', 'Economic Status']",5
+What techniques are recommended for managing stress without compromising work performance?,"['Profession', 'Emotional State', 'Mental Health Status']",3
+How can someone ensure they are emotionally available for their children while dealing with personal challenges?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Age']",4
+What activities can help improve mental well-being alongside a busy work schedule?,"['Mental Health Status', 'Profession', 'Economic Status']",3
+How can one set boundaries to maintain work-life balance effectively?,"['Profession', 'Emotional State', 'Economic Status', 'Health Status']",4
+What are the signs that professional help might be needed to manage anxiety and stress?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+What are some ways to cope with unexpected financial challenges?,"['Economic Status', 'Age', 'Profession', 'Marital Status', 'Emotional State']",5
+How can I stay motivated when facing setbacks in my business?,"['Emotional State', 'Economic Status', 'Mental Health Status', 'Education Level', 'Profession']",5
+What are effective strategies for dealing with loneliness?,"['Mental Health Status', 'Emotional State', 'Marital Status', 'Age']",4
+How can I find affordable healthcare options?,"['Economic Status', 'Health Status', 'Profession', 'Age', 'Mental Health Status', 'Marital Status']",6
+What steps can I take to improve my mental well-being during stressful times?,"['Emotional State', 'Mental Health Status', 'Economic Status']",3
+How can I balance personal and professional life effectively?,"['Profession', 'Emotional State', 'Economic Status', 'Mental Health Status']",4
+What are some practical ways to reduce financial stress?,"['Economic Status', 'Emotional State', 'Profession']",3
+How can I rebuild my social circle as an adult?,"['Age', 'Marital Status', 'Emotional State', 'Mental Health Status']",4
+What are effective methods for dealing with chronic stress?,"['Mental Health Status', 'Health Status', 'Emotional State']",3
+How can I ensure my business survives during tough economic times?,"['Economic Status', 'Profession', 'Education Level', 'Emotional State', 'Health Status', 'Age', 'Mental Health Status', 'Marital Status', 'Gender', 'Past Self-Harm History']",10
+What are some effective ways to cope with loneliness during major life transitions?,"['Mental Health Status', 'Age']",2
+How can I stay motivated and focused on my creative projects amidst personal challenges?,"['Mental Health Status', 'Emotional State', 'Profession', 'Age']",4
+What are some strategies for maintaining friendships when life gets complicated?,"['Emotional State', 'Marital Status', 'Age', 'Mental Health Status', 'Economic Status']",5
+How can I balance pursuing new opportunities with the need for self-care?,"['Emotional State', 'Health Status', 'Profession', 'Economic Status', 'Mental Health Status', 'Age']",6
+What are some healthy ways to process emotions and avoid feeling overwhelmed?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+How can I establish a sense of stability and routine when everything feels uncertain?,"['Economic Status', 'Emotional State', 'Mental Health Status', 'Health Status', 'Profession', 'Past Self-Harm History', 'Marital Status']",7
+What are some positive habits to adopt when dealing with significant changes?,"['Emotional State', 'Mental Health Status', 'Age', 'Health Status', 'Education Level', 'Economic Status']",6
+How can I ensure financial stability while following my passion and artistic career?,"['Profession', 'Economic Status', 'Age', 'Education Level', 'Marital Status']",5
+What are some signs that I might need professional emotional support?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+How can I find joy and fulfillment in everyday life despite current challenges?,"['Emotional State', 'Health Status', 'Profession']",3
+What are some meaningful activities to fill my day with purpose?,"['Age', 'Emotional State', 'Mental Health Status']",3
+How can I build new friendships in my community at this stage in life?,"['Age', 'Emotional State', 'Marital Status', 'Health Status']",4
+What are the best strategies for overcoming feelings of loneliness?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Age', 'Health Status']",5
+How can I rediscover personal interests that I might have neglected?,"['Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Health Status']",5
+What are some effective ways to maintain a positive outlook during major life changes?,"['Emotional State', 'Health Status']",2
+How should someone approach creating a new daily routine after a significant life transition?,"['Emotional State', 'Health Status', 'Mental Health Status', 'Profession']",4
+What are some ways to adjust to living alone again after many years?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Economic Status', 'Health Status', 'Profession', 'Education Level']",8
+How can I ensure that I am financially secure and independent in the long term?,"['Age', 'Economic Status', 'Profession', 'Education Level', 'Health Status', 'Marital Status', 'Mental Health Status', 'Emotional State']",8
+What are some hobbies that can help improve mental well-being?,"['Mental Health Status', 'Emotional State', 'Age', 'Economic Status']",4
+How can I support my mental health while facing major life adjustments?,"['Mental Health Status', 'Emotional State', 'Economic Status']",3
+What are some healthy ways to cope with overwhelming emotions?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+How do I know if my stress levels are affecting my daily life?,"['Emotional State', 'Health Status']",2
+What are some strategies for maintaining focus while studying?,"['Education Level', 'Emotional State']",2
+How can I build a strong support system during challenging times?,"['Emotional State', 'Profession', 'Economic Status', 'Mental Health Status', 'Health Status']",5
+What are some effective methods for improving mental resilience?,"['Mental Health Status', 'Emotional State', 'Economic Status', 'Profession', 'Health Status', 'Education Level', 'Marital Status', 'Past Self-Harm History']",8
+How can I balance social life and personal responsibilities effectively?,"['Emotional State', 'Profession', 'Economic Status']",3
+What steps can I take to make sure I'm prioritizing my well-being?,"['Emotional State', 'Health Status', 'Economic Status', 'Mental Health Status']",4
+How do I differentiate between normal stress and something more serious?,"['Emotional State', 'Health Status', 'Mental Health Status', 'Past Self-Harm History', 'Profession']",5
+What are some signs that I might need to seek professional help for stress?,"['Emotional State', 'Past Self-Harm History', 'Health Status']",3
+How can I maintain motivation when feeling emotionally drained?,"['Mental Health Status', 'Emotional State', 'Health Status']",3
+What are some ways to rebuild trust in a relationship?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Age', 'Economic Status', 'Health Status', 'Gender', 'Profession', 'Education Level', 'Past Self-Harm History']",10
+How can I cope with feelings of betrayal and maintain my mental health?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Past Self-Harm History', 'Age']",5
+What is the process for finding a reliable couples therapist?,"['Marital Status', 'Emotional State', 'Economic Status', 'Mental Health Status', 'Age', 'Gender', 'Profession', 'Health Status', 'Past Self-Harm History']",9
+How can I make decisions about my future when feeling uncertain?,"['Emotional State', 'Education Level', 'Economic Status', 'Mental Health Status', 'Age']",5
+What are effective communication strategies for difficult conversations?,"['Profession', 'Emotional State', 'Mental Health Status']",3
+How do I know if counseling is the right option for my situation?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+What are the pros and cons of taking a temporary break from a relationship?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Economic Status']",4
+How can one deal with sudden changes in life plans?,"['Emotional State', 'Mental Health Status']",2
+What steps can I take to manage anxiety during personal crises?,"['Emotional State', 'Mental Health Status', 'Health Status', 'Age']",4
+How do I balance personal well-being with relationship obligations?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Profession']",4
+How do I rebuild trust in personal relationships after a major disagreement?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Age', 'Profession', 'Past Self-Harm History', 'Gender', 'Health Status']",8
+What are some effective strategies for coping with unexpected life changes?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+How can I find affordable mental health resources in my area?,"['Economic Status', 'Emotional State', 'Mental Health Status', 'Health Status', 'Age', 'Marital Status', 'Profession', 'Education Level', 'Past Self-Harm History', 'Gender']",10
+What are some tips for maintaining financial stability during a personal crisis?,"['Economic Status', 'Profession', 'Health Status', 'Emotional State', 'Education Level']",5
+How can I identify healthy boundaries in relationships?,"['Emotional State', 'Marital Status', 'Age', 'Past Self-Harm History', 'Mental Health Status', 'Economic Status']",6
+What are some healthy ways to process feelings of anger and sadness?,"['Mental Health Status', 'Past Self-Harm History', 'Age']",3
+How do I balance personal healing with daily responsibilities?,"['Emotional State', 'Profession', 'Mental Health Status', 'Health Status', 'Marital Status']",5
+What are some signs that I need to seek professional guidance for personal issues?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+How can I improve my emotional resilience during challenging times?,"['Emotional State', 'Health Status', 'Mental Health Status', 'Profession']",4
+What are some effective self-care practices for someone going through a tough period?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+What are some effective communication strategies for improving personal relationships?,"['Emotional State', 'Marital Status', 'Mental Health Status']",3
+How do I know if I should prioritize personal well-being over relationship commitments?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Economic Status']",4
+What are some healthy ways to cope with stress from personal issues while maintaining job performance?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
+How can I find balance and clarity when feeling overwhelmed by personal decisions?,"['Emotional State', 'Age', 'Profession', 'Health Status']",4
+What are the pros and cons of making major life changes during stressful periods?,"['Emotional State', 'Mental Health Status']",2
+How can one assess the long-term impacts of significant personal decisions?,"['Age', 'Emotional State', 'Education Level', 'Economic Status', 'Mental Health Status', 'Profession']",6
+What steps can be taken to rebuild trust in important relationships?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Economic Status']",4
+How can I determine what truly makes me happy when facing conflicting emotions?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age', 'Past Self-Harm History', 'Marital Status', 'Economic Status']",7
+What are the best practices for setting boundaries in personal relationships?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Age']",4
+How can I support my mental health while navigating challenging personal situations?,"['Mental Health Status', 'Economic Status', 'Emotional State']",3
+What are some affordable ways to improve mental well-being through hobbies?,"['Economic Status', 'Mental Health Status']",2
+How can I rebuild trust in relationships after experiencing betrayal?,"['Emotional State', 'Marital Status', 'Mental Health Status']",3
+What community activities can help with feelings of isolation?,"['Mental Health Status', 'Marital Status', 'Emotional State', 'Health Status', 'Age']",5
+How do I handle financial difficulties on a fixed income?,"['Economic Status', 'Age', 'Profession', 'Education Level', 'Emotional State', 'Marital Status', 'Health Status', 'Mental Health Status', 'Past Self-Harm History', 'Gender']",10
+What steps can I take to combat loneliness in my daily life?,"['Marital Status', 'Emotional State', 'Health Status', 'Mental Health Status', 'Age']",5
+How can I find new social support networks in my local area?,"['Emotional State', 'Age', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Profession', 'Health Status', 'Education Level', 'Gender', 'Past Self-Harm History']",10
+What are some effective strategies for dealing with unexpected life changes?,"['Emotional State', 'Mental Health Status', 'Economic Status', 'Profession', 'Marital Status']",5
+How can I pursue new learning opportunities without spending too much?,"['Economic Status', 'Education Level']",2
+What are the signs that I should seek professional help for emotional struggles?,"['Emotional State', 'Past Self-Harm History']",2
+How can I balance personal hobbies with community involvement?,"['Profession', 'Health Status', 'Age', 'Economic Status', 'Emotional State', 'Marital Status', 'Mental Health Status']",7
+What are some good strategies for managing intense emotions in stressful situations?,"['Mental Health Status', 'Emotional State', 'Health Status', 'Profession']",4
+How can I make a major life decision without letting emotions cloud my judgment?,"['Emotional State', 'Mental Health Status']",2
+What are the steps to take if I want to start a new chapter in life while dealing with past grievances?,"['Emotional State', 'Mental Health Status']",2
+How do I approach a situation where I feel wronged but want to handle things legally and maturely?,"['Emotional State', 'Age', 'Profession', 'Economic Status', 'Education Level', 'Mental Health Status', 'Marital Status', 'Gender', 'Health Status', 'Past Self-Harm History']",10
+What are some effective ways to channel anger into productive activities or personal growth?,"['Mental Health Status', 'Profession', 'Past Self-Harm History', 'Age']",4
+How can someone improve their mental health while managing daily pressures and responsibilities?,"['Mental Health Status', 'Economic Status', 'Profession']",3
+What is the best way to find support or a community that understands my current life challenges?,"['Emotional State', 'Age', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Health Status', 'Past Self-Harm History']",7
+How do I prioritize personal goals while maintaining professional responsibilities in a high-stress job?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+What are some healthy ways to cope with feelings of betrayal or distrust in personal relationships?,"['Emotional State', 'Marital Status', 'Mental Health Status']",3
+How can one rebuild trust in themselves and others after experiencing a significant personal setback?,"['Emotional State', 'Mental Health Status', 'Marital Status']",3
+What are some ways to improve communication skills in a professional and personal context?,"['Profession', 'Emotional State', 'Education Level', 'Age']",4
+How can I maintain a healthy work-life balance while focusing on career advancement?,"['Profession', 'Emotional State', 'Economic Status']",3
+What are effective strategies for dealing with stress and anxiety in everyday life?,"['Emotional State', 'Mental Health Status', 'Economic Status', 'Health Status', 'Profession', 'Age']",6
+How do I know if I should reconsider my current life priorities or goals?,"['Emotional State', 'Age', 'Education Level', 'Economic Status']",4
+What are the signs that it's time to re-evaluate a significant personal relationship?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Economic Status', 'Health Status', 'Profession', 'Past Self-Harm History', 'Education Level', 'Gender']",10
+How can I ensure a relationship remains strong despite physical distance?,"['Marital Status', 'Emotional State', 'Age', 'Mental Health Status', 'Profession', 'Economic Status']",6
+What are some hobbies or activities that can help manage stress and improve mental well-being?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Health Status']",5
+How can I tell if I'm over-committing to work at the expense of personal relationships?,"['Marital Status', 'Profession', 'Economic Status', 'Emotional State', 'Mental Health Status']",5
+What are some ways to build emotional resilience during challenging personal situations?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+How do I approach conversations about future plans with a significant other?,"['Emotional State', 'Marital Status', 'Economic Status']",3
+What are some ways to cope with feelings of loneliness when living apart from loved ones?,"['Emotional State', 'Mental Health Status', 'Marital Status']",3
+How can I maintain a sense of connection with someone who is far away?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Age', 'Economic Status', 'Health Status', 'Profession', 'Past Self-Harm History', 'Education Level', 'Gender']",10
+What are some effective strategies for improving mood and motivation?,"['Mental Health Status', 'Emotional State', 'Economic Status']",3
+How can I balance personal time and communication with a partner who is not nearby?,"['Marital Status', 'Emotional State', 'Age', 'Mental Health Status']",4
+What are some healthy outlets for managing emotional stress from long-term separation?,"['Emotional State', 'Mental Health Status', 'Health Status', 'Economic Status', 'Past Self-Harm History']",5
+How can I ensure my relationship remains strong despite physical distance?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Economic Status', 'Profession', 'Health Status', 'Education Level']",8
+What are some hobbies or activities that can help alleviate feelings of sadness?,"['Mental Health Status', 'Age', 'Emotional State']",3
+How can I recognize if my feelings of sadness need professional attention?,"['Emotional State', 'Past Self-Harm History']",2
+What are some ways to celebrate special occasions when apart from a partner?,"['Emotional State', 'Health Status', 'Marital Status', 'Economic Status']",4
+How can I build a support network when feeling isolated?,"['Emotional State', 'Mental Health Status', 'Marital Status']",3
+What are some creative ways to stay connected with loved ones who live far away?,"['Emotional State', 'Age', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Health Status', 'Profession', 'Education Level', 'Gender']",9
+How do I know if it's time to take a break from work to focus on personal life?,"['Emotional State', 'Profession', 'Mental Health Status']",3
+What strategies can I use to manage stress and prevent burnout?,"['Mental Health Status', 'Health Status']",2
+How can I balance pursuing my career goals with maintaining personal relationships?,"['Emotional State', 'Profession', 'Marital Status', 'Economic Status']",4
+When is it appropriate to prioritize personal well-being over professional commitments?,"['Emotional State', 'Profession', 'Mental Health Status', 'Economic Status']",4
+What are effective methods for communicating when feeling emotionally overwhelmed?,"['Emotional State', 'Age', 'Health Status', 'Mental Health Status', 'Profession', 'Past Self-Harm History']",6
+How can I find motivation when feeling exhausted from juggling multiple responsibilities?,"['Emotional State', 'Age', 'Profession', 'Health Status']",4
+What are the signs that a relationship may need more attention and care?,"['Marital Status', 'Mental Health Status', 'Emotional State', 'Age', 'Economic Status', 'Health Status']",6
+How do I cope with feelings of isolation when working long hours?,"['Profession', 'Emotional State', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",7
+What are some ways to maintain a healthy work-life balance in a creative profession?,"['Profession', 'Emotional State', 'Economic Status', 'Health Status']",4
+How can I stay connected with loved ones who are far away?,"['Emotional State', 'Marital Status', 'Age', 'Economic Status', 'Mental Health Status', 'Health Status', 'Profession']",7
+What are some effective ways to cope with feeling overwhelmed?,"['Emotional State', 'Age', 'Health Status', 'Mental Health Status']",4
+How do I improve communication in a relationship when distance is involved?,"['Marital Status', 'Emotional State', 'Age', 'Profession', 'Economic Status', 'Mental Health Status']",6
+What are some budget-friendly ways to manage personal finances?,"['Economic Status', 'Profession', 'Education Level']",3
+How can I maintain a healthy work-life balance while working remotely?,"['Profession', 'Emotional State', 'Economic Status', 'Mental Health Status', 'Health Status', 'Marital Status']",6
+What are strategies for dealing with feelings of loneliness?,"['Mental Health Status', 'Marital Status', 'Emotional State', 'Age']",4
+How can I find motivation when I'm feeling low?,"['Mental Health Status', 'Emotional State', 'Health Status', 'Age', 'Economic Status', 'Profession', 'Marital Status', 'Education Level', 'Past Self-Harm History', 'Gender']",10
+What are some signs that I should seek professional help for stress?,"['Emotional State', 'Past Self-Harm History', 'Health Status', 'Profession']",4
+How can I rebuild trust in personal relationships?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Health Status', 'Profession', 'Economic Status', 'Age', 'Gender', 'Past Self-Harm History']",9

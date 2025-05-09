@@ -2,7 +2,7 @@ import os
 import yaml
 import json
 import pandas as pd
-from reddit import RedditDataFetcher # assuming this module is available
+from reddit import RedditDataFetcher  # assuming this module is available
 from openai import OpenAI
 from prompts import core_content_template, attribute_template
 import tqdm
@@ -21,7 +21,7 @@ import cysimdjson
 from utils import timeout
 
 
-class RedditScraper():
+class RedditScraper:
     def __init__(self, model="gpt-4o"):
         self.seen_posts = {}
 
@@ -32,14 +32,16 @@ class RedditScraper():
         #     openai_api_version="2024-05-01-preview",
         #     temperature=0
         # )
-        
+
         model = ChatOpenAI(model=model, temperature=0)
 
         self.core_content_parser = JsonOutputParser(pydantic_object=CoreContent)
         self.core_content_prompt = PromptTemplate(
             template=core_content_template,
             input_variables=["input_text"],
-            partial_variables={"format_instructions": self.core_content_parser.get_format_instructions()}
+            partial_variables={
+                "format_instructions": self.core_content_parser.get_format_instructions()
+            },
         )
         self.content_chain = self.core_content_prompt | model | self.core_content_parser
 
@@ -47,9 +49,11 @@ class RedditScraper():
         self.attribute_prompt = PromptTemplate(
             template=attribute_template,
             input_variables=["input_text"],
-            partial_variables={"format_instructions": self.attribute_parser.get_format_instructions()}
+            partial_variables={
+                "format_instructions": self.attribute_parser.get_format_instructions()
+            },
         )
-        self.attribute_chain = self.attribute_prompt | model | self.attribute_parser 
+        self.attribute_chain = self.attribute_prompt | model | self.attribute_parser
 
     @timeout(60)
     def format_content(self, original_post):
@@ -77,7 +81,7 @@ class RedditScraper():
             result["education_level"]
             result["mental_health_status"]
             result["emotional_state"]
-            return result 
+            return result
         except Exception as e:
             print(f"{e}...Retrying")
             # sleep randomly between 1 and 5 seconds
@@ -86,13 +90,15 @@ class RedditScraper():
 
     def run(self, crisis_scenario, total_posts):
         # Load the YAML configuration
-        with open('config.yaml', 'r') as file:
+        with open("config.yaml", "r") as file:
             config_data = yaml.safe_load(file)
         config = config_data["crisis_scenarios"]
 
         # Validate that the crisis scenario exists
         if crisis_scenario not in config:
-            raise ValueError(f"Crisis scenario '{crisis_scenario}' not found in configuration.")
+            raise ValueError(
+                f"Crisis scenario '{crisis_scenario}' not found in configuration."
+            )
 
         # Get the list of subreddits for the given crisis scenario
         subreddits = config[crisis_scenario]
@@ -127,9 +133,13 @@ class RedditScraper():
         print("SEEN POSTS: ", len(self.seen_posts))
         for subreddit in subreddits:
             print(f"\nProcessing subreddit: {subreddit}")
-            subreddit_data_path = os.path.join("reddit_data", f"r_{subreddit}_posts.jsonl")
+            subreddit_data_path = os.path.join(
+                "reddit_data", f"r_{subreddit}_posts.jsonl"
+            )
             if not os.path.exists(subreddit_data_path):
-                raise Exception(f"Subreddit File Reading Error: {subreddit_data_path} does not exist! Make sure you download the reddit data for this subreddit first!")
+                raise Exception(
+                    f"Subreddit File Reading Error: {subreddit_data_path} does not exist! Make sure you download the reddit data for this subreddit first!"
+                )
 
             # Check if the subreddit has already been processed
             if subreddit in valid_posts_all:
@@ -143,7 +153,9 @@ class RedditScraper():
                 all_valid_posts = all_valid_posts + curr_subreddit_valid_posts
                 continue
 
-            print("Currently for this subreddit, has: ", len(curr_subreddit_valid_posts))
+            print(
+                "Currently for this subreddit, has: ", len(curr_subreddit_valid_posts)
+            )
 
             with open(subreddit_data_path, "rb") as f:
                 for i, line in tqdm.tqdm(enumerate(f)):
@@ -152,7 +164,9 @@ class RedditScraper():
                         continue
 
                     parsed_line = dict(parser.parse(line))
-                    post_content = f"# {parsed_line['title']}\n\n{parsed_line['selftext']}" 
+                    post_content = (
+                        f"# {parsed_line['title']}\n\n{parsed_line['selftext']}"
+                    )
 
                     # skip removed posts
                     if "[removed]" in post_content:
@@ -172,10 +186,10 @@ class RedditScraper():
                         "id": parsed_line["id"],
                         "subreddit": subreddit,
                         "url": parsed_line["url"],
-                        "created_utc": parsed_line["created_utc"]
+                        "created_utc": parsed_line["created_utc"],
                     }
-                    
-                    if has_all_attributes(post_content): 
+
+                    if has_all_attributes(post_content):
                         curr_subreddit_valid_posts.append(post)
 
                     valid_posts_all[subreddit] = curr_subreddit_valid_posts
@@ -189,9 +203,13 @@ class RedditScraper():
 
             # If we collected too many posts, trim to the target number
             if len(curr_subreddit_valid_posts) > target_per_subreddit:
-                curr_subreddit_valid_posts = curr_subreddit_valid_posts[:target_per_subreddit]
+                curr_subreddit_valid_posts = curr_subreddit_valid_posts[
+                    :target_per_subreddit
+                ]
 
-            print(f"Finished processing {subreddit}: collected {len(curr_subreddit_valid_posts)} posts")
+            print(
+                f"Finished processing {subreddit}: collected {len(curr_subreddit_valid_posts)} posts"
+            )
             all_valid_posts = all_valid_posts + curr_subreddit_valid_posts
 
         output_file = os.path.join(output_dir, "posts.json")
@@ -201,7 +219,7 @@ class RedditScraper():
         # After collection is done, switch to ChatOpenAI to avoid content filters
         model = ChatOpenAI(temperature=0.9, model="gpt-4o")
         self.content_chain = self.core_content_prompt | model | self.core_content_parser
-        self.attribute_chain = self.attribute_prompt | model | self.attribute_parser 
+        self.attribute_chain = self.attribute_prompt | model | self.attribute_parser
 
         # Iterate over each row in the original DataFrame.
         for post in tqdm.tqdm(all_valid_posts):
@@ -244,24 +262,24 @@ class RedditScraper():
 
             # Build a new dictionary with columns in the desired order:
             new_post = {
-                'id': post['id'],
-                'title': post['title'],
-                'original': post['content'],
-                'query': query,
-                'background': background,
-                # categorization begin 
-                'scenario': scenario,
-                'age': age,
-                'gender': gender,
-                'marital status': marital_status,
-                'profession': profession,
-                'economic status': economic_status,
-                'health status': health_status,
-                'education level': education_level,
-                'mental health status': mental_health_status,
-                'emotional state': emotional_state,
-                'url': post['url'],
-                'subreddit': post['subreddit']
+                "id": post["id"],
+                "title": post["title"],
+                "original": post["content"],
+                "query": query,
+                "background": background,
+                # categorization begin
+                "scenario": scenario,
+                "age": age,
+                "gender": gender,
+                "marital status": marital_status,
+                "profession": profession,
+                "economic status": economic_status,
+                "health status": health_status,
+                "education level": education_level,
+                "mental health status": mental_health_status,
+                "emotional state": emotional_state,
+                "url": post["url"],
+                "subreddit": post["subreddit"],
             }
             final_data.append(new_post)
 
@@ -269,7 +287,8 @@ class RedditScraper():
             with open(output_file, "w") as f:
                 json.dump(final_data, f, indent=4)
 
-        return final_data 
+        return final_data
+
 
 # Example usage:
 if __name__ == "__main__":
@@ -278,7 +297,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     crisis_scenario = sys.argv[1]
-    
+
     try:
         total_posts = int(sys.argv[2])
     except ValueError:

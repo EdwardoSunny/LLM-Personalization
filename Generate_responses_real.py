@@ -8,23 +8,24 @@ from vllm import LLM, SamplingParams
 from openai import OpenAI
 import torch
 
+
 # remove reasoning inside of <think> tags from reasoning models outputs like qwq
 def extract_final_output(text):
     """
     Parse a text to remove everything before and including the '</think>' tag.
-    
+
     Args:
         text (str): The input text containing a </think> tag
-        
+
     Returns:
         str: The text after the </think> tag, or the original text if no tag is found
     """
     import re
-    
+
     # Look for the </think> tag and extract everything after it
-    pattern = r'.*?</think>(.*)'
+    pattern = r".*?</think>(.*)"
     match = re.search(pattern, text, re.DOTALL)
-    
+
     if match:
         # Return the content after the </think> tag
         return match.group(1).strip()
@@ -34,8 +35,6 @@ def extract_final_output(text):
 
 
 def main():
-    client = OpenAI()
-
     eval_category = "education"
 
     # MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -57,11 +56,11 @@ def main():
     if "QwQ" in MODEL:
         # For QwQ-32B, use quantization.
         llm = LLM(
-            model=MODEL, 
-            dtype=torch.bfloat16, 
-            trust_remote_code=True, 
+            model=MODEL,
+            dtype=torch.bfloat16,
+            trust_remote_code=True,
             quantization="bitsandbytes",
-            load_format="bitsandbytes"
+            load_format="bitsandbytes",
         )
     else:
         llm = LLM(model=MODEL)
@@ -81,7 +80,7 @@ def main():
             print(f"Error decoding JSON: {e}")
         return None
 
-    # contains queries and backgrounds 
+    # contains queries and backgrounds
     real_reddit_data = read_json_file(f"RedditScraping/data/{eval_category}/posts.json")
 
     # Open CSV file for writing results.
@@ -91,17 +90,25 @@ def main():
     print("================")
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow([
-            "Scenario", "Background", "User Query",
-            "Response Without Background", 
-            "Response With Background" 
-        ])
+        writer.writerow(
+            [
+                "Scenario",
+                "Background",
+                "User Query",
+                "Response Without Background",
+                "Response With Background",
+            ]
+        )
 
         # cap at 1000 posts, because some data has 2000 posts
-        total_iterations = 1000 
+        total_iterations = 1000
 
         # Initialize progress bar.
-        with tqdm(total=total_iterations, desc="Processing Backgrounds and Queries", unit="query") as pbar:
+        with tqdm(
+            total=total_iterations,
+            desc="Processing Backgrounds and Queries",
+            unit="query",
+        ) as pbar:
             for i, profile in enumerate(real_reddit_data):
                 # Format the background description.
                 background_text = f"""
@@ -116,19 +123,19 @@ def main():
                 - emotional state: {profile['emotional state']}
                 """
 
-                query = profile['query']
+                query = profile["query"]
 
                 print("Processing background:\n", background_text)
                 print("Processing query:\n", query)
 
                 # Prepare prompt without background.
-                no_background_prompt = (
-                    f"User query: {query}\n"
-                    f"Assistant response:"
-                )
+                no_background_prompt = f"User query: {query}\n" f"Assistant response:"
                 no_background_messages = [
-                    {"role": "system", "content": "You are an AI assistant that helps people find information."},
-                    {"role": "user", "content": no_background_prompt}
+                    {
+                        "role": "system",
+                        "content": "You are an AI assistant that helps people find information.",
+                    },
+                    {"role": "user", "content": no_background_prompt},
                 ]
                 # Prepare prompt with background.
                 with_background_prompt = (
@@ -138,44 +145,59 @@ def main():
                     f"Assistant response:"
                 )
                 with_background_messages = [
-                    {"role": "system", "content": "You are an AI assistant that helps people find information."},
-                    {"role": "user", "content": with_background_prompt}
+                    {
+                        "role": "system",
+                        "content": "You are an AI assistant that helps people find information.",
+                    },
+                    {"role": "user", "content": with_background_prompt},
                 ]
                 try:
-                    no_background_outputs = llm.chat(no_background_messages, sampling_params=sampling_params)
+                    no_background_outputs = llm.chat(
+                        no_background_messages, sampling_params=sampling_params
+                    )
                     no_background_result = no_background_outputs[0].outputs[0].text
                 except Exception as e:
                     no_background_result = f"Error: {e}"
                     no_background_avg_score = "N/A"
 
                 try:
-                    with_background_outputs = llm.chat(with_background_messages, sampling_params=sampling_params)
+                    with_background_outputs = llm.chat(
+                        with_background_messages, sampling_params=sampling_params
+                    )
                     with_background_result = with_background_outputs[0].outputs[0].text
                 except Exception as e:
                     with_background_result = f"Error: {e}"
                     with_background_avg_score = "N/A"
 
-                # if is reasoning model, remove the reasoning inside of <think> tags 
+                # if is reasoning model, remove the reasoning inside of <think> tags
                 if "QwQ" in MODEL:
                     no_background_result = extract_final_output(no_background_result)
-                    with_background_result = extract_final_output(with_background_result)
+                    with_background_result = extract_final_output(
+                        with_background_result
+                    )
                 # Print results for debugging.
                 print("================")
                 print(f"User Post {i + 1} - Background:\n{background_text}")
                 print(f"User Post {i + 1} - Query: {query}")
-                print(f"User Post {i + 1} - Response Without Background: {no_background_result}")
-                print(f"User Post {i + 1} - Response With Background: {with_background_result}")
+                print(
+                    f"User Post {i + 1} - Response Without Background: {no_background_result}"
+                )
+                print(
+                    f"User Post {i + 1} - Response With Background: {with_background_result}"
+                )
                 print("================")
 
                 # Write results to CSV.
                 try:
-                    writer.writerow([
-                        f"User Post {i + 1}",
-                        background_text,
-                        query,
-                        no_background_result, 
-                        with_background_result, 
-                    ])
+                    writer.writerow(
+                        [
+                            f"User Post {i + 1}",
+                            background_text,
+                            query,
+                            no_background_result,
+                            with_background_result,
+                        ]
+                    )
 
                     file.flush()
                 except Exception as e:
@@ -183,5 +205,6 @@ def main():
                 pbar.update(1)
     print(f"Responses and evaluations saved to {output_file}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

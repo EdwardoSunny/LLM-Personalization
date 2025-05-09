@@ -9,7 +9,21 @@ num_profiles = 1  # Number of profiles to generate
 profiles_big_five = generate_user_profiles(n=num_profiles, use_big_five=True)
 profiles_mbti = generate_user_profiles(n=num_profiles, use_big_five=False)
 
-test_model(config["openai_config"], personalized_base_prompt, config["prompt_tasks_dir"], config["prompt_groups"], profiles_big_five, output_dir="output/personalized/")
+test_model(
+    config["openai_config"],
+    personalized_base_prompt,
+    config["prompt_tasks_dir"],
+    config["prompt_groups"],
+    profiles_big_five,
+    output_dir="output/personalized/",
+)
 
 
-test_model(config["openai_config"], vanilla_base_prompt, config["prompt_tasks_dir"], config["prompt_groups"], profiles_big_five, output_dir="output/vanilla/")
+test_model(
+    config["openai_config"],
+    vanilla_base_prompt,
+    config["prompt_tasks_dir"],
+    config["prompt_groups"],
+    profiles_big_five,
+    output_dir="output/vanilla/",
+)

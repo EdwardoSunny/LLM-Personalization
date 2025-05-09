@@ -26,6 +26,7 @@ llm = LLM(model=MODEL)
 # Define sampling parameters for generating responses.
 sampling_params = SamplingParams(max_tokens=1024, temperature=0.7, top_p=0.95)
 
+
 # Read JSON file
 def read_json_file(file_path):
     try:
@@ -153,6 +154,7 @@ def evaluate_response(response, background_description, user_query):
     result = eval_outputs.choices[0].message.content
     return result
 
+
 def extract_comprehensive_score(evaluation_results):
     # If the input is a string, extract the Comprehensive Score directly.
     if isinstance(evaluation_results, str):
@@ -163,12 +165,25 @@ def extract_comprehensive_score(evaluation_results):
             print("No Comprehensive Score found in text.")
             return None
 
+
 data_full = read_json_file(f"RedditScraping/data/{category}/posts.json")
 
 user_queries = [post["query"] for post in data_full]
-user_backgrounds = [] 
+user_backgrounds = []
 for i in range(0, len(data_full)):
-    user_backgrounds.append({"Age": data_full[i]["age"], "Gender": data_full[i]["gender"], "Marital Status": data_full[i]["marital status"], "Profession": data_full[i]["profession"], "Economic Status": data_full[i]["economic status"], "Health Status": data_full[i]["health status"], "Education Level": data_full[i]["education level"], "Mental Health Status": data_full[i]["mental health status"], "Emotional State": data_full[i]["emotional state"]})
+    user_backgrounds.append(
+        {
+            "Age": data_full[i]["age"],
+            "Gender": data_full[i]["gender"],
+            "Marital Status": data_full[i]["marital status"],
+            "Profession": data_full[i]["profession"],
+            "Economic Status": data_full[i]["economic status"],
+            "Health Status": data_full[i]["health status"],
+            "Education Level": data_full[i]["education level"],
+            "Mental Health Status": data_full[i]["mental health status"],
+            "Emotional State": data_full[i]["emotional state"],
+        }
+    )
 
 # Open CSV file for writing results.
 output_file = OUTPUT_FILE
@@ -177,18 +192,28 @@ print("RUNNING")
 print("================")
 with open(output_file, mode="w", newline="", encoding="utf-8") as file:
     writer = csv.writer(file)
-    writer.writerow([
-        "Scenario", "Background", "User Query",
-        "Response Without Background", "Evaluation Without Background", "Average Score Without Background",
-        "Response With Background", "Evaluation With Background", "Average Score With Background"
-    ])
+    writer.writerow(
+        [
+            "Scenario",
+            "Background",
+            "User Query",
+            "Response Without Background",
+            "Evaluation Without Background",
+            "Average Score Without Background",
+            "Response With Background",
+            "Evaluation With Background",
+            "Average Score With Background",
+        ]
+    )
 
     # Initialize progress bar.
     for idx, background in enumerate(user_backgrounds):
         # Get queries for the current background.
         # Format the background description.
 
-        background_text = "\n".join([f"- {key}: {value}" for key, value in background.items()])
+        background_text = "\n".join(
+            [f"- {key}: {value}" for key, value in background.items()]
+        )
         background_description = (
             f"Age: {background['Age']}, Gender: {background['Gender']}, Marital Status: {background['Marital Status']}, "
             f"Profession: {background['Profession']}, Economic Status: {background['Economic Status']}, "
@@ -199,12 +224,14 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
 
         # Prepare prompt without background.
         no_background_prompt = (
-            f"User query: {user_queries[idx]}\n"
-            f"Assistant response:"
+            f"User query: {user_queries[idx]}\n" f"Assistant response:"
         )
         no_background_messages = [
-            {"role": "system", "content": "You are an AI assistant that helps people find information."},
-            {"role": "user", "content": no_background_prompt}
+            {
+                "role": "system",
+                "content": "You are an AI assistant that helps people find information.",
+            },
+            {"role": "user", "content": no_background_prompt},
         ]
         # Prepare prompt with background.
         with_background_prompt = (
@@ -214,13 +241,20 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
             f"Assistant response:"
         )
         with_background_messages = [
-            {"role": "system", "content": "You are an AI assistant that helps people find information."},
-            {"role": "user", "content": with_background_prompt}
+            {
+                "role": "system",
+                "content": "You are an AI assistant that helps people find information.",
+            },
+            {"role": "user", "content": with_background_prompt},
         ]
         try:
-            no_background_outputs = llm.chat(no_background_messages, sampling_params=sampling_params)
+            no_background_outputs = llm.chat(
+                no_background_messages, sampling_params=sampling_params
+            )
             no_background_result = no_background_outputs[0].outputs[0].text
-            no_background_evaluation = evaluate_response(no_background_result, background_description, user_queries[idx])
+            no_background_evaluation = evaluate_response(
+                no_background_result, background_description, user_queries[idx]
+            )
             score = extract_comprehensive_score(no_background_evaluation)
             no_background_avg_score = (score / 6) if score is not None else "N/A"
         except Exception as e:
@@ -229,9 +263,13 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
             no_background_avg_score = "N/A"
 
         try:
-            with_background_outputs = llm.chat(with_background_messages, sampling_params=sampling_params)
+            with_background_outputs = llm.chat(
+                with_background_messages, sampling_params=sampling_params
+            )
             with_background_result = with_background_outputs[0].outputs[0].text
-            with_background_evaluation = evaluate_response(with_background_result, background_description, user_queries[idx])
+            with_background_evaluation = evaluate_response(
+                with_background_result, background_description, user_queries[idx]
+            )
             score = extract_comprehensive_score(with_background_evaluation)
             with_background_avg_score = (score / 6) if score is not None else "N/A"
         except Exception as e:
@@ -241,13 +279,19 @@ with open(output_file, mode="w", newline="", encoding="utf-8") as file:
 
         # Write results to CSV.
         try:
-            writer.writerow([
-                f"Scenario {idx}",
-                background_text,
-                user_queries[idx],
-                no_background_result, no_background_evaluation, no_background_avg_score,
-                with_background_result, with_background_evaluation, with_background_avg_score
-            ])
+            writer.writerow(
+                [
+                    f"Scenario {idx}",
+                    background_text,
+                    user_queries[idx],
+                    no_background_result,
+                    no_background_evaluation,
+                    no_background_avg_score,
+                    with_background_result,
+                    with_background_evaluation,
+                    with_background_avg_score,
+                ]
+            )
             file.flush()
         except Exception as e:
             print(f"Error while writing to CSV: {e}")

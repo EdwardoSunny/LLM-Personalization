@@ -1,0 +1,45 @@
+* Syth data
+Vanilla Agent:
+- llama DONE
+- qwen2.5 DONE
+- mistral DONE
+- deepseek DONE
+- qwq RUNNING
+
+Retrieval Agent:
+- llama DONE 
+- qwen2.5 DONE 
+- mistral DONE 
+- deepseek RUNNING 
+- qwq RUNNING 
+
+ALL EVAL:
+REGULAR:
+- llama RUNNING
+- qwen2.5 RUNNING 
+- mistral RUNNING 
+- deepseek NS 
+- qwq NS
+
+RETRIEVAL
+- llama NS 
+- qwen2.5 NS 
+- mistral NS 
+- deepseek NS 
+- qwq NS
+
+* REAL data agents
+** Real Data 
+*** Vanilla Agents
+- llama NS 
+- qwen2.5 NS 
+- mistral NS 
+- deepseek NS 
+- qwq NS 
+
+*** Retrieval Agent:
+- llama NS 
+- qwen2.5 NS 
+- mistral NS 
+- deepseek NS 
+- qwq NS 

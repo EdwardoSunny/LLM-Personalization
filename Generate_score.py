@@ -20,6 +20,7 @@ if "claude" in MODEL:
 else:
     llm = LLM(MODEL)
 
+
 # Read JSON file
 def read_json_file(file_path):
     try:
@@ -31,6 +32,7 @@ def read_json_file(file_path):
     except json.JSONDecodeError as e:
         print(f"Error decoding JSON: {e}")
     return None
+
 
 # Evaluate the LLM response using the evaluation framework.
 def evaluate_response(response, background_description, user_query, eval_llm):
@@ -132,8 +134,8 @@ def evaluate_response(response, background_description, user_query, eval_llm):
         """
 
     evaluator_messages = [
-            {"role": "system", "content": sys_evaluator_prompt},
-            {"role": "user", "content": evaluation_prompt}
+        {"role": "system", "content": sys_evaluator_prompt},
+        {"role": "user", "content": evaluation_prompt},
     ]
 
     if "claude" in MODEL:
@@ -141,18 +143,23 @@ def evaluate_response(response, background_description, user_query, eval_llm):
             model=MODEL,
             max_tokens=500,
             system=evaluator_messages[0]["content"],
-            messages=[evaluator_messages[1]]
+            messages=[evaluator_messages[1]],
         )
 
         result = evaluation_response.content[0].text
         return result
     else:
-        scoring_sampling_params = SamplingParams(max_tokens=500, temperature=0.7, top_p=0.95)
+        scoring_sampling_params = SamplingParams(
+            max_tokens=500, temperature=0.7, top_p=0.95
+        )
 
-        eval_outputs = eval_llm.chat(evaluator_messages, sampling_params=scoring_sampling_params)
+        eval_outputs = eval_llm.chat(
+            evaluator_messages, sampling_params=scoring_sampling_params
+        )
 
         result = eval_outputs[0].outputs[0].text
         return result
+
 
 def extract_comprehensive_score(evaluation_results):
     # If the input is a string, extract the Comprehensive Score directly.
@@ -164,6 +171,7 @@ def extract_comprehensive_score(evaluation_results):
             print("No Comprehensive Score found in text.")
             print(evaluation_results)
             return None
+
 
 # Open CSV file for writing results.
 output_file = OUTPUT_FILE
@@ -177,31 +185,46 @@ if os.path.exists(output_file):
 
 # 'Scenario', 'Background', 'User Query', 'Response Without Background', 'Evaluation Without Background', 'Average Score Without Background', 'Response With Background', 'Evaluation With Background', 'Average Score With Background'
 for index, row in tqdm(df.iterrows()):
-    no_background_evaluation = evaluate_response(row['Response Without Background'], row['Background'], row['User Query'], llm)
+    no_background_evaluation = evaluate_response(
+        row["Response Without Background"], row["Background"], row["User Query"], llm
+    )
     score = extract_comprehensive_score(no_background_evaluation)
     it = 0
     while score is None:
-        print(f"Retrying to extract comprehensive score for no background evaluation {it}")
-        no_background_evaluation = evaluate_response(row['Response Without Background'], row['Background'], row['User Query'], llm)
+        print(
+            f"Retrying to extract comprehensive score for no background evaluation {it}"
+        )
+        no_background_evaluation = evaluate_response(
+            row["Response Without Background"],
+            row["Background"],
+            row["User Query"],
+            llm,
+        )
         score = extract_comprehensive_score(no_background_evaluation)
         it += 1
     no_background_avg_score = (score / 6) if score is not None else "N/A"
 
-    with_background_evaluation = evaluate_response(row['Response With Background'], row['Background'], row['User Query'], llm)
+    with_background_evaluation = evaluate_response(
+        row["Response With Background"], row["Background"], row["User Query"], llm
+    )
     score = extract_comprehensive_score(with_background_evaluation)
     it = 0
     while score is None:
-        print(f"Retrying to extract comprehensive score for with background evaluation {it}")
-        with_background_evaluation = evaluate_response(row['Response With Background'], row['Background'], row['User Query'], llm)
+        print(
+            f"Retrying to extract comprehensive score for with background evaluation {it}"
+        )
+        with_background_evaluation = evaluate_response(
+            row["Response With Background"], row["Background"], row["User Query"], llm
+        )
         score = extract_comprehensive_score(with_background_evaluation)
         it += 1
     with_background_avg_score = (score / 6) if score is not None else "N/A"
 
     # # add columns to the dataframe for the scores
-    df.loc[index, f'{MODEL} Evaluation Without Background'] = no_background_evaluation
-    df.loc[index, f'{MODEL} Average Score Without Background'] = no_background_avg_score
-    df.loc[index, f'{MODEL} Evaluation With Background'] = with_background_evaluation
-    df.loc[index, f'{MODEL} Average Score With Background'] = with_background_avg_score
+    df.loc[index, f"{MODEL} Evaluation Without Background"] = no_background_evaluation
+    df.loc[index, f"{MODEL} Average Score Without Background"] = no_background_avg_score
+    df.loc[index, f"{MODEL} Evaluation With Background"] = with_background_evaluation
+    df.loc[index, f"{MODEL} Average Score With Background"] = with_background_avg_score
 
     # write dataframe to the file
     df.to_csv(output_file, index=False)

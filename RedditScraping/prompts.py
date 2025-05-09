@@ -57,4 +57,3 @@ You are an expert at information extraction. Your task is to determine whether s
 **Paragraph:** {input_text}
 
 {format_instructions}"""
-
