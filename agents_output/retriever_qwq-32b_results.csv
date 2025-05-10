@@ -2,3 +2,7 @@ User Query,Attribute Path,Path Length
 What strategies can help balance career demands with spending quality time with loved ones?,"['Profession', 'Emotional State', 'Economic Status', 'Age', 'Marital Status']",5
 What are some effective ways to communicate better with children during challenging times?,"['Age', 'Education Level', 'Emotional State', 'Health Status']",4
 How can personal growth be prioritized when dealing with significant life changes?,"['Emotional State', 'Education Level', 'Profession', 'Economic Status']",4
+What are the best practices for maintaining a positive relationship with children in a changing family dynamic?,"['Education Level', 'Marital Status', 'Emotional State', 'Health Status', 'Age']",5
+How can one cope with feelings of anxiety while managing professional responsibilities?,"['Emotional State', 'Profession']",2
+What techniques are recommended for managing stress without compromising work performance?,"['Profession', 'Emotional State', 'Mental Health Status', 'Economic Status']",4
+How can someone ensure they are emotionally available for their children while dealing with personal challenges?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Economic Status']",4
