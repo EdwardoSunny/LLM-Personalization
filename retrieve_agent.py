@@ -16,7 +16,6 @@ import numpy as np
 import ast
 from sentence_transformers import SentenceTransformer
 from sklearn.neighbors import NearestNeighbors
-from openai import OpenAI
 
 import torch
 from vllm import LLM, SamplingParams
@@ -47,7 +46,12 @@ def extract_final_output(text):
 
 
 def parse_score(score_str):
-    client = OpenAI()
+    endpoint = os.getenv("ENDPOINT_URL", "https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
+    client = AzureOpenAI(
+        azure_endpoint=endpoint,
+        azure_deployment="gpt-4o-mini",
+        api_version="2024-05-01-preview",
+    )
 
     messages = [
         {
@@ -302,11 +306,11 @@ if __name__ == "__main__":
     # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
     # output_csv = "agents_output/retriever_mistral-7b-instruct_results.csv"
 
-    deployment = "deepseek-ai/deepseek-llm-7b-chat"
-    output_csv = "agents_output/retriever_deepseek-7b_results.csv"
+    # deployment = "deepseek-ai/deepseek-llm-7b-chat"
+    # output_csv = "agents_output/retriever_deepseek-7b_results.csv"
 
-    # deployment = "Qwen/QwQ-32B"
-    # output_csv = "agents_output/retriever_qwq-32b_results.csv"
+    deployment = "Qwen/QwQ-32B"
+    output_csv = "agents_output/retriever_qwq-32b_results.csv"
 
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.

@@ -1,7 +1,7 @@
 import os
 import base64
 import csv
-from openai import AzureOpenAI, OpenAI
+from openai import AzureOpenAI 
 import re
 import json
 from tqdm import tqdm
@@ -40,7 +40,12 @@ def extract_final_output(text):
 
 
 def parse_score(score_str):
-    client = OpenAI()
+    endpoint = os.getenv("ENDPOINT_URL", "https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
+    client = AzureOpenAI(
+        azure_endpoint=endpoint,
+        azure_deployment="gpt-4o-mini",
+        api_version="2024-05-01-preview",
+    )
 
     messages = [
         {
@@ -277,8 +282,8 @@ if __name__ == "__main__":
     input_csv = (
         "/data/edward/LLM-Personalization/Data/queries_list.json"  # 输入数据文件路径
     )
-    deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
-    output_csv = "agents_output/llama3-8b-instruct_results.csv"
+    # deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
+    # output_csv = "agents_output/llama3-8b-instruct_results.csv"
 
     # deployment = "Qwen/Qwen2.5-7B-Instruct"
     # output_csv = "agents_output/qwen25-7b-instruct_results.csv"
@@ -289,8 +294,8 @@ if __name__ == "__main__":
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
     # output_csv = "agents_output/deepseek-7b_results.csv"
 
-    # deployment = "Qwen/QwQ-32B"
-    # output_csv = "agents_output/qwq-32b_results.csv"
+    deployment = "Qwen/QwQ-32B"
+    output_csv = "agents_output/qwq-32b_results.csv"
 
     # Create a vLLM instance using your open source model.
     if "QwQ" in deployment:

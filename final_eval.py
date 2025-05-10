@@ -36,8 +36,18 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
     # MODEL_ALIAS = "qwen25-7b-instruct"
 
-    MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
-    MODEL_ALIAS = "deepseek-7b"
+    # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
+    # MODEL_ALIAS = "deepseek-7b"
+
+    ############# RETRIEVAL EVAL #############
+    # MODEL_BEING_EVAL = "meta-llama/Meta-Llama-3-8B-Instruct"
+    # MODEL_ALIAS = "retriever_llama3-8b-instruct"
+
+    # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
+    # MODEL_ALIAS = "retriever_qwen25-7b-instruct"
+
+    MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
+    MODEL_ALIAS = "retriever_mistral-7b-instruct"
 
     if "QwQ" in MODEL_BEING_EVAL:
         # For QwQ-32B, use quantization.

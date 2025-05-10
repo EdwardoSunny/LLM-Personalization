@@ -1,32 +1,21 @@
-* Syth data
-Vanilla Agent:
-- llama DONE
-- qwen2.5 DONE
-- mistral DONE
-- deepseek DONE
-- qwq RUNNING
+* Syth Data
+| Model    | Vanilla Agent | Retrieval Agent | Eval Regular | Eval Retrieval |
+|----------+---------------+-----------------+--------------+----------------|
+| LLaMA    | DONE          | DONE            | RUNNING      | RUNNING        |
+| Qwen2.5  | DONE          | DONE            | DONE         | RUNNING        |
+| Mistral  | DONE          | DONE            | DONE         | RUNNING        |
+| DeepSeek | DONE          | DONE            | RUNNING      | NS             |
+| QWQ      | RUNNING       | RUNNING         | NS           | NS             |
 
-Retrieval Agent:
-- llama DONE 
-- qwen2.5 DONE 
-- mistral DONE 
-- deepseek DONE 
-- qwq RUNNING 
+* Real Data
+| Model     | Vanilla Agent | Retrieval Agent | Eval Regular | Eval Retrieval |
+|-----------+----------------+-----------------+---------------+----------------|
+| LLaMA     | DONE           | DONE            | RUNNING       | NS             |
+| Qwen2.5   | DONE           | DONE            | RUNNING       | NS             |
+| Mistral   | DONE           | DONE            | DONE          | NS             |
+| DeepSeek  | DONE           | DONE            | RUNNING       | NS             |
+| QWQ       | RUNNING        | RUNNING         | NS            | NS             |
 
-ALL EVAL:
-REGULAR:
-- llama RUNNING 
-- qwen2.5 RUNNING 
-- mistral DONE
-- deepseek RUNNING 
-- qwq NS
-
-RETRIEVAL (partial)
-- llama NS 
-- qwen2.5 NS 
-- mistral NS 
-- deepseek NS 
-- qwq NS
 
 * REAL data agents (scai4)
 ** Real Data 
