@@ -193,7 +193,7 @@ if __name__ == "__main__":
     # 默认 fallback 的 selected_keys
     default_selected_keys = ["Emotional State", "Past Self-Harm History"]
 
-    output_file = f"agents_eval/{MODEL_ALIAS}_agent_eval_results.csv"
+    output_file = f"agents_eval/partial/{MODEL_ALIAS}_agent_eval_results.csv"
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(
