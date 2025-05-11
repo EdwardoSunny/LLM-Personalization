@@ -1,7 +1,7 @@
 import os
 import base64
 import csv
-from openai import AzureOpenAI 
+from openai import AzureOpenAI
 import re
 import json
 from tqdm import tqdm
@@ -11,8 +11,14 @@ import pandas as pd
 import heapq
 import numpy as np
 from collections import Counter, OrderedDict
-from vllm import LLM, SamplingParams
+import pandas as pd
+import numpy as np
+import ast
+from sentence_transformers import SentenceTransformer
+from sklearn.neighbors import NearestNeighbors
+
 import torch
+from vllm import LLM, SamplingParams
 
 
 def extract_final_output(text):
@@ -40,8 +46,7 @@ def extract_final_output(text):
 
 
 def parse_score(score_str):
-    # endpoint = "https://oai-b-westus3.openai.azure.com/"
-    endpoint = "https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview"
+    endpoint = os.getenv("ENDPOINT_URL", "https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
     client = AzureOpenAI(
         azure_endpoint=endpoint,
         azure_deployment="gpt-4o-mini",
@@ -68,29 +73,37 @@ def parse_score(score_str):
     return response.choices[0].message.content.strip()
 
 
+class PathRetrieverSklearn:
+    def __init__(self, path_csv_path, embedding_model_name='all-MiniLM-L6-v2'):
+        self.df = pd.read_csv(path_csv_path)
+        self.df["query_text"] = self.df["User Query"].apply(eval).apply(lambda x: x["query_id"])
+        self.df["path_list"] = self.df["Best Path"].apply(ast.literal_eval)
+
+        self.model = SentenceTransformer(embedding_model_name)
+        self.embeddings = self.model.encode(self.df["query_text"].tolist(), show_progress_bar=True)
+
+        self.nn = NearestNeighbors(n_neighbors=3, metric="cosine").fit(self.embeddings)
+
+    def retrieve_similar_paths(self, query_text, top_k=3):
+        query_vec = self.model.encode([query_text])
+        distances, indices = self.nn.kneighbors(query_vec, n_neighbors=top_k)
+        return self.df.iloc[indices[0]]["path_list"].tolist()
+
 def get_scenario_attributes():
     """返回该 Scenario 下的固定背景信息列表"""
     return [
-        "Age",
-        "Gender",
-        "Marital Status",
-        "Profession",
-        "Economic Status",
-        "Health Status",
-        "Education Level",
-        "Mental Health Status",
-        "Past Self-Harm History",
-        "Emotional State",
+        "Age", "Gender", "Marital Status", "Profession", "Economic Status",
+        "Health Status", "Education Level", "Mental Health Status",
+        "Past Self-Harm History", "Emotional State"
     ]
 
-
 class AttributePathAgent:
-    def __init__(self, attribute_pool, llm):
+    def __init__(self, attribute_pool, llm, retriever):
         self.attribute_pool = attribute_pool
-
         self.MODEL = deployment
-
         self.llm = llm
+
+        self.retriever = retriever
         self.path = []  # 只记录attribute的path
 
     def run(self, query, max_turns=10):
@@ -103,9 +116,7 @@ class AttributePathAgent:
         asked_attributes = set()
 
         for turn in range(max_turns):
-            remaining_attributes = [
-                attr for attr in self.attribute_pool if attr not in asked_attributes
-            ]
+            remaining_attributes = [attr for attr in self.attribute_pool if attr not in asked_attributes]
             if not remaining_attributes:
                 print(f"[Turn {turn}] No more attributes to select.")
                 break
@@ -115,15 +126,11 @@ class AttributePathAgent:
 
             # Step 1: 调用 LLM版abstention
             if not self.llm_abstention_decision(query, background_description):
-                print(
-                    f"[Turn {turn}] Abstention decided: No further attributes needed."
-                )
+                print(f"[Turn {turn}] Abstention decided: No further attributes needed.")
                 break
 
             # Step 2: 选择下一个attribute
-            next_attr = self.llm_attribute_selection(
-                query, background_description, remaining_attributes
-            )
+            next_attr = self.llm_attribute_selection(query, background_description, remaining_attributes)
             if next_attr is None:
                 print(f"[Turn {turn}] No valid attribute selected.")
                 break
@@ -192,16 +199,28 @@ class AttributePathAgent:
             print(f"[Warning] Unable to parse completeness score: {result}; Error: {e}")
             return 0
 
-    def llm_attribute_selection(
-        self, query, background_description, remaining_attributes
-    ):
+    def llm_attribute_selection(self, query, background_description, remaining_attributes):
+        # 构造 attribute 列表文本
         attribute_list_text = "\n".join(f"- {attr}" for attr in remaining_attributes)
 
+        # 🔁 1. 获取 few-shot 轨迹（每条路径都是一个 list）
+        few_shot_paths = self.retriever.retrieve_similar_paths(query, top_k=3)
+
+        # 🧠 2. 构造 few-shot 示例块
+        few_shot_prompt = ""
+        for i, path in enumerate(few_shot_paths):
+            few_shot_prompt += (
+                f"[Example {i+1}]\n"
+                f"Best Path from similar user: {path}\n\n"
+            )
+
+        # 🧩 3. 构造总 prompt
         prompt = (
             "You are an AI assistant selecting important background attributes.\n"
             "Below are the available attributes:\n"
             f"{attribute_list_text}\n\n"
-            "Given the user query and known background, identify the next most important attribute to collect.\n"
+            f"{few_shot_prompt}"
+            "Given the user query and current background, identify the next most important attribute to collect.\n"
             "Output only the attribute name.\n\n"
             f"User query: {query}\n\n"
             f"Current attributes: {background_description}\n\n"
@@ -209,11 +228,8 @@ class AttributePathAgent:
         )
 
         messages = [
-            {
-                "role": "system",
-                "content": "You select the next most important background attribute.",
-            },
-            {"role": "user", "content": prompt},
+            {"role": "system", "content": "You select the next most important background attribute."},
+            {"role": "user", "content": prompt}
         ]
 
         sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
@@ -231,25 +247,23 @@ class AttributePathAgent:
             print(f"[Warning] Unexpected attribute selected: {result}")
             return None
 
+
     def construct_background_text(self, asked_attributes):
         """简单列出当前已有的attributes名"""
         if not asked_attributes:
             return "(None)"
         return ", ".join(asked_attributes)
 
-
 import pandas as pd
 import csv
 from tqdm import tqdm
 
-
-def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns=10):
+def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, retriever):
     """
     读取输入CSV，每个query运行 attribute path agent，
     记录每个query对应的属性路径到output_csv。
     """
     # 读取数据
-
     categories = ["career", "education", "financial", "health", "life", "relationship", "social"]
     
     for eval_category in tqdm(categories):
@@ -286,33 +300,31 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns=10):
                 query = entry["query"]
 
                 # 初始化 agent
-                agent = AttributePathAgent(attribute_pool=attribute_pool, llm=llm)
+                agent = AttributePathAgent(attribute_pool=attribute_pool, llm = llm, retriever = retriever)
 
                 # 跑 agent，拿到 path
-                attribute_path = agent.run(query, max_turns=max_turns)
+                attribute_path = agent.run(query)
 
                 # 写入一行：query, path列表, path长度
                 writer.writerow([query, str(attribute_path), len(attribute_path)])
                 file.flush()
 
+if __name__ == "__main__":
+    # deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
+    # output_csv = "retriever_real_llama3-8b-instruct_results.csv"
 
-if __name__ == "__main__": 
-    deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
-    output_csv = "real_llama3-8b-instruct_results.csv"
-
-    # deployment = "Qwen/Qwen2.5-7B-Instruct"
-    # output_csv = "real_qwen25-7b-instruct_results.csv"
+    deployment = "Qwen/Qwen2.5-7B-Instruct"
+    output_csv = "retriever_real_qwen25-7b-instruct_results.csv"
 
     # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
-    # output_csv = "real_mistral-7b-instruct_results.csv"
+    # output_csv = "retriever_real_mistral-7b-instruct_results.csv"
 
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
-    # output_csv = "real_deepseek-7b_results.csv"
+    # output_csv = "retriever_real_deepseek-7b_results.csv"
 
     # deployment = "Qwen/QwQ-32B"
-    # output_csv = "real_qwq-32b_results.csv"
+    # output_csv = "retriever_real_qwq-32b_results.csv"
 
-    # Create a vLLM instance using your open source model.
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.
         llm = LLM(
@@ -325,7 +337,8 @@ if __name__ == "__main__":
     else:
         llm = LLM(model=deployment)
 
-    record_attribute_paths(
-        output_csv, get_scenario_attributes(), llm, max_turns=10
-    )
+    retriever = PathRetrieverSklearn("MCTS_path.csv")
+    record_attribute_paths(output_csv, get_scenario_attributes(), llm, 10, retriever)
     print("Attribute paths have been recorded in:", output_csv)
+
+

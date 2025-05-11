@@ -1,0 +1,26 @@
+User Query,Attribute Path,Path Length
+What direction should I go with my business?,"['Profession', 'Economic Status']",2
+What are some possible career paths for an extreme introvert with a degree in English and Communication?,['Profession'],1
+What should I do if I want to get my life back and start a career?,"['Profession', 'Age', 'Education Level']",3
+How should I approach the situation regarding my salary increase and potential promotion at my current company?,"['Economic Status', 'Profession']",2
+How do I best navigate the transition into software engineering?,"['Profession', 'Education Level']",2
+How do I decide on a main career path?,"['Profession', 'Economic Status']",2
+How do I decide if I should stay with my current company or look elsewhere/go back to school/etc.?,"['Profession', 'Economic Status', 'Emotional State']",3
+What should I do if I don't have a plan or vision for what career to pursue?,"['Profession', 'Economic Status', 'Education Level']",3
+Is a certificate good enough for surgery tech or should I dedicate to the AAS? Does anyone have experience going from stay at home mom to career driven?,"['Economic Status', 'Profession', 'Education Level']",3
+What certificates or what kind of education can I go for that will have a payoff to it?,"['Education Level', 'Economic Status', 'Profession']",3
+"Should I slog it out for 3 years to attempt to increase the chance of myself getting into my dream job, or should I opt for better work-life balance but risk not getting my dream job?","['Profession', 'Economic Status', 'Emotional State', 'Mental Health Status']",4
+What should I do career-wise if I have no idea what I want to do?,"['Profession', 'Economic Status']",2
+Should I quit my job in my field and passion to pursue something with higher pay and hopes of eventually returning to my field of passion?,"['Profession', 'Economic Status', 'Emotional State']",3
+Is a long commute worth the better lifestyle?,"['Profession', 'Economic Status', 'Emotional State']",3
+Are there any jobs that are the same as special needs support but that bring in more money?,"['Profession', 'Economic Status']",2
+What career paths (that wouldn't require another ten years in school) have good salary potential these days?,"['Profession', 'Economic Status']",2
+"Do I actually hate my job, or does everybody feel this way?","['Profession', 'Mental Health Status', 'Emotional State']",3
+"Would an internship be fruitful for me to try and acquire at this time, and would anyone even take me?","['Profession', 'Economic Status', 'Past Self-Harm History', 'Emotional State', 'Education Level']",5
+What should I study to become a functional junior developer in 1 year?,['Profession'],1
+"How can I help my wife find a full-time CT Tech or X-Ray Tech job at a medical clinic with normal, weekday hours and benefits?","['Profession', 'Economic Status']",2
+Are there any careers at the intersection of Creative Marketing and Data Science?,['Profession'],1
+"What career or life advice can you offer to help me find stability and possibly a new career, considering my interests in natural health, animals, and art?","['Profession', 'Economic Status', 'Emotional State', 'Health Status', 'Education Level']",5
+"Should I keep working full time while going to school part time despite worsening my depression, or take out personal loans and work less to focus on my education?","['Emotional State', 'Mental Health Status', 'Economic Status']",3
+"Should I keep working full time while going to school part time and risk worsening burnout and depression, or should I take out personal loans on top of my graduate school loans to focus on completing my program?","['Emotional State', 'Mental Health Status', 'Economic Status', 'Profession']",4
+Are there any courses I can take to give me further qualification in video editing (that aren’t degrees)?,"['Profession', 'Education Level']",2
