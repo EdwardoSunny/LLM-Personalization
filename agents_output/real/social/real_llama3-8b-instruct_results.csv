@@ -1,10 +1,10 @@
 User Query,Attribute Path,Path Length
 Any tips on what I can do to stop people from looking away from me while talking?,['Mental Health Status'],1
-How can I make friends in a new state when I'm exhausted from working 2 jobs?,"['Age', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Education Level']",6
+How can I make friends in a new state when I'm exhausted from working 2 jobs?,"['Age', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Education Level', 'Health Status']",7
 Does anyone have any tips that I could use to maintain better social skills?,"['Education Level', 'Profession', 'Mental Health Status']",3
 "Is there anything I can do to help catch on quicker, or to improve my common sense?",['Education Level'],1
-How do I overcome social anxiety of approaching my coursemates?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Economic Status']",6
-What should I choose: move to America for a new life or stay in Brazil to pursue a PhD and become a professor?,"['Education Level', 'Profession']",2
+How do I overcome social anxiety of approaching my coursemates?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status']",5
+What should I choose: move to America for a new life or stay in Brazil to pursue a PhD and become a professor?,"['Education Level', 'Profession', 'Economic Status']",3
 Why do I care all of a sudden about being a virgin and wanting a relationship?,[],0
 How can I find my natural voice and stop being self-conscious about it?,['Education Level'],1
 How can adopting a 'yes' mentality improve my life?,['Education Level'],1
@@ -17,20 +17,20 @@ How can I improve my social skills as an introvert?,['Education Level'],1
 How can I set myself free from all those negative thoughts about approaching women?,[],0
 How can I make new friends after moving back home to a town where I know no one?,['Education Level'],1
 What would be the right way for me to act so I'll learn again to attract people around me and just feel natural around them?,['Emotional State'],1
-"How can I overcome my fear of socializing and not freezing up, especially when playing baseball or speaking in class?","['Mental Health Status', 'Emotional State']",2
+"How can I overcome my fear of socializing and not freezing up, especially when playing baseball or speaking in class?","['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Age', 'Economic Status', 'Health Status']",7
 What are some suggestions or tips to become more social?,"['Education Level', 'Profession', 'Mental Health Status']",3
-How do I meet new people and make friends?,"['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",7
-How can I overcome my inability to build real friendships and feel more socially secure?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
+How do I meet new people and make friends?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+How can I overcome my inability to build real friendships and feel more socially secure?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender']",9
 How can I overcome my shyness and improve my social skills to meet people and approach girls?,['Education Level'],1
 Is there anything I can do to stop feeling intimidated by people easily?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
 "How should I behave on my date at the cinema, and what tips can you give me?",['Age'],1
 How do I handle this type of person?,[],0
 How can I improve my friendships with other men without letting my hangups get in the way?,['Mental Health Status'],1
 How can I make my social skills better for people wanting to spend time with me?,['Education Level'],1
-Any advice on getting 'me' back?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Marital Status', 'Age', 'Health Status', 'Gender', 'Economic Status']",9
-How should I talk to new people outside of niche communities?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Any advice on getting 'me' back?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender', 'Economic Status']",9
+How should I talk to new people outside of niche communities?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I enjoy going to night clubs?,[],0
-Does anyone have advice on how to handle being at school alone when I'm struggling with social anxiety and language barriers?,"['Education Level', 'Mental Health Status']",2
+Does anyone have advice on how to handle being at school alone when I'm struggling with social anxiety and language barriers?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
 How can I feel less overwhelmed as the new RA and make friends?,['Education Level'],1
 What should I do to stay mindful of the progress of relationships in my life?,['Emotional State'],1
 How do I catch up and improve my social maturity?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Economic Status']",6
@@ -41,12 +41,12 @@ What can I do to develop meaningful relationships and improve my social skills a
 "How can I cope with feeling awkward and unconfident around others, especially my crush, while going on a group trip abroad?",['Emotional State'],1
 "How can I be more normal in terms of conversation, relationships, music, movies, hobbies, drinking, sports consumption, food, gym, vehicle use, club behavior, politics, everyday habits, and general social interactions?","['Education Level', 'Profession', 'Mental Health Status']",3
 Anything I could do to get over this fear?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Health Status', 'Past Self-Harm History', 'Age', 'Economic Status']",8
-How does one introduce yourself to a new school when friend groups are already established?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How does one introduce yourself to a new school when friend groups are already established?,"['Education Level', 'Profession', 'Age', 'Mental Health Status']",4
 What do people my age talk about?,['Age'],1
-"Are there ways to better control, or just completely stop stuttering?","['Education Level', 'Profession']",2
+"Are there ways to better control, or just completely stop stuttering?","['Education Level', 'Profession', 'Age', 'Mental Health Status']",4
 "How can I come up with a strategy to meet new people and potentially get a girlfriend, considering my social and sensory challenges?","['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
 How can I be accepted by my coworkers and make genuine friends at work?,['Profession'],1
-Any tips for being less anxious and maybe even saying something to him?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Education Level']",7
+Any tips for being less anxious and maybe even saying something to him?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Education Level']",5
 Do you think I'm losing a big part of the awesome life studying can offer?,"['Education Level', 'Mental Health Status']",2
 How can I branch out and overcome my anxiety to make new friends after losing contact with my best friend?,['Emotional State'],1
 How can I quickly kickstart my social life when I'm a natural introvert with no social media presence?,"['Age', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",5
@@ -61,7 +61,7 @@ Is starting at a new school in another city a good option?,"['Education Level', 
 What steps can I take to not become so overwhelmed and enjoy myself when out with people?,['Emotional State'],1
 Why can't someone ever look at me longer than 2 seconds?,[],0
 How can I make new friends as a 20-year-old?,['Education Level'],1
-Any tips to making friends outside of work?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Any tips to making friends outside of work?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I improve my social life and build friendships after spending years focusing only on academics?,['Education Level'],1
 How can I improve my conversation skills and overcome my fear of asking out someone I like?,['Education Level'],1
 How can I be more relatable in the workplace and just in general?,['Profession'],1
@@ -73,9 +73,9 @@ How can I improve my self-confidence with girls?,['Education Level'],1
 What can I do to change the way people see me?,[],0
 How can I talk to girls when I'm scared to look at them?,[],0
 How can I go out and make friends or know what to do when hanging out with them?,['Education Level'],1
-Should I talk to my nurse in charge about my concerns of being misinterpreted? How can I beat these negative thoughts?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
-How can I make and retain friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Economic Status']",6
-"How can I make friends, both guys and girls?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Should I talk to my nurse in charge about my concerns of being misinterpreted? How can I beat these negative thoughts?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",5
+How can I make and retain friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
+"How can I make friends, both guys and girls?","['Education Level', 'Profession']",2
 What are some tips to be more confident and in a better mood?,['Emotional State'],1
 How can I improve myself overall and my life?,['Education Level'],1
 How can I become more social and meet new people?,['Education Level'],1
@@ -90,18 +90,18 @@ How can I overcome drug-induced psychosis and anxiety?,[],0
 How can I make lasting friendships at my new tech job and avoid feeling like an outsider?,['Profession'],1
 How can I overcome my anxiety about approaching girls in public places?,[],0
 "How should I approach this, and how do I get my confidence back?","['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
-How can I change to be less lonely and make friends?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status']",6
+How can I change to be less lonely and make friends?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
 How can I get rid of my bad temper?,"['Emotional State', 'Mental Health Status']",2
 Is it possible to function and to stay on top of the social loop without getting Snapchat?,[],0
-Why can't I get friends?,"['Emotional State', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",5
-How can I make close friends?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
+Why can't I get friends?,"['Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Economic Status', 'Marital Status']",6
+How can I make close friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
 How do I go about meeting girls organically when there are none in my research groups or classes?,[],0
 What tips do you have to force myself into social situations despite anxiety?,[],0
 How can I start going out with my friends and be more outgoing?,['Education Level'],1
 How can I improve my relationship with my brother despite our differences?,['Education Level'],1
 How do I stop being regarded as the weird/awkward/boring/nerdy girl at school?,[],0
 How do I make friends with people who don’t want to pursue a romantic or sexual relationship with me?,[],0
-"What should I do now that I went on a date with a girl I've liked for years, but she hasn't texted me back and is possibly still hooking up with my friend?","['Emotional State', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status']",5
+"What should I do now that I went on a date with a girl I've liked for years, but she hasn't texted me back and is possibly still hooking up with my friend?","['Emotional State', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Education Level']",6
 How can I stop feeling anxious about going to school and blushing in class?,"['Education Level', 'Mental Health Status']",2
 How can I regain self-belief and make new friends without repeating past mistakes?,['Emotional State'],1
 Is it a bad habit to convince myself that someone is out of my league to stay focused on schoolwork?,['Education Level'],1
@@ -124,22 +124,22 @@ What about me makes people not take me seriously in a group?,[],0
 "How should I proceed if I see her or cross paths at the workplace, and should I intentionally ignore her?",[],0
 "What is the etiquette for meeting people at concerts and shows, and how should I approach these situations if I'm going alone?",['Age'],1
 "What realistically can I do at this point? Or am I really just a victim of unfortunate circumstances that have left me fucked beyond any help? Should I continue with my plan to just give up, just focusing on passions and not worrying about finding someone, or is that going to only ensure my continued solitude and I need to keep trying?",[],0
-How can I make friends and connect with others at my art college when I feel shy and out of place?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I make friends and connect with others at my art college when I feel shy and out of place?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
 What am I supposed to do to meet new people and access social events like parties and meetups?,['Profession'],1
 Has anyone ever been in this spot or have experience a situation like this?,[],0
 How can I improve my conversational skills to engage in longer conversations and develop friendships and a potential relationship?,['Education Level'],1
-"What should I do to improve my motivation and communication skills, and how can I prepare for my maturity exam?","['Education Level', 'Profession']",2
-How can I make friends?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
+"What should I do to improve my motivation and communication skills, and how can I prepare for my maturity exam?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+How can I make friends?,"['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status']",8
 How can I cope with feeling alone on my birthday?,['Emotional State'],1
 Any tips on how to stop thinking this way?,[],0
-"What should I do after exchanging numbers with a girl from my class, considering I'm an introvert and have never been in this situation before?","['Age', 'Education Level', 'Profession', 'Emotional State', 'Mental Health Status', 'Economic Status']",6
+"What should I do after exchanging numbers with a girl from my class, considering I'm an introvert and have never been in this situation before?","['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 How can I improve my dating life and form meaningful relationships despite my challenges?,"['Education Level', 'Mental Health Status']",2
-How can I overcome my inability to socialize and talk to a girl I like despite being bullied and blackmailed by friends?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Marital Status']",5
+How can I overcome my inability to socialize and talk to a girl I like despite being bullied and blackmailed by friends?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level']",4
 How can I find or approach a girl I saw at a workshop who winked at me?,[],0
 How do you make friends at 18?,"['Age', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",5
 How can I meet new people and put myself out there after a breakup?,['Age'],1
 How do I overcome my extreme anxiety about social interaction and manage my nerves for the interview at Burger King?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
-How can I become more socially confident and courageous?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I become more socially confident and courageous?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
 How can I find true friends after turning 30?,"['Age', 'Profession', 'Education Level', 'Mental Health Status']",4
 How do you 'connect' with people and develop a friendship?,"['Education Level', 'Profession']",2
 How can I deal with intense anxiety that makes me sick every morning because of my job?,['Profession'],1
@@ -147,10 +147,10 @@ What should I do about my severe anxiety that makes it hard to go to work?,"['Me
 What resources or support can help me improve my social skills and imagination to better interact with my son?,['Education Level'],1
 Does never having been drunk at almost 21 make me weird?,['Age'],1
 How can I navigate classroom politics and group creation effectively?,['Education Level'],1
-How do you feel about dating today?,"['Emotional State', 'Gender', 'Marital Status', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Age', 'Health Status']",9
+How do you feel about dating today?,"['Emotional State', 'Gender', 'Profession', 'Education Level', 'Marital Status', 'Mental Health Status', 'Economic Status', 'Health Status', 'Age']",9
 "What books, blogs, or other resources have advice on how to just be a nice person?",[],0
-How can I make friends and overcome feeling socially isolated?,"['Education Level', 'Mental Health Status']",2
-How can I turn my life around?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+How can I make friends and overcome feeling socially isolated?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Marital Status', 'Economic Status']",6
+How can I turn my life around?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Marital Status']",6
 How can I improve my verbal communication to make better impressions during conversations?,['Education Level'],1
 How can I improve my social skills when talking to girls?,['Education Level'],1
 What are some ways I can make friends and not really spend money?,"['Education Level', 'Profession', 'Economic Status']",3
@@ -172,19 +172,19 @@ How do I stop viewing girls as sex objects?,[],0
 Why am I feeling happy about my crush getting a boyfriend after initially being upset?,['Emotional State'],1
 What should I do about these kind of situations in the future?,[],0
 What tips can you give for maintaining a friendship with someone who inspires me?,"['Education Level', 'Profession', 'Emotional State']",3
-Anything else I should be trying to speed up this process a little bit? Is it just going to take more time/practice? Or is this likely a permanent issue that I'm going to have to learn to live with?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Health Status', 'Economic Status', 'Marital Status', 'Age', 'Past Self-Harm History']",9
+Anything else I should be trying to speed up this process a little bit? Is it just going to take more time/practice? Or is this likely a permanent issue that I'm going to have to learn to live with?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Health Status', 'Economic Status', 'Marital Status', 'Age']",8
 How can I confidently approach a girl I want to be my girlfriend?,[],0
 Why would he blow me off online while still being active?,[],0
 Does anyone check out r/Mindfulness?,[],0
 How can I convince my friend's parents to let her go on a trip with me?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",5
 Anyone else struggling with a drop in social skills due to focusing more on career development?,['Profession'],1
 "What can I do to improve my social skills, especially when it comes to women and dating?","['Education Level', 'Profession', 'Mental Health Status']",3
-Is my difficulty in socializing and finding words due to spending too much time alone or could it be ADHD?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Is my difficulty in socializing and finding words due to spending too much time alone or could it be ADHD?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Age', 'Economic Status', 'Health Status']",7
 How can I build meaningful friendships and relationships despite my disability?,['Education Level'],1
-How do I become more easygoing and normal in social interactions?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",5
+How do I become more easygoing and normal in social interactions?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",6
 "Should I talk to her? Also, for what reasons should you NOT try anything?",[],0
-Does anyone have any suggestions for what I should do to improve my social skills and make friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Age']",7
-How can I overcome loneliness and build meaningful friendships?,"['Education Level', 'Mental Health Status']",2
+Does anyone have any suggestions for what I should do to improve my social skills and make friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
+How can I overcome loneliness and build meaningful friendships?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status', 'Health Status']",7
 How can I establish proper friendships and maintain conversations in college?,['Education Level'],1
 What do these girls think about me?,[],0
 How can I improve my social skills and make more friends?,['Education Level'],1
@@ -198,7 +198,7 @@ How can I manage my tendency to get bored and dislike people after spending too 
 "What are some specific things I can say to a girl in my friend group to let her know I'm not interested in her, without appearing heartless and losing friends?",['Profession'],1
 How do I become a part of the 'cool gang'? Where do I even start?,[],0
 How can I overcome the self-doubt and low self-esteem caused by my childhood emotional neglect?,['Emotional State'],1
-How do I make friends?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
+How do I make friends?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "Where are some good places to meet new friends and especially girls? Also, what is the best way to go about choosing the right people to try and befriend?",[],0
 How do I find friends while living in a remote area?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I manage my feelings of discomfort and boredom after spending too much time with people?,['Emotional State'],1
@@ -206,10 +206,10 @@ What should I say to my professor if I want to know if he's written any books?,[
 How can I stop being a clingy friend and avoid ruining my friendship?,['Emotional State'],1
 Does anyone judge a guy if he attempts to pee at a urinal but fails to?,[],0
 How can I feel more comfortable attending social events alone?,['Emotional State'],1
-Has anybody experienced feeling like an outsider or is it just me?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Marital Status', 'Age', 'Gender', 'Economic Status']",8
+Has anybody experienced feeling like an outsider or is it just me?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Marital Status', 'Economic Status']",6
 "Is there anything else I can do to have adult relationships, or should I just save my energy and quit trying?",[],0
 "How should I approach people and groups, and what's appropriate to say to develop social skills as an adult?",['Education Level'],1
-How can I build a genuine connection with people and stop feeling so alone?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status', 'Health Status', 'Age']",8
+How can I build a genuine connection with people and stop feeling so alone?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Marital Status', 'Economic Status', 'Health Status']",7
 How do I be a good friend and maintain friendships?,['Education Level'],1
 What should I do about my job that is affecting my mental health and happiness?,['Profession'],1
 What can I do to address my feelings about being a 23-year-old virgin with no relationship experience?,[],0
@@ -226,47 +226,47 @@ Are there other things I can work on and develop that could potentially help wit
 How can I stop driving people away and improve my social interactions?,['Emotional State'],1
 How do you make friends near your age?,"['Age', 'Education Level']",2
 How can I learn to deal with verbal confrontation?,['Education Level'],1
-How can I better manage the confrontations with my conservative parents regarding my cannabis use?,"['Age', 'Profession', 'Education Level', 'Mental Health Status']",4
+How can I better manage the confrontations with my conservative parents regarding my cannabis use?,"['Age', 'Profession', 'Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 "Am I doing something wrong in the way I approach my guy friends, and is there a better way to communicate my boundaries?","['Emotional State', 'Gender']",2
 How do I start making a living and make new friends?,['Profession'],1
-What can I do to improve this aspect?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
-Do you have any advice for dealing with a roommate who is sensitive to smells?,"['Mental Health Status', 'Emotional State', 'Economic Status', 'Profession', 'Marital Status', 'Health Status', 'Education Level', 'Age']",8
+What can I do to improve this aspect?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Marital Status']",6
+Do you have any advice for dealing with a roommate who is sensitive to smells?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Education Level', 'Age']",8
 How can I change my mindset to value what I think of myself more and what others think of me less?,['Emotional State'],1
 What can I do to keep a woman to stay around?,[],0
 How do I get over an inferiority complex? How does someone like me meet people in an organic way to build friendships? How do I make myself more active on social media even when my life is pretty boring? How do I change my body and my attitude so that when I'm 30 I can look back and be amazed at how much my life has changed?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Age', 'Profession', 'Economic Status']",6
-How do I make friends?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
+How do I make friends?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status']",8
 "Should I try to ask one of the girls I could maybe ask to prom, despite feeling anxious and not having classes with them?",['Emotional State'],1
 How can I start dating and overcome my fear of rejection?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status']",6
 How can I open up emotionally to someone I am dating and allow them to connect with me?,['Emotional State'],1
 What can I do to manage my desire to use alcohol as a way to ease social anxiety?,['Mental Health Status'],1
 How can I change my perspective to connect better with people and be less lonely?,['Emotional State'],1
-How can I get my motivation back and start talking to more people and going on dates?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession']",4
+How can I get my motivation back and start talking to more people and going on dates?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
 Is social media necessary for making friends as a university student?,['Education Level'],1
 "How can I move forward and make a life for myself if I have no idea what I want to be, or who I am even now?",[],0
 Why do friends randomly decide to hate you or cut you off without a discussion?,[],0
-What are some tips to become more extroverted?,"['Education Level', 'Profession', 'Mental Health Status']",3
-How can I find fulfillment when being a 'nice guy' isn't benefiting me as expected?,"['Education Level', 'Profession']",2
+What are some tips to become more extroverted?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Age', 'Economic Status']",6
+How can I find fulfillment when being a 'nice guy' isn't benefiting me as expected?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
 How can I feel more engaged when meeting new people?,['Education Level'],1
 Why do girls stop texting me?,[],0
 How can I improve my social skills and overcome social awkwardness?,['Education Level'],1
 How can I deal with my feelings for my friend who is now dating someone else?,['Emotional State'],1
 Should I be 'young' and engage in risky behaviors like my peers to avoid future regrets?,['Age'],1
 Why do I feel so alienated and different when it comes to dating/girls?,[],0
-How can I improve my social skills beyond interacting with friends on social media and text messages?,"['Education Level', 'Profession']",2
+How can I improve my social skills beyond interacting with friends on social media and text messages?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Economic Status']",6
 How can I improve my social skills and gain the courage to speak up and make friends?,['Education Level'],1
 How can I relate better to my classmates and make friends around my age group despite feeling disconnected?,"['Age', 'Education Level']",2
 "Other than occasional therapy, is there any solid advice?",[],0
 How can I make conversations more interesting and show a girl that I think she's cute?,[],0
-How can I make friends as an adult in a new town with limited social opportunities?,"['Education Level', 'Profession']",2
-How do I develop a personality?,"['Education Level', 'Profession']",2
+How can I make friends as an adult in a new town with limited social opportunities?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status']",6
+How do I develop a personality?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How do I become a more socially interesting and involved person? What can I do to bring more meaning to my at-home life than simply surfing the internet and doing homework?,['Education Level'],1
 How can I discipline myself better to achieve my goals and maintain a proper diet?,['Education Level'],1
 What changes can I make to improve my mental health and social life?,['Emotional State'],1
-Could you give me some advice for my first date?,"['Age', 'Education Level', 'Profession', 'Emotional State', 'Economic Status', 'Marital Status', 'Gender']",7
+Could you give me some advice for my first date?,"['Age', 'Education Level', 'Profession', 'Emotional State']",4
 How can I overcome my fear of reaching out and showing interest in others?,"['Emotional State', 'Mental Health Status']",2
 How can I overcome the feeling of being trapped by past social experiences?,['Mental Health Status'],1
 Does anybody have any advice on how to approach a situation like this? Or some tips to break the ice?,['Emotional State'],1
-How can I overcome loneliness and find proper friends while coping with stress from university and financial issues?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
+How can I overcome loneliness and find proper friends while coping with stress from university and financial issues?,"['Education Level', 'Mental Health Status']",2
 How can I handle starting university when I'm not good at socializing and worried about being alone?,"['Education Level', 'Mental Health Status']",2
 How can I make at least one good friend and improve my social skills?,"['Education Level', 'Profession', 'Mental Health Status']",3
 "What books can I read to improve my social skills, and how can I meet people and strike up conversations?",['Education Level'],1
@@ -276,14 +276,14 @@ Is there anyway I can change the way I socialize?,"['Emotional State', 'Educatio
 How can I develop friendships with women despite my social anxiety and past homeschooling experience?,"['Education Level', 'Mental Health Status']",2
 Where's a good place to start? Is this something that can actually be fixed or changed? Should I get used to always being alone?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status', 'Health Status']",7
 What can I do now to not feel so lonely and empty?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status']",6
-Should I just keep trying to work on myself so I'm more interesting?,"['Emotional State', 'Education Level', 'Mental Health Status']",3
+Should I just keep trying to work on myself so I'm more interesting?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status']",4
 Why is it that people won't include me in anything?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status', 'Education Level']",6
 "Would a speech therapist help with my social anxiety and trouble with enunciation, or is there some type of exercise I can do to help myself?",['Emotional State'],1
 What are people interested in seeing on Snapchat? Are people okay with things like 'wake up' selfies or stuff like that? What would be going too far?,[],0
 How can I stop isolating myself and socialize more in college?,['Education Level'],1
 How can I embrace discomfort to overcome my introversion?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status']",4
 "How do I get him to stop without violence, and do I just ignore it until it goes away?",[],0
-Why didn't my friends and coworkers show up to my party even after confirming they would come?,"['Emotional State', 'Profession', 'Economic Status', 'Mental Health Status', 'Marital Status']",5
+Why didn't my friends and coworkers show up to my party even after confirming they would come?,"['Emotional State', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Is there like a self-help group thing that a bunch of loser nobodies can meet up and talk about their shit?,[],0
 How can I deal with my fear of going to parties and being rejected?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
 How can I stop procrastinating and motivate myself to complete tasks on time?,['Education Level'],1
@@ -294,17 +294,17 @@ How do I get over my mentality that stops me from pursuing romantic or sexual re
 How do I tell my friend to stop singing and suggest he write and sell songs instead?,['Profession'],1
 How can I improve my social skills and make friends?,['Education Level'],1
 How can I learn to deal with negative comments better?,['Emotional State'],1
-Is the lack of genuine connection in my life the result of poor social skills or something much deeper?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Marital Status', 'Economic Status']",6
-How do unemployed adults make new friends without having a job?,"['Education Level', 'Economic Status', 'Profession', 'Marital Status', 'Age', 'Emotional State', 'Mental Health Status']",7
+Is the lack of genuine connection in my life the result of poor social skills or something much deeper?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Marital Status']",6
+How do unemployed adults make new friends without having a job?,"['Education Level', 'Economic Status', 'Profession', 'Marital Status', 'Age', 'Mental Health Status']",6
 How can I sustain a normal conversation with a girl?,[],0
 How do you meet new people your own age in an isolated area?,"['Age', 'Profession']",2
-Is there any hope for me?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Past Self-Harm History', 'Profession']",5
+Is there any hope for me?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Past Self-Harm History', 'Profession', 'Economic Status']",6
 How can I stop people thinking I'm weird?,[],0
 Why am I still being ostracized and ignored despite making improvements in my social skills and achievements?,[],0
 Is there any way to stop these thoughts from taking over my present life?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Health Status', 'Past Self-Harm History']",6
 How can I be more giving in my relationships and less selfish with my time and energy?,['Emotional State'],1
 How do I stop turning everything into a joke and express my true feelings?,['Emotional State'],1
-How can I navigate my friendship with this girl given our schedules and the communication challenges I face?,"['Age', 'Education Level', 'Profession', 'Emotional State', 'Mental Health Status']",5
+How can I navigate my friendship with this girl given our schedules and the communication challenges I face?,"['Age', 'Education Level', 'Profession', 'Emotional State', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Gender', 'Health Status', 'Past Self-Harm History']",10
 "Why am I the target of harassment from my roommates, and how can I reverse or avoid this in the future?",[],0
 How can I improve my behavior to stop being an outsider in groups and build friendship and romantic bonds with people?,"['Education Level', 'Mental Health Status']",2
 Why do I feel empty after meeting someone I'm interested in?,['Emotional State'],1
@@ -315,15 +315,15 @@ How can I overcome my lack of confidence and break free from acting like a child
 "How can I be a fun, loving, amazing person to be with?",['Emotional State'],1
 How can I retain a good relationship with a female that progresses beyond simple office talk?,[],0
 Why don't I have any friends here despite my efforts?,"['Education Level', 'Profession']",2
-How can I become a more likable person and make friends?,"['Education Level', 'Profession', 'Emotional State', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Age']",7
-Do I have a good plan for being more socially active in college? Is there anything else I should do to increase my odds of social success this time? Is there anything I'm doing that's a bad idea and I should drop?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Economic Status', 'Health Status', 'Age']",8
+How can I become a more likable person and make friends?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Do I have a good plan for being more socially active in college? Is there anything else I should do to increase my odds of social success this time? Is there anything I'm doing that's a bad idea and I should drop?,"['Education Level', 'Profession', 'Mental Health Status']",3
 What do you do to keep your emotions from ruling your life?,[],0
 Why am I so lonely?,[],0
-How can I ensure that this new chapter in my life is a good one?,"['Education Level', 'Emotional State', 'Profession']",3
+How can I ensure that this new chapter in my life is a good one?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status']",5
 What am I doing wrong in my social interactions that leads me to have suicidal thoughts?,[],0
 How do I overcome my awkwardness when asking women out?,[],0
-What can I do to improve my social skills faster?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
-What should I do about my fluency disorder affecting my ability to communicate?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
+What can I do to improve my social skills faster?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
+What should I do about my fluency disorder affecting my ability to communicate?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Health Status', 'Age']",6
 Am I really that incomprehensible?,[],0
 "Can anyone give me some tips on how to handle certain social situations like responding to jokes, opening up to others, or starting conversations without coming off as creepy?",['Education Level'],1
 "Why do I feel ignored and dismissed in conversations with this group of people, and is it because of my appearance?",[],0
@@ -332,14 +332,14 @@ Any possible tips for not talking too much out of fear of awkward silence?,[],0
 Am I still wrong? Do I not have a right to be upset by these things? Am I being racist?,[],0
 Why do I no longer receive attention from women at work after having many crushes on me before?,[],0
 "Am I doing enough already just by listening, or should I do more to help my colleague with anxiety and depression?",['Profession'],1
-Any advice for a non-social 22m trying to be more social?,[],0
+Any advice for a non-social 22m trying to be more social?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I improve my social skills and build confidence?,['Education Level'],1
 How can I deal with the discomfort of receiving attention from women after my weight loss?,[],0
 "How can I move forward and not feel like a burden while dealing with my autism, ADHD, GAD, and depression?",['Mental Health Status'],1
 "How do I open up to new people, get more friends of the opposite sex and maybe even find a relationship?",[],0
 How can I get better social skills and improve my social life?,['Education Level'],1
 What am I doing wrong that people never wait and listen to what I say?,[],0
-How can I overcome my low self-esteem and start dating despite my past experiences?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Marital Status', 'Past Self-Harm History', 'Economic Status']",7
+How can I overcome my low self-esteem and start dating despite my past experiences?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Marital Status']",5
 What are some tips and advice to minimize symptoms of social anxiety?,['Education Level'],1
 How do I stop thinking about her all the time and drop these feelings?,[],0
 How can I improve my social skills when I missed out on learning them during my early years?,['Education Level'],1
@@ -350,11 +350,11 @@ Any ideas to overcome being perceived as quiet in a workplace setting?,"['Educat
 What is my best option? Should I leave everything behind and go back to college and make some friends/meaningful relationships or stay here and be happy with my job for 2/3 of the day and basically feel miserable for the last 1/3 of the day until I'm completely fed up with it?,"['Education Level', 'Profession']",2
 How can I make new friends in the Sarasota area?,['Profession'],1
 "How can I get better at socialising fast, or at all?","['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
-What are some methods or drills that can help me stop overthinking my body and what others think of me at every single moment?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
-How can learning martial arts help me overcome anxiety and depression caused by past bullying and humiliation?,[],0
-"How can I improve my social skills with friends, strangers, and especially girls?","['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Gender', 'Marital Status']",8
+What are some methods or drills that can help me stop overthinking my body and what others think of me at every single moment?,"['Emotional State', 'Mental Health Status', 'Education Level']",3
+How can learning martial arts help me overcome anxiety and depression caused by past bullying and humiliation?,['Mental Health Status'],1
+"How can I improve my social skills with friends, strangers, and especially girls?","['Education Level', 'Profession', 'Age', 'Mental Health Status']",4
 How do you get over regrets?,[],0
-How can I start a meaningful romantic relationship?,"['Education Level', 'Profession', 'Economic Status', 'Marital Status']",4
+How can I start a meaningful romantic relationship?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I tell if I am attractive or not?,[],0
 How do I fit in? Are there other people who feel this way? Is this just what adult life is and I need to just fake it till I make it?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status']",6
 Any tips for forming friendships at my age whilst most are still in school as I graduated a year early?,['Age'],1
@@ -362,12 +362,12 @@ Any tips for forming friendships at my age whilst most are still in school as I 
 How am I supposed to keep or get someone's interest when I have nothing to talk about?,['Education Level'],1
 What are some ways to counteract the fear of abandonment and rejection?,[],0
 How can I become more socially confident and form relationships in college?,['Education Level'],1
-How do I make friends and where do people even make friends?,"['Profession', 'Education Level', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status']",7
+How do I make friends and where do people even make friends?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I make and keep real friends?,"['Education Level', 'Profession', 'Mental Health Status']",3
 "Can you please share your own experiences with dealing with gym anxiety and some practical ways that can help me get out of this anxious cycle? Some coping skills, useful mindset?","['Profession', 'Education Level']",2
 "Does anyone have any tips for finding things to do in my area, or just trying to be more social in general?","['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
 "If I find myself starting to make a friend, should I tell them about my alexithymia? When? Is it possible that someone would still want to be friends with me even if they know I don't care emotionally about them or our friendship together?","['Emotional State', 'Education Level', 'Mental Health Status', 'Profession']",4
-How can I overcome my low self-esteem and improve my ability to interact with people?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession']",4
+How can I overcome my low self-esteem and improve my ability to interact with people?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",5
 How can I make the most of reconnecting with an old high school crush after years of self-improvement?,['Education Level'],1
 Does anyone else have a similar situation or dealt with a similar situation?,"['Profession', 'Education Level']",2
 What can I do to overcome my social anxiety and build social skills?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status']",7
@@ -381,8 +381,8 @@ How can I befriend people I meet despite my shyness and insecurities?,"['Educati
 What can I do to start a meaningful conversation?,['Education Level'],1
 How can I make close friends in my current situation?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",5
 What is the etiquette for meeting people at concerts or shows?,['Profession'],1
-What can I do to build meaningful friendships and connections at 25?,"['Education Level', 'Profession']",2
-Any ideas of how I can combat this self doubt?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+What can I do to build meaningful friendships and connections at 25?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Any ideas of how I can combat this self doubt?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender']",9
 What can I do to improve my social skills and be able to make friends and find a girlfriend?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I meet new people at 24-25 years old?,"['Age', 'Profession']",2
 How can I avoid looking at people's mouths when making eye contact?,['Education Level'],1
@@ -390,21 +390,21 @@ Any tips for getting out of this mindset?,"['Emotional State', 'Mental Health St
 Any ideas how I can go about meeting new people in a big city?,['Profession'],1
 Is it normal to feel completely lost and like everything is falling apart in my mid-20s?,"['Age', 'Emotional State']",2
 Is it normal not to have a best friend?,"['Education Level', 'Mental Health Status']",2
-How do I overcome my anxiety and become more confident?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
+How do I overcome my anxiety and become more confident?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Marital Status', 'Health Status']",7
 How can I get out of the mindset of being bullied and overcome my fear of encountering people from high school in public?,['Mental Health Status'],1
 What advice can you give for feeling like nobody likes me and struggling to talk to someone I like?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Marital Status', 'Economic Status']",6
 How can I overcome my feelings of loneliness and isolation in a new country?,"['Education Level', 'Mental Health Status']",2
-How can I become more interesting and learn to talk to people to save my relationship?,"['Profession', 'Mental Health Status', 'Emotional State', 'Education Level', 'Economic Status', 'Marital Status']",6
-How can I form meaningful relationships with friends or significant others?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Gender']",7
+How can I become more interesting and learn to talk to people to save my relationship?,"['Profession', 'Mental Health Status']",2
+How can I form meaningful relationships with friends or significant others?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Marital Status', 'Economic Status']",6
 How can I overcome my feelings of inadequacy due to my height and improve my dating life?,[],0
 How should I get closer to her?,[],0
-How can I overcome my social anxiety and make friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
+How can I overcome my social anxiety and make friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status']",7
 How can I improve my social skills and behavior to avoid turning people away?,['Education Level'],1
 Should I try to limit my work schedule to help my social life?,['Profession'],1
-How can I stop feeling lonely and improve my chances of finding love?,"['Marital Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
+How can I stop feeling lonely and improve my chances of finding love?,"['Marital Status', 'Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",6
 How can I improve my ability to engage in conversations with attractive women and overcome my anxiety?,[],0
 Do you have any tips on how to express my feelings better to other people?,['Emotional State'],1
-What would you suggest me to do to change the things the way they are to get more friends and relationships and be more connected with other people?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
+What would you suggest me to do to change the things the way they are to get more friends and relationships and be more connected with other people?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I retrain my brain to be kinder to myself after social events?,['Emotional State'],1
 How can I initiate friendships when people seem more friendly towards me lately?,['Education Level'],1
 How can I express my discomfort about birthday celebrations to others?,['Age'],1
@@ -413,10 +413,10 @@ Do you have any advice on whether it would be weird to ask a guy I haven't talke
 How can I be less awkward or come off less standoffish?,['Education Level'],1
 How can I improve my self-esteem and stop hating myself?,[],0
 How can I get over her and start approaching other girls?,[],0
-How can I gain confidence?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status']",4
+How can I gain confidence?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
 Why am I unable to get a girlfriend despite my efforts?,[],0
 Does anyone else just feel really weak or self-conscious when around athletes or people with better bodies?,[],0
-What should I do? Are the problems with me? With them? I need concrete advice on how to manage this situation.,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",5
+What should I do? Are the problems with me? With them? I need concrete advice on how to manage this situation.,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status', 'Health Status']",6
 Any idea or advice on what I should do about attending the small house party?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
 What should I do when I find myself not wanting to be social around others?,[],0
 What are some tips on showing feelings to create stronger relationships?,['Emotional State'],1
@@ -425,11 +425,11 @@ What should I do to manage my anxiety about attending a show alone for the first
 How do I learn basic social skills at age 31?,['Education Level'],1
 How can I be myself and get along with coworkers who are a different age?,['Age'],1
 Why do people seem to instantly dislike me or come to dislike me after meeting me a few times?,[],0
-How can I improve my friendships so that my friends reach out to me more often?,"['Education Level', 'Emotional State']",2
+How can I improve my friendships so that my friends reach out to me more often?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status']",5
 Is it wrong to not want to talk to him?,[],0
 Is this something I can fix with meds or have I officially just gone mad?,[],0
 What are the best ways to invite classmates to become friends?,['Education Level'],1
-Is there any way I can try to reverse this and try to regain my confidence in talking to people and regain my social skills in general?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession']",4
+Is there any way I can try to reverse this and try to regain my confidence in talking to people and regain my social skills in general?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
 How can I effectively handle the roleplay scenarios in a customer support interview when I have limited information?,['Profession'],1
 Am I being too sensitive about my friendship with Jade?,"['Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Health Status', 'Age', 'Gender']",9
 What are good ways to build self esteem?,"['Education Level', 'Mental Health Status']",2
@@ -437,12 +437,12 @@ What are good ways to build self esteem?,"['Education Level', 'Mental Health Sta
 How can I practice my social skills while going out alone without feeling anxious or awkward?,['Education Level'],1
 How can I be a better conversationalist and a more interesting human being overall?,['Education Level'],1
 "Is there any way I can let her know that she's hurting us and herself, without making her feel like she should just shut up and not talk about her problems?",['Emotional State'],1
-How can I expand my social circle and meet new people without feeling guilty about neglecting my existing friends and family commitments?,"['Education Level', 'Profession']",2
+How can I expand my social circle and meet new people without feeling guilty about neglecting my existing friends and family commitments?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I be less clingy and anxious when talking to girls?,[],0
 What indicators would a member of the female gender give if she were interested in something beyond platonic friendship?,[],0
 Is it too late to start trying to be social at work after being silent for the past 3 months?,['Profession'],1
 "How can I help myself get out of my head when speaking to people, and just say what I want and need to say?",['Emotional State'],1
-How can I make and maintain friendships as an adult with social interaction challenges?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",4
+How can I make and maintain friendships as an adult with social interaction challenges?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status']",6
 How do I reject someone's advances in a work setting and is my behavior inappropriate in these situations?,[],0
 How do you actually talk to people when you're feeling anxious?,[],0
 What should I have done or do in the future when something like this happens again?,[],0
@@ -451,52 +451,52 @@ How do I stop fixating on the fact I’ve no experience with girls and being afr
 How can I get a girlfriend when I don't see any romantic opportunities?,[],0
 How do I command respect from people who are better than me and not be walked on by my long-distance girlfriend who barely talks to me but still takes my money?,[],0
 Has anyone experienced something similar? Does anyone have any advice on why people that get to know me don't like me?,[],0
-How can I start building new social connections in the Charleston area as a homeschooled senior who is struggling with isolation?,"['Education Level', 'Profession']",2
+How can I start building new social connections in the Charleston area as a homeschooled senior who is struggling with isolation?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I stop coming off as intimidating to others?,['Profession'],1
 How can I overcome my fear of talking to people and improve my communication skills?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",5
 How can I have more social interactions?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I stop being a jerk and put my past actions to rest?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Marital Status', 'Economic Status']",6
 How can I make new friends in a college setting despite my anxiety and Aspergers?,"['Education Level', 'Mental Health Status']",2
 How do I talk to a girl I never talked to?,[],0
-Is there any way or exercise to overcome this?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Health Status', 'Past Self-Harm History', 'Age']",8
+Is there any way or exercise to overcome this?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Health Status']",6
 How should I deal with my male friend who makes hurtful jokes about my body?,[],0
 What can I do to feel like I belong in my social group at university?,"['Education Level', 'Mental Health Status']",2
 Should I get on anti-anxiety meds?,[],0
 How can I text and connect with other young guys and not feel like I'm annoying them?,[],0
 Why do I always get attracted to someone who will never reciprocate my feelings?,[],0
-How can I make friends when I'm struggling with social anxiety and past negative experiences?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+How can I make friends when I'm struggling with social anxiety and past negative experiences?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Past Self-Harm History', 'Profession', 'Economic Status', 'Marital Status']",7
 How can I temporarily cope with my social anxiety to pass my classes and graduate college?,['Education Level'],1
 How can I manage this situation with my job where I feel stressed and forced into a position I don't want?,['Profession'],1
 Should I speak to my friends about being disappointed with their reaction to my panic attack?,['Emotional State'],1
-How can I cope with constantly being left out and feeling wrongly judged?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Marital Status', 'Economic Status', 'Health Status', 'Age', 'Gender']",9
-How can I become more accepted and involved in my social group?,"['Education Level', 'Profession']",2
+How can I cope with constantly being left out and feeling wrongly judged?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status', 'Health Status']",7
+How can I become more accepted and involved in my social group?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I practically go out more and change my mindset to feel less lonely?,['Emotional State'],1
 How can I manage my anxiety when talking to people?,['Mental Health Status'],1
 What can I do to express emotions more effectively in my speech and facial expressions?,['Emotional State'],1
-Would therapy really help?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Education Level']",5
+Would therapy really help?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Economic Status', 'Health Status', 'Past Self-Harm History']",7
 "How can I stop this behavior, or manage my anxiety/guilt response over not being able to prevent all bad things that might happen to people I love?",['Mental Health Status'],1
-What can I do about feeling intimidated by other guys my age and being so lonely?,"['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
+What can I do about feeling intimidated by other guys my age and being so lonely?,"['Age', 'Education Level', 'Mental Health Status']",3
 How can I make friends in my first year at university when I don't really have the motivation and feel content being alone?,"['Education Level', 'Mental Health Status']",2
 How can I manage my anxiety for my upcoming date?,['Emotional State'],1
 "As a single guy, how do you even approach a girl if she’s with 3 of her friends?",[],0
-Does it sound like I have a chance with the guy I like at work?,"['Profession', 'Gender', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Age', 'Health Status']",9
+Does it sound like I have a chance with the guy I like at work?,"['Profession', 'Gender', 'Education Level', 'Economic Status', 'Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Health Status', 'Past Self-Harm History']",10
 "How do I get new friends when I'm broke and socially anxious? And if that's not possible, how do I work through these feelings of being alone and wanting new connections?",['Economic Status'],1
 Any advice on why she hasn't accepted my Snapchat request and if I should be concerned about making her uncomfortable?,[],0
 Am I doing something wrong in approaching and maintaining conversations at social events?,['Profession'],1
 "Should I start going out now and looking for a girlfriend, or wait until I'm 25?",['Age'],1
 How can I become more confident and increase my social skills?,['Education Level'],1
-Am I doomed to settle with someone I hate out of fear of loneliness?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Profession', 'Health Status']",6
+Am I doomed to settle with someone I hate out of fear of loneliness?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Profession', 'Health Status', 'Education Level']",7
 How can I be a fun person to be around and maintain my new social circle?,['Profession'],1
 How can I make new friends while feeling incompatible with my current group?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I improve my social skills after isolating myself due to depression?,['Education Level'],1
-"How can I have a healthy balance between self-improvement and making meaningful friendships, and am I socializing with the wrong people?","['Profession', 'Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
+"How can I have a healthy balance between self-improvement and making meaningful friendships, and am I socializing with the wrong people?","['Profession', 'Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status']",7
 How can I better understand and navigate my social interactions given my Asperger's?,['Education Level'],1
 Why have I never had any relationship experience despite trying to engage with women through social settings and online dating?,[],0
 "Should I ask this girl if I can sleep at her house after the concert, or would that be too intrusive?",[],0
-How can I make new friends outside my class?,"['Education Level', 'Profession', 'Age']",3
+How can I make new friends outside my class?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Do you have tips on how I could go about making 'work' friends into 'real' friends?,['Profession'],1
 How can I stop feeling annoying and improve my relationship with my husband?,"['Marital Status', 'Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",6
-How do I approach a guy I have a crush on when we have never talked?,"['Age', 'Education Level', 'Profession', 'Emotional State', 'Mental Health Status', 'Economic Status']",6
+How do I approach a guy I have a crush on when we have never talked?,"['Age', 'Education Level', 'Profession', 'Emotional State', 'Mental Health Status']",5
 Does anyone have any thoughts or advice on how I can be more sociable with my coworkers?,['Profession'],1
 How can I normally talk to the 17-year old intern when I have changed my working habits?,['Age'],1
 How can I stop obsessing over relationships?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Economic Status']",5
@@ -509,7 +509,7 @@ What can I do to find motivation and reasons to keep going when I'm scared to ma
 How can I deal with my anxiety about talking about myself?,['Emotional State'],1
 How can I handle the anxiety and panic after accidentally giving bad advice to a friend about a work meeting?,['Mental Health Status'],1
 How can I overcome my social anxiety to make friends and talk to girls?,"['Education Level', 'Profession']",2
-"What is the point of living when my mental health is hindering my ability to live a normal, happy, and healthy life?","['Mental Health Status', 'Emotional State', 'Education Level', 'Past Self-Harm History']",4
+"What is the point of living when my mental health is hindering my ability to live a normal, happy, and healthy life?","['Mental Health Status', 'Emotional State']",2
 "Are paid public speaking classes any good for overcoming my issues with public speaking, or is it too much too soon?",['Profession'],1
 "How do I stop caring about how my body looks, or lose weight?",[],0
 How can I determine if I am socially anxious or just shy?,"['Emotional State', 'Mental Health Status']",2
@@ -517,22 +517,22 @@ What would be the right way for me to act so I'll learn again to attract people 
 How can I overcome my mental health issues and improve my self-esteem to start dating?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
 How can I manage my anxiety about feeling like I smell bad despite reassurance from others?,['Mental Health Status'],1
 How can I overcome my anxiety about getting a haircut and shave?,"['Emotional State', 'Mental Health Status']",2
-What can I do to manage my severe social anxiety and learn to live independently?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",5
-What should I do about my nervousness around my girlfriend and whether I like her or not?,"['Emotional State', 'Mental Health Status', 'Profession', 'Marital Status', 'Education Level', 'Economic Status']",6
-"Has anyone suffered from these symptoms as well? And if so, what can I do to improve my confidence or stop these symptoms from happening?","['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Health Status']",5
-"How can I cope with feeling overwhelmed by anxiety, family, social, financial, and academic issues?","['Education Level', 'Mental Health Status', 'Emotional State']",3
+What can I do to manage my severe social anxiety and learn to live independently?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",6
+What should I do about my nervousness around my girlfriend and whether I like her or not?,"['Emotional State', 'Mental Health Status', 'Profession', 'Marital Status', 'Education Level']",5
+"Has anyone suffered from these symptoms as well? And if so, what can I do to improve my confidence or stop these symptoms from happening?","['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Health Status', 'Economic Status']",6
+"How can I cope with feeling overwhelmed by anxiety, family, social, financial, and academic issues?","['Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status']",4
 How can I get some encouragement to keep going with my new job?,['Emotional State'],1
 How can I manage my anxiety and nervousness about being judged as wealthy at work?,['Economic Status'],1
 Is it possible to deal with severe social anxiety on your own or is seeking professional help the best way to go?,['Emotional State'],1
-How do you cope with your anxiety?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Economic Status']",5
+How do you cope with your anxiety?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Economic Status', 'Health Status']",6
 How can I cope with returning to university feeling unprepared and anxious?,['Education Level'],1
 "Can drug and weed use cause social anxiety and depression, and if I stop, will these illnesses gradually disappear?","['Profession', 'Education Level']",2
 How can I improve my socializing skills at my new job to avoid losing it?,['Profession'],1
 What can I do to manage my anxiety about being perceived as rich?,['Economic Status'],1
-How can I cope with my anxiety about going to school?,"['Education Level', 'Mental Health Status']",2
+How can I cope with my anxiety about going to school?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Age', 'Economic Status', 'Health Status']",7
 How can I overcome my fear of seeing people I know at the gym so I can work out?,['Age'],1
 What can I do to manage my anxiety about being judged as rich?,['Economic Status'],1
-What can I do to manage my anxiety and nervousness about talking about myself at work?,[],0
+What can I do to manage my anxiety and nervousness about talking about myself at work?,['Emotional State'],1
 What can I do to handle my nervousness and improve my performance during job interviews?,['Emotional State'],1
 Am I just genetically inferior?,[],0
 "How can I overcome my anxiety about talking about myself, especially at work?","['Emotional State', 'Profession']",2
@@ -542,10 +542,10 @@ How can I find a new job that doesn't involve customer service while managing my
 How can I overcome my anxiety about interacting with new people?,['Mental Health Status'],1
 How do you handle first dates?,[],0
 How can I handle my nervousness and stuttering when talking to people?,['Emotional State'],1
-How to conquer dating anxiety?,"['Gender', 'Education Level', 'Marital Status', 'Emotional State', 'Economic Status', 'Mental Health Status', 'Profession']",7
+How to conquer dating anxiety?,"['Gender', 'Education Level', 'Marital Status', 'Emotional State', 'Economic Status', 'Mental Health Status', 'Profession', 'Health Status']",8
 "Where do I fall within the black community, and how do I cope with these feelings of exclusion and low self-worth?",[],0
-"Does anyone have any advice for dealing with social anxiety, particularly when interacting with the opposite sex?","['Education Level', 'Gender', 'Profession', 'Mental Health Status', 'Emotional State', 'Age', 'Marital Status', 'Economic Status']",8
-Where do I go from here?,"['Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Marital Status', 'Health Status']",7
+"Does anyone have any advice for dealing with social anxiety, particularly when interacting with the opposite sex?","['Education Level', 'Gender', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
+Where do I go from here?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
 What can I do to handle my anxiety about talking about myself when I'm at work or traveling?,['Mental Health Status'],1
 "Do you work? If yes, what kind of job do you have?",['Profession'],1
 Could someone give me a response or share similar experiences that have been resolved?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Health Status', 'Economic Status']",6
@@ -558,7 +558,7 @@ Has anyone who's been in similar situations advise any tips for how to combat th
 "Can children have anxiety or depression, and how can we detect and address it?","['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 How can I ensure I have full control over my SA while I transition smoothly into adulthood?,[],0
 Has anyone ever experienced this or similar symptoms and can provide advice?,['Age'],1
-How can I overcome my fear of social interactions and loneliness?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Marital Status', 'Economic Status']",6
+How can I overcome my fear of social interactions and loneliness?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Marital Status', 'Economic Status', 'Health Status']",7
 How can I improve my self-esteem and communication skills to connect better at work?,['Profession'],1
 How can I deal with my suicidal thoughts caused by social anxiety around girls?,[],0
 Does anybody have any recommendations on how I can solve my anxiety in social relationships?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
@@ -567,48 +567,48 @@ How can I stop caring about what other people think of me?,"['Emotional State', 
 How do I get myself going and face my fears of making mistakes while starting a new job?,['Emotional State'],1
 Does anyone have tips on how to deal with social anxiety and an eating disorder while managing school stress?,"['Education Level', 'Mental Health Status']",2
 How do I stop 'mind black-out' when talking to people?,[],0
-Any tips for dealing with social anxiety in class?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Age']",5
-How can I deal with my fear of people and panic attacks in public?,"['Mental Health Status', 'Emotional State']",2
+Any tips for dealing with social anxiety in class?,"['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
+How can I deal with my fear of people and panic attacks in public?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Health Status', 'Past Self-Harm History']",6
 How can I overcome my anxiety about interacting with people I don't know well?,"['Emotional State', 'Mental Health Status']",2
 How can I get a job if I'm socially anxious?,['Profession'],1
 How can I improve my social skills quickly for giving presentations during my internship?,['Profession'],1
 How do I get people to Snapchat me?,"['Profession', 'Education Level', 'Age', 'Economic Status', 'Mental Health Status']",5
 What is the connection between realistic video game addiction and anxiety?,['Mental Health Status'],1
-How can I make a resume when I have no job experience?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+How can I make a resume when I have no job experience?,"['Education Level', 'Profession', 'Economic Status']",3
 Do I have social anxiety?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
 Does anyone else feel forgettable? Does anyone else feel literal exhaustion/headaches when in social situations for too long?,[],0
 Is there anyone who may know how I can help my dad overcome his social anxiety?,['Profession'],1
 What should I do to improve my life and become more social?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I overcome my social anxiety to successfully interview and secure a job in accounting?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
-How can I handle the job interview and overcome my anxiety about speaking to people and answering questions?,"['Emotional State', 'Education Level', 'Profession']",3
+How can I handle the job interview and overcome my anxiety about speaking to people and answering questions?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
 What can I do to change my life and get out of this situation?,[],0
-How do I curtail this social anxiety?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+How do I curtail this social anxiety?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Marital Status']",6
 Should I tell her that I want to speak with her?,['Gender'],1
 What do I do to behave normally around pretty girls?,[],0
 "Is it possible to get disability or SSI or whatever if you have social anxiety? Also if I did get it, is there a possibility it could be taken away?",[],0
 Any tips with being able to invite a girl to my party despite my anxiety?,[],0
 How can I improve my communication skills and manage my anxiety to have better relationships?,['Emotional State'],1
 How can I cope with the anger and frustration towards my father who has been verbally abusive and manipulative?,['Mental Health Status'],1
-How can I overcome my social anxiety to make new friends and establish deep connections?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
-How can I solve my stuttering problems?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I overcome my social anxiety to make new friends and establish deep connections?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status', 'Health Status']",7
+How can I solve my stuttering problems?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Age', 'Economic Status', 'Health Status']",7
 Do I have social anxiety?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
 How can I handle my inconsiderate roommate who vapes and smokes weed in the apartment?,[],0
 How can I manage my social anxiety to prevent it from affecting my work performance?,['Emotional State'],1
 Any advice on dealing with anxiety for a presentation?,['Emotional State'],1
 How should I proceed from now if I see her or cross paths?,[],0
 What type of mental health professional should I look for?,"['Education Level', 'Mental Health Status']",2
-"Does anyone have any tips for how to navigate this? Anything that can help me get through this and, if I get another interview, work through it successfully?","['Emotional State', 'Profession', 'Mental Health Status', 'Education Level', 'Economic Status']",5
+"Does anyone have any tips for how to navigate this? Anything that can help me get through this and, if I get another interview, work through it successfully?","['Emotional State', 'Profession', 'Mental Health Status', 'Education Level', 'Economic Status', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Age', 'Gender']",10
 What can I do to overcome my fear of working and improve my life situation?,"['Profession', 'Mental Health Status']",2
-How can I deal with anxiety about meeting a girl at school after a weird experience?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Gender', 'Age', 'Economic Status']",7
-Am I at a dead end?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
+How can I deal with anxiety about meeting a girl at school after a weird experience?,"['Emotional State', 'Education Level', 'Gender', 'Profession', 'Mental Health Status', 'Health Status', 'Age']",7
+Am I at a dead end?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",5
 What shall I do to resolve feelings of isolation and form meaningful social connections at work?,['Profession'],1
-How can I make this living situation better while dealing with anxiety and discomfort around strangers?,"['Education Level', 'Mental Health Status']",2
+How can I make this living situation better while dealing with anxiety and discomfort around strangers?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
 How is it that some people mistreat others and still find someone to love them?,[],0
 What should I say to my professor about my social anxiety preventing me from joining a group for a key class project?,['Emotional State'],1
-How can I overcome my social anxiety to find a job and become more independent?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
-How do I make real life interesting or better?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status']",6
-Is it okay to make the life choice of being alone and living the rest of my life in solitude?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Economic Status', 'Health Status']",6
-"Is social anxiety going to go away when I get older? If not, what should I do?","['Age', 'Emotional State', 'Education Level', 'Mental Health Status', 'Profession']",5
+How can I overcome my social anxiety to find a job and become more independent?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
+How do I make real life interesting or better?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Is it okay to make the life choice of being alone and living the rest of my life in solitude?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Economic Status']",5
+"Is social anxiety going to go away when I get older? If not, what should I do?","['Age', 'Emotional State']",2
 What can I do to stop feeling like people think I'm a creep?,[],0
 How should I handle my anxiety about going on a date after a long time?,['Emotional State'],1
 What the hell are we afraid of?,[],0
@@ -628,23 +628,23 @@ How can I find friends when I'm out of school?,['Education Level'],1
 How can I manage my anxiety about meeting a professor?,['Education Level'],1
 How can I manage my social anxiety around clients at my new job?,['Profession'],1
 How can I manage my social anxiety and feelings of hopelessness?,"['Emotional State', 'Mental Health Status']",2
-Is it weird to not hang out with people and to almost always be by yourself?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Education Level', 'Economic Status', 'Health Status', 'Age']",8
+Is it weird to not hang out with people and to almost always be by yourself?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Education Level', 'Economic Status', 'Health Status', 'Age', 'Past Self-Harm History']",9
 What could I do to stop feeling envious of everyone having friends and improve my social interactions?,"['Education Level', 'Mental Health Status']",2
 How can I manage my anxiety in social situations?,['Emotional State'],1
 "How can I manage my anxiety to handle the move and associated tasks, such as updating my pets' vaccinations and making phone calls?",['Mental Health Status'],1
 Am I a recluse because of my situation since I don’t often get the opportunity to go out?,[],0
 How can I overcome social anxiety and become more open in social situations?,['Emotional State'],1
-Any advice on how to meet new people outside of work?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Any advice on how to meet new people outside of work?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 What should I do to not die being lonely and antisocial?,[],0
 What the fuck am I so afraid of?,[],0
-How can I approach becoming friends with a group of boys that are more my type at my new high school?,"['Education Level', 'Age', 'Profession']",3
+How can I approach becoming friends with a group of boys that are more my type at my new high school?,"['Education Level', 'Age', 'Profession', 'Economic Status']",4
 How can I overcome my social anxiety to improve in musical theatre?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status']",5
 How can I become more comfortable in social situations and improve my small talk skills?,['Education Level'],1
-Does anyone have experience with freelancing or advice for managing social anxiety and public speaking fears in a teaching job?,"['Education Level', 'Profession']",2
+Does anyone have experience with freelancing or advice for managing social anxiety and public speaking fears in a teaching job?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
 How can I overcome my nervousness to message matches on Tinder?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
 Do any other girls out there experience opposition/straight up bullying from other females?,[],0
 How can I deal with feeling completely alone and without a chance of recovery?,[],0
-"Has any of you taken a mini retirement and do you regret it, or are you glad you did it?","['Profession', 'Age', 'Economic Status', 'Education Level', 'Marital Status', 'Health Status']",6
+"Has any of you taken a mini retirement and do you regret it, or are you glad you did it?","['Profession', 'Age', 'Economic Status', 'Education Level', 'Marital Status', 'Mental Health Status']",6
 How can I handle my social anxiety during important interviews?,['Emotional State'],1
 How can I press charges and build a case against someone who molested my sister?,[],0
 What do I do?,[],0
@@ -665,25 +665,25 @@ How can I cope with social anxiety and improve my mental health in college?,['Ed
 How do you guys deal with love?,[],0
 How can I find myself?,[],0
 Did anyone overcome a similar situation or have any advices?,['Profession'],1
-"What should I do? Keep him as a friend, I'm still attached but is it worth it?","['Emotional State', 'Profession', 'Mental Health Status', 'Marital Status', 'Economic Status']",5
+"What should I do? Keep him as a friend, I'm still attached but is it worth it?","['Emotional State', 'Profession', 'Mental Health Status', 'Marital Status', 'Economic Status', 'Health Status']",6
 What can I do to address my difficulty in speaking and organizing my thoughts?,"['Education Level', 'Mental Health Status']",2
 How can I manage my anxiety to succeed at my new job as an assistant server?,['Emotional State'],1
 Has anyone else with social anxiety and ADHD been mistaken for being autistic?,[],0
-"Has anyone received help from their University/college to make school life easier due to social anxiety, and what can I do to make it easier for me?","['Education Level', 'Emotional State']",2
+"Has anyone received help from their University/college to make school life easier due to social anxiety, and what can I do to make it easier for me?","['Education Level', 'Emotional State', 'Mental Health Status']",3
 How can I ensure I don't relapse into isolation and grief after efforts to improve my mental health?,['Mental Health Status'],1
 "What can I do to cope with my health issues, anxiety, and lack of appetite while being unemployed and uninsured?","['Education Level', 'Mental Health Status']",2
 What do I do about attending the convention when I'm anxious about encountering people spreading a rumor about me?,['Emotional State'],1
 Any advice on where to go or what to do to not be awkward when hanging out with a friend?,['Age'],1
 Does anyone else have similar experiences with anxiety and depression affecting their perception of how others view them? What was your experience and did you find any ways of helping?,[],0
-How can I handle the situation with my teacher who criticized me for not displaying all my photos?,"['Emotional State', 'Education Level', 'Profession', 'Age', 'Mental Health Status', 'Economic Status']",6
+How can I handle the situation with my teacher who criticized me for not displaying all my photos?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Age', 'Economic Status']",6
 "For anyone who has been to counseling, how did you start? Were you scared of making the call to inquire as well? What is the best way to tackle this problem so that I can get the help I need?",['Mental Health Status'],1
-Is there anyone else like me who has been isolating and feels alone?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Education Level', 'Profession', 'Economic Status', 'Health Status']",7
+Is there anyone else like me who has been isolating and feels alone?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Education Level', 'Profession', 'Economic Status', 'Health Status', 'Age']",8
 What can I do to change my situation where I feel like nobody likes me or recognizes me?,[],0
 What can I do if I want to go clubbing but have no one to go with?,[],0
-What tips can I give my friend to help him with his social anxiety and lack of motivation?,"['Education Level', 'Mental Health Status']",2
-How can someone with social anxiety obtain letters of recommendation for grad school and job references?,"['Education Level', 'Profession']",2
+What tips can I give my friend to help him with his social anxiety and lack of motivation?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
+How can someone with social anxiety obtain letters of recommendation for grad school and job references?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I handle my social anxiety to achieve my dreams and become successful?,['Emotional State'],1
-What can I do to become a regular in my friend groups and be included in plans outside of school?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Age']",7
+What can I do to become a regular in my friend groups and be included in plans outside of school?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
 Has anybody found anything to work that reduced blushing?,[],0
 Has anyone ever heard of a case like this? Does anyone have any advice?,[],0
 Any tips for talking to people one-on-one without feeling awkward or tense?,[],0
@@ -691,9 +691,9 @@ How can I overcome my anxiety and fear of social situations to become more comfo
 Can church really fix mental problems?,"['Education Level', 'Mental Health Status']",2
 How can I overcome my fear of people and social anxiety?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
 How can I manage my social anxiety at small gatherings?,['Emotional State'],1
-How can I find a job despite my social anxiety?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
+How can I find a job despite my social anxiety?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
 How can I manage my panic attacks when I go outside?,['Mental Health Status'],1
-"What do you think about how I handled meeting my co-workers for the first time, and what advice can you give me?","['Profession', 'Education Level', 'Emotional State', 'Mental Health Status', 'Marital Status', 'Age', 'Economic Status']",7
+"What do you think about how I handled meeting my co-workers for the first time, and what advice can you give me?","['Profession', 'Education Level', 'Emotional State', 'Mental Health Status', 'Marital Status', 'Economic Status']",6
 What are some good ways to help me get over feeling so distraught about talking to people I don’t know professionally/making commitments to my friends?,"['Emotional State', 'Mental Health Status']",2
 How can I change thoughts that I aren't consciously having?,['Mental Health Status'],1
 How can I stop being such a boring person?,[],0
@@ -702,21 +702,21 @@ Why does this older girl continue to flirt with me aggressively and lash out whe
 How can I take responsibility for my life and become independent?,['Education Level'],1
 What should I do?,[],0
 Why am I so awkward during conversation?,[],0
-"Should I accept the job as a hotel receptionist and face my fears, or look for help and work on myself first?","['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
+"Should I accept the job as a hotel receptionist and face my fears, or look for help and work on myself first?","['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",5
 How can I deal with being labeled and judged by my peers in high school?,['Education Level'],1
 How can I overcome my social anxiety as a medical student to be able to talk to patients?,['Education Level'],1
 How can I overcome my mental health challenges by opening up to others and sharing experiences?,['Emotional State'],1
-What should I do about my anxiety and fear of being laughed at due to my bad haircut?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Gender']",5
-Is life really this hard? Am I just looking for love in the wrong places? Why the hell has it been so weird?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",5
+What should I do about my anxiety and fear of being laughed at due to my bad haircut?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Age']",5
+Is life really this hard? Am I just looking for love in the wrong places? Why the hell has it been so weird?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status', 'Education Level']",6
 How can I continue building confidence when interacting with patients despite my social anxiety and stutter?,['Profession'],1
 What advice can you give me about dealing with people at the gym who make fun of me?,['Mental Health Status'],1
-How do I start to develop interests/hobbies while having social anxiety?,"['Education Level', 'Mental Health Status']",2
+How do I start to develop interests/hobbies while having social anxiety?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Age', 'Gender']",9
 How do I cope with my feelings of inferiority and frustration due to my appearance and social status?,"['Economic Status', 'Mental Health Status']",2
-Will I be able to get a job despite my social anxiety and lack of experience?,"['Education Level', 'Mental Health Status']",2
+Will I be able to get a job despite my social anxiety and lack of experience?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Health Status']",6
 How can I overcome my awkwardness and learn to talk to girls?,[],0
 "What can I do about my extreme anxiety and nervousness when talking about myself, especially at work?",['Mental Health Status'],1
 How can I change and stop isolating myself to socialize more instead of going home for the rest of the day after 2 hours of classes?,['Emotional State'],1
-"Any ideas of how to overcome being afraid of spending time/conversing with people I know, or at least make it more manageable?","['Mental Health Status', 'Emotional State', 'Profession', 'Education Level']",4
+"Any ideas of how to overcome being afraid of spending time/conversing with people I know, or at least make it more manageable?","['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Economic Status', 'Marital Status', 'Health Status']",7
 Is there anyone else who has a fear of balls or things that are thrown towards them?,[],0
 How can I stop being overly sensitive to how people judge me and be myself in public?,"['Emotional State', 'Mental Health Status', 'Profession']",3
 How can I get used to talking to people again?,['Mental Health Status'],1
@@ -726,20 +726,20 @@ What can I do to manage my anxiety about talking about myself?,['Emotional State
 Anyone deal with this before or have a success story that can relate with me?,[],0
 Can anyone help me get my mind straight?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
 How do I get rid of my fear of performing in front of people and my fear of failing and not being perfect?,[],0
-What can I do to overcome my anxiety about talking about myself at work?,"['Education Level', 'Mental Health Status']",2
-How can I make friends despite my social anxiety?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Gender', 'Age']",7
+What can I do to overcome my anxiety about talking about myself at work?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",4
+How can I make friends despite my social anxiety?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Gender', 'Age', 'Marital Status', 'Health Status']",9
 How can I ensure my social anxiety doesn't affect my performances?,['Emotional State'],1
 How can I overcome my regret and self-hatred and get back out into the world?,[],0
 How can I manage my anxiety during meetings and conference calls at work?,['Emotional State'],1
 Should I be working at all if work makes me feel very uncomfortable and triggered?,['Emotional State'],1
 Can anyone give me some tips or share some experience to help me overcome my anxiety and help someone in need?,[],0
-How can I make more friends to spend time with?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+How can I make more friends to spend time with?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
 How can I stop being reclusive while living in shared accommodation?,"['Education Level', 'Mental Health Status']",2
 How can I overcome my loneliness and improve my social skills to enjoy life and date girls?,[],0
 Does anyone else feel the same way about social anxiety and is it normal?,"['Emotional State', 'Profession', 'Education Level', 'Mental Health Status']",4
 Does anyone have a similar issue with severe nervous sweating in social situations and know how to overcome it?,"['Age', 'Profession']",2
 "What prescription drugs can help with social anxiety, and what are their potential side effects?",[],0
-"Has anyone else experienced struggling to keep a job past the probation period, and did things eventually work out for them?","['Profession', 'Economic Status', 'Mental Health Status']",3
+"Has anyone else experienced struggling to keep a job past the probation period, and did things eventually work out for them?","['Profession', 'Economic Status', 'Education Level', 'Mental Health Status']",4
 What should I do if I'm unhappy with my college band scholarship but need the money for school?,['Education Level'],1
 Can reading aloud over a period of time help with social anxiety?,"['Education Level', 'Mental Health Status']",2
 What are some evidence-based solutions for improving social anxiety?,['Education Level'],1
@@ -747,52 +747,52 @@ What can I do about my anxiety and nervousness at work?,['Profession'],1
 Any ideas on how to get out of the house more during the summer to avoid boredom?,[],0
 What do you guys do for work?,['Profession'],1
 Is it worth speaking with a psychologist and should I try ADHD medication?,"['Education Level', 'Mental Health Status']",2
-What are some job ideas for someone with mild to severe social anxiety?,"['Education Level', 'Profession', 'Mental Health Status']",3
+What are some job ideas for someone with mild to severe social anxiety?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
 How can I overcome social anxiety and live a normal life when people do not feel comfortable around me and therefore do not want to associate themselves with me?,[],0
 How can I improve my social skills in my first job to better relate with my coworkers?,['Profession'],1
-How can I overcome my social anxiety to seize opportunities like meeting new people?,"['Emotional State', 'Education Level', 'Profession']",3
+How can I overcome my social anxiety to seize opportunities like meeting new people?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
 How do I stop my anxiety from getting me all choked up so I can transfer online friendships into in-person friendships?,['Mental Health Status'],1
 Are there any resources online for handling social anxiety when talking to coworkers?,['Education Level'],1
 What can I do when I feel like I don't matter and all I want is to escape this feeling?,[],0
-How can I overcome my isolation and make friends despite my anxiety and lack of life experiences?,"['Education Level', 'Mental Health Status']",2
+How can I overcome my isolation and make friends despite my anxiety and lack of life experiences?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status']",6
 How can I make platonic friendships with girls to have someone to vent to?,[],0
 How can I start a relationship when I'm anxious and feel like I don't have it all together?,"['Emotional State', 'Mental Health Status']",2
 How can I break into a social scene or circle when I have crippling anxiety and no friends?,[],0
 What kind of day jobs can I pursue that accommodate social and math anxiety while I attend school?,['Education Level'],1
 What are some tips or advice for overcoming social anxiety and improving my ability to communicate with others?,['Emotional State'],1
 "How can I better connect with people and manage my anxiety in social situations, especially in clubs and at school?",['Education Level'],1
-"How can I get better at socializing fast, or at all?","['Education Level', 'Profession', 'Mental Health Status']",3
-What can I do about my crippling social anxiety to improve my life?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+"How can I get better at socializing fast, or at all?","['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
+What can I do about my crippling social anxiety to improve my life?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Health Status']",6
 Should I start taking Lexapro despite my fears of side effects and lifestyle changes?,['Mental Health Status'],1
-How can I overcome my social anxiety and make friends at cosmetology school?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I overcome my social anxiety and make friends at cosmetology school?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
 How can I manage my social anxiety in eating situations?,['Emotional State'],1
 How can I overcome social anxiety and guilt from my past to live a more fulfilling life?,['Mental Health Status'],1
-How can I overcome my social anxiety while being in Nursing school?,"['Education Level', 'Profession']",2
+How can I overcome my social anxiety while being in Nursing school?,"['Education Level', 'Profession', 'Mental Health Status']",3
 Why do people dislike me?,[],0
-How can I overcome my fear of job interviews and gain the confidence to apply for jobs despite having little experience?,"['Education Level', 'Profession']",2
-How can I overcome loneliness and build meaningful relationships?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
+How can I overcome my fear of job interviews and gain the confidence to apply for jobs despite having little experience?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I overcome loneliness and build meaningful relationships?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Marital Status', 'Economic Status']",6
 Should I get therapy for possible social anxiety?,"['Emotional State', 'Mental Health Status']",2
 Can I do a graphic design program online and work freelance from home?,['Education Level'],1
 What can I do to manage my anxiety about talking about myself at work?,['Emotional State'],1
 What do I do to overcome my social anxiety and improve my situation in university?,"['Education Level', 'Mental Health Status']",2
 Does social anxiety affect facial expressions and make me appear boring to others?,['Mental Health Status'],1
 Why do people feel the need to mention how quiet someone is?,[],0
-What am I doing wrong and what can I do to make friends and have a social life?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
+What am I doing wrong and what can I do to make friends and have a social life?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status']",6
 Is there anybody else out there that was the fat kid growing up that got handsome/hot as they got older but absolutely does not see it the way everyone tells them the way they see you?,[],0
-How can I make friends and overcome my social anxiety?,"['Education Level', 'Mental Health Status']",2
+How can I make friends and overcome my social anxiety?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
 How can I improve my social skills and overcome awkwardness?,['Education Level'],1
 How can I recover from feeling overwhelmed and exhausted after social events?,['Emotional State'],1
 "How do I start dating, especially at a later age?",['Age'],1
 How can I overcome my fear of social situations and stop avoiding social invitations?,['Mental Health Status'],1
-How can I overcome my social anxiety and start going to clubs with my friends?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I overcome my social anxiety and start going to clubs with my friends?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
 How do you get outside your house?,[],0
 Does anyone have some words for someone who feels lonely and different?,[],0
 What one small step would you recommend to a person who feels he has no friends?,[],0
 How can I build trust with new people and overcome my fear of meeting them after a negative high school experience?,"['Education Level', 'Mental Health Status']",2
-How can I take the first steps to recovering from social anxiety when speaking to a doctor or therapist feels overwhelmingly difficult?,"['Education Level', 'Mental Health Status']",2
+How can I take the first steps to recovering from social anxiety when speaking to a doctor or therapist feels overwhelmingly difficult?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Health Status', 'Marital Status', 'Economic Status']",7
 Anyone been in my place? Advice?,[],0
 How can I make my next kiss less awkward?,[],0
-How severe is my social anxiety?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+How severe is my social anxiety?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Health Status', 'Economic Status']",6
 How can I regain my spark and overcome social anxiety to reconnect with my friends and pursue my dreams?,['Emotional State'],1
 How can I bring up the topic of not being invited to things with my friends without it being awkward or seeming needy?,"['Education Level', 'Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Economic Status']",6
 How do you force yourself to go to an interview?,[],0
@@ -804,8 +804,8 @@ How can I deal with my anxiety and discomfort about school swimming with people 
 How can I manage my social anxiety and paranoia while participating in a college newspaper?,['Education Level'],1
 How can I change my mindset and stop being overly affected by negative comments from others?,['Emotional State'],1
 What can I do to help my brother who denies having AvPD and SAD?,[],0
-How should I handle people in my class who are sneak dissing and making me feel isolated?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
-Should I accept a well-paying job in a field I hate or take a lower-paying job like at an Amazon warehouse?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",5
+How should I handle people in my class who are sneak dissing and making me feel isolated?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
+Should I accept a well-paying job in a field I hate or take a lower-paying job like at an Amazon warehouse?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age', 'Health Status']",7
 Is it possible that medicine and therapy may be my only way out of this?,[],0
 Am I just being a bitch who needs to force myself to do more?,[],0
 At what point do I just accept that this is just how things are and how they will always be?,[],0
@@ -814,13 +814,13 @@ Has anything like this happened to anyone else here?,[],0
 How can I disconnect from societal patterns to overcome social anxiety?,"['Education Level', 'Mental Health Status']",2
 "What are things that I can do to meet new people, become more attractive, and become more outgoing?",['Profession'],1
 How can I stop feeling lonely and improve my social skills?,"['Education Level', 'Mental Health Status']",2
-What can I do to overcome my anxiety about talking about myself at work?,"['Education Level', 'Mental Health Status']",2
+What can I do to overcome my anxiety about talking about myself at work?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",4
 How can I manage my anxiety that prevents me from leaving the house?,['Mental Health Status'],1
 What can I do to manage my anxiety about talking about myself at work?,['Emotional State'],1
 How can I set and achieve small goals to overcome social anxiety?,['Education Level'],1
 How can I improve my social skills and become more comfortable interacting with people face-to-face?,['Education Level'],1
 How do you interact with complete strangers without being awkward?,[],0
-"Has anyone overcome social anxiety and crippling fear of intimacy, enough to have a fulfilling social and professional life?","['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+"Has anyone overcome social anxiety and crippling fear of intimacy, enough to have a fulfilling social and professional life?","['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status', 'Marital Status', 'Health Status']",7
 Does anyone have any recommendations on how to actually deal with the anxiety of having to go through with seeing a new doctor?,[],0
 What should I do about my anxiety and shyness when approached by someone I'm not expecting?,['Mental Health Status'],1
 How do I round Spikey up?,[],0
@@ -828,30 +828,30 @@ How can I manage my social anxiety and start commuting to school independently?,
 "How can I cope with my anxiety without using alcohol, considering I cannot afford a psychologist?",[],0
 What advice can people give to get started on losing weight and overcoming anxiety about joining a gym?,['Education Level'],1
 How can I move forward and improve my situation now that I've started feeling better after therapy?,[],0
-Can anybody suggest a solution for feeling academically inferior due to social anxiety and agoraphobia?,"['Education Level', 'Mental Health Status']",2
-Does anyone have the same problem with social anxiety affecting job opportunities and educational choices?,"['Education Level', 'Emotional State', 'Profession']",3
+Can anybody suggest a solution for feeling academically inferior due to social anxiety and agoraphobia?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
+Does anyone have the same problem with social anxiety affecting job opportunities and educational choices?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status']",4
 How can I manage my anxiety and improve in my new fast food restaurant job?,['Education Level'],1
 Does anybody have any suggestions or advice for managing severe glossophobia and social anxiety while attending an intensive outpatient program?,"['Emotional State', 'Mental Health Status']",2
 Have any of you jumped head first into a deeply challenging circumstance and if so how did you fare and what did you learn?,[],0
 How can I stop giving a fuck about me having as much fun as other people and stop getting FOMO?,[],0
 How can I continue to build my confidence and manage social anxiety after experiencing a difficult breakup?,['Emotional State'],1
 How can I manage my social anxiety better at work and prevent it from affecting my daily life?,['Profession'],1
-What should I do about my social anxiety and inability to take a job opportunity?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",5
+What should I do about my social anxiety and inability to take a job opportunity?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",6
 How can I understand why my social anxiety returned after being sociable for a decade?,"['Education Level', 'Mental Health Status']",2
-How can I overcome social anxiety to find a job and get a driver's license?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
+How can I overcome social anxiety to find a job and get a driver's license?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status', 'Health Status', 'Age', 'Gender']",9
 What kind of jobs do you other socially anxious people have?,[],0
 "How can I manage my social anxiety and improve my social skills, especially when talking to people I like?",['Emotional State'],1
-Can anybody relate?,"['Age', 'Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Gender', 'Marital Status', 'Economic Status', 'Health Status']",9
+Can anybody relate?,"['Age', 'Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Economic Status', 'Health Status', 'Gender', 'Marital Status']",9
 "What can I do to manage my extreme social anxiety when talking about myself, especially at work?",['Profession'],1
 Should I go on a solo traveling journey to help with my social anxiety despite my fears?,"['Emotional State', 'Mental Health Status']",2
-How can I improve my self-esteem and social interactions?,"['Education Level', 'Mental Health Status']",2
+How can I improve my self-esteem and social interactions?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
 Any advice on how to find the motivation to step out of my comfort zone?,"['Emotional State', 'Profession']",2
 "How should I react if I see a lost child in a store, and I'm afraid of being accused of wrongdoing?",[],0
-How do I overcome social anxiety?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
+How do I overcome social anxiety?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status', 'Marital Status']",6
 How do I tell my girlfriend about my anxiety?,['Emotional State'],1
 "How can I have a talk or small talk with someone that they would enjoy, what are some lines I could say?",['Profession'],1
 What should I do about my social anxiety affecting my job as a door to door salesman?,"['Profession', 'Education Level', 'Mental Health Status']",3
-Do I have social anxiety or bipolar disorder?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Health Status', 'Past Self-Harm History', 'Age']",7
+Do I have social anxiety or bipolar disorder?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Health Status', 'Economic Status', 'Marital Status', 'Past Self-Harm History', 'Age']",9
 How can I temporarily cope with my social anxiety so I can graduate college?,[],0
 What are some alternatives to dating apps for meeting potential partners?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",5
 Should I tell my friends about my social anxiety and why I've been distant?,['Emotional State'],1
@@ -860,37 +860,37 @@ Can I still have social anxiety if I don't feel physical stress in my body but g
 Has anyone had their Social Anxiety triggered when having to speak a foreign/second language?,[],0
 Is this feeling of social awkwardness and tension at work something you ease into and get used to?,"['Profession', 'Mental Health Status']",2
 Why is my blushing getting worse despite being exposed to anxiety-inducing situations all day?,['Emotional State'],1
-"How can I overcome my anxiety when talking to people, including my dad and my boss?","['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Marital Status', 'Economic Status']",6
+"How can I overcome my anxiety when talking to people, including my dad and my boss?","['Mental Health Status', 'Emotional State', 'Profession']",3
 "How can I interview and work with my social anxiety, especially when I often cry in stressful situations?",['Emotional State'],1
 How can I manage my social anxiety while pursuing personal interests like karate?,['Education Level'],1
-Any tips for talking in groups?,"['Education Level', 'Profession', 'Age', 'Mental Health Status']",4
+Any tips for talking in groups?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How can I overcome my fear of socializing and stop feeling like a lone wolf?,['Mental Health Status'],1
-"Is my social anxiety actually immaturity, and how can I improve it?","['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Marital Status', 'Economic Status', 'Health Status', 'Age', 'Gender']",9
-"Is it really fair that I expect him to date someone with a history like mine, especially with all my personal problems?","['Past Self-Harm History', 'Mental Health Status', 'Emotional State', 'Education Level']",4
+"Is my social anxiety actually immaturity, and how can I improve it?","['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Age', 'Economic Status', 'Health Status']",7
+"Is it really fair that I expect him to date someone with a history like mine, especially with all my personal problems?","['Past Self-Harm History', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Economic Status']",5
 How do people make friends online?,['Education Level'],1
-What are some ways to overcome social anxiety?,"['Education Level', 'Profession', 'Mental Health Status']",3
+What are some ways to overcome social anxiety?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status']",7
 I'd really like to hear any success stories of people with similar experiences overcoming their anxiety and maybe tips on the things that helped them on their journey?,['Emotional State'],1
 How can I ask my classmates to hang out and watch a movie during spring break despite my anxiety and the lack of a nearby cinema?,['Education Level'],1
 How can I cope with my social anxiety and the constant feeling of inadequacy around my flatmates?,"['Education Level', 'Mental Health Status']",2
 "What can I do about my symptoms like nausea, pressure in ears, and fatigue related to functional dyspepsia or GERD?",['Health Status'],1
 Is it too late for me am I just a burden to the world? Should I just end my life which is best for everyone especially me?,[],0
 How can my SO and I build a sense of community and make friends?,['Profession'],1
-How can I bond with people and form connections without relying on a 'party-persona' that feels ingenuine to me?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
+How can I bond with people and form connections without relying on a 'party-persona' that feels ingenuine to me?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Marital Status', 'Economic Status', 'Health Status']",7
 How can I cope with feeling isolated and improve my self-confidence in college?,['Education Level'],1
 How can I ensure that prom night goes well without seeming awkward?,['Age'],1
 How can I improve my social skills and get responses in online dating?,['Education Level'],1
-What should I do next after getting my degree if I haven't acquired the skills to succeed and can't articulate myself well in-person?,"['Education Level', 'Profession']",2
+What should I do next after getting my degree if I haven't acquired the skills to succeed and can't articulate myself well in-person?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status']",7
 "Why do I look ugly, tired, and sad?",['Mental Health Status'],1
 What can I do to feel less anxious and more accepted at work?,['Profession'],1
 How can I overcome my shyness and anxiety to make friends at university and find part-time jobs?,['Education Level'],1
 What can I do about my anxiety when talking about myself at work?,['Emotional State'],1
 What can I expect if I seek help for my social anxiety?,['Education Level'],1
-How can I manage my anxiety while living with my mother's rude and nasty partner?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status']",5
+How can I manage my anxiety while living with my mother's rude and nasty partner?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status', 'Health Status']",6
 How do I try to see him more if my parents wouldn't allow me to? And if he might not have a phone.,[],0
 How am I supposed to get another job when every job requires communication?,[],0
 Does it get better with time? Will my body and mind get used to the requirements of the job and the new sleep schedule?,"['Education Level', 'Mental Health Status']",2
 "What should I do now to get over her and to be happy again? Also, what can I do to make some friends and maybe find someone else?",[],0
-"How can I get a job with social anxiety, low confidence, and self-esteem?","['Education Level', 'Profession', 'Mental Health Status']",3
+"How can I get a job with social anxiety, low confidence, and self-esteem?","['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age', 'Past Self-Harm History']",9
 What job options are there that don't require intense social interaction?,['Profession'],1
 How do I gain courage the correct way to approach pretty girls at my workplace and get over my extreme shyness?,[],0
 Can you recommend or suggest any way to meet new people or build a social network for myself?,['Education Level'],1
@@ -899,12 +899,12 @@ What job options are available for someone with anxiety and no current access to
 How can I manage my social anxiety at work?,['Profession'],1
 Any suggestions of how to deal with the stress of a presentation?,['Emotional State'],1
 How am I ever going to work anywhere with my anxiety?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Education Level']",5
-What are good job options for people with social anxiety?,"['Education Level', 'Profession', 'Mental Health Status']",3
-Would creating a YouTube channel or a journal about my journey be interesting or inspirational to others?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",4
-"Do I really have social anxiety or am I just scared, lacking confidence and experience or just plain lazy?","['Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Economic Status']",5
+What are good job options for people with social anxiety?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Age', 'Health Status']",7
+Would creating a YouTube channel or a journal about my journey be interesting or inspirational to others?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
+"Do I really have social anxiety or am I just scared, lacking confidence and experience or just plain lazy?","['Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Health Status']",7
 What can I do to improve myself despite my social anxiety and past bullying experiences?,['Mental Health Status'],1
 What is the first step to figuring out my life and relationships? Maybe I need to move somewhere else?,"['Profession', 'Mental Health Status']",2
-How can I overcome my anxiety and find a job despite feeling unworthy and having limited experience?,"['Education Level', 'Mental Health Status']",2
+How can I overcome my anxiety and find a job despite feeling unworthy and having limited experience?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status']",6
 How can I overcome anxiety and mental blocks from my past experiences to become who I want to be?,['Mental Health Status'],1
 How can I cope with feeling like I've missed out on life experiences due to depression and anxiety?,['Mental Health Status'],1
 Am I paranoid or what? Am I just awful at the job? Or is something not right?,[],0
@@ -915,27 +915,27 @@ How can I make a friend in college?,['Education Level'],1
 How can I cope with having no friends and not feel ashamed about it?,"['Emotional State', 'Mental Health Status']",2
 How can I prevent my kids from becoming socially awkward like me?,['Education Level'],1
 How can I decide whether to continue my college education or focus on work without disappointing my family?,['Education Level'],1
-"How can I overcome loneliness and connect with someone, possibly through a dating app?","['Education Level', 'Emotional State', 'Profession', 'Economic Status', 'Gender', 'Mental Health Status', 'Age']",7
+"How can I overcome loneliness and connect with someone, possibly through a dating app?","['Education Level', 'Emotional State', 'Profession', 'Economic Status', 'Mental Health Status', 'Marital Status', 'Health Status']",7
 How can I manage my anxiety and improve my life after reaching rock bottom?,['Mental Health Status'],1
 "What should I do now, should I just wait and give her time, or should I actively do something about it?",['Emotional State'],1
-Can anyone talk to me?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Health Status']",5
+Can anyone talk to me?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Age', 'Economic Status']",6
 How can I get over my social anxiety to enjoy my travels to Europe more fully?,['Emotional State'],1
 What can I do to overcome my anxiety about sharing personal information at work?,['Profession'],1
 Any tips on overcoming social anxiety to improve job prospects?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
-How can I overcome my social anxiety and improve my life situation?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status']",4
+How can I overcome my social anxiety and improve my life situation?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status']",6
 What do I do?,[],0
 How can I better myself and stop chasing attention and being desperate?,['Emotional State'],1
 How am I supposed to work after 10 years of unemployment because of social anxiety disorder?,['Mental Health Status'],1
-I'd like to hear any tip.,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
+I'd like to hear any tip.,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",5
 How can I overcome my self-consciousness about not having many friends?,"['Education Level', 'Mental Health Status']",2
-How can I overcome social anxiety at the gym?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I overcome social anxiety at the gym?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
 How can I cope with my social anxiety that makes social interactions exhausting?,['Emotional State'],1
-"How can I improve my social skills, self-esteem, and be more likeable?","['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
+"How can I improve my social skills, self-esteem, and be more likeable?","['Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Marital Status']",6
 "How can I get help for my mental health issues, and are there any over-the-counter drugs my parents can buy to help?",[],0
 What job options do I have considering my social anxiety and inability to drive?,"['Education Level', 'Profession', 'Mental Health Status']",3
 What is the solution to overcome social anxiety when CBT didn't work?,[],0
 "Is it normal for social anxiety symptoms to start creeping back in a situation where I'm unemployed, single, living in a small town with no social life?",['Economic Status'],1
-How can I create a proper resume without having three former employers to list?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
+How can I create a proper resume without having three former employers to list?,"['Profession', 'Education Level', 'Economic Status']",3
 How can I cope with my social anxiety and feelings of isolation?,['Emotional State'],1
 How can I overcome my anxiety about talking about myself at work?,"['Emotional State', 'Profession']",2
 "Has anyone here permanently 'retired' from a career, and been able to find happiness?",['Profession'],1
@@ -971,17 +971,17 @@ What was your haunting embarrassing moment that your mind won’t let you forget
 How can I deal with the emotional stress of starting a new job that triggers my social anxiety?,['Emotional State'],1
 "If I don't go to prom, what should I do?",[],0
 How can I cope with my current situation?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
-"How do I overcome my paranoia that my friends don't actually like me and become genuinely happy for them, regardless of whether I'm included or not?","['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Marital Status', 'Economic Status']",6
+"How do I overcome my paranoia that my friends don't actually like me and become genuinely happy for them, regardless of whether I'm included or not?","['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Marital Status']",5
 How can I change careers without taking out large loans?,['Profession'],1
 How can honesty improve my interactions on dates?,['Education Level'],1
-How can I effectively manage my social anxiety and PSSD while considering CBT and the CD Nuts protocol?,"['Mental Health Status', 'Emotional State', 'Profession', 'Education Level', 'Economic Status']",5
+How can I effectively manage my social anxiety and PSSD while considering CBT and the CD Nuts protocol?,"['Mental Health Status', 'Emotional State']",2
 How can I manage my anxiety at work so I can hold a job and not feel the need to leave?,['Profession'],1
 How do I make new friends when I have SAD and lack social skills?,"['Education Level', 'Mental Health Status']",2
 How can I manage my anxiety related to my name and social interactions?,['Emotional State'],1
-Is there a way to improve connections with people?,"['Education Level', 'Profession']",2
+Is there a way to improve connections with people?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
 Any advice on how to overcome my fear of going back to Brazilian Jiu-Jitsu class?,"['Age', 'Profession', 'Mental Health Status']",3
 How can I deal with my social phobia and improve my life?,['Emotional State'],1
-How can I motivate myself to consistently attend university and start therapy again despite feeling exhausted and overwhelmed?,"['Education Level', 'Mental Health Status']",2
+How can I motivate myself to consistently attend university and start therapy again despite feeling exhausted and overwhelmed?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
 How can I cope with anxiety while working as a waitress?,"['Education Level', 'Mental Health Status']",2
 How do other people come to the realisation that they have social anxiety? And do I even have social anxiety or am I just a weird anxious person?,[],0
 How can I deal with feeling drained and unappreciated by my friends?,['Emotional State'],1
@@ -990,9 +990,9 @@ How do I keep calm?,"['Emotional State', 'Mental Health Status']",2
 How can I manage being perceived as awkward and weird at work despite my efforts to overcome social anxiety?,['Profession'],1
 How can I get help or therapy for social anxiety without health insurance?,"['Economic Status', 'Mental Health Status', 'Profession']",3
 Can anyone give me any advice on how to get a girlfriend while being a shy/socially awkward guy? And where should a shy guy such as myself go to meet girls?,['Profession'],1
-How can I begin making friends after a decade without any?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I begin making friends after a decade without any?,"['Education Level', 'Profession']",2
 How can I overcome my anxiety about calling back therapists and asking if they are still taking new patients?,['Emotional State'],1
-How can I get rid of my social anxiety and become socially comfortable again?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status']",4
+How can I get rid of my social anxiety and become socially comfortable again?,"['Emotional State', 'Education Level', 'Mental Health Status']",3
 "How can I start a conversation with my family members, especially my brother?","['Profession', 'Education Level', 'Mental Health Status']",3
 Is there any way to overcome my anxiety about sitting next to my crush in class?,['Education Level'],1
 Is it safe to use DMAE as a supplement for improving concentration and social anxiety?,"['Education Level', 'Profession', 'Mental Health Status']",3
