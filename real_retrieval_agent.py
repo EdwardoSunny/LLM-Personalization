@@ -313,8 +313,8 @@ if __name__ == "__main__":
     # deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
     # output_csv = "retriever_real_llama3-8b-instruct_results.csv"
 
-    deployment = "Qwen/Qwen2.5-7B-Instruct"
-    output_csv = "retriever_real_qwen25-7b-instruct_results.csv"
+    # deployment = "Qwen/Qwen2.5-7B-Instruct"
+    # output_csv = "retriever_real_qwen25-7b-instruct_results.csv"
 
     # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
     # output_csv = "retriever_real_mistral-7b-instruct_results.csv"
@@ -322,8 +322,8 @@ if __name__ == "__main__":
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
     # output_csv = "retriever_real_deepseek-7b_results.csv"
 
-    # deployment = "Qwen/QwQ-32B"
-    # output_csv = "retriever_real_qwq-32b_results.csv"
+    deployment = "Qwen/QwQ-32B"
+    output_csv = "retriever_real_qwq-32b_results.csv"
 
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.

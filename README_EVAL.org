@@ -1,20 +1,20 @@
-* Syth Data
+* Syth Data (all on uril)
 | Model    | Vanilla Agent | Retrieval Agent | Eval Regular | Eval Retrieval |
 |----------+---------------+-----------------+--------------+----------------|
-| LLaMA    | DONE          | DONE            | RUNNING      | RUNNING        |
-| Qwen2.5  | DONE          | DONE            | DONE         | RUNNING        |
-| Mistral  | DONE          | DONE            | DONE         | RUNNING        |
-| DeepSeek | DONE          | DONE            | RUNNING      | NS             |
+| LLaMA    | DONE          | DONE            | DONE         | DONE           |
+| Qwen2.5  | DONE          | DONE            | DONE         | DONE           |
+| Mistral  | DONE          | DONE            | DONE         | DONE           |
+| DeepSeek | DONE          | DONE            | DONE         | DONE           |
 | QWQ      | RUNNING       | RUNNING         | NS           | NS             |
 
 * Real Data
-| Model     | Vanilla Agent | Retrieval Agent | Eval Regular | Eval Retrieval |
-|-----------+----------------+-----------------+---------------+----------------|
-| LLaMA     | DONE           | DONE            | RUNNING       | NS             |
-| Qwen2.5   | DONE           | DONE            | RUNNING       | NS             |
-| Mistral   | DONE           | DONE            | DONE          | NS             |
-| DeepSeek  | DONE           | DONE            | RUNNING       | NS             |
-| QWQ       | RUNNING        | RUNNING         | NS            | NS             |
+| Model    | Vanilla Agent   | Retrieval Agent | Eval Regular    | Eval Retrieval |
+|----------+-----------------+-----------------+-----------------+----------------|
+| LLaMA    | DONE            | DONE            | DONE            | NS             |
+| Qwen2.5  | DONE            | DONE            | RUNNING (scai3) | NS             |
+| Mistral  | DONE            | DONE            | RUNNING (scai3) | NS             |
+| DeepSeek | DONE            | DONE            | STOPPED (scai3) | NS             |
+| QWQ      | RUNNING (scai4) | RUNNING (uril)  | NS              | NS             |
 
 
 * REAL data agents (scai4)

@@ -306,11 +306,11 @@ if __name__ == "__main__":
     # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
     # output_csv = "agents_output/retriever_mistral-7b-instruct_results.csv"
 
-    # deployment = "deepseek-ai/deepseek-llm-7b-chat"
-    # output_csv = "agents_output/retriever_deepseek-7b_results.csv"
+    deployment = "deepseek-ai/deepseek-llm-7b-chat"
+    output_csv = "agents_output/retriever_deepseek-7b_results.csv"
 
-    deployment = "Qwen/QwQ-32B"
-    output_csv = "agents_output/retriever_qwq-32b_results.csv"
+    # deployment = "Qwen/QwQ-32B"
+    # output_csv = "agents_output/retriever_qwq-32b_results.csv"
 
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.
