@@ -2,21 +2,21 @@ User Query,Attribute Path,Path Length
 "How can I better manage my limited personal time while balancing work, study, and family responsibilities?",['Profession'],1
 Where do I start with applying to college and preparing for med school at 24?,['Education Level'],1
 What alternative funding sources are available for a low-income female graduate student in public health?,"['Education Level', 'Economic Status']",2
-How should I confront my roommate about her behavior?,"['Age', 'Profession', 'Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
+How should I confront my roommate about her behavior?,"['Age', 'Profession', 'Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Health Status']",7
 What motivates y’all? What keeps you going even when things get really bad? What are some healthy habits I can curate for a better life?,[],0
 "Is there any way for me to find accurate comparisons of entry-level medical jobs, including wage, work actually done, and demand for the job?",['Profession'],1
 How can I find confidence in my job prospects with a BS in CS when I feel college didn't teach me anything useful?,['Profession'],1
-Any advice on where to begin writing my scholarship essay?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",5
+Any advice on where to begin writing my scholarship essay?,"['Education Level', 'Profession', 'Mental Health Status']",3
 Is it normal to be this scared as a senior in college and is getting internships hard for others?,['Education Level'],1
 What should I do? Should I switch degrees or just continue and pursue a master's to become a psychologist?,"['Education Level', 'Profession', 'Mental Health Status']",3
 Is there anyone else who was in a similar situation and has tips for transferring out of state?,[],0
 What are the requirements to graduate with an AA in Art from Weber State University?,['Education Level'],1
 Is it normal for other seniors to experience senioritis like this?,"['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 Should I attend University of Washington and risk $200k debt or choose a more affordable college option?,['Economic Status'],1
-How can I pass College Algebra on my third attempt while dealing with my difficulties in focusing and my disability?,"['Education Level', 'Profession', 'Mental Health Status']",3
+How can I pass College Algebra on my third attempt while dealing with my difficulties in focusing and my disability?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Health Status', 'Economic Status']",6
 "What do you think about going back to college for a computer engineering degree at 38, and experiencing the college life I missed?",['Education Level'],1
 What is a corporate communications course all about?,['Education Level'],1
-What do I do about changing majors and the fear of quitting because it's hard?,"['Education Level', 'Mental Health Status']",2
+What do I do about changing majors and the fear of quitting because it's hard?,"['Education Level', 'Mental Health Status', 'Profession', 'Emotional State', 'Economic Status', 'Age']",6
 How do I get motivation to do my schoolwork and not procrastinate?,['Education Level'],1
 How do I convince myself I won't regret either dropping out of college with a year left or possibly wasting a year of my life by staying?,[],0
 Would it be the best thing for me to take summer classes considering workload and financial aspect?,['Economic Status'],1
@@ -25,21 +25,21 @@ What are my options for discussing a career change with my parents and finding a
 How can I explain my dropping grades to my professor without sounding like I'm making excuses?,['Education Level'],1
 How do I go about safely finding roommates when I'm in a commuter college?,['Education Level'],1
 Is it worth fighting my roommate's behavior when she doesn't follow the rules and isn't paying for school?,"['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
-Is zookeeping that competitive of a job? Is it okay if I have C’s in my classes?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
-Can you appeal a rejection from a first choice dream school?,"['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Economic Status']",5
-"What major should I choose in college given my varied interests in music, French, theatre, philosophy, and other subjects?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Is zookeeping that competitive of a job? Is it okay if I have C’s in my classes?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Can you appeal a rejection from a first choice dream school?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+"What major should I choose in college given my varied interests in music, French, theatre, philosophy, and other subjects?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Should I pursue what makes me happy over something I know will land me a job?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",5
 What should I include in my list of accomplishments for my professor to consider when writing a letter of recommendation?,['Education Level'],1
 Has anyone gone through something similar? Have you given up or continued to keep going?,[],0
 "Would you take an extra year of college to save money and focus on mental/physical health, or move out and finish a year early?","['Education Level', 'Mental Health Status']",2
 Is my next semester schedule too hard?,"['Education Level', 'Profession', 'Mental Health Status']",3
 "How do I multi-task between a job, college, and attending a veterinary technician clinic?","['Education Level', 'Profession']",2
-"Has anyone experienced loneliness and lack of motivation after moving back home, and can you offer advice?","['Age', 'Education Level']",2
+"Has anyone experienced loneliness and lack of motivation after moving back home, and can you offer advice?","['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 Should I return to college to study physics despite my concerns about math skills and financial stability?,"['Education Level', 'Economic Status']",2
 Is taking 13 summer college credits too many?,['Education Level'],1
 How do I get over this feeling of regret for not having fun in college?,"['Education Level', 'Mental Health Status']",2
 "How can I cope with feeling overwhelmed and burnt out while balancing work, classes, and my personal life?",['Education Level'],1
-"Is $8,315 per year too much for a BS in Education (elementary), and is $17,315 reasonable including living expenses?","['Economic Status', 'Education Level', 'Profession', 'Age', 'Mental Health Status']",5
+"Is $8,315 per year too much for a BS in Education (elementary), and is $17,315 reasonable including living expenses?","['Economic Status', 'Education Level']",2
 Are there programs where I am able to take out loans to cover the full cost of my schooling even if my credit is not good and my parents don't qualify for Parent PLUS loans?,['Education Level'],1
 How can I move past my own insecurities and let myself relax a little?,['Emotional State'],1
 Am I being too self-conscious about receiving packages?,"['Emotional State', 'Mental Health Status']",2
@@ -49,30 +49,30 @@ Should I move out for the last 6 months or should I just keep living at parents'
 How do you cope with feeling out of place and anxious in a new university environment?,['Emotional State'],1
 Any tips on managing full time school with working basically full time?,['Education Level'],1
 Is pursuing a business admin/management degree the right type of degree for a career in the culinary world?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",4
-"Is it worth going back to college at 29 for CIS/MIS, or should I try to advance myself through other means like a sales job?","['Education Level', 'Profession']",2
+"Is it worth going back to college at 29 for CIS/MIS, or should I try to advance myself through other means like a sales job?","['Education Level', 'Profession', 'Economic Status']",3
 Do I have any options if my private student loan gets denied because my cost of attendance is maxed out?,['Economic Status'],1
 How can I manage feeling behind and struggling to keep up with college coursework?,['Education Level'],1
 How can I resume with the Dean or go over her head to the president about my situation in the welding program?,[],0
-What advice can you give me to speak with my advisor?,"['Age', 'Profession', 'Education Level']",3
+What advice can you give me to speak with my advisor?,"['Age', 'Profession', 'Education Level', 'Economic Status']",4
 "If I pursued a career in Engineering but went back to IT, could that hurt my career outlook?",['Profession'],1
 Do you have any tips for managing a rigorous course load while trying to make friends in university?,['Education Level'],1
 Do you have any other suggestions for dealing with missing assignments?,"['Education Level', 'Profession']",2
 Any suggestions on how to manage the demands of school these next few weeks while keeping my husband ok?,"['Marital Status', 'Education Level']",2
 How can I manage my situation after being a college dropout?,"['Education Level', 'Profession']",2
 How can I become more social and meet new people as a college junior?,['Education Level'],1
-How can I still make my dream of pursuing computer science and med school come true given my financial and credit transfer issues?,"['Education Level', 'Economic Status', 'Profession', 'Mental Health Status', 'Emotional State', 'Age']",6
-Does anyone have any advice on how to motivate my girlfriend to do her homework?,"['Education Level', 'Profession', 'Age', 'Marital Status', 'Mental Health Status']",5
+How can I still make my dream of pursuing computer science and med school come true given my financial and credit transfer issues?,"['Education Level', 'Economic Status', 'Profession', 'Mental Health Status', 'Emotional State', 'Age', 'Health Status', 'Gender', 'Marital Status', 'Past Self-Harm History']",10
+Does anyone have any advice on how to motivate my girlfriend to do her homework?,"['Education Level', 'Profession', 'Marital Status', 'Age', 'Mental Health Status']",5
 Is it feasible and worth it to dual-enroll in a community college and a technical school for plumbing?,['Education Level'],1
-Should I even go to college?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
+Should I even go to college?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Is it worth it to take a semester off after I finish classes this summer? Or is it better just to push through?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Has anyone else experienced something like this?,[],0
-Should I transfer to another school?,"['Education Level', 'Profession']",2
+Should I transfer to another school?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How can I manage my stress and focus on my school work?,['Education Level'],1
 How can I find motivation and gain experience to secure a job after graduation?,['Education Level'],1
 Am I justified in asking for an incomplete in the course?,['Education Level'],1
 How did you narrow your choice for which degree to pursue in college?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Should I try for an internship or just buckle down on classes and keep selling stuff?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
-Does it get better?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Health Status', 'Past Self-Harm History', 'Profession', 'Age', 'Economic Status']",8
+Does it get better?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Health Status', 'Past Self-Harm History', 'Age', 'Profession', 'Economic Status', 'Gender', 'Marital Status']",10
 How can I cope with my anxiety about starting adulthood and my new job?,"['Education Level', 'Mental Health Status']",2
 Are scholarships available for adults who are not students? When is 'scholarship season'?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",5
 Should I go back to working full time and ignore my family's wishes or choose a path for school even if it doesn't interest me?,"['Education Level', 'Mental Health Status']",2
@@ -81,7 +81,7 @@ Is it even worth the debt for someone in my situation to try to get a degree?,"[
 Is it worth it to go through my savings in order to obtain a STEM degree?,['Economic Status'],1
 Does happiness or mental health matter if you're getting a good education?,['Education Level'],1
 How do you deal with extreme test anxiety?,"['Education Level', 'Profession', 'Mental Health Status']",3
-Can I get some advice on whether I should drop my CS class and become a Math major?,"['Education Level', 'Profession']",2
+Can I get some advice on whether I should drop my CS class and become a Math major?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What should I do if I am on the verge of a mental breakdown due to failing my college courses and fear losing my girlfriend?,"['Education Level', 'Mental Health Status']",2
 How can I manage my workload and avoid burnout during finals week?,['Education Level'],1
 Has anyone had success with a BA in English to get a decent job?,['Profession'],1
@@ -95,18 +95,18 @@ Should I transfer to the University of Cincinnati despite my history of depressi
 How can I make community college work while working full-time?,['Education Level'],1
 "Am I screwed for life if I'm almost finished with my first semester at University as part-time student with a 2.9 starting GPA, taking only two courses and already failing one of them?",['Education Level'],1
 What are my options for finding scholarships and deciding if I should re-enroll or reapply at my current community college given my situation?,['Education Level'],1
-Why would a college set up a nursing course with 8 classes in the first semester?,"['Education Level', 'Profession']",2
-Is there anyone else out there who has had their whole future riding on one exam? I would really like to hear some positive stories!,"['Education Level', 'Age', 'Profession', 'Mental Health Status']",4
+Why would a college set up a nursing course with 8 classes in the first semester?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Is there anyone else out there who has had their whole future riding on one exam? I would really like to hear some positive stories!,"['Education Level', 'Age', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 "What can I do to change my current situation, and should I drop out and work for a year?",[],0
 Should I explore other safer opportunities than the company's education reimbursement plan?,"['Profession', 'Economic Status', 'Education Level', 'Mental Health Status']",4
 Should I stay with my current university or transfer to a cheaper college?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-What should I do with my life?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status']",7
+What should I do with my life?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status']",7
 "Should I talk to my professors/try to finish the remaining coursework, or just file a Retroactive Cancellation?","['Education Level', 'Mental Health Status']",2
 Has anyone been in this situation and can provide advice on how to handle being in debt to a university due to a revoked scholarship because of FAFSA information issues?,"['Age', 'Education Level', 'Economic Status', 'Profession', 'Mental Health Status']",5
 How can I improve my grades and manage my anxiety while preparing to apply to law school?,['Education Level'],1
 How can I recover from my poor freshman year performance and ensure I keep my academic scholarship?,['Education Level'],1
 "What would you do if you were me? Should I listen to my parents or should I follow a passion instead, even if it's a risk?","['Education Level', 'Age', 'Profession', 'Emotional State', 'Mental Health Status', 'Economic Status']",6
-Should I take a gap year/semester or go to the tests and get an average grade or retake the courses for better grades?,"['Education Level', 'Age', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
+Should I take a gap year/semester or go to the tests and get an average grade or retake the courses for better grades?,"['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
 Is a career in computer engineering an unrealistic goal if I haven't taken a math class since high school?,['Education Level'],1
 Any SUNY schools with good online programs that I can look further into?,['Education Level'],1
 Should I drop out of university to pursue freelancing contracts despite everyone advising against it?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
@@ -115,12 +115,12 @@ What should I say to the college admissions office to get them to understand my 
 Will my crappy freshman grades reflect poorly on me for the rest of my college life?,['Education Level'],1
 "What can I do to manage my assignments and exams given my mental health challenges, especially since I can't get an extension?","['Education Level', 'Mental Health Status']",2
 Would you work out a deal with the university and try to go back in the fall? Or would you pay it off incrementally and go to the community college until you get your associates and hope that it can transfer?,['Education Level'],1
-Should I switch my major from electrical engineering to psychology?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Age', 'Health Status', 'Past Self-Harm History']",9
-"Should I risk everything for my dream school, UCSB, despite financial constraints and lack of parental support, or choose a nearby school to live at home and save money but remain unhappy?","['Age', 'Education Level']",2
+Should I switch my major from electrical engineering to psychology?,"['Education Level', 'Profession', 'Mental Health Status']",3
+"Should I risk everything for my dream school, UCSB, despite financial constraints and lack of parental support, or choose a nearby school to live at home and save money but remain unhappy?","['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Past Self-Harm History']",9
 How can I apply to college as an adult without having taken the SAT?,['Education Level'],1
 Am I too old to start an undergraduate program in the United States at 24?,['Age'],1
 How can I manage a heavy credit load without being overwhelmed?,['Economic Status'],1
-Should I go to school full time or part time given my current situation?,"['Education Level', 'Profession']",2
+Should I go to school full time or part time given my current situation?,"['Education Level', 'Profession', 'Economic Status']",3
 Has anyone else taken a longer time to finish community college?,['Age'],1
 "What are your thoughts on my perception of wanting to go to medical school? Based on what you heard would you advise against it? Also, am I too old or would the opportunity cost be too great at this age?","['Education Level', 'Age']",2
 What should I do about my brother who wants to postpone his graduation and about my own situation of being burned out and wanting to quit college?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Age', 'Profession', 'Economic Status']",6
@@ -128,24 +128,24 @@ What should I do about my brother who wants to postpone his graduation and about
 How can I manage my stress and health issues while maintaining my scholarship in college?,['Education Level'],1
 Any advice on how to pursue a biology degree while working full time and feeling discouraged by prerequisites?,['Education Level'],1
 Can someone please critique my SAP appeal letter?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
-What should I study in college given my interests and past experiences?,"['Education Level', 'Profession']",2
+What should I study in college given my interests and past experiences?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Does anyone else feel weird going 'home' after college?,"['Education Level', 'Profession']",2
 "Which route should I take, trade school or college, to help me land a job quicker in the computer technology field?",['Education Level'],1
-Would 22k in student loans be hard to pay off by just working a regular job?,"['Education Level', 'Profession']",2
+Would 22k in student loans be hard to pay off by just working a regular job?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "What are my options for re-enrolling in college and possibly attending a school out of state, given my poor transcript at a local community college?","['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status']",5
 Is there any option for me to continue my education despite my past academic dismissal?,['Education Level'],1
 Do I sacrifice my financial stability for this internship?,['Economic Status'],1
 "Is a 2-hour commute every day worth it for a year, or should I spend $1500-2400 for a studio in the city?","['Profession', 'Economic Status']",2
-Where do I go from here?,"['Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Marital Status', 'Health Status']",7
+Where do I go from here?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Health Status', 'Age']",8
 "Should I go back to architecture, or choose a new major?","['Education Level', 'Profession', 'Mental Health Status']",3
 What should I do? Should I just focus on work or should I refocus on school?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
-Should I get an internship despite the challenges it may bring?,"['Education Level', 'Age', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
+Should I get an internship despite the challenges it may bring?,"['Education Level', 'Age', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Health Status']",7
 Are my chances of getting an internship for academic credit completely screwed with a low GPA?,[],0
 How can I improve my GPA and manage my time better in college?,['Education Level'],1
 How have you found ways to pay large/moderate bits of your loans?,[],0
-"Is a major in Organizational Communications right for me, and what type of jobs could I land with it?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
+"Is a major in Organizational Communications right for me, and what type of jobs could I land with it?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State', 'Health Status', 'Gender', 'Marital Status', 'Past Self-Harm History']",10
 "Would it be inappropriate to email my professor to express gratitude for his guidance, without mentioning my personal life details?",['Education Level'],1
-"How do you decide to go back to school, should I just go to a different school?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+"How do you decide to go back to school, should I just go to a different school?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Do universities remove classes where only 2 are registered?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How do I get out of this mindset? What should I do?,"['Emotional State', 'Mental Health Status', 'Education Level']",3
 What career options should I consider if I want to continue working with patients beyond Nursing?,['Profession'],1
@@ -155,8 +155,8 @@ Should I go back to college even though my friend says it's not worth it?,['Educ
 What should I do about wanting to go to college while keeping my current job?,['Education Level'],1
 Do I have a good chance of making it back in as a student after being academically dismissed for a WF and a D in two classes?,['Education Level'],1
 What can I do to help combat these feelings of anxiety and inadequacy?,"['Emotional State', 'Mental Health Status']",2
-Should I commute or live on campus for college?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
-"What should I do -- drop out & go to a CC, or transfer, or stick it out?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Should I commute or live on campus for college?,"['Age', 'Profession', 'Education Level', 'Economic Status']",4
+"What should I do -- drop out & go to a CC, or transfer, or stick it out?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
 How do those of you who have higher GPAs that are hard to maintain manage to emotionally deal with it?,[],0
 What advice can I give my mom about my brother's schooling situation and potential loss of scholarships?,"['Age', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",5
 "If I were to transfer to another 4 year college, will I be taken seriously? Should I just give up?",[],0
@@ -165,7 +165,7 @@ Has anyone had similar experiences who could give some advice?,"['Profession', '
 Would I have more social opportunities in attending a university/community college or working a job like in retail?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Does anyone have any advice for my situation? Am I truly missing out? Did I choose the right thing?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Profession', 'Marital Status', 'Economic Status']",6
 What can I do if I get suspended from college due to low grades?,[],0
-What would be the best way for me to graduate debt free?,"['Education Level', 'Economic Status', 'Profession']",3
+What would be the best way for me to graduate debt free?,"['Education Level', 'Economic Status']",2
 How can I manage my fear of attending university and the potential debt if I have a nervous breakdown and drop out?,"['Education Level', 'Mental Health Status']",2
 How should I choose a degree path that prepares me for a career in analytics or business?,"['Education Level', 'Profession']",2
 How can I successfully appeal my academic dismissal from the University of North Carolina?,['Education Level'],1
@@ -173,7 +173,7 @@ How quick can I do 60 credit hours?,"['Education Level', 'Age', 'Profession', 'E
 What do you think would be the best and most realistic scenario for me?,[],0
 Does it matter what school you go to in terms of getting a better salary with an Actuarial Sciences degree?,['Education Level'],1
 Are there any scholarships or grants for late-in-life college students that aren’t dependent on being below the poverty line?,['Education Level'],1
-"What should I do? Should I email him back to explain myself, put the work study on my resume, or include the work in my portfolio?","['Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State']",5
+"What should I do? Should I email him back to explain myself, put the work study on my resume, or include the work in my portfolio?","['Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Age']",8
 What major should I choose if I like computers but also love being active?,['Education Level'],1
 Does anyone else feel more mature than other college students and have trouble enjoying being at college?,['Age'],1
 What are the pros and cons of taking a traditional route to med school versus applying to a BS/MD program?,['Education Level'],1
@@ -188,17 +188,17 @@ How can I deal with losing interest in my degree in my final year?,['Education L
 Any advice for working while in college?,['Education Level'],1
 How can I realistically avoid being home except to sleep and still have time for myself while attending university?,['Age'],1
 Should I transfer schools despite the financial challenges and starting over socially?,"['Education Level', 'Mental Health Status']",2
-"What is it like to pursue a Networking and Cybersecurity major at FLCC, especially balancing it with full-time work?","['Education Level', 'Profession']",2
+"What is it like to pursue a Networking and Cybersecurity major at FLCC, especially balancing it with full-time work?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Where do I go from here after failing a required class and having my college admission rescinded?,"['Age', 'Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",6
 What do I even do at this point?,[],0
 Did you guys have separation anxiety when you started college?,[],0
-"Can my boyfriend apply for new grants, including Pell Grants, to go back to community college after being on academic probation, and is there a way to check if he owes on his previous grants?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Marital Status', 'Mental Health Status']",6
+"Can my boyfriend apply for new grants, including Pell Grants, to go back to community college after being on academic probation, and is there a way to check if he owes on his previous grants?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "Are there types of schools that focus on the academics, keeping a bare bones approach to the fluff?",['Education Level'],1
-Is it worth getting into wildlife biology or should I consider a different career path?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
-Anyone else like college much more than summer?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
-Should I finish my accounting degree or pursue programming instead?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
-Does anyone have any experience asking a college to increase the Need Based Grant they awarded you?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",4
-How can I manage feeling behind my peers and the loneliness it brings?,"['Education Level', 'Age']",2
+Is it worth getting into wildlife biology or should I consider a different career path?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Anyone else like college much more than summer?,"['Education Level', 'Profession', 'Age', 'Economic Status']",4
+Should I finish my accounting degree or pursue programming instead?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age', 'Health Status', 'Marital Status', 'Gender']",9
+Does anyone have any experience asking a college to increase the Need Based Grant they awarded you?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
+How can I manage feeling behind my peers and the loneliness it brings?,"['Education Level', 'Age', 'Mental Health Status']",3
 "Is there any way to get aid or grants, really any help so I wouldn't be in a pit of debt?",['Economic Status'],1
 "How do you balance work, college, and life with hobbies?",['Education Level'],1
 How do you juggle work and studying?,['Profession'],1
@@ -210,18 +210,18 @@ What advice do others have for dealing with burnout and lack of motivation in ed
 How can I get an internship and make the best of my remaining time in college?,['Education Level'],1
 Should I drop from my management program and enroll in the digital marketing program instead?,"['Education Level', 'Profession', 'Mental Health Status']",3
 Has anyone been in my shoes where you feel too old to go to college and have no clue what to study?,"['Age', 'Education Level']",2
-"What may be my best route to go about becoming a physician while working full-time, and is online school a viable option to complete while working 40-56 hours a week?","['Education Level', 'Profession']",2
+"What may be my best route to go about becoming a physician while working full-time, and is online school a viable option to complete while working 40-56 hours a week?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How do I stop from falling behind and get back on track with my college plans?,['Education Level'],1
 "Should I go back to school full time at 27, considering the risks of debt and losing insurance?",['Education Level'],1
 Should I take a job where I have no interest or experience just to have a 'real job'?,"['Education Level', 'Mental Health Status']",2
-What is the best combination of degrees after getting an A.A.S. in communications?,"['Education Level', 'Profession']",2
+What is the best combination of degrees after getting an A.A.S. in communications?,"['Education Level', 'Profession', 'Economic Status']",3
 Should I transfer to a good public school to finish my undergraduate degree in IT before turning 25 or stay at UAG and finish at 22?,"['Age', 'Education Level']",2
 "What are the stipulations to getting my financial aid back, and can I apply to a community college while on academic probation?",[],0
 How should I proceed to get in-state tuition despite not having paid taxes in the state?,[],0
 Is it worth working this full-time job while taking a class or two each term until I finish my major or is it not worth it?,['Education Level'],1
 What can I write in my appeals form to explain my situation and possibly get my grades changed from F's to W's?,[],0
 How should we decide who gets the private bathroom in the apartment?,[],0
-Is college hard?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
+Is college hard?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How are you guys making it work as a single working parent enrolled in college?,[],0
 Can I go to college if I'm 23 and have never taken the SAT/ACT?,['Education Level'],1
 What steps should I take to continue my education after being academically dismissed from my university?,['Education Level'],1
@@ -229,7 +229,7 @@ What steps should I take to continue my education after being academically dismi
 What are your internship success/horror stories?,['Profession'],1
 What are some common struggles students face during college that they wish they had one-on-one problem-solving support for?,['Education Level'],1
 Should I quit my part-time job to focus on university despite feeling guilty?,['Education Level'],1
-Does anyone know of any cheap-ish college linguistic programs?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Does anyone know of any cheap-ish college linguistic programs?,"['Education Level', 'Profession', 'Economic Status', 'Age']",4
 Should I go back to school to become a psychologist?,"['Education Level', 'Mental Health Status']",2
 "Should I take a year off before deciding to go to college, even though everyone is advising against it?","['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 What advice can you offer regarding pursuing graduate school as an environmental engineer considering the financial implications and opportunity costs?,['Education Level'],1
@@ -242,8 +242,8 @@ How can I manage my college and work situation without feeling overwhelmed and a
 How can I be a better conversationalist in and outside of college?,['Education Level'],1
 What are some things I can do over each break that will give me a valid reason to not come home?,[],0
 How can I get financial assistance or advice to attend certification school for Dental Assisting?,['Economic Status'],1
-Should I ride it out and obtain the degree or start over in an American university?,"['Education Level', 'Profession', 'Economic Status']",3
-Should I change my major from criminal justice to something more flexible like business administration or marketing?,"['Education Level', 'Profession']",2
+Should I ride it out and obtain the degree or start over in an American university?,"['Education Level', 'Profession']",2
+Should I change my major from criminal justice to something more flexible like business administration or marketing?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How feasible is it to take a leave of absence and work to reduce my current debt before returning to finish my degree at the expensive tech school?,['Economic Status'],1
 Is it possible for him to get to community college? What sort of steps should he take from here?,"['Education Level', 'Profession']",2
 How did you choose between a career in RN and engineering when you were torn?,"['Profession', 'Education Level', 'Mental Health Status']",3
@@ -253,8 +253,8 @@ How can I achieve a better work/life balance so my non-work time rejuvenates me?
 What are some good 'breakup' phrases I could use with my current advisor?,[],0
 Anyone have any suggestions on how to be less fat (other than eat less/move more)?,[],0
 "What can I do to improve my situation with my mentor, given that changing mentors is not an option and I only have about a year left?",['Profession'],1
-Would doing a masters help my mother get a better job and is it worth the cost?,"['Education Level', 'Profession']",2
-What am I in grad school for?,"['Education Level', 'Profession']",2
+Would doing a masters help my mother get a better job and is it worth the cost?,"['Education Level', 'Profession', 'Economic Status']",3
+What am I in grad school for?,"['Education Level', 'Profession', 'Mental Health Status']",3
 How can I better manage stress in a STEM research program?,['Education Level'],1
 How can I overcome the guilt and inability to enjoy life after finishing my Master's degree?,"['Education Level', 'Emotional State']",2
 What should I do about feeling burnt out in my final year of my physics PhD and not wanting to continue in academia?,['Education Level'],1
@@ -269,12 +269,12 @@ Should I drop out of my master's program after 1 semester to get my tuition back
 How do you stay motivated and focused on your thesis/dissertation writing?,['Education Level'],1
 Does anyone have any tips for coping with this feeling or not getting bogged down in it?,"['Emotional State', 'Mental Health Status']",2
 Is this warranted or am I overthinking things? Do others feel this way?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
-Is attending a top graduate school even feasible for someone in my position?,"['Education Level', 'Profession', 'Economic Status']",3
+Is attending a top graduate school even feasible for someone in my position?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Does anyone else feel like a failure for doing a PhD?,['Education Level'],1
 How are/did others deal with job season and comparing themselves to classmates? How did you get your significant others to better understand and provide the support you need?,[],0
 I am wondering if it's possible at all for me to come back to science after abandoning it for years?,['Education Level'],1
 "What jobs should I look for with a PhD in Experimental Psychology/Neuroscience, and should I consider academic or non-academic paths?","['Education Level', 'Profession']",2
-Should I take the two chemistry classes I need or pursue a new bachelor's degree?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
+Should I take the two chemistry classes I need or pursue a new bachelor's degree?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What can I do to overcome feeling burned out and stay productive in grad school while dealing with personal and professional commitments?,['Education Level'],1
 Does anyone have any advice or experience with feeling defeated about not being ready to graduate?,['Education Level'],1
 Do I need to visit the universities I’m applying to in the U.K. before I apply?,['Education Level'],1
@@ -289,33 +289,33 @@ How can I financially make ends meet while focusing on school and interning?,['E
 Is year 2 too late to quit a PhD program?,"['Age', 'Profession', 'Education Level']",3
 "What are the logistics of dropping out of a PhD program, and how can I find a job afterward given my concerns about references and explaining my situation?",['Education Level'],1
 How much debt do you think it is reasonable to take on as an MSW?,[],0
-What should I do if I'm miserable in my masters of nursing program and unsure about my career path?,"['Education Level', 'Profession']",2
-How can I transition from my current career to becoming a successful artist?,"['Profession', 'Education Level']",2
+What should I do if I'm miserable in my masters of nursing program and unsure about my career path?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
+How can I transition from my current career to becoming a successful artist?,"['Profession', 'Education Level', 'Economic Status']",3
 Has anyone else ever had to take leave? How did it go when you returned?,[],0
 "Did anyone travel for a year between undergrad and grad school or at least spend some time working only part time/doing an unpaid internship? What was your experience, was it worth it?","['Profession', 'Education Level', 'Age', 'Economic Status', 'Mental Health Status']",5
 "Do you know if an app exists that allows you to annotate and export/extract the annotated parts of a PDF document to Word or Google Docs, and also works with Endnote on iOS?",['Profession'],1
 Should I quit my Master's program or tough it out?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I manage my anxiety and panic attacks while pursuing a PhD?,['Mental Health Status'],1
 "At what point, if at all, do I tell my advisor about my mental health struggles?",['Mental Health Status'],1
-Has anyone been through something similar or has any advice on whether I should continue my Master's program or move back home?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Has anyone been through something similar or has any advice on whether I should continue my Master's program or move back home?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
 How do you keep yourself from feeling guilty about taking a day off?,[],0
-What should I do about this work situation and how should I go about finding something else to do in the meantime?,"['Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",4
+What should I do about this work situation and how should I go about finding something else to do in the meantime?,"['Profession', 'Mental Health Status', 'Economic Status']",3
 "Why did my essay, which I thought was bad, receive a high grade?",['Education Level'],1
-"How long did it take to find a job after finishing a PhD, and how did you manage financially and emotionally in the interim period?","['Economic Status', 'Profession', 'Education Level', 'Mental Health Status']",4
+"How long did it take to find a job after finishing a PhD, and how did you manage financially and emotionally in the interim period?","['Economic Status', 'Profession']",2
 What can I do to better prepare for the challenges of my first year in a PhD program?,['Education Level'],1
 What are the realistic chances that I could get into a Master program for Earth Sciences without having to go back and get a brand new bachelors degree?,['Education Level'],1
-"How should I choose between a highly acclaimed 6-year graduate program in a small town and a shorter program in a large city, considering my concerns about future regret and social life?","['Education Level', 'Profession']",2
+"How should I choose between a highly acclaimed 6-year graduate program in a small town and a shorter program in a large city, considering my concerns about future regret and social life?","['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Gender']",9
 What should I do if I'm unsure about pursuing a PhD and don't want to uproot my life?,['Education Level'],1
 "How can I manage my exhaustion from work, grad school, and living with multiple people?",['Education Level'],1
 How will I tell the admission counsel about the things which I haven't done yet during my gap year?,['Education Level'],1
 Any tips for coping with stress and anxiety as a master's student?,['Education Level'],1
 Is there a way to structure the academic system so that there are multiple paths toward building knowledge?,['Education Level'],1
-Do people actually work full-time and take 2-3 classes in the evenings?,"['Profession', 'Education Level']",2
+Do people actually work full-time and take 2-3 classes in the evenings?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
 "How should I position myself as a candidate for graduate school after being 5 years away from my field, and how can I reengage with my former professors for support?",['Education Level'],1
 How did you talk to your advisor/department and get a letter of recommendation when considering leaving academia for a non-academic job?,['Profession'],1
 What are my chances of getting into an REU based on my background and experience?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I best support my friend who is considering dropping out of grad school?,['Education Level'],1
-Is my current experience representative of graduate school or is there some hope that I will get some mentorship on how to be a better scientist?,"['Profession', 'Education Level']",2
+Is my current experience representative of graduate school or is there some hope that I will get some mentorship on how to be a better scientist?,"['Profession', 'Education Level', 'Mental Health Status', 'Economic Status']",4
 What is the effect of Ritalin on decision fatigue?,['Education Level'],1
 "Has anyone experienced starting a PhD program later in life while also dealing with being newly single, or have any wisdom to share?","['Age', 'Marital Status']",2
 Any one have any advice on how to handle a Phone/In Person interview?,['Profession'],1
@@ -324,13 +324,13 @@ Any one have any advice on how to handle a Phone/In Person interview?,['Professi
 "How can I manage the side effects of my current medication which make me dizzy, unable to concentrate, and extremely sleepy?",['Health Status'],1
 "Has anyone ever been through something similar? Either way, advice would be appreciated.",[],0
 Does anyone have any advice for managing my time and study methods while feeling overwhelmed?,['Education Level'],1
-"Where should I go to grad school, UCSF in San Francisco or UT Austin in Texas?","['Education Level', 'Profession']",2
+"Where should I go to grad school, UCSF in San Francisco or UT Austin in Texas?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 What should I do after being told to leave my BME PhD program and having no GRE?,[],0
 Should I pursue biochemistry in grad school if I don't want my career to be my life?,['Profession'],1
 How do I stop being so self-deprecating?,['Emotional State'],1
 How can I manage the anxiety and uncertainty regarding my academic program and course schedule?,['Education Level'],1
-Should I focus more on applying to masters programs or would going straight to a PhD program in finance be realistic given my situation?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
-"Is it feasible to make a career jump from marketing into science, and what would I need to do to be accepted into a master's program?","['Education Level', 'Profession']",2
+Should I focus more on applying to masters programs or would going straight to a PhD program in finance be realistic given my situation?,"['Education Level', 'Profession', 'Economic Status']",3
+"Is it feasible to make a career jump from marketing into science, and what would I need to do to be accepted into a master's program?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Health Status']",7
 Should I stay in my PhD program or leave and get a regular job?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Is it appropriate for my husband to ask the university if there is an additional budget to help cover my travel costs to visit with him?,['Marital Status'],1
 How can I handle the feelings of inadequacy and exhaustion during my PhD journey?,['Education Level'],1
@@ -339,10 +339,10 @@ Do I have what it takes to continue in my PhD program or should I consider leavi
 Tips/pep talks for surviving before I can hit the sweet spot and advance to candidacy?,[],0
 How can I manage the stigma and judgment from needing accommodations for my mental health issues in my PhD program?,['Mental Health Status'],1
 How can I tell my advisor that I'm struggling with my mental health and chronic illness?,['Health Status'],1
-Is it a normal sort of expectation for PhD students to produce a patent-worthy result within two months?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Is it a normal sort of expectation for PhD students to produce a patent-worthy result within two months?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I make the most out of grad school because not going isn't an option for me?,['Education Level'],1
-Is it worth it to pursue an MHA and MBA in terms of effort and ROI?,"['Profession', 'Education Level']",2
-What should I do about my situation with my PhD program and lack of progress on my thesis?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
+Is it worth it to pursue an MHA and MBA in terms of effort and ROI?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
+What should I do about my situation with my PhD program and lack of progress on my thesis?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status']",6
 How do you deal with presenting at large conferences as an autistic person?,[],0
 Is it normal for my advisor to wait until the last moment to get the required signatures for my graduation paperwork?,['Education Level'],1
 What should I do to manage financially while pursuing a master's program and juggling multiple jobs?,['Economic Status'],1
@@ -352,38 +352,38 @@ How can I be a supportive partner from a distance when my girlfriend moves for g
 When did graduate school get to be hell?,"['Education Level', 'Mental Health Status']",2
 Should I pick up a tier 1 business school in Germany/France or go for Australia?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I regain my motivation to study and improve my situation in Estonia?,['Education Level'],1
-What should I do after deciding to leave my biochemistry PhD program due to lack of support and mental health struggles?,"['Mental Health Status', 'Emotional State', 'Profession']",3
+What should I do after deciding to leave my biochemistry PhD program due to lack of support and mental health struggles?,"['Mental Health Status', 'Emotional State']",2
 What are some things to consider when choosing between two graduate programs with similar offerings?,['Education Level'],1
 How should I spend the next 6 months before starting my funded PhD program in clinical psychology?,['Education Level'],1
 Why do I feel guilty about taking sick days and how can I manage this guilt?,['Mental Health Status'],1
 Is it practical to be a part time grad student while managing responsibilities as a parent and partner?,['Education Level'],1
-How can I get over the constant worrying about how other people view me and just get on with my life?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",4
-What was the experience like for those who completed or are completing a PhD remotely or in absentia?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+How can I get over the constant worrying about how other people view me and just get on with my life?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
+What was the experience like for those who completed or are completing a PhD remotely or in absentia?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Has anyone with a PhD in STEM subsequently gotten an MFA?,['Education Level'],1
-How can I transition to an international career in laboratory services in low and middle income countries without incurring a lot of debt?,"['Education Level', 'Profession']",2
+How can I transition to an international career in laboratory services in low and middle income countries without incurring a lot of debt?,"['Education Level', 'Profession', 'Economic Status']",3
 What should I do if my PhD paper is rejected and I'm worried about losing a postdoc opportunity?,['Education Level'],1
-"For you folks who started grad school single and managed to find a healthy long-term relationship, how did you do it? Do you have tips for how to be a good partner while also managing the immense stress that grad programs involve?","['Marital Status', 'Education Level', 'Profession', 'Mental Health Status']",4
+"For you folks who started grad school single and managed to find a healthy long-term relationship, how did you do it? Do you have tips for how to be a good partner while also managing the immense stress that grad programs involve?","['Marital Status', 'Education Level', 'Profession']",3
 What graduate programs are suitable for me to increase my career capital and gain hard skills?,"['Education Level', 'Profession']",2
 What are some ways to deal with lack of motivation due to mental health issues related to grad school responsibilities?,['Education Level'],1
-Am I screwed for financial aid?,"['Economic Status', 'Education Level', 'Marital Status']",3
-What should I do about the overwhelming anxiety and stress from my teaching responsibilities and thesis work?,"['Education Level', 'Mental Health Status']",2
+Am I screwed for financial aid?,"['Economic Status', 'Education Level']",2
+What should I do about the overwhelming anxiety and stress from my teaching responsibilities and thesis work?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",4
 How can I stay productive for the entire day and not lose track of the big picture?,['Profession'],1
 How can I manage this situation where I feel guilty for prioritizing my mental health over taking a new job?,['Emotional State'],1
 How can I manage grad school with PTSD without losing my mind?,['Mental Health Status'],1
-"What is a realistic description of life in Academia? Would life in industry gain you more freedom over life in Academia? Should I major in some form of engineering or get a PhD if I want to work in industry? Which field should I pursue for better research opportunities post-gradschool, Engineering or Physics? Which field would be better in terms of money, Engineering or Physics? If I want to start a company in the future, would it be worth it to major in Physics or Engineering?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Past Self-Harm History']",9
+"What is a realistic description of life in Academia? Would life in industry gain you more freedom over life in Academia? Should I major in some form of engineering or get a PhD if I want to work in industry? Which field should I pursue for better research opportunities post-gradschool, Engineering or Physics? Which field would be better in terms of money, Engineering or Physics? If I want to start a company in the future, would it be worth it to major in Physics or Engineering?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender']",10
 What should I do if I'm not learning anything in my third year of a PhD program?,['Education Level'],1
 How can I manage the stress of the admissions process for graduate school?,['Education Level'],1
 How can I deal with feeling awful after someone criticized my degree?,['Education Level'],1
-What should I do to handle my thesis situation and manage my mental health and finances?,"['Education Level', 'Mental Health Status', 'Economic Status', 'Profession']",4
+What should I do to handle my thesis situation and manage my mental health and finances?,"['Education Level', 'Mental Health Status', 'Profession', 'Economic Status']",4
 "What are my options in terms of asking for more financial aid, and has anyone navigated this conversation successfully?",['Economic Status'],1
 Does anybody have any experience changing PhDs in the UK? Not just institutions but subjects too? Has anybody moved from physics to climate science? Or does anybody have any just general advice?,['Education Level'],1
 How can I stay motivated and manage my depression while waiting for a new advisor in my PhD program?,['Mental Health Status'],1
 How can I manage my mental health without university support now that I'm leaving my PhD program?,['Education Level'],1
 Any ideas or suggestions?,[],0
 How can I stay sane while working on my dissertation full-time without distractions?,['Education Level'],1
-Would it be completely frowned upon to try to leverage the other scholarship with my preferred school?,"['Profession', 'Education Level']",2
+Would it be completely frowned upon to try to leverage the other scholarship with my preferred school?,"['Profession', 'Education Level', 'Economic Status']",3
 Is it worth attending Johns Hopkins MAIS if I will double my overall student debt?,"['Profession', 'Economic Status', 'Education Level', 'Age', 'Mental Health Status']",5
-What should I do if I can't find a tenure track position or post-doc after getting my Ph.D.?,"['Education Level', 'Economic Status', 'Profession', 'Mental Health Status']",4
+What should I do if I can't find a tenure track position or post-doc after getting my Ph.D.?,"['Education Level', 'Economic Status', 'Profession']",3
 Should I find a way to master out before the preliminary exam?,[],0
 "Does anyone have any success stories of being in similar situations to mine, or any ideas for what they think I should do?","['Education Level', 'Profession', 'Mental Health Status']",3
 Do any of you have tips or advice on how I should go about co-authoring papers with my professor?,['Education Level'],1
@@ -395,10 +395,10 @@ When and how should I tell my advisor that I no longer want to pursue academia?,
 What should I do about my MA program if I feel it's not benefiting my career and I'm overwhelmed with work and personal commitments?,['Education Level'],1
 How did you sustain a long distance relationship at the beginning of a grad program? What difficulties did you face?,['Education Level'],1
 What are some factors to consider when deciding between different graduate programs in materials science?,['Education Level'],1
-"How do those with anxiety, depression, or ADHD manage self-care and productivity while working 60-80 hours a week as grad students?","['Education Level', 'Mental Health Status']",2
+"How do those with anxiety, depression, or ADHD manage self-care and productivity while working 60-80 hours a week as grad students?","['Education Level', 'Mental Health Status', 'Profession']",3
 "Is it true that you can't leave campus for the weekend unless for a wedding, funeral, or work obligation at Middlebury's summer program?","['Profession', 'Education Level']",2
 Is there any time for a relationship in Grad School?,['Education Level'],1
-Do I have a chance of getting into Emory's Health Informatics online program?,"['Education Level', 'Profession']",2
+Do I have a chance of getting into Emory's Health Informatics online program?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I decide between the Masters programs at the University of Toronto and the University of Guelph?,['Education Level'],1
 "How do regular students with fellowship flexibility end up becoming 'visiting students,' or working with other professors despite not being a part of a special program?","['Profession', 'Education Level', 'Mental Health Status']",3
 "Should I pursue a PhD or an MS considering my family responsibilities, financial situation, and career goals?","['Education Level', 'Profession']",2
@@ -408,25 +408,25 @@ How hurt are my chances for grad school?,['Education Level'],1
 How can I navigate academia and social events without drinking?,[],0
 How can I cope with imposter syndrome as a grad student and manage the pressure of my situation?,['Education Level'],1
 What are healthy ideas to push past burnout without taking time off?,['Profession'],1
-Would it be stupid of me to give up a very secure future with the City for a PhD?,"['Profession', 'Education Level']",2
+Would it be stupid of me to give up a very secure future with the City for a PhD?,"['Profession', 'Education Level', 'Economic Status']",3
 How can I truly relax at night and de-stress in the evenings?,['Emotional State'],1
 How can I continue to manage stress while maintaining my academic workload?,['Education Level'],1
 Should I quit my current sales job to go back to school for the prerequisites needed for a physical therapy program?,"['Education Level', 'Profession']",2
-Do you think pursuing a higher degree makes sense for me?,"['Education Level', 'Profession']",2
+Do you think pursuing a higher degree makes sense for me?,"['Education Level', 'Profession', 'Economic Status']",3
 What's the most graceful way to quit your program and tell your advisor that you're leaving?,[],0
 What are your thoughts on this? Do you guys have any recommendations?,[],0
 How can I stop feeling like life is passing me by in school?,['Education Level'],1
-"As a professor, how would you feel if you had been denied by a student who said that they just generally weren't sure about doing a PhD but then the student started a PhD with a close collaborator? If you were a student, how would you handle this? Would accepting the second person's offer damage my relationship beyond repair with the first person?","['Mental Health Status', 'Emotional State', 'Profession']",3
+"As a professor, how would you feel if you had been denied by a student who said that they just generally weren't sure about doing a PhD but then the student started a PhD with a close collaborator? If you were a student, how would you handle this? Would accepting the second person's offer damage my relationship beyond repair with the first person?","['Mental Health Status', 'Emotional State']",2
 What should I do if my applications for a professional degree in data science don't go well?,['Education Level'],1
 "Is my reasoning to pay for my own master's degree sound, or is it a bad idea?",['Education Level'],1
 What should I do if I have serious personal doubts about accepting a TT job offer when I originally wanted to pursue a non-academic career?,"['Education Level', 'Profession']",2
 "Any sage words of encouragement, ideas to settle down, or ways to get past this?","['Emotional State', 'Mental Health Status', 'Marital Status', 'Profession', 'Education Level', 'Economic Status']",6
 Is grad school really that detrimental to your mental health?,"['Education Level', 'Profession', 'Mental Health Status']",3
-"Is pursuing a Master's in Healthcare Administration worth the investment, and can I manage it while working full-time?","['Education Level', 'Profession']",2
+"Is pursuing a Master's in Healthcare Administration worth the investment, and can I manage it while working full-time?","['Education Level', 'Profession', 'Economic Status']",3
 What helped you navigate grief while completing research in grad school?,"['Education Level', 'Mental Health Status']",2
 How am I expected to live for the next month when my pay is delayed over something out of my control?,['Economic Status'],1
 "Is NUS well-recognised in top tier American grad schools, especially in data science, and would going to UC Berkeley give me any sort of edge?","['Education Level', 'Profession']",2
-"Do you know of a program in materials science, engineering, analytical chemistry etc that can be done online, is based on research more than classes, and doesn't require a GRE?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+"Do you know of a program in materials science, engineering, analytical chemistry etc that can be done online, is based on research more than classes, and doesn't require a GRE?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 What are the next steps after completing a PhD in biomedical informatics?,['Education Level'],1
 How can I rediscover my motivation and 'why' for continuing my DVM/PhD program in biochemistry?,['Education Level'],1
 How can I get some clinical experience while studying for my GRE/GMAT and taking any pre-requisites?,['Profession'],1
@@ -436,40 +436,40 @@ How can I cope with not receiving the NSF GRFP?,"['Education Level', 'Mental Hea
 Has any other Persian PhD student filled out their tax forms and actually owed money?,[],0
 What should I do about considering withdrawing for the semester due to personal emergencies and stress?,"['Emotional State', 'Mental Health Status']",2
 What do I do about my anxiety and financial situation as I prepare to start grad school?,['Economic Status'],1
-When will I officially hear back about the fellowship?,"['Profession', 'Education Level', 'Economic Status', 'Age']",4
+When will I officially hear back about the fellowship?,"['Profession', 'Education Level', 'Economic Status']",3
 What are some advice and suggestions for taking a year off for mental health from other grads and academics?,['Education Level'],1
 "How do I update my resume to reflect that I'm still currently enrolled in a grad school program but would like to leave, and how do I signify the classes that I've taken without listing a degree/expected graduation date?",['Education Level'],1
 What’s the point of having a PhD if I’m not in academia?,['Profession'],1
-"How should I choose between the University of Pittsburgh's Master's in Public and International Affairs and Penn State Harrisburg's Master's in Public Administration, considering my personal constraints?","['Education Level', 'Profession']",2
+"How should I choose between the University of Pittsburgh's Master's in Public and International Affairs and Penn State Harrisburg's Master's in Public Administration, considering my personal constraints?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 What are the pros and cons of accepting a funded PhD spot when I'm already in significant student debt?,['Education Level'],1
 "Any advice on a potential next step? Or am I totally helpless here, since it didn't happen to me?",[],0
 Can any PhD students or PhD holders shed some insight about the hours you put in per week?,['Profession'],1
-Would it have been better to pursue a degree as a GIS Administrator instead of a GIS Developer?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Would it have been better to pursue a degree as a GIS Administrator instead of a GIS Developer?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Has anybody had similar experiences balancing moving and marriage?,"['Profession', 'Marital Status', 'Education Level', 'Economic Status']",4
 What should I do about the minor revisions for my dissertation?,['Education Level'],1
 "Should I keep my comfortable job in a town I hate, or leave everything behind for grad school?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",5
 What can I do to get out of this funk?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
 What should I do after being humiliated during my thesis defense and accused of cheating?,[],0
 How can I find positive aspects or achievements in my week?,['Education Level'],1
-"What steps should I take to develop a portfolio for architecture or fashion design, and how can I make up for my poor GPA when applying to a master's program?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+"What steps should I take to develop a portfolio for architecture or fashion design, and how can I make up for my poor GPA when applying to a master's program?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Have any of you had a similar problem and successfully found a way of working through it?,[],0
 Any advice? Words of encouragement?,['Emotional State'],1
 How do you do due diligence on a postgraduate course to ensure it will be beneficial for career progression?,['Education Level'],1
-What is the best way to deal with this situation of transferring to another program with a failed 3 years experience and uncertain recommendations?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State']",5
-How can I move forward after quitting a PhD program?,"['Age', 'Education Level']",2
+What is the best way to deal with this situation of transferring to another program with a failed 3 years experience and uncertain recommendations?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",4
+How can I move forward after quitting a PhD program?,"['Age', 'Education Level', 'Profession']",3
 "Will my F in circuits, flip flopping of majors, time spent in undergrad, and a D in my Programming Languages class keep me from getting into any graduate school even if I do great for the rest of my biology classes?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What are some last-minute tips for finishing my master's degree while balancing work and family?,['Education Level'],1
 How can I manage writing multiple 14+ page papers without losing brain power?,['Education Level'],1
-Has anyone left because their stipend got cut? Any advice?,"['Economic Status', 'Profession', 'Mental Health Status']",3
+Has anyone left because their stipend got cut? Any advice?,"['Economic Status', 'Profession']",2
 What should I do here? Should I take the minimum passing grade and not worry about even attempting the last two assignments?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
-"What is the leaving process like for quitting a PhD, and how should I organize and leave all my data?","['Education Level', 'Profession']",2
+"What is the leaving process like for quitting a PhD, and how should I organize and leave all my data?","['Education Level', 'Profession', 'Age', 'Mental Health Status']",4
 Is it really worth this misery to get a master's degree?,"['Education Level', 'Economic Status', 'Profession', 'Mental Health Status', 'Emotional State']",5
 Should I leave my Economics PhD program with an MA and pursue a job outside academia?,"['Education Level', 'Profession']",2
 How can I balance working a part-time job with my grad school responsibilities?,['Education Level'],1
 "Should I even think about grad school in the future, once I have my life straightened out? Do I even have a chance with such a black mark on my record?",['Education Level'],1
 "What do you all think I should take, a free Masters at Big State school or at Johns Hopkins in China?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "When is it right to just decide life gave you ambition, but not the ability to succeed at this?",[],0
-Is it worth applying for an M.A. in General Psychology with low scores and no research/references?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
+Is it worth applying for an M.A. in General Psychology with low scores and no research/references?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State', 'Health Status']",7
 How can I create positive social support in grad school or stop dreading school right now?,['Education Level'],1
 Can I still attend a PhD program with funding after accepting late?,"['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status']",5
 "What would you do to make the most of an opportunity to take 2-3 months properly off without feeling bored, depressed, or resentful?",['Education Level'],1
@@ -483,9 +483,9 @@ How can I tell if what I'm feeling right now is a sign that I shouldn't go to gr
 Can anyone offer support in either direction regarding starting grad school or not?,['Education Level'],1
 Has anyone else here struggled with anxieties about taking on additional student loan debt for a program that aligns with their career goals?,['Education Level'],1
 What should I consider before applying for a PhD in physical chemistry at the age of 27?,['Education Level'],1
-How can I manage to finish grading essays when I'm feeling depressed and unmotivated?,"['Mental Health Status', 'Emotional State']",2
+How can I manage to finish grading essays when I'm feeling depressed and unmotivated?,"['Mental Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
 "Do I pursue this path even though people around me are holding me back, or is this actually good advice that I should stop and listen to?","['Emotional State', 'Mental Health Status', 'Profession', 'Marital Status', 'Economic Status']",5
-What do I prioritize so I don't embarrass myself on the questions too much? Any tips on getting past crippling nervousness so I can be productive?,[],0
+What do I prioritize so I don't embarrass myself on the questions too much? Any tips on getting past crippling nervousness so I can be productive?,"['Emotional State', 'Education Level', 'Mental Health Status']",3
 "Have any of you experienced something similar, and if so, how did you re-motivate yourself?",[],0
 How can I celebrate my graduation when no one in my friends or family has ever gone to graduate school?,"['Education Level', 'Emotional State', 'Profession', 'Economic Status', 'Mental Health Status', 'Age']",6
 "Would it be better in my situation to just take tons of edX courses, or to go for certifications instead of a masters in Computer Science or Information Technology?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
@@ -497,7 +497,7 @@ How can I manage this situation where my professor commented on my absence due t
 How do you stay focused through a breakup?,[],0
 What should I do if I'm being forced to go to grad school despite my unwillingness?,[],0
 Does anyone have advice on handling breast cancer while completing a fast-paced grad school program?,['Education Level'],1
-"What are my prospects for getting into an MSF program given my poor GPA, lack of quantitative background, and average work experience?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+"What are my prospects for getting into an MSF program given my poor GPA, lack of quantitative background, and average work experience?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
 "What should I consider before pursuing a PhD, given my financial and family constraints?",['Education Level'],1
 "What are my chances of getting into Tulane, UW St. Louis, Grinnell, Vanderbilt, Swarthmore, Colorado College, and Rensselaer?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Can you recommend affordable and diverse colleges on the East Coast or in California with good financial aid and scholarships?,['Education Level'],1
@@ -516,9 +516,9 @@ How can I cope with feeling mediocre compared to others in my college applicatio
 Can anyone help me find a credible online school for a degree in wildlife preservation?,['Education Level'],1
 "What are my chances of getting into UCSD, UCSB, UCI, and UCD?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "What kinds of schools can I get into, and what specific things can I do to ensure I get into a top-tier school? In terms of my high school career, what can I do and what should I stop doing?",['Education Level'],1
-How can I improve my chances of getting scholarships when my class rank has dropped due to medical issues?,"['Education Level', 'Health Status', 'Mental Health Status']",3
+How can I improve my chances of getting scholarships when my class rank has dropped due to medical issues?,"['Education Level', 'Health Status', 'Economic Status']",3
 What should I do about choosing between a commuter school and a go-away state school given my financial situation and personal preferences?,['Economic Status'],1
-Anyone know of easy scholarships I can get or apply for?,"['Education Level', 'Age', 'Profession', 'Economic Status']",4
+Anyone know of easy scholarships I can get or apply for?,"['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status']",5
 Why was I declined by Purdue despite fitting their stats and having a strong resume and essay?,"['Education Level', 'Mental Health Status']",2
 What can I do to get financial aid while being considered homeless despite lacking documentation?,"['Economic Status', 'Mental Health Status']",2
 "I really want to get into at least UCLA or UC Berkeley, is that possible?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
@@ -528,13 +528,13 @@ What are my chances of getting into a mid-size to smaller biology/pre-med progra
 What would happen if my friend withdrew from Columbia due to health problems? Would Columbia force him to attend or penalize him for choosing a school closer to home because of his cystic fibrosis?,['Health Status'],1
 Anyone have any idea about what the FUCK is going on?,[],0
 "How do I apply to colleges in the UK, USA, Canada, or New Zealand, and what is the process for obtaining financial aid?",['Education Level'],1
-Is it useful to do an MBA after a degree in Mass communication could not get any good jobs?,"['Education Level', 'Profession']",2
+Is it useful to do an MBA after a degree in Mass communication could not get any good jobs?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Is anyone else feeling less proud of their acceptances due to benefitting from diversity programs?,[],0
 Which UC campus would be the cheapest for an international student studying abroad for one semester?,['Economic Status'],1
 How can I find a way to be truly content or at least not feel like I am jailing myself?,[],0
 What should I consider when choosing between these colleges given my acceptance offers and financial constraints?,['Education Level'],1
 Will I get into Stanford based on my essays?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
-Which colleges in Massachusetts with strong STEM programs would be suitable for me given my academic and extracurricular profile?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Gender', 'Mental Health Status']",6
+Which colleges in Massachusetts with strong STEM programs would be suitable for me given my academic and extracurricular profile?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What options do I have if I can't get into my dream schools?,"['Education Level', 'Profession']",2
 Can emancipating my twins help them qualify for FAFSA based on their own income?,[],0
 "Is there a silver lining to my decision not to study in the US, or am I romanticising what could have been?","['Education Level', 'Mental Health Status']",2
@@ -542,33 +542,33 @@ Do I have ANY chance at top schools?,"['Education Level', 'Profession', 'Economi
 What should I do to prepare for the USC merit scholarship interview?,['Education Level'],1
 "Is 16 extracurricular activities a lot, or have I wasted 2 years of my life?",['Education Level'],1
 "How can I handle the situation where my friends and I have high expectations of someone getting into a top school, but I'm worried about the lack of extracurriculars on their application?",['Education Level'],1
-What do you think I should do about my parents not letting me go to NYU?,"['Education Level', 'Age', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Gender']",9
+What do you think I should do about my parents not letting me go to NYU?,"['Education Level', 'Age', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 How likely am I to lose my chances of getting into college?,['Education Level'],1
 Why do you need my non-custodial parent's information for the CSS Profile?,[],0
 How much will my first semester senior grades affect my admission into these schools? Would emailing the admissions office about my explanation for my grades be beneficial or hurt more in the decision making?,['Education Level'],1
 What should I do about being rejected from my desired school after being caught for lying in an appeal?,"['Age', 'Education Level', 'Mental Health Status']",3
 Should I mention that I have ADD in my applications?,"['Education Level', 'Profession', 'Mental Health Status']",3
-What can I do about being burned out and unmotivated in my classes?,"['Education Level', 'Profession']",2
+What can I do about being burned out and unmotivated in my classes?,"['Education Level', 'Profession', 'Mental Health Status']",3
 What should I do? What tips do you have for me?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Economic Status']",5
-"Should I take a gap year? Why or why not? And if I should, how could I fill my time?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+"Should I take a gap year? Why or why not? And if I should, how could I fill my time?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What should I do to try and mitigate the risk of my mother potentially jeopardizing my admission and ROTC scholarship at UT Austin?,[],0
 How can I afford to pay for college without taking out loans?,['Economic Status'],1
 What should I do if I've been deferred and rejected from my top choice colleges and might be rejected from others due to financial aid requests?,['Economic Status'],1
 Is there anything wrong with wanting to go to a school with requirements like a 2.5 GPA and 19 ACT score? Should I have yearned for more and applied to schools with higher admission requirements? Am I doing myself a disservice for planning to go here?,['Education Level'],1
 What strategies can help maintain my motivation and academic performance in university?,['Education Level'],1
-Is there ANY other option for my friend to pay for college without student loans or parental support?,"['Education Level', 'Economic Status']",2
+Is there ANY other option for my friend to pay for college without student loans or parental support?,"['Education Level', 'Economic Status', 'Profession']",3
 How can I leverage my URM status to get into a reputable college despite my GPA being affected by past lack of motivation?,"['Age', 'Education Level', 'Economic Status', 'Profession', 'Mental Health Status']",5
 How can I manage my lack of motivation and productivity in school?,['Education Level'],1
 Is it realistic for my wife to get a free ride to college by doing well on standardized tests?,"['Education Level', 'Economic Status']",2
 Has anyone had success transferring to another school without meeting the requirements?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Can you assess my chances of getting into a T30 liberal arts university with financial aid?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-What can I do or what do I need to get into USC for film?,"['Profession', 'Education Level', 'Age', 'Economic Status', 'Mental Health Status']",5
+What can I do or what do I need to get into USC for film?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
 Will I get into the colleges I applied to?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "Will the fact that I'm only 18 and already living alone, enrolled in an EMT course, working to support myself, and having struggled with depression balance out the fact that I am taking only 4 classes?",['Mental Health Status'],1
 How can I find a potential internet girlfriend/boyfriend in time for Valentine’s Day?,[],0
-What should I do after being waitlisted at Purdue?,"['Age', 'Profession', 'Education Level']",3
-Should I go to college or continue working like a horse for the rest of my life?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
-Are there any schools still accepting applications that give merit scholarships?,"['Education Level', 'Profession', 'Economic Status']",3
+What should I do after being waitlisted at Purdue?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",5
+Should I go to college or continue working like a horse for the rest of my life?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Are there any schools still accepting applications that give merit scholarships?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "To what extent can my personal story contribute to my college application, specifically in supplemental essays?",['Education Level'],1
 Why do I feel unworthy of my admission to Vanderbilt?,[],0
 How can attending a community college be beneficial compared to going directly to a university?,['Education Level'],1
@@ -579,8 +579,8 @@ How can I effectively convey my background and experiences in a university appli
 What can I do to improve my undergrad GPA for M.Ed program applications after 20 years?,['Education Level'],1
 "Would the fact that I am a first-generation immigrant and hail from an impoverished family with a single father serve as an interesting essay topic for college applications, or would colleges disregard such an emotionally packed essay?",['Economic Status'],1
 Do they take my father's nearing retirement and our family debt into account for financial aid?,['Economic Status'],1
-What do I do about my college decision if I'm accepted only at Central Michigan University and waiting on Michigan State?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-Should I take a gap year and what career path should I explore between medicine and the outdoors?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State', 'Age', 'Health Status']",7
+What do I do about my college decision if I'm accepted only at Central Michigan University and waiting on Michigan State?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Should I take a gap year and what career path should I explore between medicine and the outdoors?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Health Status']",7
 How am I supposed to pay thousands of dollars for college with basically no aid and not a lot in savings?,"['Economic Status', 'Education Level']",2
 How can I go to college in Canada as a 22-year-old who previously struggled with a drug problem?,[],0
 How do I fill out the FAFSA regarding parent's income when I'm not on speaking terms with my family and can't access their tax information?,"['Age', 'Economic Status', 'Marital Status', 'Profession', 'Mental Health Status']",5
@@ -594,12 +594,12 @@ How can I handle multiple rejections from colleges?,"['Education Level', 'Mental
 What questions do you have for someone who just got into UIUC for Computer Engineering?,['Education Level'],1
 What steps should I take now that I've decided to apply for college at 25?,['Education Level'],1
 What are some college suggestions that will challenge me the most academically for studying business/economics?,['Education Level'],1
-How can I manage my school absences and deal with my medical program certification issues?,['Education Level'],1
-"What career path or degree would be the fastest way for me to find a comfortable job, considering I'm already 30 and don't have transcripts or SAT scores?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
+How can I manage my school absences and deal with my medical program certification issues?,"['Education Level', 'Health Status', 'Profession', 'Age', 'Mental Health Status', 'Economic Status']",6
+"What career path or degree would be the fastest way for me to find a comfortable job, considering I'm already 30 and don't have transcripts or SAT scores?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Age', 'Emotional State', 'Health Status', 'Past Self-Harm History', 'Gender', 'Marital Status']",10
 How can I improve my chances of getting into a great college despite feeling inadequate?,['Education Level'],1
 Does the admissions process truly do justice to students who have compelling personal stories but lack standard academic credentials?,"['Education Level', 'Mental Health Status']",2
 "Where should I apply for college given my interests in engineering, business, or politics?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-How can I increase my chances of getting into an Ivy League or top 20 university?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+How can I increase my chances of getting into an Ivy League or top 20 university?,"['Education Level', 'Profession', 'Economic Status']",3
 What should I do to find a relatively cheap school that doesn't require standardized test scores and will accept me as a transfer for an English major?,['Education Level'],1
 How can I cope with the stress of expecting rejection from a university application?,['Education Level'],1
 "How can I, as a poor international student, get an elite education in the US for free?",[],0
@@ -608,9 +608,9 @@ How can I be okay with taking a gap year?,"['Education Level', 'Mental Health St
 What should I consider when transferring to a respected school?,['Education Level'],1
 How can I successfully get into a top graduate program after attending a lower-ranked undergraduate school?,['Education Level'],1
 "What should I consider when deciding between out-of-state and in-state colleges, given the financial implications?",['Economic Status'],1
-How do I accept that no college will be a perfect fit and let go of some constraints? What constraints should I let go of?,"['Education Level', 'Age', 'Profession']",3
+How do I accept that no college will be a perfect fit and let go of some constraints? What constraints should I let go of?,"['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
 "Should I update Dartmouth, Cornell, Notre Dame, Northwestern, and Stanford on how my online courses and businesses are going?",['Profession'],1
-Does anyone have any knowledge about being rescinded at UW or any similar-tier school?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
+Does anyone have any knowledge about being rescinded at UW or any similar-tier school?,"['Profession', 'Education Level', 'Economic Status']",3
 How can I manage my parents' expectations and stress during the college application process?,['Education Level'],1
 How can I manage my mental health while pursuing a college education?,['Education Level'],1
 "What are some suggestions for research opportunities or paths I can take, given my interests and academic profile?",['Education Level'],1
@@ -623,14 +623,14 @@ How can I handle the pressure and fear of rejection in the college application p
 "Are there any scholarships or grants for first-generation immigrant college students, Latin people, adults going to school for the first time, gay men in troubled homes, or any local funding options for Florida or Colorado residents?","['Age', 'Profession', 'Mental Health Status']",3
 Does anyone have any advice on what I can do or a school that will accept me with a low GPA? Is there such a thing as an academic bankruptcy for cases like this?,['Education Level'],1
 "Can you 'chance me' for admissions to Lehigh, Drexel, UPenn, and Princeton?",[],0
-"How can I cope with being rejected from my dream school, MIT, and deal with the embarrassment of facing my classmates who were accepted?","['Education Level', 'Mental Health Status', 'Emotional State']",3
+"How can I cope with being rejected from my dream school, MIT, and deal with the embarrassment of facing my classmates who were accepted?","['Education Level', 'Mental Health Status', 'Emotional State', 'Age', 'Profession', 'Economic Status']",6
 Do I at least stand a chance at NYU?,['Education Level'],1
 Am I the only one who's constantly checking my email for college decisions?,"['Education Level', 'Age', 'Profession', 'Mental Health Status']",4
-Any suggestions for a new laptop for college?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Any suggestions for a new laptop for college?,"['Education Level', 'Profession', 'Economic Status', 'Age']",4
 Is there any chance I'll get into a four year school like U Albany?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "Any tips for managing potential student debt and balancing work, extracurricular activities, and preparation for medical school applications?",['Education Level'],1
 How can I cope with rejection and personal setbacks?,['Emotional State'],1
-Why have I only gotten into my safety schools despite my efforts in high school?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Why have I only gotten into my safety schools despite my efforts in high school?,"['Education Level', 'Profession', 'Economic Status']",3
 Will the education and opportunities I receive at Georgia Tech make it enough of an advantage to give up in state tuition at Madison?,['Education Level'],1
 Can anyone give me hope or say something encouraging?,['Emotional State'],1
 How can I join the College Admissions Hub Discord Server?,['Education Level'],1
@@ -641,13 +641,13 @@ What are my chances of getting a scholarship for journalism at GWU with my curre
 Do I still have time to make myself into someone that can stand with the people that get into places like Cambridge and Harvard? Where do I go from here?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
 "Will not doing any extras (clubs, volunteering) look bad when my daughter applies to transfer to a university if the reason was chronic health issues?",['Health Status'],1
 How should I handle the disappointment of being rejected from a dream school like Pomona while being accepted to another prestigious school like Northwestern?,"['Education Level', 'Mental Health Status']",2
-Are any other international students experiencing difficulties with college admissions?,"['Education Level', 'Profession']",2
+Are any other international students experiencing difficulties with college admissions?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "Should I choose UMass for CS with a scholarship and better opportunities for internships, or UIUC for its prestige and potential career benefits in my home country?","['Education Level', 'Profession']",2
 ,[],0
 How can I navigate the non-meritocratic aspects of college admissions?,"['Education Level', 'Profession']",2
 How can I cope with multiple rejections and improve my outlook?,['Emotional State'],1
 Where should I apply to college with a strong SAT score but a poor high school GPA and good Navy GPA?,['Profession'],1
-How should I choose between University of Oregon and University of Connecticut for my marine biology studies?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+How should I choose between University of Oregon and University of Connecticut for my marine biology studies?,"['Education Level', 'Profession']",2
 Did I get in because I'm poor and brown?,[],0
 Why was I rejected from top US universities despite showing demonstrated interest and being a finalist for a scholarship?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Can you figure out which college Sheldon attended for undergrad?,['Education Level'],1
@@ -662,10 +662,10 @@ What should I do now that I've only been accepted into my safety schools for a C
 Should I include my past substance abuse in my college essay if it explains my academic turnaround?,['Economic Status'],1
 Do I have a chance of getting into a top school if I take a gap year and reapply?,['Education Level'],1
 What should I consider when applying to colleges and dealing with the pressure of not applying to prestigious schools?,['Education Level'],1
-Why am I not as happy as I expected myself to be after getting accepted into my top choice in-state college?,"['Education Level', 'Emotional State']",2
+Why am I not as happy as I expected myself to be after getting accepted into my top choice in-state college?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status']",4
 "What's the probability of getting off the waitlist at UCB? How many people are there on the UCB waitlist? Also, what do Fall, Winter, and Spring grades mean for an international student whose academic term is from January to December?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I cope with being rejected from my top college choices and feeling inadequate?,['Education Level'],1
-Should I just go to a college for a year and transfer to BU?,"['Education Level', 'Profession', 'Age']",3
+Should I just go to a college for a year and transfer to BU?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How can I find success after being rejected from top schools like Duke?,"['Education Level', 'Profession']",2
 Why was I rejected from so many colleges despite having a strong application?,"['Education Level', 'Mental Health Status']",2
 "Should I attend community college in hopes of transferring to a nursing school in two years, despite living with a borderline abusive mother and concerns about the community college environment?","['Mental Health Status', 'Emotional State', 'Education Level', 'Economic Status', 'Profession', 'Health Status']",6
@@ -673,7 +673,7 @@ Any opinions or advice on choosing between Duke and UNC Chapel Hill?,['Education
 "What should I consider when applying to colleges, specifically for a computer science program?",['Education Level'],1
 How can I manage my feelings after being rejected from all the T20 schools I applied to?,"['Emotional State', 'Mental Health Status', 'Education Level']",3
 "Which school should I choose for overall prestige between Brown, Dartmouth, or Cornell for Computer Science?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-What should I do after being rejected from my top college choices?,"['Age', 'Education Level', 'Profession']",3
+What should I do after being rejected from my top college choices?,"['Age', 'Education Level', 'Profession', 'Mental Health Status']",4
 How can I manage this situation as a gap year student with a low GPA and high ACT who has been accepted to multiple universities but faced financial challenges?,['Economic Status'],1
 How can I successfully transfer to my dream school after overcoming past educational challenges and a gap year?,['Education Level'],1
 "What can I do to get admitted to Berkeley, and how are my chances looking now? If not Berkeley, what schools do you think I can get into?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
@@ -681,9 +681,9 @@ What should I focus on to improve my college application?,['Education Level'],1
 How can I deal with the guilt and pain of feeling responsible for misadvising my friends regarding their college applications?,['Emotional State'],1
 "Which school should I go to, USC or Harvard?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "Should I attend Pratt Institute despite the crippling debt, or choose a state school to avoid financial burden?",['Economic Status'],1
-How can I cope with feeling inadequate after being rejected from top colleges despite having good stats and extracurriculars?,"['Education Level', 'Mental Health Status']",2
+How can I cope with feeling inadequate after being rejected from top colleges despite having good stats and extracurriculars?,"['Education Level', 'Mental Health Status', 'Emotional State']",3
 How can I address my academic performance and improve my chances of getting accepted into a good college?,['Education Level'],1
-"Should I choose UMD College Park or Northeastern for my computer science major, considering my mental health and financial situation?","['Education Level', 'Mental Health Status']",2
+"Should I choose UMD College Park or Northeastern for my computer science major, considering my mental health and financial situation?","['Education Level', 'Mental Health Status', 'Economic Status']",3
 How can I improve my chances of getting accepted into college as a veteran with a difficult past?,"['Education Level', 'Mental Health Status']",2
 What should I consider when applying to colleges after experiencing a significant drop in grades due to personal issues?,['Education Level'],1
 What should I consider when choosing between universities after overcoming significant personal challenges?,['Education Level'],1
@@ -693,7 +693,7 @@ What should I do if I've been rejected from every university I applied to and ho
 Can anyone help me build my list of colleges to apply to?,['Education Level'],1
 What should I do if I want to transfer from Virginia Tech to UVA for a better business program?,['Education Level'],1
 "Does anyone going to a high-ranked school, but not the highest-ranked school, feel the same way about regretting not applying to an Ivy League?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-How do I become passionate about something?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
+How do I become passionate about something?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Age', 'Health Status']",7
 "Help me decide between IU Kelly, CU Boulder, and UW Madison for my college education.",['Education Level'],1
 How likely is it to get my scholarship and/or acceptances revoked because of getting 3 C's this quarter?,[],0
 Should I reconsider attending CMU after being waitlisted but receiving a significant financial aid offer?,['Economic Status'],1
@@ -707,25 +707,25 @@ How did I get rejected from Dartmouth and waitlisted at Vandy?,[],0
 What are my college options given my acceptance and rejection results?,['Education Level'],1
 Do I make the sacrifice or follow my aspirations?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I deal with rejection from colleges and improve my mental health?,['Education Level'],1
-What options are there for someone who was rejected by elite colleges and got into state schools with little scholarship money?,"['Profession', 'Economic Status', 'Education Level']",3
-Is it worth taking a gap year to reapply to better colleges?,"['Education Level', 'Profession', 'Economic Status', 'Age']",4
+What options are there for someone who was rejected by elite colleges and got into state schools with little scholarship money?,"['Profession', 'Economic Status']",2
+Is it worth taking a gap year to reapply to better colleges?,"['Education Level', 'Profession', 'Economic Status']",3
 Could you have even waitlisted me?,[],0
-Why are people posting so many pictures in 'interesting facts about me' Facebook group posts?,"['Age', 'Profession', 'Education Level', 'Economic Status', 'Mental Health Status']",5
+Why are people posting so many pictures in 'interesting facts about me' Facebook group posts?,"['Age', 'Profession', 'Education Level', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 Is applying to community college then transferring the best move for me?,"['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status']",5
 "What advice can you offer for choosing between Oxy and UCSB, and how can I persuade my mom against choosing Oxy?",['Education Level'],1
-"How do I choose between Boston University, The Ohio State, and NC State for Biomedical Engineering given my concerns about grade deflation, safety, and cultural fit?","['Education Level', 'Profession']",2
+"How do I choose between Boston University, The Ohio State, and NC State for Biomedical Engineering given my concerns about grade deflation, safety, and cultural fit?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Is it worth trading off my guaranteed future as a doctor for an uncertain future in the US?,['Age'],1
 What should I do about missing 2 quarters of school as a junior and not being registered for SAT or AP exams?,"['Education Level', 'Mental Health Status']",2
 What should I consider when applying to colleges after navigating the application process blind and making mistakes?,['Education Level'],1
 Do I really need to keep any hopes hanging or is it just a delayed rejection?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
-Would I be insane to choose a full ride to UMich Ross over Dartmouth for 15k/yr and Yale for 22k/yr?,"['Education Level', 'Profession']",2
+Would I be insane to choose a full ride to UMich Ross over Dartmouth for 15k/yr and Yale for 22k/yr?,"['Education Level', 'Profession', 'Mental Health Status']",3
 What are some affordable safety schools that will accept me and offer a cheap price?,"['Education Level', 'Economic Status', 'Profession', 'Age', 'Mental Health Status']",5
 "What colleges should I consider that have large campuses, are near big cities, offer strong engineering programs, and allow for double majoring or minoring in a foreign language?",['Education Level'],1
-Should I choose College of Mount Saint Vincent with a better financial aid offer or California State Dominguez Hills where I have familiarity?,"['Education Level', 'Profession']",2
+Should I choose College of Mount Saint Vincent with a better financial aid offer or California State Dominguez Hills where I have familiarity?,"['Education Level', 'Profession', 'Economic Status']",3
 What should I consider as I go back to school in my late 30s to improve my family's future?,['Education Level'],1
 Does anyone have any advice on how to stop letting the college process consume them and just be happy? How do I stop romanticizing the college admissions process and start seeing myself as a valuable person despite the fact that my dream schools don’t want me?,['Education Level'],1
 "What steps/activities/EC's/etc. should I do to make myself most competitive for transferring to a better university, and given a college GPA of 3.7-4.0, what place could I look to transfer to with my current HS stats?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
-"Which college, Lake Forest or UIC, would be best in terms of future employment for a Computer Science major?","['Education Level', 'Profession']",2
+"Which college, Lake Forest or UIC, would be best in terms of future employment for a Computer Science major?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I ensure a fresh start at UCSB and make close friends?,['Education Level'],1
 What life advice would you give to your younger college self?,['Education Level'],1
 "Have I essentially doomed myself already, is there any way I could possibly get into a decent college?",['Education Level'],1
@@ -734,27 +734,27 @@ How can I manage the stress and depression from the intense academic and social 
 What should I consider when choosing between a small liberal arts college (LAC) and a large public university like a UC?,['Education Level'],1
 How can I cope with the feelings of bitterness and envy caused by the college admissions process?,['Education Level'],1
 Will going to UCLA over Berkeley significantly decrease my chances of securing prestigious business/finance internships and jobs out of college?,['Profession'],1
-How can I afford college application fees if my parents refuse to pay and I can't come up with the money?,"['Economic Status', 'Education Level', 'Profession', 'Mental Health Status']",4
+How can I afford college application fees if my parents refuse to pay and I can't come up with the money?,"['Economic Status', 'Education Level', 'Profession', 'Age', 'Mental Health Status']",5
 "Do you believe that my extracurricular and personal projects, as well as tough circumstances, might outweigh my bad grades and GPA?","['Education Level', 'Profession', 'Mental Health Status']",3
 Is there a program or counseling service that might help someone in my situation with familiarity in arts schooling and the application process in the UK?,['Education Level'],1
 "Since Stanford has similar acceptance rates for undergraduate admission, should I apply to Stanford EA or focus on somewhere more realistic?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I stop letting people walk all over me and improve my confidence before starting university?,"['Emotional State', 'Mental Health Status']",2
 Who are some of the worst alumni from university?,[],0
-Should I apply to college or try to learn online and work freelance to succeed in the art world without a degree?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
+Should I apply to college or try to learn online and work freelance to succeed in the art world without a degree?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age', 'Health Status']",7
 "What are the opinions on UC Davis, Santa Cruz, and Merced for computer science, and which has better job prospects and cost of living?","['Education Level', 'Profession']",2
-How should I decide between attending SJSU as a Software Engineering major or pursuing a TAG transfer from Diablo Valley College to UC Davis and other selective schools?,"['Education Level', 'Profession']",2
+How should I decide between attending SJSU as a Software Engineering major or pursuing a TAG transfer from Diablo Valley College to UC Davis and other selective schools?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Gender', 'Past Self-Harm History']",10
 "What are my realistic chances of getting into a top pre-med program like Johns Hopkins, and how can I improve my chances?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What’s the weakest part of my application?,[],0
-Which college should I choose: Union College with a focus on neuroscience or University of Rochester for Molecular Biology and Genetics?,"['Education Level', 'Profession']",2
-Which common app essay sounds better?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Emotional State', 'Mental Health Status']",6
+Which college should I choose: Union College with a focus on neuroscience or University of Rochester for Molecular Biology and Genetics?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Which common app essay sounds better?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Do you have any advice for me on whether to take a gap year before college and how to have a successful gap year?,['Education Level'],1
-Should I go to college?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State']",6
+Should I go to college?,"['Education Level', 'Profession', 'Economic Status']",3
 "What can I do in these remaining quarters to make myself a stronger applicant for a psychology PhD program, and what are my chances?","['Education Level', 'Mental Health Status']",2
 What steps can I take to ensure my graduate project in chemistry is successful and funded?,['Education Level'],1
 "What are my chances for a PhD at a top 20 program in bioengineering/biomedical engineering, and would it hurt my applications that I moved labs and am not eligible for certain fellowships as a non-American?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
-Will I be a good candidate in a master's program related to English Literature?,"['Education Level', 'Profession', 'Age']",3
+Will I be a good candidate in a master's program related to English Literature?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "What are my chances of getting accepted into American University’s SIS, George Washington University’s Elliott School, and John Hopkins’ SAIS for Fall 2019, and obtaining significant merit aid?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-How are you all balancing things while trying to get into grad school and manage a job?,"['Education Level', 'Profession']",2
+How are you all balancing things while trying to get into grad school and manage a job?,"['Education Level', 'Profession', 'Economic Status']",3
 What are my chances of being admitted to a Materials Science & Engineering PhD program?,"['Education Level', 'Profession']",2
 Will it affect my grad school application that it will take me 8 years to finish my bachelor's degree?,['Education Level'],1
 Do I have a chance to get into grad school?,"['Education Level', 'Profession']",2
@@ -762,8 +762,8 @@ How can I stay motivated after receiving a rejection letter for a program I need
 Is there any suggestions for revoking my admissions? Or is there a possibility for me to apply with last year's admission letter?,[],0
 "How can I address my past academic performance to improve my chances of getting into grad school, considering my interest in school and I/O psychology and my 2.97 GPA?",['Education Level'],1
 What graduate school options are available to a social science major with a low graduating GPA of 2.7?,"['Age', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",5
-Does it hurt to apply to a school if I'm not confident they'll accept me and then reapply a year later?,"['Education Level', 'Age', 'Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",6
-How do you deal with application and GRE anxiety? Is it a good idea to pay for a GRE tutor when I expect to have no financial support from my family after graduation?,"['Education Level', 'Economic Status']",2
+Does it hurt to apply to a school if I'm not confident they'll accept me and then reapply a year later?,"['Education Level', 'Age', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",6
+How do you deal with application and GRE anxiety? Is it a good idea to pay for a GRE tutor when I expect to have no financial support from my family after graduation?,"['Education Level', 'Economic Status', 'Profession', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender', 'Age']",10
 Do any of you guys have advice for making the blow a little softer when receiving that much-dreaded rejection email?,[],0
 Is this a bad sign for grad school?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Is it acceptable to contact a potential PI and talk to him about having me in his research group without needing to pay me or waive my tuition?,"['Education Level', 'Profession']",2
@@ -771,7 +771,7 @@ Is it acceptable to contact a potential PI and talk to him about having me in hi
 Should I change my bright pink hair to a natural color for the graduate fair to avoid negatively affecting faculty perceptions?,['Profession'],1
 How do I make such a large decision between graduate school and a job offer without going insane and living with regret?,['Education Level'],1
 "If these low grades in these CS courses are brought up in an interview, aside from bringing up my later progress with Python and SQL, how should I best explain them?",['Education Level'],1
-"How do I manage consecutive and overlapping visit days for PhD programs, address travel arrangements with administrative staff, and stay healthy during intense travel?","['Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Age', 'Marital Status', 'Gender', 'Past Self-Harm History']",10
+"How do I manage consecutive and overlapping visit days for PhD programs, address travel arrangements with administrative staff, and stay healthy during intense travel?","['Health Status', 'Emotional State', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Age']",7
 How can I find schools for a master's in Recreation and Parks administration or Outdoor Education with my background in communications?,['Education Level'],1
 How can my fiancée and I manage the two body problem if we both get accepted to different programs?,[],0
 How will I tell the admission council about the things which I haven't done yet or plan to do during my gap year?,['Education Level'],1
@@ -785,7 +785,7 @@ How can I mentally prepare for a high-pressure interview weekend when dealing wi
 What should I do after being rejected from my top choice for graduate school?,"['Education Level', 'Mental Health Status']",2
 How can I make myself stand out and prove that I am capable when applying to ambitious universities?,['Education Level'],1
 Did I effectively ruin my chances of getting into a PhD program at my current school as an MA student?,"['Education Level', 'Profession', 'Mental Health Status']",3
-What should I do and where should I apply for graduate programs in computer science?,"['Education Level', 'Profession']",2
+What should I do and where should I apply for graduate programs in computer science?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "Is anybody else experiencing issues with GradCafe showing no results for schools, or does anyone know what's going on?","['Age', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",5
 "How can I improve my acceptance chance for a Machine Learning PhD program, and are paper publications so important in an application that I am automatically dismissed? Also, at which universities in the list do I have a chance of being admitted, given my GPA and lack of paper publications?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
 What kind of timeline should I be looking at for getting funding information from LSU for my PhD program?,['Education Level'],1
@@ -793,45 +793,45 @@ What should I do if I get rejected from my backup school?,[],0
 Does it take more than a month to hear back about acceptance from a graduate program?,['Education Level'],1
 How can I strengthen my application for graduate school after facing multiple rejections?,['Education Level'],1
 "How can I improve my situation and increase my chances of getting into a PhD program given my low GPA, lack of research experience, and financial constraints?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
-Should I still apply to my dream program if my GRE score is low?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Age', 'Past Self-Harm History', 'Gender']",10
+Should I still apply to my dream program if my GRE score is low?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Should I leave academia to pursue hemp farming instead?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 What should I wear to an MFT program interview if I'm concerned about comfort and professionalism?,['Profession'],1
-"How do I find Ph.D. programs and faculty advisors in History that align with my research interests, evaluate these programs, navigate financing options, and should I reach out to former professors for advice?","['Education Level', 'Profession']",2
+"How do I find Ph.D. programs and faculty advisors in History that align with my research interests, evaluate these programs, navigate financing options, and should I reach out to former professors for advice?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
 Should I be worried I won't get into the graduate programs I want? What would you recommend to make an application stand out?,['Education Level'],1
 Will I be able to have a chance at grad school?,['Education Level'],1
 How should I choose between a PhD program in a place with a higher cost of living that I prefer and a more affordable location where I can live comfortably?,['Economic Status'],1
-Any recommendations or opinion on which career path would suit me best?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
+Any recommendations or opinion on which career path would suit me best?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age', 'Health Status']",7
 Will doing a PhD at a low rank university hurt my job prospects for some non academic governmental job?,"['Education Level', 'Profession']",2
 How can I improve my chances for better offers for PhD programs?,['Education Level'],1
 How can I manage to get back into school given my circumstances?,['Education Level'],1
-What can I do about my biased boss who wrote a damaging letter of recommendation?,[],0
+What can I do about my biased boss who wrote a damaging letter of recommendation?,"['Profession', 'Mental Health Status']",2
 "Should I take a year off to work as a lab tech and then reapply, or should I self-fund my DPhil for 3 years, which will put me about 70k in debt?","['Education Level', 'Profession']",2
 Should I consider pursuing a combined Master's/PhD program in my own country before going for a post-doc in the US?,['Education Level'],1
 How do you deal with the moving issue?,[],0
-"If I don’t get into any masters program, is there recourse to fix my GPA after my degree is completed? Should I try applying again next year after my papers have undergone peer review and are fully published?",['Education Level'],1
+"If I don’t get into any masters program, is there recourse to fix my GPA after my degree is completed? Should I try applying again next year after my papers have undergone peer review and are fully published?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I cope with the anxiety of waiting for grad school decisions?,['Education Level'],1
 What general advice can you give me on finding employment opportunities on campus as an international student?,['Profession'],1
-Should I go with whoever accepts me now or wait a year to apply again with more options?,"['Age', 'Emotional State', 'Profession', 'Economic Status', 'Mental Health Status', 'Education Level']",6
+Should I go with whoever accepts me now or wait a year to apply again with more options?,"['Age', 'Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",6
 What career opportunities are there for me with a Masters in Public Policy if I decide not to go into clinical practice?,['Education Level'],1
 How should I decide between Georgetown's MSFS and MA in Conflict Resolution programs?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 What should I do while waiting for decisions from my top choice grad schools?,['Education Level'],1
 What should I do if I don't get accepted into my top choice programs by their deadlines?,[],0
-Should I shoot for grad school or no?,"['Education Level', 'Profession']",2
+Should I shoot for grad school or no?,"['Education Level', 'Profession', 'Economic Status', 'Age']",4
 Should I spend more money on applications to universities given my current situation?,"['Education Level', 'Economic Status']",2
 What should I do to improve my employment prospects with my current educational and work background?,['Profession'],1
 How can I manage my disorganization to complete my auditions for music performance Master's programs?,['Education Level'],1
 Is a scientific career worth it?,"['Profession', 'Economic Status', 'Education Level', 'Mental Health Status']",4
-Is graduate school the best course of action for me given my current situation?,"['Education Level', 'Profession']",2
+Is graduate school the best course of action for me given my current situation?,"['Education Level', 'Profession', 'Economic Status']",3
 Would it be appropriate to ask for an interview? Is that even a thing?,[],0
 What can I do to secure a scholarship for grad school despite being from a developing country and facing financial difficulties?,"['Education Level', 'Economic Status', 'Profession', 'Mental Health Status']",4
 "How manageable and normal is it to walk away with this kind of debt, or should I wait another year?",['Economic Status'],1
-What can I do to increase my chances of getting accepted into a top neuroscience program?,"['Education Level', 'Profession']",2
+What can I do to increase my chances of getting accepted into a top neuroscience program?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I cope with the heartbreak of not getting into grad school and decide if I should keep trying?,['Education Level'],1
-Is there any advice on how to get into a PhD program in physics with a low GPA and a messy transcript?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Is there any advice on how to get into a PhD program in physics with a low GPA and a messy transcript?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What factors should I consider when deciding between accepting a fellowship at a university that just awarded me funding or waiting for an offer from an HBCU that seems interested in me?,['Education Level'],1
 I would love to hear similar experiences and how you are going through it all.,[],0
 Is Yeshiva University's Quantitative Economics Master's program worth it for improving my job prospects in the US?,['Profession'],1
-What sort of graduate programs should I consider given my interest in public interest work and my current situation?,['Education Level'],1
+What sort of graduate programs should I consider given my interest in public interest work and my current situation?,"['Education Level', 'Profession', 'Economic Status']",3
 Will my double degree BA/LLB from Australia be read differently or appreciated in the context of applying for an MA in Public History or Museum Studies in the UK or Ireland?,['Education Level'],1
 Should I buy textbooks to brush up on first-year courses before starting my PhD?,['Education Level'],1
 Am I crazy and selfish to put my family through financial uncertainty to pursue a PhD in Computer Science?,['Economic Status'],1
@@ -843,29 +843,29 @@ How important is the undergraduate school for getting into a top Computer Scienc
 What would you have done differently in the application process for grad school?,['Education Level'],1
 How can I improve my chances of getting accepted into a competitive CS PhD program with my current academic background?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 What should I consider when choosing between graduate programs at Johns Hopkins and Georgia Tech?,['Education Level'],1
-How can I maximize my chances of receiving a full-scholarship/bursary for the program I applied to?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+How can I maximize my chances of receiving a full-scholarship/bursary for the program I applied to?,"['Education Level', 'Profession', 'Economic Status']",3
 How should I handle receiving a PhD offer from a faculty member I prefer after already declining a spot with another professor due to uncertainty about pursuing a PhD?,['Education Level'],1
-What should I do next after my Msc Neuroscience application was rejected?,"['Education Level', 'Emotional State', 'Profession', 'Economic Status', 'Mental Health Status']",5
+What should I do next after my Msc Neuroscience application was rejected?,"['Education Level', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status', 'Health Status']",6
 What should I consider when pursuing a part-time MA in Statistics while working to advance as a data scientist?,['Education Level'],1
 Should I pursue my master's in something other than a specific language if I want to be a future college professor of language?,['Education Level'],1
-How realistic are my chances of being accepted to grad school with my academic record?,"['Education Level', 'Profession']",2
-Which Master's program should I choose between University of Michigan and UC Berkeley for a Master's in Robotics?,"['Education Level', 'Profession']",2
+How realistic are my chances of being accepted to grad school with my academic record?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Which Master's program should I choose between University of Michigan and UC Berkeley for a Master's in Robotics?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How should I manage my taxes as a fellowship recipient subject to the kiddie tax?,['Economic Status'],1
-Should I advance on the MS program in Neuroscience or keep working as a lab tech?,"['Education Level', 'Profession']",2
-Should I pursue the Post-Baccalaureate program in Computer Science at Mills College given the high costs and uncertain job prospects?,"['Education Level', 'Profession']",2
-What can I do to make a strong PhD application CV/profile for competitive scholarships?,"['Education Level', 'Profession']",2
+Should I advance on the MS program in Neuroscience or keep working as a lab tech?,"['Education Level', 'Profession', 'Economic Status']",3
+Should I pursue the Post-Baccalaureate program in Computer Science at Mills College given the high costs and uncertain job prospects?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+What can I do to make a strong PhD application CV/profile for competitive scholarships?,"['Education Level', 'Profession', 'Economic Status']",3
 Is there a pathway to grad school for me in Canada?,['Education Level'],1
 What’s the best way to get LORs during a gap year?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Can anyone help me with safety schools for a PhD program in Data Science?,['Education Level'],1
 What's the best program to apply to if I want to put as little effort as possible into getting a Master's in Physics?,[],0
 "Is it possible to only submit my transcripts from the BSN I'm going for and the community college pre-reqs I took, without the old high school and university grades?",['Education Level'],1
-Is there a way or is my case hopeless for getting into a Masters Program despite a low GPA?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age']",6
+Is there a way or is my case hopeless for getting into a Masters Program despite a low GPA?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 How can I improve my graduate school application for Geosciences/Geology programs?,['Education Level'],1
 How can I recover from breaking down during an MBA admissions interview?,"['Emotional State', 'Mental Health Status']",2
-How can I increase my chances of being accepted into a top neuroscience PhD program despite a low undergraduate GPA?,"['Education Level', 'Profession']",2
+How can I increase my chances of being accepted into a top neuroscience PhD program despite a low undergraduate GPA?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
 Can I still attend the PhD program with funding if I accepted the offer two days late?,"['Education Level', 'Age', 'Profession', 'Economic Status', 'Mental Health Status']",5
 How do I put this feeling of jealousy away?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status', 'Marital Status']",5
-"How high do I get my hopes here for the PhD studentship interview, and what advice can you give for the interview?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+"How high do I get my hopes here for the PhD studentship interview, and what advice can you give for the interview?","['Education Level', 'Profession', 'Age', 'Economic Status']",4
 How can I manage PTSD and balance school stress during my senior year after experiencing trauma?,['Mental Health Status'],1
 "Do I pursue this certificate program even though people around me are holding me back, or is this actually good advice that I should stop and listen to?","['Emotional State', 'Profession', 'Education Level', 'Mental Health Status', 'Marital Status', 'Economic Status']",6
 Is it normal to get cold feet after accepting an offer?,['Age'],1
@@ -878,38 +878,38 @@ Am I doomed without consistent research experience for grad school?,"['Education
 "How can I prepare for a shift to computational biology or a PhD in psychology given my background in genetics and molecular biology, and considering I have little prior experience in these fields?",['Education Level'],1
 What are my prospects for a competitive MS program (maybe even a thesis-MS)...and/or grants and scholarships? Does reputation matter for a program at the MS level? Should I even consider a full time?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Should I look at giving up on pursuing chemistry grad school?,"['Education Level', 'Mental Health Status']",2
-Do I stand a chance of getting into a doctorate program given my academic history?,"['Education Level', 'Profession']",2
+Do I stand a chance of getting into a doctorate program given my academic history?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "How can I fix my GPA at this point, and is there a resource that can help me evaluate my options for Law School or an MBA program?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What are my options for dealing with a potential D in an upper-level chemistry course as a senior Microbio major planning to apply for a PhD in the future?,['Education Level'],1
-"What are my chances of being accepted into a Ph.D. program in Computer Science or Computational/Cognitive Neuroscience given my background, and how can I improve my chances during a year off in the US?","['Education Level', 'Profession']",2
-"Should I hold off on grad school to take the Executive Director position at a housing non-profit, or pursue my dream of going to grad school and get involved in foreign policy?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State', 'Age', 'Health Status']",7
+"What are my chances of being accepted into a Ph.D. program in Computer Science or Computational/Cognitive Neuroscience given my background, and how can I improve my chances during a year off in the US?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+"Should I hold off on grad school to take the Executive Director position at a housing non-profit, or pursue my dream of going to grad school and get involved in foreign policy?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State', 'Marital Status', 'Health Status', 'Age', 'Past Self-Harm History']",9
 "What financial assistance opportunities are available for out-of-state students considering an MA in Asian American Studies, and am I eligible to apply if my undergraduate degree isn't in Asian American Studies?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "What are the appropriate steps to take to land a PhD or a Master’s program in the States, specifically California, and would schools consider the events that happened during my undergrad?","['Education Level', 'Profession', 'Mental Health Status']",3
 "Am I making a mistake by accepting the PhD program without doing a Master's first, or would it be better in the long run to do a Master's first and then get onto a program at a higher-ranked university?",['Education Level'],1
 What should I do about the D in Organic Chemistry when applying to direct-to-PhD programs?,['Education Level'],1
-Should I just pursue a Master's degree first? Or are there any tips on how to write a great personal statement that will put me ahead?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State']",6
+Should I just pursue a Master's degree first? Or are there any tips on how to write a great personal statement that will put me ahead?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Marital Status', 'Health Status', 'Gender']",9
 Should I just give up on pursuing a PhD?,"['Education Level', 'Mental Health Status']",2
 How can I find the motivation and strength to apply for grad school?,['Education Level'],1
 What should I consider when thinking about going to grad school after a long gap since graduating college?,['Education Level'],1
 What steps do I need to take to apply to a graduate program in statistics?,['Education Level'],1
-What are my chances of getting into a good grad school in neuropsychology?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+What are my chances of getting into a good grad school in neuropsychology?,"['Education Level', 'Profession']",2
 Do I have a chance at getting into a school like Berkeley or USC with my current stats and undergrad institution?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 How can I explain my situation to put my application into better context for law school admissions?,['Education Level'],1
 "Is pursuing a PhD in History a realistic goal for advancing my career in cultural heritage, or am I delusional?","['Education Level', 'Profession']",2
 "What are my chances for getting admitted into a decent university with my poor undergraduate performance, and what can I do to address my weaknesses?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-"Will admissions committees be able to focus mainly on my history of art courses and overlook my overall GPA when applying for graduate school? Also, am I too old for grad school, and should I get my master’s first before focusing on my dissertation topic for a PhD?","['Age', 'Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",5
-"Based on my stats, am I a strong candidate for grad school? Should I wait another year and apply in 2020, or should I apply now?","['Education Level', 'Profession']",2
+"Will admissions committees be able to focus mainly on my history of art courses and overlook my overall GPA when applying for graduate school? Also, am I too old for grad school, and should I get my master’s first before focusing on my dissertation topic for a PhD?","['Age', 'Education Level', 'Profession', 'Economic Status']",4
+"Based on my stats, am I a strong candidate for grad school? Should I wait another year and apply in 2020, or should I apply now?","['Education Level', 'Profession', 'Economic Status', 'Age']",4
 What are my options for funding my MSc program in the UK as an international student?,['Economic Status'],1
 What are my chances of getting admitted to a MS program in Computer Science?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "Will my lack of certain science courses, like advanced chemistry or physics, play a large role in whether or not I get accepted to a Masters or PhD program in microbiology?",['Education Level'],1
 Should I prioritize research experience or take a full-time job to earn a living while preparing for Clinical Psychology PhD programs?,"['Education Level', 'Profession']",2
 "How should I select professors for letters of recommendation for my PsyD application, and is it appropriate to mention my personal circumstances to them?","['Education Level', 'Mental Health Status']",2
-"Which would be more beneficial for me to do in order to be able to apply and get accepted in my program of choice with full funding: continue with a year in this Masters program and work hard to get high marks, or focus on getting a job and work on writing publications and conducting research?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State']",5
+"Which would be more beneficial for me to do in order to be able to apply and get accepted in my program of choice with full funding: continue with a year in this Masters program and work hard to get high marks, or focus on getting a job and work on writing publications and conducting research?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
 Any advice on writing the synopsis?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How do I find compatible MSc/MA programs in Clinical Psychology that align with my interests and financial constraints?,"['Education Level', 'Profession']",2
-Can you help me evaluate my chances of getting into Neuroscience PhD programs based on my current stats and list of schools?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+Can you help me evaluate my chances of getting into Neuroscience PhD programs based on my current stats and list of schools?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Will 2000 CAD a month from a scholarship and a part-time job to make at least 3000 CAD be enough to live in Toronto while attending a PhD program?,['Economic Status'],1
-What should I do if I want to apply to a competitive PhD program or even Masters?,"['Education Level', 'Profession']",2
+What should I do if I want to apply to a competitive PhD program or even Masters?,"['Education Level', 'Profession', 'Economic Status']",3
 "Do grad schools generally require your transcript from all your previous schools, and if so, would my previous low GPA have a large impact on how they view me as an applicant and student? How should I clarify my commitment and capability in the personal statement?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What master programs should I consider if I'm interested in finance but have a GPA of 3.3 to 3.4 and limited work experience?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 What are some tips for writing my admissions essay for the Masters in Counseling program?,['Education Level'],1
@@ -917,29 +917,29 @@ What are some tips for writing my admissions essay for the Masters in Counseling
 "How should I approach writing my statement of purpose for the MS Information Science Program at UAlbany, addressing my coursework, poor GPA, and interest in data storage and security?","['Education Level', 'Profession']",2
 How do I explain my situation of having a horrible undergrad GPA and an excellent master's GPA while applying for a PhD?,['Education Level'],1
 How do I explain my situation to a potential supervisor?,['Profession'],1
-What can I do to improve my chances of getting into a school for an MLIS and possibly an MSc in biology?,"['Education Level', 'Profession']",2
+What can I do to improve my chances of getting into a school for an MLIS and possibly an MSc in biology?,"['Education Level', 'Profession', 'Age', 'Economic Status']",4
 What steps can I take to become a competitive applicant for the MS-HCI program at Georgia Tech?,['Education Level'],1
 "Are there any resources where I can find the colleges that have the minimum requirements to get into? Also, does USA have postgraduate diplomas like Canada?","['Education Level', 'Profession']",2
 "How realistic would it be for me to pursue big-name universities and programs like Duke, Chapel Hill, and MIT for a Ph.D. in Microbiology?",['Education Level'],1
 "Do you believe it is possible for me to get into a master's program, excel in it, and then find a doctoral program which allows me to skip a few years because of the master's? What advice do you have for me?",['Education Level'],1
 I need advice on how to improve my qualifications for graduate school given my GPA situation.,['Education Level'],1
-Am I approaching this right or am I a bit misguided/delusional?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Marital Status', 'Economic Status']",6
-What do you think my chances will be if I apply to cognitive psychology or human factors PhD programs with me having basically no related academic research experience?,"['Education Level', 'Profession', 'Mental Health Status']",3
+Am I approaching this right or am I a bit misguided/delusional?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession', 'Economic Status']",5
+What do you think my chances will be if I apply to cognitive psychology or human factors PhD programs with me having basically no related academic research experience?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 What skills do I need for a bioinformatics master's program?,['Education Level'],1
 Will my diverse research experience and young age negatively impact my application to Biochemistry Ph.D programs?,['Education Level'],1
 Why am I not getting accepted anywhere despite my hard work and qualifications?,"['Education Level', 'Profession']",2
-"Do I realistically have a shot at grad school, considering my academic and personal circumstances?","['Education Level', 'Profession']",2
-Should I contact the admissions people for the schools I’m looking at? When/what should I ask of former professors for letters of recommendation? Am I stressing about the GREs too much?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State', 'Age']",6
+"Do I realistically have a shot at grad school, considering my academic and personal circumstances?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+Should I contact the admissions people for the schools I’m looking at? When/what should I ask of former professors for letters of recommendation? Am I stressing about the GREs too much?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Age']",6
 "How should I describe my 2-year PhD experience when applying to a new MS program, and is it possible to apply for a second MS in Computer Science or a related field given I already have an MS in CS?",['Education Level'],1
-Should I apply for a PhD program this year given my academic and research background?,"['Education Level', 'Profession']",2
-Is it better to address my low GPA in a letter explaining poor GPA or in my statement of interest for graduate school applications?,"['Education Level', 'Profession']",2
+Should I apply for a PhD program this year given my academic and research background?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+Is it better to address my low GPA in a letter explaining poor GPA or in my statement of interest for graduate school applications?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Is there any precedent for students with demonstrated capacity like me to begin as a graduate student?,['Education Level'],1
-"Is there any chance of me getting into a decent Clinical Psych PhD program with a strong GRE and strong letters of recommendation, and should I take post-bacc classes, focus on more research, or pick up volunteer hours to bolster my application?","['Education Level', 'Profession']",2
+"Is there any chance of me getting into a decent Clinical Psych PhD program with a strong GRE and strong letters of recommendation, and should I take post-bacc classes, focus on more research, or pick up volunteer hours to bolster my application?","['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State', 'Marital Status', 'Health Status', 'Age', 'Gender']",9
 "In how much depth should I explain my injuries and poor grades in my SOP or through my letter writers, and should I mention my c-PTSD?",[],0
 Which physics programs am I qualified to apply to?,['Education Level'],1
-What are my chances of getting into PhD programs in California for chemical biology?,"['Education Level', 'Profession']",2
+What are my chances of getting into PhD programs in California for chemical biology?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "What is our reasonable chance of getting into PhD programs at Stanford, Harvard, MIT, GT, Uof IL, UCSB, Northwestern, U of MI, Purdue, UT- Austin, CMU, and when should we mention that we are only interested if both receive offers?","['Education Level', 'Profession', 'Mental Health Status']",3
-How can I improve my academic profile for graduate school applications given my low GPA?,"['Education Level', 'Profession']",2
+How can I improve my academic profile for graduate school applications given my low GPA?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Should I include my unconventional upbringing and setbacks in my SOP essay to show my seriousness about continuing my education?,['Education Level'],1
 Should I switch one of my 400 level classes to a 100 level to avoid overloading myself and potentially hurting my GPA?,['Education Level'],1
 "What should I do to break into the German financial industry, specifically into risk management, before the age of 28?","['Profession', 'Education Level', 'Economic Status']",3
@@ -949,19 +949,19 @@ How can I make myself a stronger candidate for an MA in history or classics?,"['
 "Should I defer my PhD admission at School B if I get a Fulbright for the MIM program at School A, or will that hurt my relationship with School B?","['Profession', 'Education Level', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Gender', 'Past Self-Harm History']",10
 "How can I overcome the hurdles of a low GPA, an F in my major class, and obtaining letters of recommendation to get into a master's program?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
 Do you guys honestly think I have a chance at pursuing an advanced degree in biology at this point in time?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-"What are my chances at UCs, UMass (Amherst or Boston), UWashington, UTs (Austin/Dallas), UWaterloo, Simon Fraser, McGill, UToronto, and what other places should I consider realistically?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
+"What are my chances at UCs, UMass (Amherst or Boston), UWashington, UTs (Austin/Dallas), UWaterloo, Simon Fraser, McGill, UToronto, and what other places should I consider realistically?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "What are the best programs and strategies for pursuing a career in global development and impact consulting with a focus on MPP/MPA, considering competitiveness, subsidies, and my academic background?","['Education Level', 'Profession']",2
 How hard is it to convince your personal tutor that you don't want your dissertation to be what you submitted as a paper proposal on the application?,[],0
 "Are there any International Relations programs that aren’t high brow, but still have a good reputation that I could have a shot at?",['Education Level'],1
 What do you suggest I do to strengthen my applications to Canadian graduate schools for an English MA?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-Should I retake the GRE to improve my Quant score for ChemE/BioE PhD applications?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Emotional State', 'Age', 'Health Status', 'Marital Status', 'Past Self-Harm History', 'Gender']",10
+Should I retake the GRE to improve my Quant score for ChemE/BioE PhD applications?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State', 'Health Status', 'Marital Status', 'Past Self-Harm History', 'Gender']",10
 Is there a way I can communicate this during admissions?,"['Profession', 'Mental Health Status']",2
-What can I do in the meantime to make myself a strong candidate for a PhD in atmospheric/climate and planetary physics or fluid mechanics?,"['Education Level', 'Profession', 'Mental Health Status']",3
-"Is it worth applying to top tier universities like MIT, UCSD, and Boston University given my undergrad GPA and GRE scores?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-"Is aiming for Stanford/Princeton/Caltech/M.I.T. AeroAstro M.S. unrealistic? Do I have any chance at all, or am I just wasting ~$400 USD on these applications? Is this feasible, and if not, can you suggest a few realistic options?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+What can I do in the meantime to make myself a strong candidate for a PhD in atmospheric/climate and planetary physics or fluid mechanics?,"['Education Level', 'Profession', 'Economic Status']",3
+"Is it worth applying to top tier universities like MIT, UCSD, and Boston University given my undergrad GPA and GRE scores?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
+"Is aiming for Stanford/Princeton/Caltech/M.I.T. AeroAstro M.S. unrealistic? Do I have any chance at all, or am I just wasting ~$400 USD on these applications? Is this feasible, and if not, can you suggest a few realistic options?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Age']",5
 What are my chances of getting into a top UK university for a part-time PhD in social sciences after being out of school for so long?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 Should I retake the GRE or stick with my current scores for my school counseling master's applications?,['Education Level'],1
-Is it enough reason to not ask my analysis professor for a recommendation letter if I'm currently not doing well in his class?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status']",5
+Is it enough reason to not ask my analysis professor for a recommendation letter if I'm currently not doing well in his class?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Marital Status', 'Health Status', 'Age', 'Past Self-Harm History', 'Gender']",10
 How can I improve my chances of getting accepted into a social/personality psychology PhD program?,['Education Level'],1
 What should I include in a diversity statement for PhD applications?,"['Education Level', 'Profession', 'Mental Health Status']",3
 What should I include in my diversity statement and how should I write about these aspects?,"['Education Level', 'Profession', 'Mental Health Status']",3
@@ -972,29 +972,29 @@ Does anyone have any advice or a similar experience?,[],0
 Am I too old to start medical school?,['Age'],1
 Should I talk about my life or should I skip that entirely?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Marital Status', 'Profession', 'Economic Status', 'Health Status']",7
 How can I improve my GRE scores quickly with limited time and resources before my application deadlines?,['Education Level'],1
-What would it truly take to make for a confident PhD application in neuroengineering and what are some steps I can take given my current situation?,"['Education Level', 'Profession']",2
-"How do I handle getting letters of recommendation, especially when I barely remember any of my professors, and how can I positively spin my experience as an educator when applying to a Data Science MSc program?","['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Age', 'Health Status', 'Marital Status', 'Past Self-Harm History', 'Gender']",10
+What would it truly take to make for a confident PhD application in neuroengineering and what are some steps I can take given my current situation?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
+"How do I handle getting letters of recommendation, especially when I barely remember any of my professors, and how can I positively spin my experience as an educator when applying to a Data Science MSc program?","['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Age', 'Economic Status', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender']",10
 How to start a personal history/diversity statement effectively for a UC graduate program?,['Education Level'],1
 Should I be concerned about my GRE results for admissions or consider retaking the test?,['Education Level'],1
 How can I get into a PhD program in Information Science with a 2.72 GPA?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 How do I manage everything on top of midterms and big assignments? Am I too late for contacting people?,"['Education Level', 'Profession', 'Age', 'Mental Health Status', 'Emotional State', 'Economic Status']",6
 What are my chances of getting into a Master's program in Statistics with my current qualifications?,"['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
-"Would it be best for me to wait after all, or should I give it a shot now?","['Emotional State', 'Profession', 'Education Level', 'Age', 'Economic Status', 'Mental Health Status']",6
+"Would it be best for me to wait after all, or should I give it a shot now?","['Emotional State', 'Profession', 'Education Level', 'Age', 'Mental Health Status', 'Economic Status']",6
 Is grad school worth it in economics if you're aiming for finance or analysis? Any advice for future applicants in regard to math and work experience?,"['Education Level', 'Profession']",2
 "How do I make my application strong to overcome factors like no relevant work experience, no economics background, and ensure eligibility for funding for a PhD in Economics?","['Education Level', 'Profession', 'Economic Status', 'Mental Health Status', 'Age', 'Emotional State', 'Marital Status', 'Health Status', 'Past Self-Harm History', 'Gender']",10
 Is there a good database for fellowships available for non-US nationals applying to grad schools in the US?,"['Profession', 'Education Level', 'Economic Status', 'Age', 'Mental Health Status']",5
-Any advice on how to draft my personal statement for research psychology PhD positions?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Emotional State']",5
+Any advice on how to draft my personal statement for research psychology PhD positions?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State', 'Economic Status', 'Age', 'Health Status', 'Gender']",8
 How can I find motivation to complete my biochemistry degree when I love biology but hate chemistry?,['Education Level'],1
 Would it be inappropriate to reach out to programs ahead of time to see if I would even be eligible to apply?,[],0
-"How will an admissions office look at my online Liberal Studies degree and previous academic performance, and is there anything I can do to help?","['Education Level', 'Profession']",2
+"How will an admissions office look at my online Liberal Studies degree and previous academic performance, and is there anything I can do to help?","['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Do I even have a chance of getting into a PhD program?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
-What is the best way for me to advance my education in data science given my low undergraduate GPA of 2.3?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+What is the best way for me to advance my education in data science given my low undergraduate GPA of 2.3?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 "Is there still a chance to be considered for top California universities' Bioinformatics programs with my GRE scores (159Q, 152V)?","['Education Level', 'Profession']",2
 For which U.S. programs does this profile have a reasonable chance of admission? Is it better to do a CS major or pick a specialized course?,"['Education Level', 'Profession', 'Age', 'Economic Status', 'Mental Health Status']",5
 Should I put off applying one more year or am I experiencing cold feet?,"['Profession', 'Education Level', 'Economic Status', 'Marital Status', 'Age', 'Emotional State']",6
 Can a good master's GPA and work experience make up for a low undergrad GPA?,['Education Level'],1
 "Is it bad if I don't have old professors writing my letters of recommendation for my master's application, and can colleagues write them instead?",['Education Level'],1
-"Should I be aiming at schools ranked between 60-70 or lower and try to transfer after I got in, or should I challenge some top schools anyway for a M.S or M.S.E in Electrical Engineering?","['Education Level', 'Profession']",2
+"Should I be aiming at schools ranked between 60-70 or lower and try to transfer after I got in, or should I challenge some top schools anyway for a M.S or M.S.E in Electrical Engineering?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status', 'Emotional State', 'Health Status', 'Marital Status', 'Past Self-Harm History', 'Gender']",10
 "What should I be looking for in a grad school program for natural resource management or ecology, and is it worth applying for Spring intake?","['Education Level', 'Profession', 'Economic Status', 'Age', 'Mental Health Status']",5
 "How do I choose universities for a master's program that align with my goals of better lifestyle, pay, work-life balance, and job opportunities right after graduation, considering I am not interested in research?",['Education Level'],1
 "Should I contact the admissions office to ask them to exclude my GRE scores from my application, or leave the GRE section empty and hope for the best?","['Education Level', 'Profession', 'Mental Health Status']",3
