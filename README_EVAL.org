@@ -10,10 +10,10 @@
 * Real Data
 | Model    | Vanilla Agent   | Retrieval Agent | Eval Regular    | Eval Retrieval |
 |----------+-----------------+-----------------+-----------------+----------------|
-| LLaMA    | DONE            | DONE            | DONE            | NS             |
+| LLaMA    | DONE            | DONE            | DONE            | RUNNING (uril) |
 | Qwen2.5  | DONE            | DONE            | RUNNING (scai3) | NS             |
-| Mistral  | DONE            | DONE            | RUNNING (scai3) | NS             |
-| DeepSeek | DONE            | DONE            | STOPPED (scai3) | NS             |
+| Mistral  | DONE            | DONE            | DONE            | NS             |
+| DeepSeek | DONE            | DONE            | RUNNING (scai3) | NS             |
 | QWQ      | RUNNING (scai4) | RUNNING (uril)  | NS              | NS             |
 
 

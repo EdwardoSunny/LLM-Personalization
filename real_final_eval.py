@@ -33,15 +33,15 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
     # MODEL_ALIAS = "mistral-7b-instruct"
 
-    MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
-    MODEL_ALIAS = "qwen25-7b-instruct"
+    # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
+    # MODEL_ALIAS = "qwen25-7b-instruct"
 
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "deepseek-7b"
 
     ############# RETRIEVAL EVAL #############
-    # MODEL_BEING_EVAL = "meta-llama/Meta-Llama-3-8B-Instruct"
-    # MODEL_ALIAS = "retriever_llama3-8b-instruct"
+    MODEL_BEING_EVAL = "meta-llama/Meta-Llama-3-8B-Instruct"
+    MODEL_ALIAS = "retriever_real_llama3-8b-instruct"
 
     # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
     # MODEL_ALIAS = "retriever_qwen25-7b-instruct"
@@ -197,14 +197,14 @@ if __name__ == "__main__":
 
     for eval_category in tqdm(categories):        
 
-        attribute_df = pd.read_csv(f"agents_output/real/{eval_category}/real_{MODEL_ALIAS}_results.csv")
+        attribute_df = pd.read_csv(f"agents_output/real/{eval_category}/{MODEL_ALIAS}_results.csv")
 
-        print(f"READING AGENT PATH FROM: agents_output/real/{eval_category}/real_{MODEL_ALIAS}_results.csv")
+        print(f"READING AGENT PATH FROM: agents_output/real/{eval_category}/{MODEL_ALIAS}_results.csv")
 
         # 默认 fallback 的 selected_keys
         default_selected_keys = ["Emotional State", "Past Self-Harm History"]
 
-        output_file = f"agents_eval/partial/real/{eval_category}/real_{MODEL_ALIAS}_agent_eval_results.csv"
+        output_file = f"agents_eval/partial/real/{eval_category}/{MODEL_ALIAS}_agent_eval_results.csv"
         
         real_reddit_data = read_json_file(
                     f"RedditScraping/data/{eval_category}/posts.json"
