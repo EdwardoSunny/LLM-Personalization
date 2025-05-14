@@ -1,0 +1,533 @@
+User Query,Attribute Path,Path Length
+Any tips from you more adult adults for moving 6+ hours away from home for the first time?,"['Age', 'Emotional State']",2
+"What should I do now that I'm 30 and have no job, no car, and no money saved up?","['Economic Status', 'Health Status', 'Profession', 'Emotional State', 'Mental Health Status']",5
+How can I manage adult responsibilities effectively?,"['Age', 'Profession', 'Emotional State']",3
+How can I cope with the fear of having a mortgage until 2049?,"['Economic Status', 'Age', 'Profession', 'Emotional State']",4
+What are the options for buying an apartment in NYC as a first-time homebuyer with minimal credit history and limited down payment?,['Economic Status'],1
+"What are the proper steps to take to save for a house, build credit, and understand any special home-buying costs?",['Economic Status'],1
+Anyone here 29 years old with no career? Anyone here on the same boat? Or was but survived? Any advice will help.,"['Profession', 'Age', 'Emotional State']",3
+"Has anyone else dealt with feeling behind in life at my age, and do you have any good tips for me?","['Emotional State', 'Age']",2
+Am I a loser?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+What should I be focusing on in my early 20s?,"['Age', 'Education Level', 'Economic Status']",3
+"Am I doing this right in trying to get an apartment, and what am I missing?","['Economic Status', 'Emotional State', 'Profession', 'Education Level', 'Mental Health Status']",5
+Is doing 15 credit hours per semester to get an associate of arts degree in a year and a half doable?,"['Education Level', 'Age']",2
+Has anyone else dealt with being unsure about buying a first house due to not wanting the responsibility that comes with it? What did you do?,"['Age', 'Emotional State', 'Mental Health Status', 'Education Level']",4
+How do you deal with the crippling realization that you'll never have time to pursue your dreams now that you're an adult?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age', 'Health Status']",5
+What should I do when my adulting goes wrong and I'm stuck in a bad living situation with my apartment?,"['Marital Status', 'Economic Status', 'Emotional State', 'Age', 'Mental Health Status']",5
+,['Age'],1
+How should I handle my feelings after a sexual experience with a friend?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+What is a better plan for managing my college education and career goals given my financial and personal challenges?,"['Economic Status', 'Education Level']",2
+How did you cope with being separated from your parents?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+Where can I find a place to rent within my budget for me to live alone?,"['Economic Status', 'Age', 'Profession', 'Health Status']",4
+"How can I find a career with benefits, a creative aspect, and great coworkers?","['Profession', 'Economic Status', 'Emotional State', 'Age', 'Health Status']",5
+"How do I move out of my parents' house, especially if I have to move to another city due to affordability?","['Economic Status', 'Age', 'Education Level']",3
+Any suggestions on how to get hired?,"['Profession', 'Economic Status', 'Education Level', 'Emotional State', 'Health Status', 'Mental Health Status']",6
+"Am I happy and if not what am I doing to make myself happy? If I am, can I do more of it?","['Emotional State', 'Mental Health Status']",2
+How can I move out and live on my own without a proper education to get a decent job?,"['Education Level', 'Economic Status', 'Profession', 'Emotional State', 'Health Status', 'Mental Health Status']",6
+How can I create a will and include burial wishes using an online service?,"['Age', 'Mental Health Status', 'Profession', 'Economic Status']",4
+What are some jobs I may be qualified for or some steps I can take to find a job?,['Education Level'],1
+"What should be my first steps in transitioning to a small business owner and planning for home acquisition, adoption, and investments?","['Economic Status', 'Profession', 'Education Level', 'Health Status']",4
+What should I do about my overprotective mom who is against me traveling to Thailand alone?,['Emotional State'],1
+When does the feeling of being an adult kick in?,"['Age', 'Education Level', 'Mental Health Status']",3
+How can I make friends as an adult besides online?,"['Age', 'Education Level', 'Profession', 'Emotional State']",4
+How do I forewarn my boss about needing time off due to my dad's illness?,['Health Status'],1
+"Should I focus on saving for a car, or on renting an apartment?","['Economic Status', 'Age', 'Profession']",3
+Can someone give me a rundown of what my options are for an auto loan and insurance? How much should I spend? Is it better to go new or used? Who should I buy from?,"['Economic Status', 'Profession', 'Age', 'Education Level', 'Health Status']",5
+How can I become more street smart with limited experience?,"['Profession', 'Education Level', 'Emotional State', 'Age', 'Health Status']",5
+What are my best options for buying a car with no credit after an accident?,"['Age', 'Economic Status', 'Profession', 'Health Status']",4
+How do I become better with finances?,"['Economic Status', 'Profession', 'Education Level', 'Age']",4
+How do I get better at remembering things?,"['Education Level', 'Emotional State', 'Health Status', 'Profession', 'Mental Health Status']",5
+How can I get my parents (primarily my mom) to calm down and let me go without hurting them or starting a war?,"['Emotional State', 'Past Self-Harm History']",2
+What did you do to get cooking after work?,"['Profession', 'Emotional State', 'Mental Health Status']",3
+"Is it normal to feel inadequate and behind when you don't understand adult responsibilities like taxes, saving money, and financial aid at 20?",['Education Level'],1
+How do I intelligently buy health care coverage?,"['Health Status', 'Economic Status', 'Profession']",3
+How can I manage living on my own better?,"['Economic Status', 'Emotional State', 'Profession']",3
+How can I maintain a relationship with my mom without these issues?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Past Self-Harm History']",4
+"Is aiming for entrepreneurship at 19 too risky, or should I focus on completing my degree?",['Age'],1
+How can I save up money and balance school with my new full-time job?,"['Economic Status', 'Education Level']",2
+Do you think I would be able to secure a lease with my standing?,"['Economic Status', 'Profession', 'Emotional State', 'Age', 'Mental Health Status']",5
+Any advice on moving to Seattle for a 2-year undergrad degree program?,"['Age', 'Education Level', 'Economic Status']",3
+How does Section 8 Housing work and is there a way to get government aid in car insurance or affordable basic coverage?,['Economic Status'],1
+Are there any resources for intervention to help my mother recognize her problems or to apply for home care/companionship?,['Health Status'],1
+What are the pros and cons of living closer to work and away from the city as a single young person moving to a new area?,"['Age', 'Profession', 'Emotional State']",3
+What could they do to make the chemical smell go away in my apartment?,"['Health Status', 'Mental Health Status', 'Age', 'Profession', 'Economic Status']",5
+When should I go see a doctor?,"['Health Status', 'Mental Health Status', 'Emotional State']",3
+How do we make better cleaning habits for ourselves?,"['Health Status', 'Emotional State', 'Profession', 'Economic Status']",4
+How can I achieve my goal of homeownership by early 2019?,"['Economic Status', 'Age', 'Profession', 'Education Level', 'Marital Status']",5
+"What's a good ballpark for rent on a $50k salary in Burlington, VT, considering my expenses and savings goals?","['Economic Status', 'Age']",2
+Does anyone know the feeling or is this just really pathetic?,[],0
+Is this how you adult?,"['Age', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status']",5
+Do you guys think its reasonable to consider putting a down payment on a condo while attending college and any tips or suggestions?,"['Economic Status', 'Age']",2
+What should I do to become financially stable and get my life on track?,"['Economic Status', 'Profession', 'Education Level']",3
+How do the rest of you adults make time for gaming?,"['Age', 'Economic Status', 'Profession', 'Health Status', 'Emotional State']",5
+How can I grow up and take control of my life?,['Age'],1
+How can I develop the necessary life skills to live independently and prove to my parents that I am responsible during my summer before college?,"['Education Level', 'Emotional State', 'Age']",3
+How can I afford to move out with no degree and little to no substantial job experience?,"['Economic Status', 'Profession', 'Education Level', 'Age']",4
+How can I improve my financial management and adulting skills?,"['Economic Status', 'Education Level', 'Profession']",3
+How do you transition out of asking for parental permission when you live independently?,"['Emotional State', 'Mental Health Status', 'Age', 'Education Level', 'Marital Status']",5
+What are some words of wisdom for dealing with this fear of growing up?,"['Age', 'Emotional State', 'Mental Health Status']",3
+How can I fix my life to be less of a burden on my family and become more satisfied with myself?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+How can I find a part-time job that is not in retail and does not require dealing with customers regularly?,"['Profession', 'Emotional State']",2
+Any advice on figuring out money and is a studio apartment a smart choice for someone hoping to one day move on with a special someone into a bigger home?,[],0
+"What would you do in a situation where you are broke, counting down the days until you're homeless, and frozen outside of the career that you've been trying to get to since you were born?","['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+What are some things that I can do to work on my temper and maybe some insights on how to grow up and learn to budget?,"['Emotional State', 'Age']",2
+How can I gain life experience and confidence to be independent and manage adulthood responsibilities?,"['Age', 'Profession', 'Emotional State']",3
+How can I move out of my parents' home to gain independence?,"['Economic Status', 'Age', 'Education Level']",3
+Does anyone have any tips on how to balance changing interests?,"['Emotional State', 'Profession']",2
+How do I juggle both a full time job and relationship well?,"['Marital Status', 'Emotional State', 'Profession', 'Economic Status']",4
+Any advice/things I should know about moving out on my own as a 17-year-old?,"['Age', 'Emotional State', 'Profession', 'Mental Health Status', 'Economic Status', 'Health Status']",6
+Will unpaid medical bills in my name affect my credit score?,"['Economic Status', 'Profession']",2
+How can I motivate myself to update my budget every time I spend and control impulsive buying?,['Economic Status'],1
+How do I choose a dentist for teeth implants?,['Profession'],1
+Why are my credit card applications getting declined instantly?,"['Economic Status', 'Profession', 'Age', 'Emotional State', 'Education Level']",5
+How can I get a driver's license given my poor vision and dental issues?,"['Health Status', 'Emotional State', 'Profession']",3
+Do you guys have any tips for budgeting and managing expenses?,['Economic Status'],1
+How can I start building a social life and make friends as an adult post college?,"['Age', 'Education Level', 'Profession', 'Emotional State']",4
+Any advice on where we could look to for cheaper housing or anything we could do for some extra cash without tearing our hair out as full-time students and part-time workers? Or just any advice in general would be gladly appreciated.,['Economic Status'],1
+How do you make friends as an adult?,"['Age', 'Emotional State', 'Mental Health Status', 'Profession']",4
+How do people make mistakes in their jobs and forgive themselves and move on?,"['Profession', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+"Should I work both my current retail job and take the offer to become a certified pharmacy technician, or choose between the two?","['Profession', 'Economic Status', 'Emotional State', 'Health Status']",4
+Any tips and tricks on how to let my parents be more okay with me coming back late from my boyfriend's house?,['Emotional State'],1
+"What advice can you give me for moving out and renting my first apartment, especially considering having a roommate and finding an affordable area?",['Economic Status'],1
+Has anyone been through burnout from work and what can I do to manage it?,['Profession'],1
+How do I cease giving a damn emotionally?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status']",4
+Where do I go from here to continue advancing as a young adult?,"['Emotional State', 'Age', 'Education Level', 'Profession', 'Gender', 'Mental Health Status', 'Economic Status']",7
+How do you adjust financially from college?,"['Economic Status', 'Profession', 'Education Level']",3
+Is it normal for parents to put their name on the lease when you're moving out?,"['Age', 'Marital Status']",2
+How can I effectively quit smoking and manage my health conditions?,"['Health Status', 'Mental Health Status', 'Profession', 'Economic Status']",4
+How can we effectively manage a household with two kids and multiple pets in a small apartment?,"['Economic Status', 'Profession', 'Health Status', 'Education Level', 'Age', 'Emotional State']",6
+"How do I find a psychologist, set up an appointment, and make it fit into my work schedule?",['Profession'],1
+Is this normal as an adult? Do normal people just go about their lives in near complete apathy?,"['Emotional State', 'Mental Health Status', 'Age', 'Marital Status']",4
+Can I even afford to quit my job?,"['Economic Status', 'Health Status', 'Profession']",3
+Should I stop or moderate my smoking to improve my financial stability?,"['Economic Status', 'Profession', 'Health Status']",3
+What is the fastest way for me to find an apartment and move out?,"['Economic Status', 'Profession', 'Age', 'Emotional State']",4
+Why won't this sadness go away?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status', 'Age', 'Profession']",5
+How do I find affordable health and dental insurance coverage and what is needed for me to receive it?,['Economic Status'],1
+How can I tell what I should do if it all feels the same?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Age', 'Past Self-Harm History']",5
+Is there any kind of program for this situation to help him?,"['Emotional State', 'Profession', 'Mental Health Status', 'Past Self-Harm History', 'Age']",5
+Any information on help for getting health insurance?,"['Health Status', 'Economic Status', 'Profession']",3
+What advice do you have for an almost-adult about to step into the real world? What's something you wish you knew before you got an apartment?,['Age'],1
+What can I do to decide on a career or interest that will earn me enough money to move out?,"['Profession', 'Economic Status', 'Education Level']",3
+How can I find a stable job so I can move out?,"['Profession', 'Economic Status', 'Education Level']",3
+What steps do I need to take to be ready to move out and create a budget I can stick to?,"['Economic Status', 'Age']",2
+"Should I pursue nursing school and stay with my parents, or get my own place despite the financial challenges?","['Economic Status', 'Emotional State', 'Age']",3
+Any suggestions from other adults on gifts you really appreciated receiving?,"['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",5
+Is it normal to feel nostalgic about going back to college?,"['Emotional State', 'Mental Health Status', 'Age']",3
+How can I learn to accept this new reality?,"['Emotional State', 'Mental Health Status', 'Age', 'Profession']",4
+How do I deal with anxiety/ADHD and finally move out?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+How can I get over severe money anxiety?,"['Economic Status', 'Emotional State', 'Mental Health Status']",3
+Can I justify buying $25 worth of craft supplies while between jobs?,"['Economic Status', 'Emotional State', 'Profession']",3
+"How do I responsibly find a sex partner while also working on dealing with depression/rape trauma, and moving out?","['Emotional State', 'Past Self-Harm History', 'Marital Status', 'Age', 'Profession', 'Health Status', 'Mental Health Status', 'Economic Status']",8
+Anyone have advice on how to get started with applying for jobs and building credit?,"['Economic Status', 'Education Level', 'Profession', 'Age', 'Mental Health Status']",5
+Any tips for getting my life on track after graduating college and starting a job?,"['Emotional State', 'Mental Health Status', 'Age']",3
+"What do I need to know about health insurance, how does it work, and what should I be looking for/can I even afford it?","['Economic Status', 'Health Status']",2
+Any tips for someone who's about to start her first job?,['Profession'],1
+Does anyone have any suggestions of how to deal with this defeated feeling that hits many of those in their mid-20s? Anyone have any job suggestions with my qualifications I provided?,"['Profession', 'Education Level', 'Emotional State', 'Mental Health Status']",4
+What should I do to move out by October of next year?,"['Economic Status', 'Profession', 'Health Status', 'Age', 'Emotional State']",5
+How can I manage my health and financial issues better?,"['Economic Status', 'Profession', 'Health Status']",3
+How do I get a plan that has a copay similar to what my parents have? Also what is the difference between a deductible and a copay?,"['Economic Status', 'Age', 'Profession', 'Health Status']",4
+What can I do to get over this fear of moving out?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status', 'Age', 'Profession']",5
+Is all of this for nothing?,"['Emotional State', 'Mental Health Status', 'Health Status', 'Past Self-Harm History', 'Age']",5
+"Is it manageable to move out with reliable people while working and going to college, or should I stick it out until I finish undergrad?","['Education Level', 'Economic Status']",2
+"How do we work taking the time and energy to cook into our days, and what should a grocery store budget look like?","['Economic Status', 'Profession']",2
+What are some tips for entering the real world and making friends in a new city after college graduation?,"['Age', 'Education Level', 'Emotional State']",3
+What should I do in terms of this relationship? Should I consider moving out?,"['Marital Status', 'Mental Health Status', 'Age', 'Economic Status', 'Emotional State']",5
+Is there anything else that I can be doing to help him out? Or anything that he could be doing to be less exhausted?,"['Health Status', 'Emotional State']",2
+How should I prioritize between buying a new mattress or a new car?,"['Economic Status', 'Emotional State', 'Profession', 'Age']",4
+"Should I move back to my hometown despite the challenges, or stay in Cape Town and try to make things work?",['Emotional State'],1
+How do you live after dropping out of college?,"['Education Level', 'Economic Status', 'Profession', 'Age', 'Mental Health Status', 'Past Self-Harm History']",6
+What should I know about the home buying process as a first-time buyer?,"['Economic Status', 'Age', 'Education Level']",3
+When does life get easy?,"['Emotional State', 'Health Status', 'Mental Health Status', 'Profession', 'Age']",5
+Has anyone else been in this situation and what can we do about it?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+Should I start dating now?,"['Emotional State', 'Mental Health Status', 'Age', 'Past Self-Harm History', 'Profession', 'Economic Status', 'Marital Status']",7
+"Should I look for a general practice doctor and a separate OB/GYN, or can an OB/GYN also be my primary care provider and do annual check-ups?",['Health Status'],1
+Should I look for a new job now or wait since my job might be ending in April and I'm having a baby in May?,"['Age', 'Profession', 'Economic Status']",3
+What do full-fledged adults do in their daily lives to make them feel like their life isn't mundane and pointless?,"['Profession', 'Emotional State']",2
+Where should I start generally speaking?,"['Age', 'Education Level', 'Economic Status', 'Health Status', 'Mental Health Status', 'Marital Status']",6
+How can I start planning for moving to Oregon and finding a job and an apartment there?,"['Profession', 'Economic Status']",2
+How can I become more independent and manage adult responsibilities better?,"['Education Level', 'Profession', 'Economic Status']",3
+What should I do to find a primary care doctor who is accepting new patients?,"['Profession', 'Health Status']",2
+How do I fix my fucking life?,"['Emotional State', 'Mental Health Status', 'Age', 'Profession']",4
+How can I get a job in computer science without a college degree and manage my anxiety?,"['Education Level', 'Mental Health Status', 'Age', 'Profession']",4
+What can I do about my dating situation if I don't want to take up hiking or get a pet?,"['Emotional State', 'Marital Status', 'Profession', 'Mental Health Status']",4
+Is it unusual for someone my age to go to doctor's appointments alone and handle everything themselves?,"['Emotional State', 'Health Status', 'Age']",3
+How can I be a better adult?,"['Age', 'Education Level', 'Mental Health Status']",3
+"Given my situation, is moving out wise or should I stay until I graduate? Also, if we decide to move out, what do I do with my dogs and do registered ESAs help with housing? Are there any reliable programs to support us financially besides food stamps?","['Economic Status', 'Profession']",2
+"Should I apply for assistance now with my current information or wait until I move out, and should I focus on paying my loans first or moving out first?","['Emotional State', 'Economic Status', 'Age', 'Marital Status', 'Mental Health Status']",5
+"How do you manage to make dinners after a long day at work? Is meal prep something we should consider? What sort of groceries should we look into stocking? Also, if you have any I would love some recipes!",['Profession'],1
+How can I improve my decision-making and financial literacy to avoid the mistakes I've made in the past?,"['Economic Status', 'Education Level']",2
+How can I manage work and life when I'm too exhausted to do anything after work?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+How many other millennials or people new to adulting feel frustrated about office jobs?,"['Profession', 'Mental Health Status', 'Education Level', 'Age', 'Emotional State']",5
+"Where should I move if I want a low cost of living, good public transit, counseling jobs, and access to parks and activities?","['Economic Status', 'Profession', 'Age', 'Emotional State']",4
+What are the consequences of breaking my lease and how should I do it?,"['Economic Status', 'Age', 'Emotional State', 'Marital Status', 'Mental Health Status']",5
+"Do I take this leap of faith and move with my boyfriend, or do I do the safe thing and wait it out?","['Marital Status', 'Emotional State', 'Age', 'Mental Health Status', 'Past Self-Harm History', 'Profession', 'Economic Status']",7
+Could someone provide me with some answers?,"['Emotional State', 'Mental Health Status', 'Age', 'Profession', 'Education Level', 'Economic Status']",6
+"What are tips in balancing work, school, and home, let alone yourself in all that?","['Emotional State', 'Profession']",2
+How to convince controlling parents that I could do my own adulting?,"['Age', 'Emotional State', 'Education Level']",3
+"What steps should I take to successfully move out and manage my finances, given my current situation?","['Economic Status', 'Profession']",2
+Where should I begin to address my life issues?,"['Emotional State', 'Mental Health Status', 'Age', 'Marital Status']",4
+Has anyone had luck with online jobs or side hustles that can be done from home?,"['Profession', 'Economic Status', 'Education Level', 'Emotional State']",4
+How do I set myself up over the next few months so I can live on my own by August?,"['Age', 'Economic Status', 'Education Level']",3
+Is there anything I should know about the process of leaving/starting something new?,"['Emotional State', 'Profession', 'Mental Health Status', 'Education Level', 'Health Status']",5
+How can I increase my chances of getting into a 4-year college at age 26?,"['Education Level', 'Age', 'Economic Status']",3
+Why am I experiencing intense back pain despite having an ergonomic workstation and being active at 23?,"['Health Status', 'Age', 'Profession']",3
+How can I manage my finances better to avoid wasting money on unnecessary expenses?,"['Economic Status', 'Profession']",2
+"Any advice to help me learn how to be motivated enough to be self-sustaining, and make more of an effort to get moving?","['Emotional State', 'Mental Health Status']",2
+How do people make friends as adults?,"['Age', 'Education Level', 'Profession', 'Emotional State']",4
+When do I start to feel like an adult?,"['Age', 'Education Level', 'Emotional State', 'Mental Health Status']",4
+Does anyone ever feel like they are doing really well at adulting and then all of a sudden they realize that they actually suck at this adulting and everything is falling apart?,[],0
+Where do you shop for cute but professional outfits suitable for a hot climate?,"['Profession', 'Education Level', 'Economic Status']",3
+Have anyone ever been in my shoes before? And is there any advice you can give me?,"['Emotional State', 'Past Self-Harm History', 'Age', 'Mental Health Status']",4
+What the hell is insurance and how do I get some?,"['Economic Status', 'Profession', 'Health Status', 'Education Level', 'Emotional State']",5
+Why is it not more common for parents to accept that their child has a medical issue?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Age']",4
+Is it so horrible if I don't go visit my dying grandmother?,[],0
+Do I have any legal rights or insurance claims regarding construction dust in my apartment?,"['Profession', 'Health Status', 'Economic Status', 'Mental Health Status', 'Age']",5
+How can I talk to my mom about needing more privacy and space without causing conflict?,"['Emotional State', 'Age']",2
+"How much money would I make working at KFC in Florida, and can you give an estimate of my bi-weekly or monthly pay?","['Economic Status', 'Emotional State', 'Profession', 'Age', 'Health Status']",5
+How can I dig myself out of this shithole of just feeling bad constantly?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+What should I do about the job offer that doesn't pay well and is temporary but important for my career?,"['Profession', 'Economic Status', 'Emotional State']",3
+How can I create a credible workable plan to go back home and continue my education without ending up in a worse situation?,"['Economic Status', 'Education Level', 'Emotional State']",3
+What do you guys think?,"['Mental Health Status', 'Age', 'Past Self-Harm History', 'Profession']",4
+Is there a loan forgiveness thing I can do to lessen my loan repayments or something?,"['Economic Status', 'Profession', 'Education Level', 'Age', 'Mental Health Status']",5
+How should I proceed with my employer not providing the health insurance they promised?,"['Health Status', 'Emotional State', 'Economic Status', 'Mental Health Status']",4
+What specific steps should I take to start adulting and gain independence?,"['Age', 'Education Level', 'Mental Health Status']",3
+What's the best way to study for the CompTIA A+ certification so I actually make some tangible progress?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
+Is buying my first house considered an adulting win?,"['Age', 'Economic Status']",2
+"Should I meet in the middle and work towards becoming a legal academic, or am I just better off staying with the job goal of solicitor?",['Profession'],1
+What is my best opportunity for moving out and starting my own life while continuing my education and saving money?,"['Economic Status', 'Education Level']",2
+How do I even begin to recover?,['Emotional State'],1
+What can I do to make friends and enjoy life despite not being able to afford a fancy social life?,['Economic Status'],1
+What should I do about my college situation given my mental health and job prospects?,"['Education Level', 'Profession', 'Economic Status', 'Mental Health Status']",4
+"What does a normal, healthy adult routine look like to stop binge eating and feel relaxed and happy?","['Emotional State', 'Health Status', 'Past Self-Harm History', 'Age']",4
+What should I know before using an employment agency?,"['Economic Status', 'Profession', 'Emotional State', 'Education Level', 'Health Status']",5
+Is it too late for me to shift careers and study for 5 more years?,"['Emotional State', 'Economic Status', 'Age']",3
+"What are the best health insurance options in Tennessee, considering a budget of $80 to $100 a month, and what should be considered when choosing one?",['Economic Status'],1
+How can I start adulting and take steps to prepare for having children?,"['Age', 'Education Level', 'Mental Health Status']",3
+Are there any hacks to make things easier?,"['Mental Health Status', 'Past Self-Harm History', 'Profession', 'Age', 'Emotional State', 'Education Level']",6
+Who is an appropriate lease guarantor if my parents are not an option?,"['Economic Status', 'Emotional State', 'Age', 'Marital Status', 'Education Level']",5
+Does anybody feel left behind by their married friends?,"['Marital Status', 'Emotional State', 'Mental Health Status']",3
+How do you remain positive and keep adulting when life is stressful and falling apart?,"['Emotional State', 'Mental Health Status']",2
+Any and all adulting advice is welcomed,"['Age', 'Mental Health Status']",2
+Is it as hard as I think it is to work and go to school while living without parents' financial help?,['Economic Status'],1
+Has anyone else experienced anything similar? Is this what being a workaholic is? Am I stuck in 'fight or flight' mentality?,"['Emotional State', 'Mental Health Status']",2
+Does anyone have good life advice?,['Emotional State'],1
+Any tips for becoming self sufficient?,"['Emotional State', 'Economic Status', 'Profession', 'Health Status', 'Education Level']",5
+How can we change this mentality and become a bit more positive?,"['Mental Health Status', 'Emotional State', 'Profession', 'Past Self-Harm History']",4
+Any advice on how to manage financially as a teacher with student loans and a low salary?,['Economic Status'],1
+What can I do to be more grateful for what I have and more inspired and happy in my current job? Am I entering into a midlife crisis or am I really depressed?,['Emotional State'],1
+Should I get an apartment or buy a house given my current situation?,['Economic Status'],1
+"Is it okay to get engaged and still be living at home? Should we move in together first? Should we move in while engaged, or completely get married first? Are we just too young?","['Marital Status', 'Age', 'Emotional State']",3
+How can I offer support to friends who are not doing okay mentally and emotionally when I am stressed myself?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status', 'Age', 'Profession']",5
+How can I manage my first-time rent payments?,"['Economic Status', 'Age', 'Profession', 'Education Level']",4
+Does anyone else experience anything similar?,"['Emotional State', 'Past Self-Harm History', 'Health Status']",3
+What career options should I consider with a BA in Communication and Political Science if I'm not interested in marketing or digital work?,"['Profession', 'Education Level', 'Economic Status', 'Emotional State']",4
+How do I stop this laziness and uselessness that is me?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age', 'Education Level', 'Profession']",6
+How can I manage the high expectations and work stress in my first graduate job while improving communication with my boss?,"['Profession', 'Emotional State']",2
+What are the pros and cons of moving out of my mom's house?,"['Age', 'Emotional State', 'Education Level', 'Profession', 'Economic Status']",5
+Can someone with lots of work experience look over my resume?,['Profession'],1
+How can my girlfriend prove her residency in Washington to get a license?,"['Age', 'Marital Status', 'Economic Status']",3
+How can I overcome my fear of phone calls?,"['Emotional State', 'Past Self-Harm History', 'Age', 'Health Status']",4
+How can I manage procrastination caused by anxiety and depression?,"['Mental Health Status', 'Emotional State', 'Profession']",3
+Do I need to get over this new 'adulting' job or will my anxiety get the best of me every time?,"['Emotional State', 'Mental Health Status', 'Age', 'Health Status', 'Profession']",5
+"Once you buy a home and budget yourself in your career, how do you 'start over' just for the material? Does adulting ever get easier?",['Economic Status'],1
+How can I maintain the habit of cleaning regularly?,"['Age', 'Profession', 'Mental Health Status', 'Education Level', 'Emotional State']",5
+How can I afford to move out at 18 while attending community college?,"['Economic Status', 'Age']",2
+How do we do the rental process with no car to go to the office?,"['Age', 'Profession', 'Economic Status', 'Emotional State', 'Mental Health Status']",5
+Any advice for moving out as a young mom and how to keep my mom from hating/disowning me over this?,"['Age', 'Mental Health Status', 'Emotional State', 'Marital Status']",4
+How can I manage my life and self-care when I'm too depressed to function?,"['Emotional State', 'Past Self-Harm History', 'Health Status']",3
+Is it realistic for me to move out of my parents' house by sophomore year while saving enough for 6 months of living expenses?,"['Economic Status', 'Age']",2
+How do I get health insurance given my current income and situation?,"['Health Status', 'Economic Status']",2
+How do I get rid of more stuff now when I've already decided I can't get rid of them?,['Emotional State'],1
+"Is it possible for someone without a college education to make decent money by working from home, and where do you find legit opportunities like that?",['Education Level'],1
+How can I get access to health insurance without killing my bank account?,"['Economic Status', 'Health Status']",2
+How do I know/decide what I want to be?,"['Profession', 'Emotional State', 'Education Level', 'Mental Health Status', 'Age']",5
+What is the best way to ask for a raise?,"['Profession', 'Economic Status', 'Mental Health Status', 'Emotional State']",4
+How do I make the most of my insurance before it ends?,"['Economic Status', 'Profession', 'Age', 'Health Status']",4
+Why is my credit score of 646 not enough to qualify for an apartment when the requirement is 680?,"['Economic Status', 'Profession']",2
+What kind of things should I be mindful of or add to my daily routine to make living alone easier?,"['Emotional State', 'Health Status']",2
+Does anyone have any sort of advice on what I should do?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age', 'Economic Status']",5
+"Is there anybody else here who has successfully been through this? If so, what did y’all do? And does anyone know what kind of utility is possible for me to get in order to provide 'proof'?",['Past Self-Harm History'],1
+"What is the process to start leasing a new car, and should I buy a car with a loan or is it cheaper to lease? Also, are leasing and financing different?",['Economic Status'],1
+Does being away from friends and family get easier?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Past Self-Harm History', 'Age']",5
+How can I find motivation and direction for starting a business?,"['Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",4
+How can I better manage my budgeting and anxiety related to finances and professional requirements?,"['Economic Status', 'Profession']",2
+Does anyone have any wisdom they can share with me before I hurl all over my car?,['Emotional State'],1
+How can I manage feeling drained after work while not enjoying unemployment?,"['Profession', 'Health Status']",2
+How can I improve my financial situation and get out of poverty?,"['Economic Status', 'Profession', 'Education Level', 'Age']",4
+How can I effectively search for a new job and improve my career prospects without relying on networking?,"['Profession', 'Education Level', 'Economic Status']",3
+What are some actual ways to distract my focus from relationships?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+What can I do to help pay for college in addition to student loans and how can I balance work and my social life?,"['Economic Status', 'Education Level']",2
+"What should I study if I go back to school online, considering I don't want to end up with more debt and the same kind of jobs?","['Economic Status', 'Profession', 'Education Level']",3
+Can I pursue a career in bartending if I don't drink alcohol due to having an addictive personality?,"['Emotional State', 'Profession', 'Mental Health Status']",3
+Should I commit to college or work on my health for a second chance?,"['Education Level', 'Health Status']",2
+What can I do if I'm tired of being a nurse and feeling overwhelmed by responsibilities?,"['Profession', 'Emotional State']",2
+What else can I do for a career that would make about the same amount of money as I currently make in healthcare?,"['Profession', 'Economic Status']",2
+Can you share a story about overcoming a rocky beginning to adulthood or a challenging first job to help put my situation into perspective?,"['Age', 'Past Self-Harm History', 'Mental Health Status', 'Emotional State', 'Profession']",5
+How can I cope with my anxiety and depression about living on my own and starting a new job?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+How do I ask my boss to do something different because I loathe my current tasks?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+What kind of small appreciation gift should I give to our leasing agent when I don't know them very well?,"['Age', 'Profession', 'Economic Status', 'Emotional State']",4
+"Should I stay with my boyfriend despite the issues, or should I leave?","['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status']",4
+How have all of you gone about transporting your belongings when moving house with a lot of stuff?,"['Profession', 'Age', 'Economic Status', 'Health Status', 'Emotional State']",5
+Am I an irresponsible adult like my parents say I am?,"['Mental Health Status', 'Emotional State', 'Age', 'Education Level', 'Marital Status']",5
+"What advice do you have on affording rent while in school, apartment hunting, living on your own vs. living with a roommate, and how to find a good roommate?",['Economic Status'],1
+How do I create credit quickly and start this whole process? Is it possible to speak with a banker at Huntington about our best option for a small business loan?,"['Economic Status', 'Profession', 'Age', 'Mental Health Status', 'Education Level']",5
+What should I do to manage my lawn care situation when I'm unable to do it myself?,"['Age', 'Emotional State', 'Profession', 'Health Status']",4
+What do I wear to appear like an upstanding member of society in court?,"['Profession', 'Age', 'Education Level', 'Emotional State', 'Gender', 'Marital Status', 'Economic Status']",7
+What are some ideas or feedback for my YouTube channel on adulting?,"['Age', 'Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",5
+Is it sensible for my happiness from renting ASAP to outweigh the investment of working towards a mortgage?,"['Profession', 'Economic Status', 'Age', 'Emotional State']",4
+Do they have to put through a specific car on the paperwork or something?,"['Age', 'Marital Status', 'Emotional State', 'Gender']",4
+"How can I learn the basic aspects of adulthood and motivate myself not to quit or give up, while overcoming the fear of failing?","['Emotional State', 'Mental Health Status']",2
+How do I request and set up an appointment with a psychiatrist to get mental illnesses diagnosed and medicated?,"['Mental Health Status', 'Emotional State', 'Profession', 'Economic Status', 'Age']",5
+How do you find doctors through your insurance aside from using their online portal?,"['Profession', 'Health Status', 'Economic Status', 'Age', 'Emotional State']",5
+How important is it to get insurance if I have a lot of bills and financial commitments?,['Economic Status'],1
+"Is this anxiety normal, or am I totally weird for thinking this?",[],0
+Does anyone feel like their life could be turned upside down at any moment?,"['Emotional State', 'Mental Health Status']",2
+Would it be best to have him apply on his own without me? Would he get in trouble if I lived with him and wasn't on the lease?,"['Marital Status', 'Mental Health Status', 'Age', 'Economic Status']",4
+How do I get over my fear of being rejected or looked down on because I'm 25 and only now looking for my first job?,"['Emotional State', 'Profession', 'Age', 'Mental Health Status', 'Economic Status']",5
+What do I need to know about working two jobs and how do people balance life by doing so?,"['Emotional State', 'Profession', 'Economic Status', 'Mental Health Status']",4
+How can I expand my Etsy shop effectively while managing it as a side gig?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status']",4
+How am I going to get enough money within like a month to move?,"['Economic Status', 'Profession', 'Age', 'Education Level', 'Health Status']",5
+Any advice on switching universities to another country and finding a job there?,"['Profession', 'Education Level', 'Economic Status', 'Mental Health Status', 'Age']",5
+Can anyone share encouraging words or stories about moving out and being scared but ending up happy with their choice?,['Emotional State'],1
+"What would you do if you accomplished everything, or mostly everything, you've wanted to do in life?","['Emotional State', 'Mental Health Status', 'Education Level', 'Economic Status', 'Profession']",5
+How can I deal with the need for instant gratification while meeting my financial goals?,"['Economic Status', 'Emotional State', 'Profession']",3
+"Should I enroll in a health insurance plan that costs $1177 a year, or should I just get a FSA to cover a yearly visit to a PCP?","['Economic Status', 'Health Status']",2
+Is it possible for me to come back to the animal hospital on occasion for observation?,"['Age', 'Health Status']",2
+"How can I start repaying my parents for everything they've done for me, despite my struggles with adult ADHD, depression, and bipolar depression?","['Mental Health Status', 'Emotional State']",2
+Should I buy a car or get a mortgage?,"['Economic Status', 'Profession', 'Age', 'Health Status']",4
+How do I save money and find an apartment without getting scammed?,"['Economic Status', 'Profession', 'Age', 'Education Level']",4
+What should I do about a cavity in my molar and could it spread?,"['Health Status', 'Emotional State', 'Mental Health Status', 'Profession']",4
+How can I get back into therapy or find mental health support without insurance?,"['Mental Health Status', 'Economic Status']",2
+How can I be more responsible?,"['Emotional State', 'Age', 'Profession', 'Mental Health Status']",4
+Is there a better way to get more out of my personal time and work at the same time? Should I try and look for a new job?,['Profession'],1
+What are the most basic essentials I need to acquire in order to qualify for renting an apartment? How do I explain to either one of my parents that I'm possibly moving soon and I don't want anyone to stop me? How do I convince everyone I'm capable enough to take care of myself and finally be a damn adult?,[],0
+Is this approach going to help me find more gainful employment?,"['Profession', 'Economic Status', 'Education Level', 'Age', 'Emotional State', 'Mental Health Status']",6
+Is Medi-Cal qualification based on individual income or household income?,['Economic Status'],1
+How different is full-time work from part-time work in terms of how tiring it is?,"['Profession', 'Economic Status', 'Age']",3
+How can I find an in-network therapist using my insurance's website without feeling drained by the process?,"['Emotional State', 'Health Status']",2
+"How do I know if my insurance covers seeing a therapist and a cardiologist, and how can I find an in-network provider?",['Health Status'],1
+Is this a clerical error between the mortgage and the court?,"['Profession', 'Mental Health Status', 'Age', 'Emotional State', 'Economic Status']",5
+"Is mental illness the case, or something bigger?","['Mental Health Status', 'Economic Status', 'Profession', 'Age']",4
+When should my parents stop claiming me as a dependent if I am a full-time college student living independently and paying for most of my own expenses?,['Economic Status'],1
+How can I learn to handle adult responsibilities and manage my life better?,"['Age', 'Education Level', 'Emotional State']",3
+Does this get any easier? Does anyone feel the same way?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+How do I stop feeling like I made a massive mistake and that I'm going to go broke?,"['Emotional State', 'Mental Health Status', 'Economic Status', 'Past Self-Harm History']",4
+"What do I need to know about renting an apartment, budgeting, paying off student loans, taxes, and health insurance as a soon-to-be college graduate?","['Economic Status', 'Education Level']",2
+"How do I manage working a full-time job, keeping in touch with family members, and sustaining a social life?","['Profession', 'Emotional State', 'Health Status']",3
+"How can I learn the ins and outs of adulting, including moving out, paying bills, budgeting, time management, cleaning, and cooking?",['Education Level'],1
+"How do we change it and make progress when every time we start, things fall apart?","['Emotional State', 'Mental Health Status', 'Profession', 'Health Status', 'Education Level']",5
+Does it get better?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age', 'Health Status']",5
+How can I prepare for my new job as a dishwasher at a private country club?,"['Profession', 'Economic Status', 'Education Level', 'Emotional State', 'Mental Health Status']",5
+What option should I choose for moving out and getting a pet?,"['Emotional State', 'Age', 'Economic Status', 'Profession']",4
+How did you know you were ready to move out/had to move out?,['Mental Health Status'],1
+Does anyone have any advice on how to juggle a busy work life but still be able to do things like dishes and keep a tidy home?,"['Profession', 'Emotional State']",2
+How can I go about moving out of my mother's house?,"['Age', 'Education Level', 'Economic Status']",3
+Does anyone have any advice on whether to stay at a close university to be with loved ones or transfer to a school up north with a better sustainability program?,"['Age', 'Profession', 'Education Level', 'Emotional State', 'Economic Status', 'Mental Health Status']",6
+How do you unwind after a long day at work?,"['Emotional State', 'Mental Health Status']",2
+How can I improve my budgeting and saving strategies?,"['Economic Status', 'Profession', 'Education Level']",3
+How can I manage my feelings of being lost and anxious about the future?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+"How do I go to a doctor, a gyno, a therapist, and a dentist without insurance or money?","['Economic Status', 'Health Status', 'Emotional State', 'Profession', 'Mental Health Status']",5
+Anyone have any advice?,"['Emotional State', 'Past Self-Harm History', 'Marital Status', 'Age', 'Gender']",5
+How can I talk to a cleaning lady about work not done?,['Profession'],1
+"What are some small, manageable things I can do to work towards a better quality of life for myself?",['Health Status'],1
+How can I support my partner financially if I can't even get my life together?,"['Economic Status', 'Profession', 'Emotional State', 'Age', 'Mental Health Status']",5
+Should I just stay in community college and not transfer to university late or should I go to cosmetology school? Is not getting an actual degree a bad idea?,[],0
+"Am I unrealistic to think that I could accomplish these things alone with the right amount of time/discipline? Any tips for picking up some of these skills and tackling projects solo (as someone who is pretty much clueless?) How do you prioritize and maintain your home as projects pile up when you have time consuming repeated tasks (ex: mowing the lawn, grocery shopping, laundry/housework) that end up taking up large chunks of your days off? Is it better to just budget for these things to be paid for (at the cost of my savings or other things I'd rather spend money on)?","['Emotional State', 'Profession']",2
+How can I find a job that allows me to also secure a rental place when current options are 230km away and I'm not qualified for nearby opportunities?,"['Profession', 'Economic Status']",2
+Should I pursue a promotion at work and slow down my college degree progress?,"['Education Level', 'Profession', 'Emotional State', 'Age', 'Economic Status']",5
+How do you decide between spending PTO visiting family or taking vacations abroad?,['Emotional State'],1
+What can I do in the mean time to prepare for the worst?,"['Health Status', 'Mental Health Status']",2
+What should I do about health insurance since I can't afford private insurance and don't qualify for health assistance in Florida?,"['Economic Status', 'Health Status']",2
+What do you do to keep hydrated without having to run out of the room every hour?,['Profession'],1
+What advice can I give a soon-to-be 18-year-old who grew up in a demeaning household and lacks basic documentation to enter adulthood?,"['Economic Status', 'Education Level']",2
+Is it worth spending a lot of money on braces without knowing if the results will be good?,"['Economic Status', 'Mental Health Status', 'Emotional State', 'Health Status']",4
+How do you become okay with resting or taking a deserved break?,['Emotional State'],1
+"Does anyone have any tips, in any field, on how to help myself?","['Profession', 'Education Level', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History']",5
+How can I move out when my mom is making it difficult and saying she can prevent it?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status', 'Marital Status']",4
+How do I apologize to my neighbor whom I disturbed with loud noises when assembling a loft bed?,['Emotional State'],1
+What else can I be doing to help stay awake during work?,"['Health Status', 'Mental Health Status', 'Emotional State']",3
+Am I wrong for refusing to rent a car for my coworker?,"['Emotional State', 'Profession', 'Economic Status', 'Age']",4
+Should I save for longer or get a loan for my first car?,"['Economic Status', 'Profession', 'Age', 'Education Level']",4
+Does anyone else kind of feel the same way about your friends from high school?,['Emotional State'],1
+What should I do about the job relocation and my parents' reaction?,"['Emotional State', 'Profession', 'Mental Health Status', 'Age', 'Marital Status']",5
+Does anyone have any tips for maintaining income as a freelancer? Platforms or websites to advertise or build an audience?,['Profession'],1
+What should I do if I can't find a job with my business degree and only have experience in minimum wage work?,"['Economic Status', 'Emotional State', 'Profession', 'Education Level']",4
+Does anyone have any suggestions for affordable housing in LA that won't involve me sharing a bedroom with someone?,"['Economic Status', 'Age', 'Profession', 'Health Status', 'Emotional State']",5
+What is a good way to find a decent roommate?,"['Age', 'Marital Status', 'Mental Health Status', 'Profession', 'Emotional State']",5
+How do I leave work at work?,['Profession'],1
+Is this normal for young fresh adults? Have you ever been in this position? What did you do? Does it get any better?,"['Age', 'Emotional State', 'Mental Health Status', 'Profession', 'Education Level']",5
+How can I get over the embarrassment of not understanding basic life skills?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Health Status']",4
+Does anyone have any tips for a first-timer working in retail?,"['Profession', 'Emotional State']",2
+"What do I need to consider when buying a house out of state, such as cheaper buying options, savings for down payment, necessary paperwork, and affordable areas in Washington?",['Economic Status'],1
+What are things that I should make sure I know and try before I turn 30?,"['Age', 'Education Level', 'Profession', 'Mental Health Status', 'Emotional State']",5
+"Should I move in with these 2 friends despite concerns about rent fairness, their fighting, and the challenges of living with friends?","['Emotional State', 'Mental Health Status', 'Age', 'Profession', 'Economic Status']",5
+Where do I start with college if I want to become a school counselor and take online courses?,"['Education Level', 'Profession', 'Health Status', 'Emotional State', 'Mental Health Status']",5
+Do you guys have any tips for adjusting to a 'nomadic' lifestyle or shifting schedule?,"['Profession', 'Emotional State']",2
+How can I manage my transition from a flexible schedule to a fixed full-time work schedule?,"['Profession', 'Emotional State']",2
+How can I stop being dependent on my parents and become more accomplished and realistic about the rest of my life?,"['Education Level', 'Emotional State', 'Mental Health Status']",3
+What should I do?,"['Mental Health Status', 'Emotional State', 'Age', 'Past Self-Harm History', 'Profession', 'Education Level']",6
+"How will not having a credit score in my 20s affect my ability to get the things I need, and how can I establish credit responsibly?","['Emotional State', 'Age', 'Economic Status']",3
+What should I consider when starting dental assisting school after a period of self-discovery?,"['Age', 'Education Level', 'Mental Health Status']",3
+Can you check out my website and give me any advice or comments?,"['Age', 'Profession', 'Education Level', 'Emotional State', 'Mental Health Status', 'Health Status', 'Past Self-Harm History']",7
+Am I the only one who feels like I wasted 4 years of my life? I don’t even know what I want to do as a career... any advice? Career options? Tips on adult life in general? Am I just overreacting?,"['Emotional State', 'Profession', 'Age', 'Education Level']",4
+How should I budget when I make $1450 a month and plan on living very frugally?,['Economic Status'],1
+What are some other basic things similar to an AAA membership that every adult should have handy?,"['Age', 'Economic Status', 'Health Status']",3
+What should I be doing with my health insurance if I feel like nothing is wrong?,"['Health Status', 'Emotional State', 'Age', 'Profession']",4
+What should I do if I'm worried about not finding a job in my field after graduation?,"['Education Level', 'Profession', 'Economic Status', 'Emotional State']",4
+How can I make and maintain healthy and productive routines?,"['Health Status', 'Emotional State']",2
+How can I find motivation to act like an adult in public?,"['Emotional State', 'Mental Health Status', 'Age', 'Past Self-Harm History', 'Economic Status']",5
+Does anyone have a miracle trick to help me feel and act like an adult?,"['Emotional State', 'Education Level', 'Mental Health Status', 'Age', 'Profession']",5
+How do I prepare for my first job at the county tax office?,"['Education Level', 'Profession']",2
+"Should I pursue a master's degree in international business law in Europe, or stay and focus on securing my future in my family's law firm considering my desire to have children?","['Education Level', 'Economic Status', 'Emotional State', 'Age', 'Profession', 'Marital Status', 'Mental Health Status', 'Health Status']",8
+How can I manage responsibilities without getting overwhelmed?,"['Emotional State', 'Health Status', 'Profession']",3
+Why do I keep looking back on what I could have done differently despite having a promising future?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+"Is it really possible to start at approximately minimum wage and work up to a salary that allows you to live comfortably, just by gaining experience?","['Profession', 'Economic Status']",2
+What is this asking me about being exempt from withholding on a W-4 form?,"['Profession', 'Economic Status', 'Age', 'Marital Status', 'Education Level']",5
+Do you think a landlord would be open to renting to me if I prepay the entirety of my annual rent or if I buy lease guarantee insurance?,['Economic Status'],1
+How should I prepare if I get kicked out?,"['Economic Status', 'Health Status', 'Emotional State', 'Profession', 'Mental Health Status']",5
+"How should I word a reply to the recruiter to state that I'm interested, but I need more info before making a decision, without sounding rude?",['Emotional State'],1
+Why was I fired after only a week at a real estate agency when I thought I was doing well?,"['Profession', 'Mental Health Status', 'Health Status', 'Economic Status', 'Emotional State']",5
+What would you advise me to do?,"['Emotional State', 'Mental Health Status', 'Economic Status', 'Age', 'Profession', 'Health Status']",6
+How can I create an effective wind-down bedtime routine?,"['Emotional State', 'Mental Health Status']",2
+What advice and pointers can you give me for moving out quickly like this besides simply just 'budget'?,['Economic Status'],1
+How do people just quit their jobs and go backpacking across Europe?,"['Age', 'Profession', 'Economic Status', 'Health Status']",4
+What advice do you have for finding a simple retail job without a college degree when I'm experiencing anxiety and need to avoid returning to my mom's house?,"['Age', 'Emotional State']",2
+"Is it wise to move to a new country to be close to a friend, considering my circumstances?","['Emotional State', 'Mental Health Status', 'Age', 'Profession']",4
+How can I manage the stress of moving and starting a new job?,"['Emotional State', 'Mental Health Status']",2
+How can I make friends my age in an introverted state like Washington?,"['Age', 'Emotional State']",2
+What do I do?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status', 'Age']",5
+What is the best way to approach my dad about renting and get him to understand and not tell us we are going to throw money away?,['Emotional State'],1
+What should I do if I'm unhappy with my job despite its benefits?,"['Profession', 'Mental Health Status', 'Emotional State']",3
+What should I spend my first paycheck on?,"['Economic Status', 'Health Status', 'Profession', 'Age']",4
+"Do I move home where it might be a little tougher to find a job in my field, or do I stay here but have to deal with the insane cost of living and the commuting? When do I look for a new job?","['Profession', 'Economic Status']",2
+How can I find a clear career path and income stream?,"['Profession', 'Economic Status', 'Education Level']",3
+What should I do to find a job in Germany?,"['Profession', 'Economic Status', 'Education Level', 'Emotional State']",4
+What tips/tricks do you have to stay motivated and get your to do list done after work?,['Emotional State'],1
+What are some good health insurance options for a senior undergrad student that I could pay on my own?,"['Education Level', 'Economic Status']",2
+Can anyone give me some pointers for my first overseas business trip?,"['Profession', 'Age', 'Economic Status', 'Health Status']",4
+Which city should we move to that meets our specific requirements?,"['Emotional State', 'Economic Status', 'Age', 'Health Status']",4
+How do I start adulting?,"['Age', 'Education Level', 'Economic Status', 'Mental Health Status', 'Profession']",5
+How do I get in to see a doctor?,"['Health Status', 'Mental Health Status', 'Emotional State']",3
+How can volunteering or a side hustle help improve my sense of contribution to the world?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
+How can I find a part-time job while dealing with my complicated circumstances?,"['Economic Status', 'Emotional State', 'Profession']",3
+What are some tips for managing finances and responsibilities after moving out on my own for the first time?,['Economic Status'],1
+"How would you handle a situation where a best friend changes important plans without notifying you, and you're unsure if the friendship is worth keeping?",['Emotional State'],1
+Should I quit physical therapy school to avoid further debt and potential academic failure?,"['Education Level', 'Economic Status', 'Profession']",3
+Is there any good learning sources out there that will explain how cars work without using big words?,['Education Level'],1
+"What are my options for medical insurance for my mother, considering her age and the potential for high premiums?","['Age', 'Health Status']",2
+How can I find modeling jobs or tips in Zurich as a 15-year-old?,"['Profession', 'Age', 'Education Level', 'Emotional State', 'Gender']",5
+What should we be paying attention to while house hunting to avoid getting in over our head after this big purchase?,"['Economic Status', 'Age', 'Profession']",3
+How do I stop putting so much pressure on myself?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+Would appreciate any suggestions how to adult a bit better.,"['Age', 'Education Level', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",6
+"Do I have to have a job in DE before signing for an apartment, or is it fine if I show my social security benefits as proof of income?","['Profession', 'Economic Status', 'Age', 'Mental Health Status']",4
+How can I alleviate a burning sensation caused by Icy Hot spray on sensitive areas?,"['Health Status', 'Mental Health Status', 'Past Self-Harm History']",3
+What should I do next after being promoted to assistant manager at 18?,"['Economic Status', 'Age', 'Profession', 'Health Status', 'Emotional State', 'Mental Health Status', 'Education Level']",7
+Is it normal to be this stressed?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Profession']",4
+Is it a good idea to take out a big loan to pay for my apartment while I go to school during the clinicals time?,"['Economic Status', 'Education Level', 'Profession', 'Age', 'Mental Health Status']",5
+How can I dress my age but still look professional?,"['Age', 'Profession']",2
+How do you get out of a major life rut and stop being so bitter/jealous of everyone else?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Profession', 'Marital Status']",5
+"What should my next move be career-wise, and should I consider getting a master's degree to give myself more options?","['Education Level', 'Profession', 'Economic Status']",3
+Is there another best course of action for dealing with a background check when I lack a W-2 form or pay stubs? Am I totally screwed from getting this job?,"['Profession', 'Economic Status', 'Health Status', 'Mental Health Status', 'Marital Status']",5
+How do I manage living with chronic pain while maintaining a job and self-sufficiency?,"['Health Status', 'Economic Status']",2
+How can I convince my South Asian parents to let me move out?,"['Age', 'Education Level', 'Emotional State', 'Mental Health Status', 'Marital Status']",5
+"What detailed methods can I use to achieve my goals of financing a car, getting my own phone and phone plan, moving into an apartment, finding romance, and losing weight?","['Economic Status', 'Age', 'Education Level', 'Profession']",4
+How do you personally find purpose in life?,"['Emotional State', 'Mental Health Status', 'Education Level', 'Profession']",4
+What can I do to advance in my career when I lack skill and education?,"['Education Level', 'Profession', 'Emotional State', 'Economic Status']",4
+Where can I go when I leave home since my dad wants me out?,"['Age', 'Mental Health Status', 'Emotional State', 'Profession', 'Economic Status']",5
+"Where do I start to become independent, get a job, and move out?","['Economic Status', 'Profession', 'Education Level']",3
+How do I use my medical and dental insurance?,"['Health Status', 'Profession', 'Economic Status']",3
+Should I go back to school to finish off those two years or start from scratch and do a program I’ll be happy with and has a guaranteed job?,"['Education Level', 'Profession', 'Economic Status']",3
+"Is there a way that I can get a quote for health insurance for my parents, and not myself?","['Age', 'Marital Status', 'Health Status', 'Economic Status']",4
+What are some essentials that I should be buying now to take with me and essentials that I should then buy first few days when settling in?,['Economic Status'],1
+How can I manage the stress of having to go to work and socialize early in the mornings?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+What are some useful tips for starting Vyvanse again after a few months off?,"['Health Status', 'Mental Health Status', 'Emotional State', 'Profession']",4
+How can I deal with feeling disappointed on my birthday when my expectations are not met?,"['Emotional State', 'Mental Health Status']",2
+How can I achieve visible change in my life and secure a well-paying job despite my current circumstances?,"['Economic Status', 'Education Level', 'Profession', 'Emotional State']",4
+Does anyone have any life advice on what I should do after finishing my diploma?,"['Education Level', 'Profession', 'Age', 'Mental Health Status']",4
+"Has anyone else gone through something similar, if so, how did you handle it?","['Past Self-Harm History', 'Emotional State', 'Profession', 'Mental Health Status']",4
+Does anyone have any advice on how to cope with all of this?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status', 'Age']",5
+How do you make friends?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Age', 'Profession', 'Past Self-Harm History']",6
+Any advice on how to get back on my feet?,"['Mental Health Status', 'Emotional State', 'Profession', 'Age']",4
+"Does anyone have tips for growing up, self-discipline, and getting your life together?","['Age', 'Education Level', 'Emotional State']",3
+Where can I go to ask for financial aid for enrolling in community college?,['Economic Status'],1
+"What do you do to get excited again when life feels discouraging and like an existential crisis, especially on a very low budget?","['Emotional State', 'Profession']",2
+"What else should I consider when I make the transition to working in trades like plumbing, welding, HVAC, or as a CNA?","['Profession', 'Economic Status', 'Education Level', 'Health Status']",4
+What should I do after applying to college for the first time?,"['Economic Status', 'Health Status', 'Education Level', 'Profession', 'Mental Health Status']",5
+How can I manage my situation after finally getting a car?,"['Economic Status', 'Profession', 'Emotional State', 'Age']",4
+Do you have tips for living as cheaply as possible and making extra money?,['Economic Status'],1
+What steps should we take to manage our finances after purchasing a vehicle in cash?,['Economic Status'],1
+Does anyone have experience working long hours while going to school?,"['Profession', 'Education Level', 'Age', 'Emotional State']",4
+Has anyone else hit this point of wanting to take a break and just live life without career pressures?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Profession']",4
+Why am I always buying new pairs of casual shoes as an adult?,['Age'],1
+How can I find a stable job that matches my schedule and avoid commitment issues?,"['Profession', 'Emotional State', 'Mental Health Status', 'Age']",4
+What can I do to feel better when I'm too exhausted to make new friends?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age']",4
+What should we look for in a bank and account types when merging our accounts into a joint bank account?,"['Economic Status', 'Profession', 'Age', 'Emotional State']",4
+Should I see an OB/GYN or can my GP handle my OB/GYN-related questions?,"['Health Status', 'Profession', 'Marital Status', 'Age', 'Emotional State']",5
+"How much money do I need to save to move out, and do you have any tips and advice?","['Economic Status', 'Age', 'Profession']",3
+Did we actually get a decent deal on our car purchase?,['Emotional State'],1
+How can I cope with feeling unsupported and like I'm slipping in my efforts?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status', 'Marital Status']",4
+"How can I become financially stable and independent after moving out at 18? How do I budget, keep track of things, and do taxes? What are some smart ways of living for young adults?",['Economic Status'],1
+How do I go about handling losing my wallet with important items like a government ID and social security card in it?,"['Age', 'Past Self-Harm History', 'Emotional State', 'Economic Status']",4
+Does anyone else have experience with feeling lost after graduation?,"['Emotional State', 'Health Status', 'Profession', 'Mental Health Status']",4
+What can I do to improve my situation with my health issues and job search struggles?,"['Health Status', 'Profession', 'Economic Status']",3
+Is it possible to live with moderate comfort for a single income household on a teaching salary?,"['Profession', 'Economic Status']",2
+Should I leave a note or is there someone I can call to inform that my neighbor did not return my package?,"['Age', 'Emotional State', 'Marital Status']",3
+How do you manage being a full-time student while working full-time?,"['Emotional State', 'Mental Health Status', 'Profession', 'Economic Status']",4
+"How does getting a full-time job affect my insurance, and what do premiums or co-pays mean?","['Economic Status', 'Health Status', 'Profession', 'Mental Health Status', 'Age']",5
+How do I go about bringing up insurance and benefits when hired for a job?,"['Economic Status', 'Profession', 'Mental Health Status', 'Education Level', 'Emotional State']",5
+Am I trying too hard to rush things or am I rightfully annoyed at my current situation?,[],0
+How can I stop feeling intimidated by my friends who seem more successful than I am?,"['Emotional State', 'Mental Health Status', 'Profession']",3
+How can I prepare for moving into my first apartment as a single person?,"['Age', 'Economic Status', 'Profession']",3
+Does anyone else feel like an imposter when teaching despite not having an education degree?,"['Education Level', 'Mental Health Status']",2
+What should I say when the receptionist asks for the reason for my doctor's appointment?,"['Emotional State', 'Mental Health Status', 'Age', 'Profession']",4
+When is it worth it to speak up against a colleague who makes offensive comments?,"['Emotional State', 'Mental Health Status', 'Age', 'Profession']",4
+How can I grow and create more specific goals to work towards?,"['Emotional State', 'Education Level', 'Profession']",3
+"Should I get a cheaper apartment in a more dangerous area, get a nicer/more expensive and safer apartment, or try my luck with random roommates? What kind of job should I look for given my degree in communications and minor in psychology, with an interest in ministry/humanitarian work?","['Profession', 'Economic Status', 'Emotional State', 'Age', 'Mental Health Status', 'Education Level', 'Past Self-Harm History']",7
+What should I do about my mom wanting me and my boyfriend to get married soon if we want to live together?,['Emotional State'],1
+"How can I improve my energy, mental clarity, and stamina through diet?","['Health Status', 'Economic Status']",2
+How do I become more mature as a 23 year old?,"['Age', 'Education Level', 'Emotional State', 'Mental Health Status']",4
+Is this my life? Everyday? Till I die? 8-5? Pretending like I don't feel like crap every day from my autoimmune problems?,"['Health Status', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Profession']",5
+Any recommendations for a new job that pays at least 20/H and is not in the field of security?,['Profession'],1
+Anyone have suggestions for jobs I can apply for that make more in this field?,"['Profession', 'Economic Status', 'Education Level', 'Health Status', 'Emotional State']",5
+How can I improve my financial and personal situation at 38?,"['Economic Status', 'Profession', 'Emotional State']",3
+How can I adapt to living alone and handling daily tasks like cooking and doing laundry on my own?,"['Health Status', 'Emotional State', 'Profession', 'Economic Status']",4
+How can I keep things civil and balanced in the household and at work after inviting my boss to live with my family?,"['Marital Status', 'Emotional State', 'Profession', 'Economic Status', 'Mental Health Status']",5
+Is there any way to get cheap housing with my credit score and no cosigner?,['Economic Status'],1
+"What steps should I take to move into my own home, considering whether to rent or buy and how to choose a location?","['Economic Status', 'Profession', 'Age']",3
+"What are some worthwhile investments for pots, pans, shoes, and other essentials?","['Economic Status', 'Age', 'Profession', 'Education Level', 'Health Status']",5
+Am I the only one who feels like I am behind from achieving my dreams?,"['Emotional State', 'Education Level', 'Profession', 'Age', 'Mental Health Status']",5
+When do you start sending out your own Christmas Cards?,"['Age', 'Profession', 'Emotional State']",3
+"Do you prefer having your own private property vs a neighborhood with HOA? If so, why?","['Economic Status', 'Marital Status']",2
+What am I supposed to say to the counselor about my past grades?,"['Education Level', 'Age', 'Profession', 'Mental Health Status']",4
+How can I become stronger and more resilient after facing setbacks?,"['Mental Health Status', 'Emotional State', 'Profession']",3
+What are some tips to improve my irritation and low morale at work for 2020?,"['Emotional State', 'Profession']",2
+How can I develop healthy habits to manage my depression?,"['Mental Health Status', 'Health Status', 'Emotional State']",3
+Am I going to be able to overcome my procrastination and study effectively for my exams?,"['Education Level', 'Emotional State', 'Mental Health Status', 'Profession']",4
+How can I manage the anxiety and addiction related to social media use?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+Can Reddit break me to be my best?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age']",4
+How can I get back on track when I feel lost and don't know where to begin?,[],0
+How do you deal with thoughts like this? How do you keep a positive mentality and stay happy?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+How can I become a well-rounded person?,"['Emotional State', 'Education Level', 'Profession', 'Mental Health Status', 'Age']",5
+How can you keep with your daily life after taking time off?,"['Mental Health Status', 'Emotional State', 'Economic Status']",3
+Why have I lost my motivation and feel unable to take action?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age', 'Education Level']",5
+"Is it weird to want so little from life and be happy with a minimalistic, simple life?","['Emotional State', 'Mental Health Status', 'Profession', 'Health Status']",4
+How can I improve my mental state?,"['Emotional State', 'Mental Health Status', 'Age']",3
+How can I create and stick to a list for budgeting and scheduling to focus on my passion?,"['Education Level', 'Profession', 'Economic Status']",3
+What are your goals for the decade?,"['Emotional State', 'Education Level', 'Profession', 'Economic Status']",4
+Is it weird to be living at home at 23?,"['Age', 'Marital Status', 'Emotional State', 'Profession']",4
+How can I maintain the improvements I've made in my life?,"['Education Level', 'Mental Health Status', 'Emotional State', 'Profession']",4
+Is it wise to pay 14k to 16k dollars for an IT diploma when I'm currently earning up to 2k in a field I'm not interested in?,"['Economic Status', 'Profession']",2
+Is having a goal of having sex with a model a worthy goal?,"['Emotional State', 'Mental Health Status', 'Profession', 'Education Level', 'Age']",5
+What are some suggestions from people who may have been in a similar situation and what are some resources to help with this?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+How can I overcome feeling lost and unmotivated in my life?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+Is jumping hobbies like this normal?,"['Mental Health Status', 'Emotional State', 'Past Self-Harm History', 'Age', 'Profession']",5
+How can I feel more happy?,"['Emotional State', 'Mental Health Status', 'Health Status']",3
+How can I overcome my lack of confidence and self-esteem due to my weight and the way I speak?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age', 'Profession']",5
+How can I better maintain friendships when I struggle to relate to people and feel embarrassed about accepting help?,"['Emotional State', 'Mental Health Status']",2
+How do I change my attitude towards being single and improve my productivity as a student?,"['Emotional State', 'Education Level']",2
+How can I overcome my porn addiction and get my life back on track?,"['Mental Health Status', 'Past Self-Harm History', 'Emotional State', 'Age', 'Profession']",5
+Should I get some fuckin therapy?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status', 'Age']",4
+How can I get out of this cycle of depression and lack of motivation?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age', 'Economic Status']",5
+How can I overcome my imposter syndrome and improve my self-esteem while searching for internships?,"['Mental Health Status', 'Emotional State', 'Education Level']",3
+"How can I take better control of my body, both physically and emotionally?","['Health Status', 'Emotional State']",2
+How can I improve my grades in three weeks to avoid being sent to live with my dad?,"['Education Level', 'Profession', 'Mental Health Status', 'Economic Status', 'Age', 'Emotional State']",6
