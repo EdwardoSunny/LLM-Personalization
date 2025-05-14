@@ -167,7 +167,7 @@ class AttributePathAgent:
         ]
 
         # Define sampling parameters for generating responses.
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -216,7 +216,7 @@ class AttributePathAgent:
             {"role": "user", "content": prompt},
         ]
 
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -303,14 +303,17 @@ if __name__ == "__main__":
     # deployment = "Qwen/Qwen2.5-7B-Instruct"
     # output_csv = "real_qwen25-7b-instruct_results.csv"
 
-    # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
-    # output_csv = "real_mistral-7b-instruct_results.csv"
+    deployment = "mistralai/Mistral-7B-Instruct-v0.1"
+    output_csv = "real_mistral-7b-instruct_results.csv"
 
-    deployment = "deepseek-ai/deepseek-llm-7b-chat"
-    output_csv = "real_deepseek-7b_results_test.csv"
+    # deployment = "deepseek-ai/deepseek-llm-7b-chat"
+    # output_csv = "real_deepseek-7b_results_test.csv"
 
     # deployment = "Qwen/QwQ-32B"
     # output_csv = "real_qwq-32b_results.csv"
+
+    # deployment = "meta-llama/Llama-3.1-8B-Instruct"
+    # output_csv = "real_llama31-8b-instruct_results.csv"
 
     # Create a vLLM instance using your open source model.
     if "QwQ" in deployment:
@@ -323,7 +326,15 @@ if __name__ == "__main__":
             load_format="bitsandbytes",
         )
     else:
-        llm = LLM(model=deployment)
+        llm = LLM(model=deployment,
+                  gpu_memory_utilization=0.95,  # Increase from default 0.9
+                  max_num_batched_tokens=16384,  # Optimize for throughput
+                  max_model_len=4096,  # Lower if you don't need long contexts
+                  dtype=torch.bfloat16,
+                  trust_remote_code=True,
+                  quantization="bitsandbytes",
+                  load_format="bitsandbytes",
+                  )
 
     record_attribute_paths(
         output_csv, get_scenario_attributes(), llm, max_turns=10

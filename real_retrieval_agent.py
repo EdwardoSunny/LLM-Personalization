@@ -174,7 +174,7 @@ class AttributePathAgent:
         ]
 
         # Define sampling parameters for generating responses.
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -232,7 +232,7 @@ class AttributePathAgent:
             {"role": "user", "content": prompt}
         ]
 
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -322,8 +322,11 @@ if __name__ == "__main__":
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
     # output_csv = "retriever_real_deepseek-7b_results.csv"
 
-    deployment = "Qwen/QwQ-32B"
-    output_csv = "retriever_real_qwq-32b_results.csv"
+    # deployment = "Qwen/QwQ-32B"
+    # output_csv = "retriever_real_qwq-32b_results.csv"
+
+    deployment = "meta-llama/Llama-3.1-8B-Instruct"
+    output_csv = "real_llama31-8b-instruct_results.csv"
 
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.
@@ -335,7 +338,17 @@ if __name__ == "__main__":
             load_format="bitsandbytes",
         )
     else:
-        llm = LLM(model=deployment)
+        # llm = LLM(model=deployment)
+        llm = LLM(
+                    model=deployment,
+                    trust_remote_code=True,
+                    dtype=torch.bfloat16,
+                    tensor_parallel_size=4,
+                    quantization="bitsandbytes",  # Using BNB instead of AWQ
+                    enforce_eager=False,  # JIT compilation improves performance
+                    max_num_batched_tokens=8192,  # Increase batching for throughput
+                    max_num_seqs=256,  # Allow more sequences to be batched together
+                )
 
     retriever = PathRetrieverSklearn("MCTS_path.csv")
     record_attribute_paths(output_csv, get_scenario_attributes(), llm, 10, retriever)
