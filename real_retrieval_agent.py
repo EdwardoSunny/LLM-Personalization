@@ -72,6 +72,34 @@ def parse_score(score_str):
 
     return response.choices[0].message.content.strip()
 
+def parse_attribute(full_str):
+    endpoint = os.getenv("ENDPOINT_URL", "https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
+    client = AzureOpenAI(
+        azure_endpoint=endpoint,
+        azure_deployment="gpt-4.1-nano",
+        api_version="2024-05-01-preview",
+    )
+
+    messages = [
+        {
+            "role": "system",
+            "content": f"You are an expert content parser that takes a string and extracts the specific attribute that another LLM selected. It can only be one of {get_scenario_attributes()}. If none exist, just return N/A. You only one items from the list as your output. Do not output anything else",
+        },
+        {
+            "role": "user",
+            "content": f"Extract the attribute from the following text: {full_str}",
+        },
+    ]
+
+    response = client.chat.completions.create(
+        model="gpt-4.1-nano",  # You can change this to the model you want to use
+        messages=messages,
+        temperature=0,
+    )
+
+    return response.choices[0].message.content
+
+
 
 class PathRetrieverSklearn:
     def __init__(self, path_csv_path, embedding_model_name='all-MiniLM-L6-v2'):
@@ -241,6 +269,8 @@ class AttributePathAgent:
         if "QwQ" in self.MODEL:
             result = extract_final_output(result)
 
+        result = parse_attribute(result)
+
         if result in remaining_attributes:
             return result
         else:
@@ -312,22 +342,16 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, ret
 if __name__ == "__main__":
     # deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
     # output_csv = "retriever_real_llama3-8b-instruct_results.csv"
-
     # deployment = "Qwen/Qwen2.5-7B-Instruct"
     # output_csv = "retriever_real_qwen25-7b-instruct_results.csv"
-
     # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
     # output_csv = "retriever_real_mistral-7b-instruct_results.csv"
-
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
     # output_csv = "retriever_real_deepseek-7b_results.csv"
-
     # deployment = "Qwen/QwQ-32B"
     # output_csv = "retriever_real_qwq-32b_results.csv"
-
     deployment = "meta-llama/Llama-3.1-8B-Instruct"
-    output_csv = "real_llama31-8b-instruct_results.csv"
-
+    output_csv = "retriever_real_llama31-8b-instruct_results.csv"
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.
         llm = LLM(
@@ -338,20 +362,24 @@ if __name__ == "__main__":
             load_format="bitsandbytes",
         )
     else:
-        # llm = LLM(model=deployment)
+        # llm = LLM(deployment, trust_remote_code=True)
         llm = LLM(
-                    model=deployment,
-                    trust_remote_code=True,
-                    dtype=torch.bfloat16,
-                    tensor_parallel_size=4,
-                    quantization="bitsandbytes",  # Using BNB instead of AWQ
-                    enforce_eager=False,  # JIT compilation improves performance
-                    max_num_batched_tokens=8192,  # Increase batching for throughput
-                    max_num_seqs=256,  # Allow more sequences to be batched together
-                )
-
+            model=deployment,
+            trust_remote_code=True,
+            enforce_eager=False,  # JIT compilation improves performance
+            max_num_batched_tokens=8192,  # Increase batching for throughput
+            max_num_seqs=256,  # Allow more sequences to be batched together
+        )
+        # llm = LLM(
+        #             model=deployment,
+        #             trust_remote_code=True,
+        #             dtype=torch.bfloat16,
+        #             load_format="bitsandbytes",
+        #             quantization="bitsandbytes",  
+        #             enforce_eager=False,  # JIT compilation improves performance
+        #             max_num_batched_tokens=8192,  # Increase batching for throughput
+        #             max_num_seqs=256,  # Allow more sequences to be batched together
+        #         )
     retriever = PathRetrieverSklearn("MCTS_path.csv")
     record_attribute_paths(output_csv, get_scenario_attributes(), llm, 10, retriever)
     print("Attribute paths have been recorded in:", output_csv)
-
-

@@ -39,8 +39,8 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "deepseek-7b"
 
-    MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
-    MODEL_ALIAS = "llama31-8b-instruct"
+    # MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
+    # MODEL_ALIAS = "llama31-8b-instruct"
 
     ############# RETRIEVAL EVAL #############
     # MODEL_BEING_EVAL = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -49,8 +49,8 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
     # MODEL_ALIAS = "retriever_qwen25-7b-instruct"
 
-    # MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
-    # MODEL_ALIAS = "retriever_mistral-7b-instruct"
+    MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
+    MODEL_ALIAS = "retriever_mistral-7b-instruct"
 
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "retriever_deepseek-7b"
@@ -68,7 +68,15 @@ if __name__ == "__main__":
             load_format="bitsandbytes",
         )
     else:
-        llm = LLM(model=MODEL_BEING_EVAL)
+        llm = LLM(model=MODEL_BEING_EVAL,
+                  gpu_memory_utilization=0.95,  # Increase from default 0.9
+                  max_num_batched_tokens=16384,  # Optimize for throughput
+                  max_model_len=4096,  # Lower if you don't need long contexts
+                  dtype=torch.bfloat16,
+                  trust_remote_code=True,
+                  quantization="bitsandbytes",
+                  load_format="bitsandbytes",
+                  )
 
 
 def extract_final_output(text):
@@ -295,7 +303,7 @@ if __name__ == "__main__":
                         # )
 
                         sampling_params = SamplingParams(
-                            max_tokens=4096, temperature=0.0, top_p=0.95
+                            max_tokens=2048, temperature=0.0, top_p=0.95
                         )
 
                         print(path1_background_messages)
