@@ -295,7 +295,7 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, ret
     """
     # 读取数据
     # categories = ["career", "education", "financial", "health", "life", "relationship", "social"]
-    categories = ["relationship", "social"]
+    categories = ["social"]
     
     for eval_category in tqdm(categories):
         input_data = (
