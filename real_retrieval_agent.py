@@ -202,7 +202,7 @@ class AttributePathAgent:
         ]
 
         # Define sampling parameters for generating responses.
-        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=512, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -260,7 +260,7 @@ class AttributePathAgent:
             {"role": "user", "content": prompt}
         ]
 
-        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=512, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -294,8 +294,7 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, ret
     记录每个query对应的属性路径到output_csv。
     """
     # 读取数据
-    # categories = ["career", "education", "financial", "health", "life", "relationship", "social"]
-    categories = ["relationship", "social"]
+    categories = ["career", "education", "financial", "health", "life", "relationship", "social"]
     
     for eval_category in tqdm(categories):
         input_data = (
@@ -325,8 +324,16 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, ret
             # 写入表头
             writer.writerow(["User Query", "Attribute Path", "Path Length"])
 
+            max_count= 25 
+            count = 0
+
             # 进度条遍历
             for entry in tqdm(data, desc="Processing Queries"):
+                print(f"================{count}/{max_count}================")
+                print(count)
+                count += 1
+                if count > max_count:
+                    break
 
                 query = entry["query"]
 
@@ -351,17 +358,22 @@ if __name__ == "__main__":
     # output_csv = "retriever_real_deepseek-7b_results.csv"
     # deployment = "Qwen/QwQ-32B"
     # output_csv = "retriever_real_qwq-32b_results.csv"
-    deployment = "meta-llama/Llama-3.1-8B-Instruct"
-    output_csv = "retriever_real_llama31-8b-instruct_results.csv"
+    # deployment = "meta-llama/Llama-3.1-8B-Instruct"
+    # output_csv = "retriever_real_llama31-8b-instruct_results.csv"
+
+    deployment = "Qwen/QwQ-32B-AWQ"
+    output_csv = "retriever_real_qwq-32b_results.csv"
+
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.
         llm = LLM(
             model=deployment,
             dtype=torch.bfloat16,
             trust_remote_code=True,
-            quantization="bitsandbytes",
-            load_format="bitsandbytes",
-        )
+            gpu_memory_utilization=0.95,  # Increase from default 0.9
+            max_num_batched_tokens=2048,  # Reduced since you only need 512 tokens per sample
+            max_model_len=2048,  # Optimized for ~1024 input tokens + 512 output tokens        
+            )
     else:
         # llm = LLM(deployment, trust_remote_code=True)
         llm = LLM(

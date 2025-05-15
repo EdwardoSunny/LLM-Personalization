@@ -83,6 +83,33 @@ def get_scenario_attributes():
         "Emotional State",
     ]
 
+def parse_attribute(full_str):
+    endpoint = os.getenv("ENDPOINT_URL", "https://kaijie-openai-west-us-3.openai.azure.com/openai/deployments/gpt-4o/chat/completions?api-version=2024-02-15-preview")
+    client = AzureOpenAI(
+        azure_endpoint=endpoint,
+        azure_deployment="gpt-4.1-nano",
+        api_version="2024-05-01-preview",
+    )
+
+    messages = [
+        {
+            "role": "system",
+            "content": f"You are an expert content parser that takes a string and extracts the specific attribute that another LLM selected. It can only be one of {get_scenario_attributes()}. If none exist, just return N/A. You only one items from the list as your output. Do not output anything else",
+        },
+        {
+            "role": "user",
+            "content": f"Extract the attribute from the following text: {full_str}",
+        },
+    ]
+
+    response = client.chat.completions.create(
+        model="gpt-4.1-nano",  # You can change this to the model you want to use
+        messages=messages,
+        temperature=0,
+    )
+
+    return response.choices[0].message.content
+
 
 class AttributePathAgent:
     def __init__(self, attribute_pool, llm):
@@ -167,7 +194,7 @@ class AttributePathAgent:
         ]
 
         # Define sampling parameters for generating responses.
-        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=512, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -216,7 +243,7 @@ class AttributePathAgent:
             {"role": "user", "content": prompt},
         ]
 
-        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=512, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -224,6 +251,8 @@ class AttributePathAgent:
 
         if "QwQ" in self.MODEL:
             result = extract_final_output(result)
+
+        result = parse_attribute(result)
 
         if result in remaining_attributes:
             return result
@@ -279,9 +308,18 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns=10):
             writer = csv.writer(file)
             # 写入表头
             writer.writerow(["User Query", "Attribute Path", "Path Length"])
+            
+            max_count= 100 
+            count = 0
 
             # 进度条遍历
             for entry in tqdm(data, desc="Processing Queries"):
+                print(f"================{count}/{max_count}================")
+                print(count)
+                count += 1
+                if count > max_count:
+                    break
+                
 
                 query = entry["query"]
 
@@ -303,14 +341,14 @@ if __name__ == "__main__":
     # deployment = "Qwen/Qwen2.5-7B-Instruct"
     # output_csv = "real_qwen25-7b-instruct_results.csv"
 
-    deployment = "mistralai/Mistral-7B-Instruct-v0.1"
-    output_csv = "real_mistral-7b-instruct_results.csv"
+    # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
+    # output_csv = "real_mistral-7b-instruct_results.csv"
 
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
     # output_csv = "real_deepseek-7b_results_test.csv"
 
-    # deployment = "Qwen/QwQ-32B"
-    # output_csv = "real_qwq-32b_results.csv"
+    deployment = "Qwen/QwQ-32B-AWQ"
+    output_csv = "real_qwq-32b_results.csv"
 
     # deployment = "meta-llama/Llama-3.1-8B-Instruct"
     # output_csv = "real_llama31-8b-instruct_results.csv"
@@ -322,9 +360,10 @@ if __name__ == "__main__":
             model=deployment,
             dtype=torch.bfloat16,
             trust_remote_code=True,
-            quantization="bitsandbytes",
-            load_format="bitsandbytes",
-        )
+            gpu_memory_utilization=0.95,  # Increase from default 0.9
+            max_num_batched_tokens=2048,  # Reduced since you only need 512 tokens per sample
+            max_model_len=2048,  # Optimized for ~1024 input tokens + 512 output tokens        
+            )
     else:
         llm = LLM(model=deployment,
                   gpu_memory_utilization=0.95,  # Increase from default 0.9

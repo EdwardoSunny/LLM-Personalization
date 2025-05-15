@@ -42,6 +42,9 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
     # MODEL_ALIAS = "llama31-8b-instruct"
 
+    # MODEL_BEING_EVAL = "Qwen/QwQ-32B-AWQ"
+    # MODEL_ALIAS = "qwq-32b"
+
     ############# RETRIEVAL EVAL #############
     # MODEL_BEING_EVAL = "meta-llama/Meta-Llama-3-8B-Instruct"
     # MODEL_ALIAS = "retriever_llama3-8b-instruct"
@@ -49,8 +52,8 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "Qwen/Qwen2.5-7B-Instruct"
     # MODEL_ALIAS = "retriever_qwen25-7b-instruct"
 
-    MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
-    MODEL_ALIAS = "retriever_mistral-7b-instruct"
+    # MODEL_BEING_EVAL = "mistralai/Mistral-7B-Instruct-v0.1"
+    # MODEL_ALIAS = "retriever_mistral-7b-instruct"
 
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "retriever_deepseek-7b"
@@ -58,14 +61,19 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
     # MODEL_ALIAS = "retriever_llama31-8b-instruct"
 
+    MODEL_BEING_EVAL = "Qwen/QwQ-32B-AWQ"
+    MODEL_ALIAS = "retriever_qwq-32b"
+
+
     if "QwQ" in MODEL_BEING_EVAL:
         # For QwQ-32B, use quantization.
         llm = LLM(
             model=MODEL_BEING_EVAL,
             dtype=torch.bfloat16,
             trust_remote_code=True,
-            quantization="bitsandbytes",
-            load_format="bitsandbytes",
+            gpu_memory_utilization=0.95,  # Increase from default 0.9
+            max_num_batched_tokens=4096,  # Optimized batch size for L40 with AWQ model
+            max_model_len=4096,  # Reduced context length for faster inference
         )
     else:
         llm = LLM(model=MODEL_BEING_EVAL,
@@ -117,9 +125,9 @@ def read_json_file(file_path):
 
 
 user_backgrounds = read_json_file(
-    "/data/edward/LLM-Personalization/Data/user_profiles_list.json"
+    "/root/LLM-Personalization/Data/user_profiles_list.json"
 )
-user_queries = read_json_file("/data/edward/LLM-Personalization/Data/queries_list.json")
+user_queries = read_json_file("/root/LLM-Personalization/Data/queries_list.json")
 
 
 def evaluate_response(response, background_description, user_query):
