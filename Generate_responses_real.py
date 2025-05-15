@@ -35,7 +35,7 @@ def extract_final_output(text):
 
 
 def main():
-    eval_category = "education"
+    eval_category = "life"
 
     # MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
     # OUTPUT_FILE = f"output/{eval_category}/llama3-8b-instruct_results.csv"
@@ -67,6 +67,7 @@ def main():
         )
     else:
         llm = LLM(model=MODEL,
+                  tensor_parallel_size=2,
                   dtype=torch.bfloat16,
                   trust_remote_code=True,
                   quantization="bitsandbytes",

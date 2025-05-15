@@ -1,0 +1,26 @@
+User Query,Attribute Path,Path Length
+What should I do if I'm worried my girlfriend is going to dump me and it's affecting my mental health?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+What should I do if my brother suddenly shows erratic and agitated behavior?,[],0
+How can I get help for my depression without my anger issues returning?,[],0
+How can I find a therapist or psychiatrist who is accepting new patients?,[],0
+How can I improve my communication skills with my boyfriend and manage my insecurities?,['Emotional State'],1
+"Is it OCD, ADD, both, or something else?","['Emotional State', 'Mental Health Status']",2
+How can I improve my ability to contribute to conversations and discussions both in person and professionally?,[],0
+How can I demonstrate gratitude to my parents when I'm focused on finishing high school and dealing with my mental health?,"['Mental Health Status', 'Emotional State']",2
+What can my friend do to manage her trauma-related sleep disorder?,[],0
+How can I manage my emotions better to continue being happy and fulfilled?,"['Emotional State', 'Mental Health Status']",2
+How can I find something I am actually good at or okay at?,['Education Level'],1
+How can I motivate myself to study despite feeling apathetic and overwhelmed?,"['Emotional State', 'Mental Health Status']",2
+How can I explain my decision to take a break from alcohol to friends and family without feeling awkward?,"['Emotional State', 'Marital Status']",2
+How should I overcome feeling depressed whenever I think of my ex-girlfriend?,[],0
+Does anyone have any helpful advice or anything?,"['Emotional State', 'Past Self-Harm History', 'Marital Status', 'Mental Health Status']",4
+Why is mental health support so inadequate when people reach out for help in the UK?,[],0
+How can I get my life together and stop feeling unhappy during the week while doing my apprenticeship?,[],0
+What is online therapy?,[],0
+Am I the only one who feels this way?,[],0
+How can I cope with stopping my medication and manage my household responsibilities?,"['Health Status', 'Emotional State']",2
+Am I the only one who feels this way?,[],0
+How can I overcome my fear of leaving the comfort zone?,[],0
+"Is it weird to want so little from life and be happy with a minimalistic, simple life?",[],0
+Has anyone else had a similar experience or can tell me if they know what it is?,"['Mental Health Status', 'Past Self-Harm History']",2
+"How can I manage my mental health given my history with depression, anxiety, self-harm, and eating disorders?",['Past Self-Harm History'],1
