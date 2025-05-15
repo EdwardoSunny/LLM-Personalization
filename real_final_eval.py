@@ -58,10 +58,12 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "retriever_real_deepseek-7b"
 
-    MODEL_BEING_EVAL = "Qwen/QwQ-32B-AWQ"
-    MODEL_ALIAS = "retriever_real_qwq-32b"
-    
+    MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
+    MODEL_ALIAS = "retriever_real_llama31-8b-instruct"
 
+    #MODEL_BEING_EVAL = "Qwen/QwQ-32B-AWQ"
+    # MODEL_ALIAS = "retriever_real_qwq-32b"
+    
     if "QwQ" in MODEL_BEING_EVAL:
         # For QwQ-32B, use quantization.
         llm = LLM(
@@ -74,14 +76,14 @@ if __name__ == "__main__":
             max_model_len=4096,  # Optimized for ~1024 input tokens + 512 output tokens        
             )
     else:
-        llm = LLM(model=MODEL_BEING_EVAL,
-                  dtype=torch.bfloat16,
-                  trust_remote_code=True,
-                  quantization="bitsandbytes",
-                  load_format="bitsandbytes",
-                  gpu_memory_utilization=0.7,
-                  )
-
+        llm = LLM(
+            model=MODEL_BEING_EVAL,
+            trust_remote_code=True,
+            enforce_eager=False,  # JIT compilation improves performance
+            max_num_batched_tokens=4096,  # Increase batching for throughput
+            max_model_len=4096,  # Increase model size for larger context
+            max_num_seqs=256,  # Allow more sequences to be batched together
+        )
 
 def extract_final_output(text):
     """
@@ -243,7 +245,7 @@ if __name__ == "__main__":
                 ]
             )
 
-            total_iterations = 25 
+            total_iterations = 500 
 
             with tqdm(
                 total=total_iterations,
@@ -253,8 +255,7 @@ if __name__ == "__main__":
                 
                 for i, profile in enumerate(real_reddit_data):
                     if i >= total_iterations:
-                            break
-                            
+                        break
 
                     # Format the background description.
                     query = profile["query"]
