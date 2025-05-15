@@ -35,7 +35,7 @@ def extract_final_output(text):
 
 
 def main():
-    eval_category = "social"
+    eval_category = "life"
 
     # MODEL = "meta-llama/Meta-Llama-3-8B-Instruct"
     # OUTPUT_FILE = f"output/{eval_category}/llama3-8b-instruct_results.csv"
