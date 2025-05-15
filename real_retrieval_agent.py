@@ -260,7 +260,7 @@ class AttributePathAgent:
             {"role": "user", "content": prompt}
         ]
 
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -343,22 +343,16 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, ret
 if __name__ == "__main__":
     # deployment = "meta-llama/Meta-Llama-3-8B-Instruct"
     # output_csv = "retriever_real_llama3-8b-instruct_results.csv"
-
     # deployment = "Qwen/Qwen2.5-7B-Instruct"
     # output_csv = "retriever_real_qwen25-7b-instruct_results.csv"
-
     # deployment = "mistralai/Mistral-7B-Instruct-v0.1"
     # output_csv = "retriever_real_mistral-7b-instruct_results.csv"
-
     # deployment = "deepseek-ai/deepseek-llm-7b-chat"
     # output_csv = "retriever_real_deepseek-7b_results.csv"
-
     # deployment = "Qwen/QwQ-32B"
     # output_csv = "retriever_real_qwq-32b_results.csv"
-
     deployment = "meta-llama/Llama-3.1-8B-Instruct"
     output_csv = "retriever_real_llama31-8b-instruct_results.csv"
-
     if "QwQ" in deployment:
         # For QwQ-32B, use quantization.
         llm = LLM(
@@ -390,5 +384,3 @@ if __name__ == "__main__":
     retriever = PathRetrieverSklearn("MCTS_path.csv")
     record_attribute_paths(output_csv, get_scenario_attributes(), llm, 10, retriever)
     print("Attribute paths have been recorded in:", output_csv)
-
-
