@@ -327,7 +327,6 @@ if __name__ == "__main__":
         )
     else:
         llm = LLM(model=deployment,
-                  gpu_memory_utilization=0.95,  # Increase from default 0.9
                   max_num_batched_tokens=16384,  # Optimize for throughput
                   max_model_len=4096,  # Lower if you don't need long contexts
                   dtype=torch.bfloat16,
