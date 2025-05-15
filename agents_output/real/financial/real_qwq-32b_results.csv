@@ -38,3 +38,14 @@ Should I quit my job and what possible options do I have?,"['Economic Status', '
 Is it worth getting a Variable Universal Life insurance policy for our kids?,[],0
 Should I prioritize saving for a new laptop or opening a savings account as an emergency fund?,"['Economic Status', 'Education Level']",2
 What can I do to start making steps in the direction of financial freedom? How do I handle the late fees and interest?,['Economic Status'],1
+"Is it standard procedure for the company to withhold 20% for federal taxes when withdrawing from a 401k, and is there nothing I can do about it?","['Age', 'Marital Status', 'Economic Status', 'Profession', 'Education Level', 'Health Status', 'Emotional State', 'Mental Health Status']",8
+"Where can I find reliable, trustworthy, practical financial advice for someone who has already achieved a financially stable position and wants to plan for retirement without using a commission-based financial advisor?",['Economic Status'],1
+"How do I switch my retirement policy from AXA to Fidelity, and are there any fees for canceling with AXA?",[],0
+How can I budget my income effectively when living paycheck to paycheck?,['Economic Status'],1
+Does anyone have advice on going to other cities to apply for jobs?,[],0
+What advice do I need to hear about handling my financial situation?,['Economic Status'],1
+Can I create a Delaware LLC to invest anonymously and is the process doable and cost-effective for someone with a 9-5 job?,['Economic Status'],1
+Is it possible to start over at this point and how can we manage financially while pursuing our dream jobs?,['Economic Status'],1
+What should I do with my Roth IRA for 2020 and what should I purchase with it?,"['Age', 'Economic Status']",2
+"Am I doing this right with my retirement savings? Do these retirement numbers look healthy, and should the Roth IRA be a priority this year? Should I look to cut my expenses and save more, or focus more on the emergency fund?",[],0
+"Should we pay off the personal loan and/or credit card prior to pre-approval or use the money in our savings for down payment, closing costs etc, and when shopping around for a lender and mortgage, will each lender need to do a hard credit pull to give us their rates?",['Economic Status'],1

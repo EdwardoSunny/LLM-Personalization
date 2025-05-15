@@ -1104,3 +1104,56 @@ Why does my girlfriend seem uninterested in putting effort into our relationship
 What can I say to help my friend who is struggling with rejection and suicidal thoughts?,"['Mental Health Status', 'Past Self-Harm History', 'Emotional State']",3
 "How do I know if I know myself, and what can I do to help myself?","['Emotional State', 'Mental Health Status']",2
 How can I deal with the situation of my family issues and recent breakup?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+Is it a good idea to invite someone I met on Tinder to stay with me for 30 days?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age', 'Marital Status']",5
+How can I deal with my partner's toxic father who is affecting our relationship and my partner's wellbeing?,"['Marital Status', 'Mental Health Status', 'Past Self-Harm History', 'Emotional State']",4
+How can I recover my Pokemon game pre-order or get a refund after my ex took it?,"['Age', 'Emotional State', 'Mental Health Status', 'Marital Status']",4
+What do I do about my doubts in my relationship with my fiancé before he proposes?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History']",4
+What can I do to help my fiancé who has a low libido and rekindle our sexual relationship?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History']",4
+How do I save our relationship?,"['Marital Status', 'Mental Health Status', 'Emotional State', 'Past Self-Harm History']",4
+Are my feelings justified?,[],0
+What should I do next about telling my sister a dark secret about our parent?,[],0
+Why is my fiancee always tired and avoiding sex after we got engaged?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History']",4
+Do I leave them be or wait it out?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Age', 'Past Self-Harm History']",5
+How can I manage this situation with my boyfriend who belittled me at our dinner party?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Past Self-Harm History']",4
+How can I move on after my first breakup and make things more bearable?,"['Mental Health Status', 'Past Self-Harm History', 'Age', 'Marital Status']",4
+Do you think he might love me because of the sex we had?,"['Gender', 'Emotional State', 'Age', 'Marital Status']",4
+How can I address my girlfriend's mean behavior and improve our relationship?,"['Emotional State', 'Mental Health Status', 'Age', 'Education Level']",4
+How can I understand and manage my friend's competitive behavior and put him in his place when we talk?,"['Emotional State', 'Mental Health Status', 'Profession', 'Age']",4
+What do I do?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status', 'Age', 'Profession', 'Economic Status']",7
+How can I help my spouse with housework when she refuses to clean up after herself?,['Marital Status'],1
+Why is my friend acting differently and distancing herself after her husband returned from deployment?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Gender']",5
+How am I supposed to go forward with my feelings for Julia when she's committed to someone else?,"['Emotional State', 'Marital Status', 'Mental Health Status', 'Past Self-Harm History']",4
+Should I tell him I like him by text?,"['Emotional State', 'Age', 'Mental Health Status', 'Marital Status']",4
+"Should I just finish my degree in elementary education since I'm so close, or consider switching to a different career path I'm more interested in?",['Profession'],1
+How can I manage this situation with my boyfriend who just left the house?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History']",4
+How can I even keep going knowing that my boyfriend's ex-girlfriend is better at everything I have in common with her?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+"If my mom decides to actually leave him, what should I do?","['Marital Status', 'Mental Health Status', 'Emotional State', 'Age', 'Past Self-Harm History', 'Education Level']",6
+How can I explain my mental health and past experiences to my boyfriend without overwhelming him?,"['Past Self-Harm History', 'Emotional State']",2
+What do I do? Do I just accept the fact that she hates dogs this much?,[],0
+Are there any ways to support my boyfriend during this time?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Past Self-Harm History']",4
+How can I handle the situation with my girlfriend who is self-harming again and shutting me out?,"['Past Self-Harm History', 'Emotional State', 'Profession', 'Mental Health Status', 'Age']",5
+"What can I do to improve intimacy with my girlfriend, who is less interested in physical contact?","['Emotional State', 'Mental Health Status']",2
+Am I just expecting too much here?,"['Emotional State', 'Age', 'Profession']",3
+Should I stay in the relationship or leave to focus on myself and my studies?,"['Emotional State', 'Mental Health Status', 'Age', 'Past Self-Harm History']",4
+What should I do about my fear that I ruined my 10-year friendship after we slept together?,"['Emotional State', 'Past Self-Harm History', 'Mental Health Status']",3
+How can I help my child get through her best friend’s betrayal and repair the damage that’s been done?,"['Emotional State', 'Mental Health Status']",2
+How do I break up with someone who is super in love with me without completely breaking them and killing their confidence?,"['Emotional State', 'Mental Health Status']",2
+Do I stick around and accompany him because I feel like he'll fall back to him feeling alone? Do I give him space?,"['Emotional State', 'Mental Health Status', 'Age']",3
+How can I cope with the fear of losing my boyfriend during our break?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Marital Status']",4
+"What are ways to bring back the 'spice' to my relationship during this period with young kids, including a nursing infant?","['Age', 'Marital Status', 'Emotional State', 'Health Status']",4
+What should I do from here with my engagement on hold because my fiancée thinks I might not be straight due to my interest in gymnastics?,"['Emotional State', 'Mental Health Status', 'Gender', 'Marital Status']",4
+How can I manage the situation with my boyfriend's pets moving in with us when I'm uncomfortable with their presence?,['Emotional State'],1
+How can I select a marriage counselor that will help us move past our issues?,"['Emotional State', 'Marital Status', 'Past Self-Harm History', 'Age', 'Profession', 'Mental Health Status']",6
+How do I change this situation as I'm getting fed up with it?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History']",3
+"How have other fellow Redditors coped with such situations, and how did it work out for you?","['Emotional State', 'Mental Health Status', 'Age', 'Profession', 'Marital Status']",5
+How should I proceed with my mom who wants to cut me off due to my relationship with my boyfriend?,"['Emotional State', 'Mental Health Status', 'Marital Status', 'Past Self-Harm History']",4
+"Do I give up on trying to change my parents' minds, or do I hold out hope?","['Emotional State', 'Mental Health Status', 'Age', 'Education Level', 'Profession']",5
+How should I go about telling my husband I wish to separate?,"['Marital Status', 'Emotional State']",2
+What should I do about my fwb/roommate wanting to participate in a research study with his ex?,"['Emotional State', 'Past Self-Harm History', 'Gender', 'Age', 'Marital Status', 'Profession']",6
+What do I need to take with me to the hospital for my baby and how should I prepare for her arrival?,"['Health Status', 'Emotional State', 'Profession']",3
+What should I do next and should I speak to my best friend/lover again after he acted cold and dismissive towards me?,"['Emotional State', 'Mental Health Status', 'Age', 'Profession']",4
+"What should I do in my relationship where my girlfriend is chatting with other guys, and I'm uncomfortable with it?","['Emotional State', 'Marital Status', 'Mental Health Status', 'Past Self-Harm History']",4
+Should I confront my boyfriend about his secretive web forum habits?,"['Marital Status', 'Emotional State', 'Age', 'Mental Health Status', 'Past Self-Harm History']",5
+Has anyone had a similar experience dating someone with OCD?,"['Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Age']",4
+How do I compare in terms of my qualities for dating?,"['Marital Status', 'Emotional State', 'Mental Health Status', 'Age', 'Past Self-Harm History', 'Profession']",6
+How can I make the conversation engaging with the guy I met on Instagram and avoid making a bad impression?,"['Age', 'Emotional State', 'Marital Status', 'Profession', 'Gender', 'Education Level']",6

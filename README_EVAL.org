@@ -27,6 +27,10 @@ QWQ retrieval generate on real data (run like 20 for each)
 
 run eval for both
 
+Run real (just finished education) LLMA31 for rest
+
+Run eval on real and syth for llama generate resposne thing
+
 
 * REAL data agents (scai4)
 ** Real Data 

@@ -1,0 +1,9 @@
+User Query,Attribute Path,Path Length
+"How can I better manage my limited personal time while balancing work, study, and family responsibilities?",[],0
+Where do I start with applying to college and preparing for med school at 24?,['Age'],1
+What alternative funding sources are available for a low-income female graduate student in public health?,['Economic Status'],1
+How should I confront my roommate about her behavior?,[],0
+What motivates y’all? What keeps you going even when things get really bad? What are some healthy habits I can curate for a better life?,['Mental Health Status'],1
+"Is there any way for me to find accurate comparisons of entry-level medical jobs, including wage, work actually done, and demand for the job?",['Education Level'],1
+How can I find confidence in my job prospects with a BS in CS when I feel college didn't teach me anything useful?,"['Education Level', 'Emotional State', 'Economic Status']",3
+Any advice on where to begin writing my scholarship essay?,[],0
