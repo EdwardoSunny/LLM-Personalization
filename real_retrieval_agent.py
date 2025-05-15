@@ -294,7 +294,8 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns, ret
     记录每个query对应的属性路径到output_csv。
     """
     # 读取数据
-    categories = ["career", "education", "financial", "health", "life", "relationship", "social"]
+    # categories = ["career", "education", "financial", "health", "life", "relationship", "social"]
+    categories = ["relationship", "social"]
     
     for eval_category in tqdm(categories):
         input_data = (

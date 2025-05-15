@@ -49,8 +49,11 @@ def main():
     # MODEL = "deepseek-ai/deepseek-llm-7b-chat"
     # OUTPUT_FILE = f"output/{eval_category}/deepseek-7b_results.csv"
 
-    MODEL = "Qwen/QwQ-32B"
-    OUTPUT_FILE = f"output/{eval_category}/qwq-32b_results.csv"
+    # MODEL = "Qwen/QwQ-32B"
+    # OUTPUT_FILE = f"output/{eval_category}/qwq-32b_results.csv"
+
+    MODEL= "meta-llama/Llama-3.1-8B-Instruct"
+    OUTPUT_FILE = f"output/{eval_category}/llama31-8b-instruct_results.csv"
 
     # Create a vLLM instance using your open source model.
     if "QwQ" in MODEL:
@@ -63,7 +66,13 @@ def main():
             load_format="bitsandbytes",
         )
     else:
-        llm = LLM(model=MODEL)
+        llm = LLM(model=MODEL,
+                  dtype=torch.bfloat16,
+                  trust_remote_code=True,
+                  quantization="bitsandbytes",
+                  load_format="bitsandbytes",
+                  gpu_memory_utilization=0.7,
+                  )
 
     # Define sampling parameters for generating responses.
     sampling_params = SamplingParams(max_tokens=1024, temperature=0.7, top_p=0.95)
@@ -101,7 +110,7 @@ def main():
         )
 
         # cap at 1000 posts, because some data has 2000 posts
-        total_iterations = 1000
+        total_iterations = 500
 
         # Initialize progress bar.
         with tqdm(
@@ -110,6 +119,9 @@ def main():
             unit="query",
         ) as pbar:
             for i, profile in enumerate(real_reddit_data):
+                print(i)
+                if i >= total_iterations:
+                    break
                 # Format the background description.
                 background_text = f"""
                 - age: {profile['age']}
