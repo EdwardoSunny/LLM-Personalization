@@ -190,7 +190,7 @@ class AttributePathAgent:
         ]
 
         # Define sampling parameters for generating responses.
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -239,7 +239,7 @@ class AttributePathAgent:
             {"role": "user", "content": prompt},
         ]
 
-        sampling_params = SamplingParams(max_tokens=4096, temperature=0.0, top_p=0.95)
+        sampling_params = SamplingParams(max_tokens=1024, temperature=0.0, top_p=0.95)
 
         response = self.llm.chat(messages, sampling_params=sampling_params)
 
@@ -278,6 +278,7 @@ def record_attribute_paths(input_data, output_csv, attribute_pool, llm, max_turn
         df = pd.read_json(input_data)
 
     # 打开输出文件
+    max_count = 200
     with open(output_csv, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         # 写入表头
@@ -285,6 +286,7 @@ def record_attribute_paths(input_data, output_csv, attribute_pool, llm, max_turn
 
         # 进度条遍历
         for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Queries"):
+            
 
             if input_data.endswith(".csv"):
                 query = row["User Query"]
@@ -334,6 +336,9 @@ if __name__ == "__main__":
             max_num_batched_tokens=16384,  # Optimize for throughput
             max_model_len=4096,  # Lower if you don't need long contexts
             trust_remote_code=True,
+            dtype=torch.bfloat16,
+            quantization="bitsandbytes",
+            load_format="bitsandbytes",
         )
     else:
         llm = LLM(model=deployment)

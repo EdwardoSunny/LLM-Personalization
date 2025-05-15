@@ -49,8 +49,11 @@ def main():
     # MODEL = "deepseek-ai/deepseek-llm-7b-chat"
     # OUTPUT_FILE = "output/syth_data/deepseek-7b_results.csv"
 
-    MODEL = "Qwen/QwQ-32B"
-    OUTPUT_FILE = f"output/syth_data/qwq-32b_results.csv"
+    # MODEL = "Qwen/QwQ-32B"
+    # OUTPUT_FILE = f"output/syth_data/qwq-32b_results.csv"
+
+    MODEL= "meta-llama/Llama-3.1-8B-Instruct"
+    OUTPUT_FILE = "output/syth_data/llama31-8b-instruct_results.csv"
 
     # Create a vLLM instance using your open source model.
     if "QwQ" in MODEL:
@@ -63,7 +66,13 @@ def main():
             load_format="bitsandbytes",
         )
     else:
-        llm = LLM(model=MODEL)
+        llm = LLM(model=MODEL,
+                  dtype=torch.bfloat16,
+                  trust_remote_code=True,
+                  quantization="bitsandbytes",
+                  load_format="bitsandbytes",
+                  gpu_memory_utilization=0.7,
+                  )
 
     # Define sampling parameters for generating responses.
     sampling_params = SamplingParams(max_tokens=1024, temperature=0.7, top_p=0.95)
