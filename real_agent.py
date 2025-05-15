@@ -103,7 +103,7 @@ def parse_attribute(full_str):
     ]
 
     response = client.chat.completions.create(
-        model="gpt-4.1-nano",  # You can change this to the model you want to use
+        model="gpt-4o-mini",  # You can change this to the model you want to use
         messages=messages,
         temperature=0,
     )
@@ -114,7 +114,6 @@ def parse_attribute(full_str):
 class AttributePathAgent:
     def __init__(self, attribute_pool, llm):
         self.attribute_pool = attribute_pool
-        print(deployment)
         self.MODEL = deployment
 
         self.llm = llm
@@ -205,15 +204,13 @@ class AttributePathAgent:
 
         # 尝试解析成int
         try:
-            print(result)
             parsed_score = parse_score(result)
-            print(parsed_score)
             score = int(parsed_score)
 
             if 3 <= score <= 5:
                 return 0
             else:
-                print(f"[Warning] Invalid completeness score: {result}")
+                print(f"[Warning] Invalid completeness score: {score}")
                 return 1
         except Exception as e:
             print(f"[Warning] Unable to parse completeness score: {result}; Error: {e}")
@@ -309,7 +306,7 @@ def record_attribute_paths(output_file_name, attribute_pool, llm, max_turns=10):
             # 写入表头
             writer.writerow(["User Query", "Attribute Path", "Path Length"])
             
-            max_count= 100 
+            max_count= 25  
             count = 0
 
             # 进度条遍历

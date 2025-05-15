@@ -39,8 +39,11 @@ if __name__ == "__main__":
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "real_deepseek-7b"
 
-    MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
-    MODEL_ALIAS = "real_llama31-8b-instruct"
+    # MODEL_BEING_EVAL = "meta-llama/Llama-3.1-8B-Instruct"
+    # MODEL_ALIAS = "real_llama31-8b-instruct"
+
+    # MODEL_BEING_EVAL = "Qwen/QwQ-32B-AWQ"
+    # MODEL_ALIAS = "real_qwq-32b"
 
     ############# RETRIEVAL EVAL #############
     # MODEL_BEING_EVAL = "meta-llama/Meta-Llama-3-8B-Instruct"
@@ -54,17 +57,22 @@ if __name__ == "__main__":
 
     # MODEL_BEING_EVAL = "deepseek-ai/deepseek-llm-7b-chat"
     # MODEL_ALIAS = "retriever_real_deepseek-7b"
+
+    MODEL_BEING_EVAL = "Qwen/QwQ-32B-AWQ"
+    MODEL_ALIAS = "retriever_real_qwq-32b"
     
 
     if "QwQ" in MODEL_BEING_EVAL:
         # For QwQ-32B, use quantization.
         llm = LLM(
             model=MODEL_BEING_EVAL,
+            tensor_parallel_size=2,
             dtype=torch.bfloat16,
             trust_remote_code=True,
-            quantization="bitsandbytes",
-            load_format="bitsandbytes",
-        )
+            gpu_memory_utilization=0.95,  # Increase from default 0.9
+            max_num_batched_tokens=4096,  # Reduced since you only need 512 tokens per sample
+            max_model_len=4096,  # Optimized for ~1024 input tokens + 512 output tokens        
+            )
     else:
         llm = LLM(model=MODEL_BEING_EVAL,
                   dtype=torch.bfloat16,
@@ -235,7 +243,7 @@ if __name__ == "__main__":
                 ]
             )
 
-            total_iterations = 1000
+            total_iterations = 25 
 
             with tqdm(
                 total=total_iterations,
@@ -244,6 +252,10 @@ if __name__ == "__main__":
             ) as pbar:
                 
                 for i, profile in enumerate(real_reddit_data):
+                    if i >= total_iterations:
+                            break
+                            
+
                     # Format the background description.
                     query = profile["query"]
 
@@ -292,7 +304,7 @@ if __name__ == "__main__":
 
                     try:
                         sampling_params = SamplingParams(
-                            max_tokens=4096, temperature=0.0, top_p=0.95
+                            max_tokens=2048, temperature=0.0, top_p=0.95
                         )
 
                         print(path1_background_messages)

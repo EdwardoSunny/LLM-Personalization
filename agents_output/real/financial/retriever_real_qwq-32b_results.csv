@@ -1,0 +1,26 @@
+User Query,Attribute Path,Path Length
+Anyone have any suggestions on what I can do about an out-of-network medical bill from a 5-minute visit?,['Economic Status'],1
+Should we stop monthly contributions to our Roth IRAs and put that money into our savings so we can invest it as a lump sum at the end of each year?,['Economic Status'],1
+What should I do to start paying off my son's medical bills and help him get student loans despite his debt being in collections?,"['Economic Status', 'Profession']",2
+Is $1M in savings enough for me to chill out and work only jobs I'm passionate about?,"['Economic Status', 'Age']",2
+"Can I contribute a smaller amount per month to a Roth IRA and adjust it any time, and are there risks if our income increases?","['Economic Status', 'Marital Status']",2
+What should I be doing now at 20 years old to make money with dropshipping and stock trading?,"['Economic Status', 'Age']",2
+"What should I do with the $40,000 from life insurance to ensure I don't waste it?","['Economic Status', 'Age']",2
+Should she take money out of her 401K to help pay for school?,"['Economic Status', 'Education Level', 'Age']",3
+How do I distribute additional money towards retirement while still keeping flexibility for a future home purchase?,"['Age', 'Economic Status']",2
+Would it be better to continue working for my parents' business or seek independence and find a job of my own?,[],0
+What would be the best thing to do about the medical collection that doesn't appear on the credit report anymore? Should we pay the debt anyways or leave it unpaid?,['Economic Status'],1
+"Do I go the traditional route while I have a fairly high debt burden and need more cash in hand, or do the benefits of a roth account still outweigh the negatives?",['Economic Status'],1
+Is my plan to pay off my credit card debt using a private student loan a terrible idea?,['Economic Status'],1
+"What are my options if I cannot afford to pay the $3114 balance to register for the spring semester, and do I have to miss the semester or apply to a different college?","['Economic Status', 'Education Level']",2
+What is the best course of action for my career decision this week given my three options?,[],0
+"Does this financial plan sound financially sound, and what should I adjust or have not accounted for?",['Economic Status'],1
+How can I save more money without starving myself?,['Economic Status'],1
+"Should I max out my company 401k first before my Roth IRA, and what should I invest in?",[],0
+"What should I do, if anything, to prepare to move out, and how do I estimate my expenses to create a budget?",['Economic Status'],1
+Any advice on how to afford my insurance payments?,['Economic Status'],1
+"Can we get guardianship of our wife's cousin's 18-year-old daughter, and what impact will that have on her financial aid status?","['Age', 'Economic Status']",2
+"Is there a simple app she can use that can manage this in isolation? Where she can schedule planned expenses to better understand that even though there is $500 today, she can only spend $100 and still hit her other goals?","['Economic Status', 'Education Level']",2
+"Is the car loan rate based on the primary person with poor credit, the co-signer with excellent credit, or some combination of the two?",['Economic Status'],1
+What are some thoughts or critiques on my first year of tracking our finances and savings?,['Economic Status'],1
+Would it be a fiscally sound idea to pursue engineering while making $15/hr with $2k in pocket and $4.4k in debt? Do you believe it would be too hard to juggle both right now so I should wait until the summer to find a different job?,['Economic Status'],1

@@ -1,18 +1,18 @@
 User Query,Attribute Path,Path Length
 What direction should I go with my business?,[],0
-What are some possible career paths for an extreme introvert with a degree in English and Communication?,['Profession'],1
+What are some possible career paths for an extreme introvert with a degree in English and Communication?,"['Profession', 'Emotional State']",2
 What should I do if I want to get my life back and start a career?,[],0
 How should I approach the situation regarding my salary increase and potential promotion at my current company?,[],0
 How do I best navigate the transition into software engineering?,[],0
-How do I decide on a main career path?,"['Education Level', 'Economic Status']",2
+How do I decide on a main career path?,[],0
 How do I decide if I should stay with my current company or look elsewhere/go back to school/etc.?,"['Profession', 'Economic Status']",2
-What should I do if I don't have a plan or vision for what career to pursue?,[],0
+What should I do if I don't have a plan or vision for what career to pursue?,"['Education Level', 'Emotional State']",2
 Is a certificate good enough for surgery tech or should I dedicate to the AAS? Does anyone have experience going from stay at home mom to career driven?,['Education Level'],1
 What certificates or what kind of education can I go for that will have a payoff to it?,['Education Level'],1
 "Should I slog it out for 3 years to attempt to increase the chance of myself getting into my dream job, or should I opt for better work-life balance but risk not getting my dream job?",['Economic Status'],1
 What should I do career-wise if I have no idea what I want to do?,[],0
 Should I quit my job in my field and passion to pursue something with higher pay and hopes of eventually returning to my field of passion?,['Economic Status'],1
-Is a long commute worth the better lifestyle?,"['Economic Status', 'Profession', 'Health Status']",3
+Is a long commute worth the better lifestyle?,"['Economic Status', 'Profession']",2
 Are there any jobs that are the same as special needs support but that bring in more money?,[],0
 What career paths (that wouldn't require another ten years in school) have good salary potential these days?,[],0
 "Do I actually hate my job, or does everybody feel this way?",['Emotional State'],1
@@ -22,80 +22,5 @@ What should I study to become a functional junior developer in 1 year?,[],0
 Are there any careers at the intersection of Creative Marketing and Data Science?,[],0
 "What career or life advice can you offer to help me find stability and possibly a new career, considering my interests in natural health, animals, and art?",[],0
 "Should I keep working full time while going to school part time despite worsening my depression, or take out personal loans and work less to focus on my education?","['Mental Health Status', 'Economic Status', 'Education Level']",3
-"Should I keep working full time while going to school part time and risk worsening burnout and depression, or should I take out personal loans on top of my graduate school loans to focus on completing my program?","['Mental Health Status', 'Economic Status']",2
-Are there any courses I can take to give me further qualification in video editing (that aren’t degrees)?,[],0
-Can someone either reassure me I should stay or pour some cold water on my face and tell me I've needed to go for a while? What should I do?,"['Emotional State', 'Mental Health Status', 'Economic Status', 'Marital Status', 'Profession', 'Past Self-Harm History']",6
-What is the best job or thing to do for me right now as an 18 year old student?,[],0
-What are my options for transitioning to a career in management or starting a business given my background?,[],0
-Should I shift my career from Software Developer to Sales Executive?,"['Profession', 'Economic Status']",2
-What industry might be good to look into for someone with my background?,[],0
-Does anyone have a perspective on INFOSEC/Cybersecurity or Financial Planning as career options?,['Education Level'],1
-Should I pursue a career in cosmetology that interests me or go into the medical field for better financial stability?,['Economic Status'],1
-What career options are available for someone looking to switch from a toxic sales job?,[],0
-"Would it be best to try to stick things out and keep this position at the risk of hurting my numbers/possibly being let go for a drop in performance, or should I cut and run, get help, and keep my recent positive streak for a future resume?","['Economic Status', 'Mental Health Status']",2
-How can I navigate my current job situation mentally and professionally?,[],0
-"What would be a good career path for me to avoid being stuck in a non-GIS role, considering my current tech support job and our family plans?",[],0
-Any recommendations where I can point him in a direction he should take in this situation?,[],0
-Where can I find work-from-home jobs that are flexible with my work hours for supplemental income?,['Economic Status'],1
-What kind of jobs are there that lend themselves to the skill set found in good recruiters?,[],0
-What career advice and help can you offer for someone trying to get out of the service industry?,[],0
-What kind of jobs would incorporate my love of traveling?,['Education Level'],1
-What should my next step be in my career as I feel stagnant in Luxury Car Sales?,[],0
-How can I discuss the situation with my boss without sounding self-centered?,[],0
-Should I quit the only job I've found over the last 12 months of searching?,"['Economic Status', 'Emotional State']",2
-Do I need more patience to get ahead or should I quit?,[],0
-"What career path can I pursue that is competitive, involves adrenaline, and allows me to be part of a real team?",[],0
-How do I make the switch to pursuing a career in dog grooming while managing my financial stability and current job responsibilities?,[],0
-"How do I know what path to choose, and what kind of options are available to me with the skills and experience I have?",['Education Level'],1
-"Am I potentially getting myself in trouble with this job offer, or is it just a case of Imposter Syndrome?",[],0
-What are some ways to obtain letters of recommendation for a MS/PhD application when I have no academic connections?,[],0
-Am I crazy to pursue a bachelor's degree and a career in psychology over the age of 50?,[],0
-Should I go back home to the UK to look for remote work in Cloudsoft technology?,[],0
-Would it be crazy to scale back our life so that I could transition to a different field (i.e. Accounting)?,"['Economic Status', 'Education Level']",2
-Should I quit teaching after only 1 year to focus on my Master's degree?,['Economic Status'],1
-Should I quit teaching and focus on my Master's degree or stick it out and try to do both?,"['Economic Status', 'Mental Health Status']",2
-"What is my safest option and fastest route to earning 45-50k between electro mechanical maintenance and web design and development, and is either plan smart?",['Education Level'],1
-How can I be confident in choosing a career to pursue?,['Education Level'],1
-Am I an idiot for thinking about pursuing a career in film?,"['Emotional State', 'Education Level', 'Economic Status']",3
-What practical and decent paying jobs are available for my 56-year-old college-educated dad who can no longer work in graphic design?,[],0
-How would I go about starting my own electrical company after finishing my apprenticeship?,"['Economic Status', 'Education Level']",2
-"What jobs should I be looking for with my diploma in Chemical Engineering Technology, and is it worth going back to university for a BSc in Chemical Engineering?",[],0
-Has anyone successfully transitioned careers and how did you move from this 'status quo'?,[],0
-"How can I choose a path in grad medicine, counselling psychology, or computer science?",[],0
-What career can I do with a MH Nursing degree outside of health care?,[],0
-Can anyone offer advice to someone in a career/life rut?,[],0
-What can I do to find a job given my education and lack of experience?,[],0
-What should be my career?,['Education Level'],1
-"Is it even possible, or worth it for me to try going back to school? Has anyone else gotten a degree later in life? Is this feasible or should I be looking in a different direction?",['Education Level'],1
-What are some first steps for someone looking to pivot from a policy analyst role to a more hands-on career that makes a difference?,"['Education Level', 'Economic Status']",2
-Can you help me find a new career path?,[],0
-What should I do after I graduate if I dislike my field and am unqualified to pursue what I care about?,['Economic Status'],1
-Has anyone ever made a career side-step like this? How did you do it?,[],0
-What else can a career switcher do to increase their chances of getting a role in a new industry?,[],0
-How can I plan my next career steps with my given background?,[],0
-What jobs can I get with a BA in Spanish that pay well without additional schooling?,[],0
-What can I do to improve my job prospects as someone who graduated with a psychology degree and has been out of the workforce for several years?,[],0
-Is it possible to learn IT from scratch at age 31 without technical knowledge?,[],0
-What are some tips you have for disabled people going back to work after an extended break?,[],0
-How do I go about getting a job in a different city or state?,[],0
-"What can I do to get the motivation back in this position, or go about getting a raise when I've only been with my current Financial Controller for 5 months?",[],0
-Would the downgrade leave me worse off than living away from family?,"['Economic Status', 'Marital Status']",2
-"Is pursuing a Bachelor of Computer and Information Sciences a logical move for my career, or should I consider self-teaching coding or taking short courses instead?",['Education Level'],1
-Should I leave my parents and move in with my girlfriend?,"['Age', 'Economic Status', 'Emotional State']",3
-"What do you think I should do? Take my mat leave, stay a few more months, then get a new job?",['Economic Status'],1
-What should I consider before quitting my job at the 911 center due to high stress and workload?,"['Economic Status', 'Mental Health Status']",2
-Is there hope for my dad in a boot camp or any other retraining methods?,[],0
-How do I handle an interview request after I've already taken another job?,[],0
-Is it worth giving up the flexibility and perks of my current job to pursue a potentially more exciting role as a revenue analyst?,[],0
-What field would you recommend for someone with no real goal for any particular field and should I pursue financial security or a sense of fulfillment?,[],0
-"What should I pursue in terms of study or career options given my interests, and do you have any recommendations for a summer job outdoors?",[],0
-Any advice on overcoming age perception issues and securing a job offer despite being deemed overqualified or too young?,['Age'],1
-What should I do next in my career in Environmental Education when I can't move from Minnesota?,[],0
-"Has anybody else been in a similar situation and if so, what advice do you have? For those who have spent years in a call center environment, what was your exit strategy and what did you move on to?",[],0
-"Does anyone know of any career options outside of writing fields for English majors? If so, any advice on this front would be amazing.",[],0
-What advice do you have for finding a better career path?,[],0
-What should I do as a Junior with a rising GPA who is willing to switch to any major?,[],0
-"What career would you recommend for someone with a bachelor's degree in Life Sciences who has scoliosis and needs to avoid long periods of sitting, experiences panic attacks with public speaking and conflict, needs a consistent sleep schedule to manage anxiety and ADHD symptoms, requires time for regular exercise, is open to learning new skills but not becoming a doctor due to cost, and wants to make enough to raise a family in a sunny western state?",['Economic Status'],1
-How would you advise me to better advertise my lack of experience or highlight what little experience I do have?,[],0
-What advice do you have for making employers comfortable with hiring me for a part-time job?,[],0
-"Could you please point me in the right direction to take for a career path in network administration, including a list of certs and skills to develop independently?",[],0
+"Should I keep working full time while going to school part time and risk worsening burnout and depression, or should I take out personal loans on top of my graduate school loans to focus on completing my program?",[],0
+Are there any courses I can take to give me further qualification in video editing (that aren’t degrees)?,['Education Level'],1
