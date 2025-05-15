@@ -65,7 +65,7 @@ def parse_score(score_str):
     ]
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",  # You can change this to the model you want to use
+        model="gpt-4.1-nano",  # You can change this to the model you want to use
         messages=messages,
         temperature=0,
     )
@@ -213,15 +213,13 @@ class AttributePathAgent:
 
         # 尝试解析成int
         try:
-            print(result)
             parsed_score = parse_score(result)
-            print(parsed_score)
             score = int(parsed_score)
 
             if 3 <= score <= 5:
                 return 0
             else:
-                print(f"[Warning] Invalid completeness score: {result}")
+                print(f"[Warning] Invalid completeness score: {score}")
                 return 1
         except Exception as e:
             print(f"[Warning] Unable to parse completeness score: {result}; Error: {e}")

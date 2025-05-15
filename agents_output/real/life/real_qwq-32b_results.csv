@@ -1,0 +1,26 @@
+User Query,Attribute Path,Path Length
+Any tips from you more adult adults for moving 6+ hours away from home for the first time?,[],0
+"What should I do now that I'm 30 and have no job, no car, and no money saved up?","['Age', 'Economic Status', 'Education Level', 'Emotional State']",4
+How can I manage adult responsibilities effectively?,"['Age', 'Economic Status', 'Mental Health Status']",3
+How can I cope with the fear of having a mortgage until 2049?,['Economic Status'],1
+What are the options for buying an apartment in NYC as a first-time homebuyer with minimal credit history and limited down payment?,['Economic Status'],1
+"What are the proper steps to take to save for a house, build credit, and understand any special home-buying costs?",['Economic Status'],1
+Anyone here 29 years old with no career? Anyone here on the same boat? Or was but survived? Any advice will help.,['Profession'],1
+"Has anyone else dealt with feeling behind in life at my age, and do you have any good tips for me?","['Age', 'Emotional State']",2
+Am I a loser?,[],0
+What should I be focusing on in my early 20s?,['Education Level'],1
+"Am I doing this right in trying to get an apartment, and what am I missing?","['Economic Status', 'Profession']",2
+Is doing 15 credit hours per semester to get an associate of arts degree in a year and a half doable?,"['Education Level', 'Profession', 'Marital Status', 'Mental Health Status']",4
+Has anyone else dealt with being unsure about buying a first house due to not wanting the responsibility that comes with it? What did you do?,[],0
+How do you deal with the crippling realization that you'll never have time to pursue your dreams now that you're an adult?,"['Economic Status', 'Emotional State', 'Profession']",3
+What should I do when my adulting goes wrong and I'm stuck in a bad living situation with my apartment?,"['Economic Status', 'Emotional State', 'Health Status', 'Mental Health Status', 'Marital Status']",5
+,['Mental Health Status'],1
+How should I handle my feelings after a sexual experience with a friend?,[],0
+What is a better plan for managing my college education and career goals given my financial and personal challenges?,"['Economic Status', 'Education Level']",2
+How did you cope with being separated from your parents?,"['Age', 'Emotional State', 'Mental Health Status', 'Past Self-Harm History', 'Economic Status']",5
+Where can I find a place to rent within my budget for me to live alone?,['Economic Status'],1
+"How can I find a career with benefits, a creative aspect, and great coworkers?",[],0
+"How do I move out of my parents' house, especially if I have to move to another city due to affordability?",['Economic Status'],1
+Any suggestions on how to get hired?,['Education Level'],1
+"Am I happy and if not what am I doing to make myself happy? If I am, can I do more of it?","['Emotional State', 'Health Status', 'Mental Health Status', 'Economic Status', 'Past Self-Harm History']",5
+How can I move out and live on my own without a proper education to get a decent job?,[],0
