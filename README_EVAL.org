@@ -1,36 +1,22 @@
 * Syth Data (all on uril)
-| Model     | Vanilla Agent | Retrieval Agent | Eval Regular | Eval Retrieval |
-|-----------+---------------+-----------------+--------------+----------------|
-| LLaMA     | DONE          | DONE            | DONE         | DONE           |
-| Qwen2.5   | DONE          | DONE            | DONE         | DONE           |
-| Mistral   | DONE          | DONE            | DONE         | DONE           |
-| DeepSeek  | DONE          | DONE            | DONE         | DONE           |
-| QWQ       | DONE          | DONE            | NS           | NS             |
-| LLaMA 3.1 | DONE          | DONE            | DONE         | DONE           |
+| Model     | Vanilla Agent | Retrieval Agent | Eval Regular     | Eval Retrieval   |
+|-----------+---------------+-----------------+------------------+------------------|
+| LLaMA     | DONE          | DONE            | DONE             | DONE             |
+| Qwen2.5   | DONE          | DONE            | DONE             | DONE             |
+| Mistral   | DONE          | DONE            | DONE             | DONE             |
+| DeepSeek  | DONE          | DONE            | DONE             | DONE             |
+| QWQ       | DONE          | DONE            | RUNNING (runpod) | RUNNING (runpod) |
+| LLaMA 3.1 | DONE          | DONE            | DONE             | DONE             |
 
 * Real Data
-| Model     | Vanilla Agent | Retrieval Agent | Eval Regular    | Eval Retrieval |
-|-----------+---------------+-----------------+-----------------+----------------|
-| LLaMA     | DONE          | DONE            | DONE            | DONE           |
-| Qwen2.5   | DONE          | DONE            | DONE            | DONE           |
-| Mistral   | NS            | DONE            | DONE            | NS             |
-| DeepSeek  | DONE          | DONE            | DONE            | DONE           |
-| QWQ       | NS            | NS              | NS              | NS             |
-| LLaMA 3.1 | DONE          | RUNNING (uril)  | RUNNING (scai3) | NS             |
-
-QWQ eval start for both
-1 GPU each (x2)
-
-QWQ vanilla generate on real data (run like 20 for each)
-
-QWQ retrieval generate on real data (run like 20 for each)
-
-run eval for both
-
-Run real (just finished education) LLMA31 for rest
-
-Run eval on real and syth for llama generate resposne thing
-
+| Model     | Vanilla Agent | Retrieval Agent | Eval Regular     | Eval Retrieval   |
+|-----------+---------------+-----------------+------------------+------------------|
+| LLaMA     | DONE          | DONE            | DONE             | DONE             |
+| Qwen2.5   | DONE          | DONE            | DONE             | DONE             |
+| Mistral   | NS            | DONE            | DONE             | NS               |
+| DeepSeek  | DONE          | DONE            | DONE             | DONE             |
+| QWQ       | DONE          | DONE            | RUNNING (runpod) | RUNNING (runpod) |
+| LLaMA 3.1 | DONE          | DONE            | DONE             | RUNNING (uril)   |
 
 * REAL data agents (scai4)
 ** Real Data 
